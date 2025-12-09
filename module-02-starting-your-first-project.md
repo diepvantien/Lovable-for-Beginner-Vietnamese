@@ -1,57 +1,59 @@
-# Module 2: Starting Your First Project
+# Mô-đun 2: Bắt đầu Dự án Đầu tiên của Bạn
 
-**Goal:** Learn all the different ways to begin building in Lovable
+**Mục tiêu:** Tìm hiểu tất cả các cách khác nhau để bắt đầu xây dựng trong Lovable
 
-**Estimated Time:** 20-30 minutes
-
----
-
-## 🎯 What You'll Learn in This Module
-
-By the end of this module, you will:
-- Know how to start a project from a prompt
-- Understand how to remix existing projects
-- Learn how to use Figma designs
-- Know how to upload sketches
-- Understand how to clone websites
-- Be able to choose the best method for your needs
+**Thời gian ước tính:** 20-30 phút
 
 ---
 
-## 📖 Lesson 1: Starting from a Prompt (The Most Common Way)
+## 🎯 Bạn sẽ học được gì trong Mô-đun này
 
-### What is a Prompt?
+Vào cuối mô-đun này, bạn sẽ:
+- Biết cách bắt đầu một dự án từ một lời nhắc
+- Hiểu cách remix các dự án hiện có
+- Học cách sử dụng thiết kế Figma
+- Biết cách tải lên các bản phác thảo
+- Hiểu cách sao chép (clone) các trang web
+- Có thể chọn phương pháp tốt nhất cho nhu cầu của bạn
 
-A **prompt** is simply the message you send to Lovable describing what you want to build. Think of it like giving instructions to a builder.
+---
 
-### How to Write Your First Prompt
+## 📖 Bài học 1: Bắt đầu từ một Lời nhắc (Cách phổ biến nhất)
 
-#### Step 1: Think About What You Want
+### Lời nhắc là gì?
 
-Before you type, think about:
-- **What type of app/website?** (portfolio, blog, e-commerce, etc.)
-- **What should it do?** (showcase work, sell products, collect emails, etc.)
-- **What should it look like?** (modern, colorful, minimal, etc.)
+Một **lời nhắc (prompt)** đơn giản là tin nhắn bạn gửi cho Lovable mô tả những gì bạn muốn xây dựng. Hãy nghĩ về nó giống như đưa ra hướng dẫn cho một người xây dựng.
 
-**💡 Beginner Tip:** Don't worry about being perfect! You can always refine and improve your project later.
+### Cách viết Lời nhắc đầu tiên của bạn
 
-#### Step 2: Write Your Prompt
+#### Bước 1: Suy nghĩ về những gì bạn muốn
 
-Go to the Lovable dashboard and click in the search box. Then type what you want.
+Trước khi bạn nhập, hãy suy nghĩ về:
+- **Loại ứng dụng/trang web nào?** (portfolio, blog, thương mại điện tử, v.v.)
+- **Nó nên làm gì?** (giới thiệu công việc, bán sản phẩm, thu thập email, v.v.)
+- **Nó trông như thế nào?** (hiện đại, đầy màu sắc, tối giản, v.v.)
 
-**Example Prompts:**
+**💡 Mẹo cho người mới:** Đừng lo lắng về việc hoàn hảo! Bạn luôn có thể tinh chỉnh và cải thiện dự án của mình sau.
 
-**Simple:**
+#### Bước 2: Viết Lời nhắc của bạn
+
+Truy cập bảng điều khiển Lovable và nhấp vào hộp tìm kiếm. Sau đó nhập những gì bạn muốn.
+
+**Ví dụ về Lời nhắc:**
+
+**Đơn giản:**
 ```
 Create a personal portfolio website
 ```
+*(Tạm dịch: Tạo một trang web portfolio cá nhân)*
 
-**More Detailed:**
+**Chi tiết hơn:**
 ```
 Create a modern portfolio website for a photographer with a gallery section, about page, and contact form. Use a dark theme with elegant typography.
 ```
+*(Tạm dịch: Tạo một trang web portfolio hiện đại cho một nhiếp ảnh gia với phần thư viện ảnh, trang giới thiệu và biểu mẫu liên hệ. Sử dụng chủ đề tối với kiểu chữ thanh lịch.)*
 
-**Very Detailed:**
+**Rất chi tiết:**
 ```
 Build a restaurant website for "Sunset Bistro" with:
 - A hero section showing the restaurant
@@ -61,74 +63,76 @@ Build a restaurant website for "Sunset Bistro" with:
 - Online reservation form
 Use warm colors and elegant design.
 ```
+*(Tạm dịch: Xây dựng trang web nhà hàng cho "Sunset Bistro" với: phần hero hiển thị nhà hàng, trang thực đơn với các danh mục, trang giới thiệu kể câu chuyện nhà hàng, trang liên hệ với địa điểm và giờ mở cửa, biểu mẫu đặt chỗ trực tuyến. Sử dụng màu ấm và thiết kế thanh lịch.)*
 
-#### Step 3: Send Your Prompt
+#### Bước 3: Gửi Lời nhắc của bạn
 
-1. After typing, press **Enter** or click the send button
-2. Wait while Lovable builds your project (usually 10-30 seconds)
-3. Your project will appear!
+1. Sau khi nhập, nhấn **Enter** hoặc nhấp vào nút gửi
+2. Đợi trong khi Lovable xây dựng dự án của bạn (thường là 10-30 giây)
+3. Dự án của bạn sẽ xuất hiện!
 
-#### Step 4: Review What Was Built
+#### Bước 4: Xem lại những gì đã được xây dựng
 
-Once your project is created:
-- **Look at the preview** on the right side
-- **Check if it matches what you wanted**
-- **Note what you like and what you'd like to change**
+Khi dự án của bạn được tạo:
+- **Nhìn vào bản xem trước** ở bên phải
+- **Kiểm tra xem nó có khớp với những gì bạn muốn không**
+- **Ghi chú những gì bạn thích và những gì bạn muốn thay đổi**
 
-#### Step 5: Refine Your Project
+#### Bước 5: Tinh chỉnh Dự án của bạn
 
-If something isn't quite right, you can ask for changes:
+Nếu có gì đó chưa đúng, bạn có thể yêu cầu thay đổi:
 
-**Examples:**
+**Ví dụ:**
 ```
 Make the colors brighter
 Add a navigation menu at the top
 Change the font to something more modern
 Add a footer with social media links
 ```
+*(Tạm dịch: Làm cho màu sắc sáng hơn; Thêm menu điều hướng ở trên cùng; Đổi phông chữ sang thứ gì đó hiện đại hơn; Thêm chân trang với các liên kết mạng xã hội)*
 
-**💡 Beginner Tip:** It's normal to go back and forth a few times to get it perfect. That's part of the process!
+**💡 Mẹo cho người mới:** Việc quay lại và chỉnh sửa vài lần để có được sự hoàn hảo là điều bình thường. Đó là một phần của quy trình!
 
 ---
 
-## 📖 Lesson 2: Remixing Existing Projects (Learn from Others)
+## 📖 Bài học 2: Remix các Dự án Hiện có (Học hỏi từ người khác)
 
-### What is Remixing?
+### Remix là gì?
 
-**Remixing** means taking someone else's project and making it your own. It's like using a recipe but changing the ingredients to suit your taste.
+**Remixing** có nghĩa là lấy dự án của người khác và biến nó thành của riêng bạn. Nó giống như sử dụng một công thức nấu ăn nhưng thay đổi nguyên liệu để phù hợp với khẩu vị của bạn.
 
-### Why Remix?
+### Tại sao nên Remix?
 
-- **Learn from examples** - See how others built things
-- **Save time** - Start from something that already works
-- **Get inspiration** - Discover new ideas and designs
-- **Understand patterns** - Learn common structures
+- **Học hỏi từ các ví dụ** - Xem cách người khác xây dựng mọi thứ
+- **Tiết kiệm thời gian** - Bắt đầu từ thứ gì đó đã hoạt động
+- **Lấy cảm hứng** - Khám phá các ý tưởng và thiết kế mới
+- **Hiểu các mẫu** - Học các cấu trúc phổ biến
 
-### How to Remix a Project
+### Cách Remix một Dự án
 
-#### Step 1: Browse the Community
+#### Bước 1: Duyệt qua Cộng đồng
 
-1. On the Lovable dashboard, scroll down to see **"From the Community"** section
-2. You'll see cards showing different projects people have built
-3. Click on any project that looks interesting
+1. Trên bảng điều khiển Lovable, cuộn xuống để xem phần **"From the Community"**
+2. Bạn sẽ thấy các thẻ hiển thị các dự án khác nhau mà mọi người đã xây dựng
+3. Nhấp vào bất kỳ dự án nào trông thú vị
 
-#### Step 2: Preview the Project
+#### Bước 2: Xem trước Dự án
 
-1. Click on a project card
-2. You'll see a preview of the project
-3. Look around - check out the design, features, and layout
+1. Nhấp vào thẻ dự án
+2. Bạn sẽ thấy bản xem trước của dự án
+3. Nhìn xung quanh - kiểm tra thiết kế, tính năng và bố cục
 
-#### Step 3: Remix It
+#### Bước 3: Remix nó
 
-1. If you like what you see, look for a **"Remix"** button (usually in the top right)
-2. Click the **"Remix"** button
-3. Lovable will create a copy of that project for you!
+1. Nếu bạn thích những gì bạn thấy, hãy tìm nút **"Remix"** (thường ở góc trên bên phải)
+2. Nhấp vào nút **"Remix"**
+3. Lovable sẽ tạo một bản sao của dự án đó cho bạn!
 
-**What happens:** You now have your own version that you can edit and customize however you want.
+**Điều gì xảy ra:** Bây giờ bạn có phiên bản của riêng mình mà bạn có thể chỉnh sửa và tùy chỉnh theo ý muốn.
 
-#### Step 4: Customize Your Remix
+#### Bước 4: Tùy chỉnh bản Remix của bạn
 
-Now make it yours! Try:
+Bây giờ hãy biến nó thành của bạn! Hãy thử:
 
 ```
 Change the colors to match my brand
@@ -136,173 +140,179 @@ Update all the text with my information
 Add my logo
 Modify the layout to fit my needs
 ```
+*(Tạm dịch: Thay đổi màu sắc để phù hợp với thương hiệu của tôi; Cập nhật tất cả văn bản với thông tin của tôi; Thêm logo của tôi; Sửa đổi bố cục để phù hợp với nhu cầu của tôi)*
 
-**💡 Beginner Tip:** Remixing is a great way to learn! Look at how the project is structured, then customize it to understand how it works.
+**💡 Mẹo cho người mới:** Remix là một cách tuyệt vời để học! Nhìn vào cách dự án được cấu trúc, sau đó tùy chỉnh nó để hiểu cách nó hoạt động.
 
 ---
 
-## 📖 Lesson 3: Using Figma Designs (For Designers)
+## 📖 Bài học 3: Sử dụng Thiết kế Figma (Dành cho Nhà thiết kế)
 
-### What is Figma?
+### Figma là gì?
 
-**Figma** is a popular design tool where designers create mockups (visual designs) of websites and apps before they're built.
+**Figma** là một công cụ thiết kế phổ biến nơi các nhà thiết kế tạo ra các bản mô phỏng (thiết kế trực quan) của các trang web và ứng dụng trước khi chúng được xây dựng.
 
-### Why Use Figma with Lovable?
+### Tại sao sử dụng Figma với Lovable?
 
-If you or a designer has created a design in Figma, you can turn that design into a working website in minutes!
+Nếu bạn hoặc một nhà thiết kế đã tạo ra một thiết kế trong Figma, bạn có thể biến thiết kế đó thành một trang web hoạt động trong vài phút!
 
-### How to Use Figma Designs
+### Cách sử dụng Thiết kế Figma
 
-#### Step 1: Get Your Figma Design
+#### Bước 1: Lấy Thiết kế Figma của bạn
 
-You need:
-- A Figma account (free to sign up)
-- A design file in Figma
-- The ability to share the design
+Bạn cần:
+- Một tài khoản Figma (đăng ký miễn phí)
+- Một tệp thiết kế trong Figma
+- Khả năng chia sẻ thiết kế
 
-#### Step 2: Share Your Figma Design
+#### Bước 2: Chia sẻ Thiết kế Figma của bạn
 
-1. In Figma, open your design
-2. Click the **"Share"** button (usually top right)
-3. Copy the share link
-4. Make sure the link allows "Anyone with the link can view"
+1. Trong Figma, mở thiết kế của bạn
+2. Nhấp vào nút **"Share"** (thường ở góc trên bên phải)
+3. Sao chép liên kết chia sẻ
+4. Đảm bảo liên kết cho phép "Anyone with the link can view" (Bất kỳ ai có liên kết đều có thể xem)
 
-#### Step 3: Use It in Lovable
+#### Bước 3: Sử dụng nó trong Lovable
 
-1. In Lovable, start a new project
-2. In the prompt box, type something like:
+1. Trong Lovable, bắt đầu một dự án mới
+2. Trong hộp lời nhắc, nhập một cái gì đó như:
 
 ```
-Build this website based on my Figma design: [paste your Figma link here]
+Build this website based on my Figma design: [dán liên kết Figma của bạn vào đây]
 ```
 
-Or you can:
-1. Look for an **"Attach"** button near the prompt box
-2. Click it and paste your Figma link
-3. Then describe what you want built
+Hoặc bạn có thể:
+1. Tìm nút **"Attach"** gần hộp lời nhắc
+2. Nhấp vào nó và dán liên kết Figma của bạn
+3. Sau đó mô tả những gì bạn muốn xây dựng
 
-#### Step 4: Review and Refine
+#### Bước 4: Xem lại và Tinh chỉnh
 
-Lovable will analyze your Figma design and build a working version. You can then ask for adjustments:
+Lovable sẽ phân tích thiết kế Figma của bạn và xây dựng một phiên bản hoạt động. Sau đó, bạn có thể yêu cầu điều chỉnh:
 
 ```
 Make the spacing match the Figma design exactly
 Use the exact colors from the design
 Match the typography from Figma
 ```
+*(Tạm dịch: Làm cho khoảng cách khớp chính xác với thiết kế Figma; Sử dụng màu sắc chính xác từ thiết kế; Khớp kiểu chữ từ Figma)*
 
-**💡 Beginner Tip:** If you don't have a Figma design, that's okay! You can skip this method and use prompts or templates instead.
+**💡 Mẹo cho người mới:** Nếu bạn không có thiết kế Figma, không sao cả! Bạn có thể bỏ qua phương pháp này và sử dụng lời nhắc hoặc mẫu thay thế.
 
 ---
 
-## 📖 Lesson 4: Using Sketches (Turn Drawings into Code)
+## 📖 Bài học 4: Sử dụng Bản phác thảo (Biến bản vẽ thành mã)
 
-### What is This?
+### Đây là gì?
 
-You can upload a **sketch** (a drawing or mockup) of what you want, and Lovable will turn it into a working website!
+Bạn có thể tải lên một **bản phác thảo (sketch)** (một bản vẽ hoặc mô phỏng) về những gì bạn muốn, và Lovable sẽ biến nó thành một trang web hoạt động!
 
-### What Counts as a Sketch?
+### Cái gì được tính là một Bản phác thảo?
 
-- A drawing on paper (take a photo)
-- A digital sketch (saved as an image)
-- A wireframe (simple layout drawing)
-- A mockup (visual design)
-- A screenshot of something you like
+- Một bản vẽ trên giấy (chụp ảnh)
+- Một bản phác thảo kỹ thuật số (lưu dưới dạng hình ảnh)
+- Một wireframe (bản vẽ bố cục đơn giản)
+- Một mockup (thiết kế trực quan)
+- Một ảnh chụp màn hình của thứ gì đó bạn thích
 
-### How to Use Sketches
+### Cách sử dụng Bản phác thảo
 
-#### Step 1: Create or Find Your Sketch
+#### Bước 1: Tạo hoặc Tìm Bản phác thảo của bạn
 
-You can:
-- Draw something on paper and take a photo
-- Create a simple sketch in any drawing app
-- Use a screenshot of a website you like
-- Find an image online that shows what you want
+Bạn có thể:
+- Vẽ một cái gì đó trên giấy và chụp ảnh
+- Tạo một bản phác thảo đơn giản trong bất kỳ ứng dụng vẽ nào
+- Sử dụng ảnh chụp màn hình của một trang web bạn thích
+- Tìm một hình ảnh trực tuyến hiển thị những gì bạn muốn
 
-#### Step 2: Upload Your Sketch
+#### Bước 2: Tải lên Bản phác thảo của bạn
 
-1. In Lovable, look for the **"Attach"** button near the prompt box
-2. Click **"Attach"**
-3. Select **"Upload Image"** or **"Upload File"**
-4. Choose your sketch/image from your computer
-5. The image will attach to your prompt
+1. Trong Lovable, tìm nút **"Attach"** gần hộp lời nhắc
+2. Nhấp vào **"Attach"**
+3. Chọn **"Upload Image"** hoặc **"Upload File"**
+4. Chọn bản phác thảo/hình ảnh của bạn từ máy tính
+5. Hình ảnh sẽ đính kèm vào lời nhắc của bạn
 
-#### Step 3: Describe What You Want
+#### Bước 3: Mô tả những gì bạn muốn
 
-After attaching, type something like:
+Sau khi đính kèm, nhập một cái gì đó như:
 
 ```
 Build a website that looks like this sketch. Make it modern and responsive.
 ```
+*(Tạm dịch: Xây dựng một trang web trông giống như bản phác thảo này. Làm cho nó hiện đại và phản hồi nhanh.)*
 
-Or be more specific:
+Hoặc cụ thể hơn:
 
 ```
 Create a landing page based on this design. Use the layout shown but update the colors to blue and white, and change the text to be about my coffee shop.
 ```
+*(Tạm dịch: Tạo một trang đích dựa trên thiết kế này. Sử dụng bố cục được hiển thị nhưng cập nhật màu sắc thành xanh và trắng, và thay đổi văn bản để nói về quán cà phê của tôi.)*
 
-#### Step 4: Let Lovable Build It
+#### Bước 4: Để Lovable xây dựng nó
 
-1. Send your prompt with the attached image
-2. Lovable will analyze your sketch and build a working version
-3. Review and ask for any adjustments
+1. Gửi lời nhắc của bạn với hình ảnh đính kèm
+2. Lovable sẽ phân tích bản phác thảo của bạn và xây dựng một phiên bản hoạt động
+3. Xem lại và yêu cầu bất kỳ điều chỉnh nào
 
-**💡 Beginner Tip:** Even a rough sketch works! Lovable is good at understanding what you mean, even if the drawing isn't perfect.
+**💡 Mẹo cho người mới:** Ngay cả một bản phác thảo thô sơ cũng hoạt động! Lovable rất giỏi trong việc hiểu ý bạn, ngay cả khi bản vẽ không hoàn hảo.
 
 ---
 
-## 📖 Lesson 5: Cloning Websites (Recreate What You Like)
+## 📖 Bài học 5: Sao chép (Cloning) Trang web (Tạo lại những gì bạn thích)
 
-### What is Cloning?
+### Sao chép là gì?
 
-**Cloning** means recreating an existing website or app. You see a website you like, and you want to build something similar.
+**Cloning** có nghĩa là tạo lại một trang web hoặc ứng dụng hiện có. Bạn thấy một trang web bạn thích, và bạn muốn xây dựng một cái gì đó tương tự.
 
-### Why Clone?
+### Tại sao nên Sao chép?
 
-- **Learn from the best** - See how successful sites are built
-- **Save design time** - Start with a proven layout
-- **Understand patterns** - Learn what works well
-- **Create similar functionality** - Replicate features you like
+- **Học hỏi từ những người giỏi nhất** - Xem cách các trang web thành công được xây dựng
+- **Tiết kiệm thời gian thiết kế** - Bắt đầu với một bố cục đã được chứng minh
+- **Hiểu các mẫu** - Học những gì hoạt động tốt
+- **Tạo chức năng tương tự** - Sao chép các tính năng bạn thích
 
-### How to Clone a Website
+### Cách Sao chép một Trang web
 
-#### Step 1: Find a Website You Like
+#### Bước 1: Tìm một Trang web bạn thích
 
-Browse the internet and find a website you'd like to recreate or use as inspiration.
+Duyệt internet và tìm một trang web bạn muốn tạo lại hoặc sử dụng làm cảm hứng.
 
-**Examples:**
-- A portfolio site you admire
-- A landing page with great design
-- An app interface you like
-- A blog layout that works well
+**Ví dụ:**
+- Một trang web portfolio bạn ngưỡng mộ
+- Một trang đích với thiết kế tuyệt vời
+- Một giao diện ứng dụng bạn thích
+- Một bố cục blog hoạt động tốt
 
-#### Step 2: Take a Screenshot or Get the URL
+#### Bước 2: Chụp ảnh màn hình hoặc Lấy URL
 
-You can:
-- Take a screenshot of the website
-- Copy the website's URL (address)
-- Describe what you see
+Bạn có thể:
+- Chụp ảnh màn hình của trang web
+- Sao chép URL (địa chỉ) của trang web
+- Mô tả những gì bạn thấy
 
-#### Step 3: Use It in Lovable
+#### Bước 3: Sử dụng nó trong Lovable
 
-**Option A: With a Screenshot**
-1. Attach the screenshot to your prompt
-2. Type: `Build a website similar to this design`
+**Tùy chọn A: Với ảnh chụp màn hình**
+1. Đính kèm ảnh chụp màn hình vào lời nhắc của bạn
+2. Nhập: `Build a website similar to this design` *(Xây dựng một trang web tương tự thiết kế này)*
 
-**Option B: With a URL**
-1. In your prompt, include the URL:
+**Tùy chọn B: Với URL**
+1. Trong lời nhắc của bạn, bao gồm URL:
 ```
 Create a website similar to https://example.com but for my business
 ```
+*(Tạm dịch: Tạo một trang web tương tự https://example.com nhưng cho doanh nghiệp của tôi)*
 
-**Option C: With a Description**
+**Tùy chọn C: Với mô tả**
 ```
 Build a landing page similar to Apple's website - clean, minimal, with a hero section and product showcase
 ```
+*(Tạm dịch: Xây dựng một trang đích tương tự trang web của Apple - sạch sẽ, tối giản, với phần hero và giới thiệu sản phẩm)*
 
-#### Step 4: Customize It
+#### Bước 4: Tùy chỉnh nó
 
-After Lovable builds it, make it yours:
+Sau khi Lovable xây dựng nó, hãy biến nó thành của bạn:
 
 ```
 Change the colors to match my brand
@@ -310,213 +320,214 @@ Update all the content with my information
 Modify the layout slightly
 Add my logo and branding
 ```
+*(Tạm dịch: Thay đổi màu sắc để phù hợp với thương hiệu của tôi; Cập nhật tất cả nội dung với thông tin của tôi; Sửa đổi bố cục một chút; Thêm logo và thương hiệu của tôi)*
 
-**💡 Beginner Tip:** Cloning is great for learning! Study what makes the original site work, then adapt it for your needs.
+**💡 Mẹo cho người mới:** Sao chép là tuyệt vời để học tập! Nghiên cứu những gì làm cho trang web gốc hoạt động, sau đó điều chỉnh nó cho nhu cầu của bạn.
 
 ---
 
-## 🛠️ Hands-On Practice: Try Each Method
+## 🛠️ Thực hành: Thử từng Phương pháp
 
-Let's practice! Try creating a project using each method:
+Hãy thực hành! Thử tạo một dự án bằng cách sử dụng từng phương pháp:
 
-### Practice 1: Prompt Method
+### Thực hành 1: Phương pháp Lời nhắc
 
-**Task:** Create a simple blog homepage
+**Nhiệm vụ:** Tạo trang chủ blog đơn giản
 
-**Your prompt:**
+**Lời nhắc của bạn:**
 ```
 Create a blog homepage with a header, featured post section, and list of recent posts. Use a clean, modern design.
 ```
+*(Tạm dịch: Tạo trang chủ blog với tiêu đề, phần bài viết nổi bật và danh sách các bài viết gần đây. Sử dụng thiết kế sạch sẽ, hiện đại.)*
 
-**What to do:**
-1. Type the prompt
-2. Send it
-3. Review what was built
-4. Ask for one change (like "make the header darker")
+**Việc cần làm:**
+1. Nhập lời nhắc
+2. Gửi nó
+3. Xem lại những gì đã được xây dựng
+4. Yêu cầu một thay đổi (như "làm cho tiêu đề tối hơn")
 
-### Practice 2: Remix Method
+### Thực hành 2: Phương pháp Remix
 
-**Task:** Remix a community project
+**Nhiệm vụ:** Remix một dự án cộng đồng
 
-**What to do:**
-1. Browse the "From the Community" section
-2. Find a project you like
-3. Click "Remix"
-4. Make at least 3 changes to make it yours:
-   - Change the colors
-   - Update the text
-   - Add or remove a section
+**Việc cần làm:**
+1. Duyệt qua phần "From the Community"
+2. Tìm một dự án bạn thích
+3. Nhấp vào "Remix"
+4. Thực hiện ít nhất 3 thay đổi để biến nó thành của bạn:
+   - Thay đổi màu sắc
+   - Cập nhật văn bản
+   - Thêm hoặc xóa một phần
 
-### Practice 3: Sketch Method (Optional)
+### Thực hành 3: Phương pháp Phác thảo (Tùy chọn)
 
-**Task:** Create from a simple sketch
+**Nhiệm vụ:** Tạo từ một bản phác thảo đơn giản
 
-**What to do:**
-1. Draw a simple website layout on paper (or create a digital sketch)
-   - Draw a header at the top
-   - Draw a main content area
-   - Draw a footer at the bottom
-2. Take a photo or save it as an image
-3. Upload it to Lovable
-4. Ask Lovable to build it
+**Việc cần làm:**
+1. Vẽ một bố cục trang web đơn giản trên giấy (hoặc tạo bản phác thảo kỹ thuật số)
+   - Vẽ tiêu đề ở trên cùng
+   - Vẽ khu vực nội dung chính
+   - Vẽ chân trang ở dưới cùng
+2. Chụp ảnh hoặc lưu dưới dạng hình ảnh
+3. Tải lên Lovable
+4. Yêu cầu Lovable xây dựng nó
 
-### Practice 4: Clone Method
+### Thực hành 4: Phương pháp Sao chép
 
-**Task:** Clone a simple website
+**Nhiệm vụ:** Sao chép một trang web đơn giản
 
-**What to do:**
-1. Find a simple website you like (try a portfolio or landing page)
-2. Take a screenshot
-3. Upload it to Lovable
-4. Ask: "Build a website similar to this but for [your topic]"
+**Việc cần làm:**
+1. Tìm một trang web đơn giản bạn thích (thử portfolio hoặc trang đích)
+2. Chụp ảnh màn hình
+3. Tải lên Lovable
+4. Hỏi: "Build a website similar to this but for [your topic]" *(Xây dựng một trang web tương tự cái này nhưng cho [chủ đề của bạn])*
 
 ---
 
-## 🎯 Which Method Should You Use?
+## 🎯 Bạn nên sử dụng Phương pháp nào?
 
-Here's a simple guide:
+Đây là hướng dẫn đơn giản:
 
-| Method | Best For | When to Use |
+| Phương pháp | Tốt nhất cho | Khi nào nên sử dụng |
 |--------|----------|-------------|
-| **Prompt** | Most situations | When you have a clear idea of what you want |
-| **Remix** | Learning and inspiration | When you see something you like and want to customize |
-| **Figma** | Designers | When you have a professional design ready |
-| **Sketch** | Visual thinkers | When you've drawn or sketched your idea |
-| **Clone** | Learning from examples | When you want to recreate something that exists |
+| **Prompt** | Hầu hết các tình huống | Khi bạn có ý tưởng rõ ràng về những gì bạn muốn |
+| **Remix** | Học tập và cảm hứng | Khi bạn thấy thứ gì đó bạn thích và muốn tùy chỉnh |
+| **Figma** | Nhà thiết kế | Khi bạn có thiết kế chuyên nghiệp sẵn sàng |
+| **Sketch** | Người tư duy hình ảnh | Khi bạn đã vẽ hoặc phác thảo ý tưởng của mình |
+| **Clone** | Học hỏi từ các ví dụ | Khi bạn muốn tạo lại thứ gì đó đang tồn tại |
 
-**💡 Beginner Tip:** Start with **Prompts** - it's the easiest and most flexible method. Try the others as you get more comfortable!
-
----
-
-## 🎯 Module 2 Challenges
-
-**Practice starting projects with these challenges!**
-
-### Challenge 1: Start from Prompt (Beginner)
-
-**Your Task:** Create a project using a prompt for a simple landing page.
-
-**Requirements:**
-- Create a landing page for a local coffee shop
-- Include: hero section, menu preview, location, hours
-- Use warm, inviting colors
-- Make it mobile-friendly
-
-**💡 Hints:**
-- Be specific about what you want
-- Include design preferences
-- Mention target audience
-
-**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-2-challenge-1)
+**💡 Mẹo cho người mới:** Bắt đầu với **Prompts** - đó là phương pháp dễ nhất và linh hoạt nhất. Thử các phương pháp khác khi bạn cảm thấy thoải mái hơn!
 
 ---
 
-### Challenge 2: Remix and Customize (Intermediate)
+## 🎯 Thử thách Mô-đun 2
 
-**Your Task:** 
-1. Find a portfolio template in the community
-2. Remix it
-3. Customize it for a photographer
+**Thực hành bắt đầu dự án với các thử thách này!**
 
-**Requirements:**
-- Change all colors to match photography theme
-- Update all text with photographer information
-- Add a new "Pricing" page
-- Modify the gallery layout
+### Thử thách 1: Bắt đầu từ Lời nhắc (Người mới bắt đầu)
 
-**💡 Hints:**
-- Browse community projects first
-- Make at least 5 significant changes
-- Test each change as you go
+**Nhiệm vụ của bạn:** Tạo một dự án bằng cách sử dụng lời nhắc cho một trang đích đơn giản.
 
-**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-2-challenge-2)
+**Yêu cầu:**
+- Tạo trang đích cho một quán cà phê địa phương
+- Bao gồm: phần hero, xem trước thực đơn, địa điểm, giờ mở cửa
+- Sử dụng màu sắc ấm áp, mời gọi
+- Làm cho nó thân thiện với thiết bị di động
 
----
+**💡 Gợi ý:**
+- Cụ thể về những gì bạn muốn
+- Bao gồm sở thích thiết kế
+- Đề cập đến đối tượng mục tiêu
 
-### Challenge 3: Use Multiple Methods (Advanced)
-
-**Your Task:** Combine methods to create a project:
-1. Start with a prompt for basic structure
-2. Attach a sketch/image for design inspiration
-3. Remix a component you like from community
-
-**Requirements:**
-- Create a restaurant website
-- Use prompt for structure
-- Attach a design reference
-- Incorporate a menu component from a remix
-
-**💡 Hints:**
-- Start with prompt for foundation
-- Then add visual references
-- Finally, remix specific components
-
-**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-2-challenge-3)
+**Kiểm tra giải pháp của bạn:** Xem [Giải pháp Thử thách](supplement-challenge-solutions.md#module-2-challenge-1)
 
 ---
 
-**💡 Pro Tip:** Try each challenge and compare your approach to the solutions. There's no single "right" way!
+### Thử thách 2: Remix và Tùy chỉnh (Trung cấp)
+
+**Nhiệm vụ của bạn:**
+1. Tìm một mẫu portfolio trong cộng đồng
+2. Remix nó
+3. Tùy chỉnh nó cho một nhiếp ảnh gia
+
+**Yêu cầu:**
+- Thay đổi tất cả màu sắc để phù hợp với chủ đề nhiếp ảnh
+- Cập nhật tất cả văn bản với thông tin nhiếp ảnh gia
+- Thêm trang "Pricing" (Giá cả) mới
+- Sửa đổi bố cục thư viện ảnh
+
+**💡 Gợi ý:**
+- Duyệt qua các dự án cộng đồng trước
+- Thực hiện ít nhất 5 thay đổi đáng kể
+- Kiểm tra từng thay đổi khi bạn thực hiện
+
+**Kiểm tra giải pháp của bạn:** Xem [Giải pháp Thử thách](supplement-challenge-solutions.md#module-2-challenge-2)
 
 ---
 
-## ✅ Module 2 Checklist
+### Thử thách 3: Sử dụng Nhiều Phương pháp (Nâng cao)
 
-Before moving to Module 3, make sure you can:
+**Nhiệm vụ của bạn:** Kết hợp các phương pháp để tạo một dự án:
+1. Bắt đầu với một lời nhắc cho cấu trúc cơ bản
+2. Đính kèm một bản phác thảo/hình ảnh để lấy cảm hứng thiết kế
+3. Remix một thành phần bạn thích từ cộng đồng
 
-- [ ] Create a project using a prompt
-- [ ] Remix an existing project
-- [ ] Understand when to use each method
-- [ ] Upload and use an image/sketch
-- [ ] Clone or recreate a website design
-- [ ] Choose the best method for different situations
+**Yêu cầu:**
+- Tạo trang web nhà hàng
+- Sử dụng lời nhắc cho nền tảng
+- Đính kèm tài liệu tham khảo thiết kế
+- Kết hợp thành phần thực đơn từ một bản remix
 
----
+**💡 Gợi ý:**
+- Bắt đầu với lời nhắc cho nền tảng
+- Sau đó thêm tài liệu tham khảo trực quan
+- Cuối cùng, remix các thành phần cụ thể
 
-## 🤔 Common Questions (FAQ)
-
-### Q: Which method is best for beginners?
-**A:** Start with **prompts** - they're the easiest and most flexible. Once you're comfortable, try the others!
-
-### Q: Can I combine methods?
-**A:** Yes! For example, you can remix a project AND attach a sketch to guide the changes.
-
-### Q: What if my prompt doesn't work?
-**A:** Try being more specific, or break it into smaller requests. You can always refine and adjust!
-
-### Q: Can I use multiple images?
-**A:** Yes! You can attach multiple images to give Lovable more context.
-
-### Q: How detailed should my prompt be?
-**A:** Start simple, then add details as needed. You can always ask for changes!
+**Kiểm tra giải pháp của bạn:** Xem [Giải pháp Thử thách](supplement-challenge-solutions.md#module-2-challenge-3)
 
 ---
 
-## 🎯 What's Next?
-
-Excellent work! You now know all the different ways to start projects in Lovable. You can:
-- Start from scratch with prompts
-- Learn from others by remixing
-- Use your designs from Figma
-- Turn sketches into reality
-- Clone and customize existing sites
-
-**Ready for Module 3?** In the next module, we'll learn about Lovable's different modes (Chat Mode and Agent Mode) and how to use them effectively!
+**💡 Mẹo chuyên nghiệp:** Hãy thử từng thử thách và so sánh cách tiếp cận của bạn với các giải pháp. Không có cách "đúng" duy nhất!
 
 ---
 
-## 💡 Pro Tips for Beginners
+## ✅ Danh sách kiểm tra Mô-đun 2
 
-1. **Start simple** - Begin with basic prompts, then get more detailed as you learn
+Trước khi chuyển sang Mô-đun 3, hãy đảm bảo bạn có thể:
 
-2. **Experiment** - Try different methods to see which you prefer
-
-3. **Learn from remixes** - Study how others built things to improve your skills
-
-4. **Don't be afraid to start over** - Sometimes it's easier to begin fresh than fix something
-
-5. **Save your favorites** - Keep track of projects you like for future inspiration
+- [ ] Tạo một dự án bằng cách sử dụng lời nhắc
+- [ ] Remix một dự án hiện có
+- [ ] Hiểu khi nào nên sử dụng từng phương pháp
+- [ ] Tải lên và sử dụng hình ảnh/bản phác thảo
+- [ ] Sao chép hoặc tạo lại thiết kế trang web
+- [ ] Chọn phương pháp tốt nhất cho các tình huống khác nhau
 
 ---
 
-*Module 2 Complete! 🎉*
+## 🤔 Câu hỏi thường gặp (FAQ)
 
+### Q: Phương pháp nào tốt nhất cho người mới bắt đầu?
+**A:** Bắt đầu với **prompts** - chúng dễ nhất và linh hoạt nhất. Khi bạn đã thoải mái, hãy thử các phương pháp khác!
+
+### Q: Tôi có thể kết hợp các phương pháp không?
+**A:** Có! Ví dụ, bạn có thể remix một dự án VÀ đính kèm một bản phác thảo để hướng dẫn các thay đổi.
+
+### Q: Nếu lời nhắc của tôi không hoạt động thì sao?
+**A:** Hãy thử cụ thể hơn, hoặc chia nhỏ nó thành các yêu cầu nhỏ hơn. Bạn luôn có thể tinh chỉnh và điều chỉnh!
+
+### Q: Tôi có thể sử dụng nhiều hình ảnh không?
+**A:** Có! Bạn có thể đính kèm nhiều hình ảnh để cung cấp cho Lovable nhiều ngữ cảnh hơn.
+
+### Q: Lời nhắc của tôi nên chi tiết đến mức nào?
+**A:** Bắt đầu đơn giản, sau đó thêm chi tiết khi cần thiết. Bạn luôn có thể yêu cầu thay đổi!
+
+---
+
+## 🎯 Tiếp theo là gì?
+
+Làm tốt lắm! Bây giờ bạn đã biết tất cả các cách khác nhau để bắt đầu dự án trong Lovable. Bạn có thể:
+- Bắt đầu từ đầu với lời nhắc
+- Học hỏi từ người khác bằng cách remix
+- Sử dụng thiết kế của bạn từ Figma
+- Biến bản phác thảo thành hiện thực
+- Sao chép và tùy chỉnh các trang web hiện có
+
+**Sẵn sàng cho Mô-đun 3?** Trong mô-đun tiếp theo, chúng ta sẽ tìm hiểu về các chế độ khác nhau của Lovable (Chat Mode và Agent Mode) và cách sử dụng chúng hiệu quả!
+
+---
+
+## 💡 Mẹo chuyên nghiệp cho người mới bắt đầu
+
+1. **Bắt đầu đơn giản** - Bắt đầu với các lời nhắc cơ bản, sau đó chi tiết hơn khi bạn học
+
+2. **Thử nghiệm** - Thử các phương pháp khác nhau để xem bạn thích phương pháp nào
+
+3. **Học từ các bản remix** - Nghiên cứu cách người khác xây dựng mọi thứ để cải thiện kỹ năng của bạn
+
+4. **Đừng ngại bắt đầu lại** - Đôi khi bắt đầu mới dễ hơn là sửa chữa thứ gì đó
+
+5. **Lưu các mục yêu thích của bạn** - Theo dõi các dự án bạn thích để lấy cảm hứng trong tương lai
+
+---
+
+*Mô-đun 2 Hoàn thành! 🎉*

@@ -1,34 +1,34 @@
-# Module 11: Advanced Prompt Patterns
+# Module 11: Các Mẫu Prompt Nâng cao
 
-**Goal:** Master advanced techniques for complex applications
+**Mục tiêu:** Làm chủ các kỹ thuật nâng cao cho các ứng dụng phức tạp
 
-**Estimated Time:** 40-50 minutes
+**Thời gian ước tính:** 40-50 phút
 
-**Prerequisites:** Complete Modules 1-5 first
-
----
-
-## 🎯 What You'll Learn in This Module
-
-By the end of this module, you will:
-- Understand advanced prompt patterns for complex flows
-- Know how to create dynamic, data-driven content
-- Learn conditional logic in prompts
-- Understand how to handle loops and iterations
-- Be able to build more sophisticated applications
-- Know patterns for complex user interactions
+**Điều kiện tiên quyết:** Hoàn thành Module 1-5 trước
 
 ---
 
-## 📖 Lesson 1: Dynamic Content Generation
+## 🎯 Bạn Sẽ Học Được Gì Trong Module Này
 
-### What is Dynamic Content?
+Vào cuối module này, bạn sẽ:
+- Hiểu các mẫu prompt nâng cao cho các luồng phức tạp
+- Biết cách tạo nội dung động, dựa trên dữ liệu
+- Học logic điều kiện trong các prompt
+- Hiểu cách xử lý vòng lặp và lặp lại
+- Có khả năng xây dựng các ứng dụng tinh vi hơn
+- Biết các mẫu cho các tương tác người dùng phức tạp
 
-**Dynamic content** changes based on data, user input, or conditions. Instead of static pages, you create pages that adapt.
+---
 
-### Basic Dynamic Content
+## 📖 Bài học 1: Tạo Nội dung Động
 
-**Example:**
+### Nội dung Động là gì?
+
+**Nội dung động (Dynamic content)** thay đổi dựa trên dữ liệu, đầu vào của người dùng hoặc các điều kiện. Thay vì các trang tĩnh, bạn tạo các trang thích ứng.
+
+### Nội dung Động Cơ bản
+
+**Ví dụ:**
 ```
 Create a blog post page that displays:
 - Post title (from database)
@@ -36,25 +36,35 @@ Create a blog post page that displays:
 - Author name (from database)
 - Publication date (from database)
 - Related posts (based on category)
+(Tạo một trang bài viết blog hiển thị:
+- Tiêu đề bài viết (từ cơ sở dữ liệu)
+- Nội dung bài viết (từ cơ sở dữ liệu)
+- Tên tác giả (từ cơ sở dữ liệu)
+- Ngày xuất bản (từ cơ sở dữ liệu)
+- Các bài viết liên quan (dựa trên danh mục))
 ```
 
-**What this does:** Creates a template that fills with different data for each post.
+**Điều này làm gì:** Tạo một mẫu điền dữ liệu khác nhau cho mỗi bài viết.
 
-### Advanced Dynamic Patterns
+### Các Mẫu Động Nâng cao
 
-#### Pattern 1: Conditional Display
+#### Mẫu 1: Hiển thị Có điều kiện
 
-**Example:**
+**Ví dụ:**
 ```
 On the product page, show different content based on product availability:
 - If product is in stock: Show "Add to Cart" button and stock count
 - If product is out of stock: Show "Notify Me" button and "Out of Stock" message
 - If product is on sale: Show sale badge and discounted price
+(Trên trang sản phẩm, hiển thị nội dung khác nhau dựa trên tình trạng sẵn có của sản phẩm:
+- Nếu sản phẩm còn hàng: Hiển thị nút "Thêm vào giỏ hàng" và số lượng tồn kho
+- Nếu sản phẩm hết hàng: Hiển thị nút "Thông báo cho tôi" và thông báo "Hết hàng"
+- Nếu sản phẩm đang giảm giá: Hiển thị huy hiệu giảm giá và giá đã giảm)
 ```
 
-#### Pattern 2: Data-Driven Lists
+#### Mẫu 2: Danh sách Dựa trên Dữ liệu
 
-**Example:**
+**Ví dụ:**
 ```
 Create a task list that:
 - Shows all tasks from the database
@@ -63,11 +73,18 @@ Create a task list that:
   - Completed tasks: Show in green with strikethrough
   - Overdue tasks: Show in red with warning icon
 - Updates automatically when tasks change
+(Tạo một danh sách công việc:
+- Hiển thị tất cả các công việc từ cơ sở dữ liệu
+- Hiển thị thông tin khác nhau dựa trên trạng thái công việc:
+  - Công việc đang chờ: Hiển thị màu vàng với nút "Hoàn thành"
+  - Công việc đã hoàn thành: Hiển thị màu xanh lá cây với gạch ngang
+  - Công việc quá hạn: Hiển thị màu đỏ với biểu tượng cảnh báo
+- Cập nhật tự động khi công việc thay đổi)
 ```
 
-#### Pattern 3: User-Specific Content
+#### Mẫu 3: Nội dung Dành riêng cho Người dùng
 
-**Example:**
+**Ví dụ:**
 ```
 Create a dashboard that shows:
 - Personalized greeting with user's name
@@ -76,56 +93,76 @@ Create a dashboard that shows:
   - Regular users: Show only their own data
   - Guest users: Show limited preview
 - Recommendations based on user's activity
+(Tạo một bảng điều khiển hiển thị:
+- Lời chào cá nhân hóa với tên người dùng
+- Nội dung dựa trên vai trò của người dùng:
+  - Người dùng quản trị: Hiển thị bảng quản trị và tất cả dữ liệu
+  - Người dùng thường: Chỉ hiển thị dữ liệu của riêng họ
+  - Người dùng khách: Hiển thị bản xem trước hạn chế
+- Đề xuất dựa trên hoạt động của người dùng)
 ```
 
-**💡 Beginner Tip:** Start simple, then add conditions. Build the basic version first, then add the conditional logic.
+**💡 Mẹo cho người mới bắt đầu:** Bắt đầu đơn giản, sau đó thêm các điều kiện. Xây dựng phiên bản cơ bản trước, sau đó thêm logic điều kiện.
 
 ---
 
-## 📖 Lesson 2: Conditional Logic in Prompts
+## 📖 Bài học 2: Logic Điều kiện trong Prompt
 
-### What is Conditional Logic?
+### Logic Điều kiện là gì?
 
-**Conditional logic** means "if this, then that" - showing different content or behavior based on conditions.
+**Logic điều kiện** có nghĩa là "nếu điều này, thì điều kia" - hiển thị nội dung hoặc hành vi khác nhau dựa trên các điều kiện.
 
-### Basic Conditional Patterns
+### Các Mẫu Điều kiện Cơ bản
 
-#### Pattern 1: Simple If-Then
+#### Mẫu 1: Nếu-Thì Đơn giản (Simple If-Then)
 
-**Example:**
+**Ví dụ:**
 ```
 Create a user profile page that:
 - If user is logged in: Show full profile with edit button
 - If user is not logged in: Show limited preview with "Sign up to see more" message
+(Tạo một trang hồ sơ người dùng:
+- Nếu người dùng đã đăng nhập: Hiển thị hồ sơ đầy đủ với nút chỉnh sửa
+- Nếu người dùng chưa đăng nhập: Hiển thị bản xem trước hạn chế với thông báo "Đăng ký để xem thêm")
 ```
 
-#### Pattern 2: Multiple Conditions
+#### Mẫu 2: Nhiều Điều kiện
 
-**Example:**
+**Ví dụ:**
 ```
 Create a product card component that displays differently based on:
 - Product availability (in stock, out of stock, pre-order)
 - Product type (physical, digital, subscription)
 - User's purchase history (new, previously purchased, in cart)
 Show appropriate buttons and information for each combination
+(Tạo một component thẻ sản phẩm hiển thị khác nhau dựa trên:
+- Tình trạng sẵn có của sản phẩm (còn hàng, hết hàng, đặt trước)
+- Loại sản phẩm (vật lý, kỹ thuật số, đăng ký)
+- Lịch sử mua hàng của người dùng (mới, đã mua trước đó, trong giỏ hàng)
+Hiển thị các nút và thông tin phù hợp cho từng kết hợp)
 ```
 
-#### Pattern 3: Conditional Styling
+#### Mẫu 3: Kiểu dáng Có điều kiện
 
-**Example:**
+**Ví dụ:**
 ```
 Style the task list items based on priority:
 - High priority tasks: Red background, bold text, urgent icon
 - Medium priority tasks: Yellow background, normal text
 - Low priority tasks: Gray background, lighter text
 - Completed tasks: Green checkmark, strikethrough, grayed out
+(Tạo kiểu cho các mục danh sách công việc dựa trên mức độ ưu tiên:
+- Công việc ưu tiên cao: Nền đỏ, chữ đậm, biểu tượng khẩn cấp
+- Công việc ưu tiên trung bình: Nền vàng, chữ thường
+- Công việc ưu tiên thấp: Nền xám, chữ nhạt hơn
+- Công việc đã hoàn thành: Dấu tích xanh, gạch ngang, làm mờ)
 ```
 
-### Advanced Conditional Patterns
+### Các Mẫu Điều kiện Nâng cao
 
-#### Pattern 4: Nested Conditions
+#### Mẫu 4: Điều kiện Lồng nhau
 
-**Example:**
+**Ví dụ:**
 ```
 Create a notification system that shows different messages based on:
 - User type (admin, member, guest)
@@ -139,34 +176,51 @@ Create a notification system that shows different messages based on:
 - Read status (read, unread)
   - Unread: Bold and highlighted
   - Read: Normal styling
+(Tạo một hệ thống thông báo hiển thị các tin nhắn khác nhau dựa trên:
+- Loại người dùng (quản trị viên, thành viên, khách)
+  - Nếu là quản trị viên: Hiển thị tất cả thông báo bao gồm cảnh báo hệ thống
+  - Nếu là thành viên: Hiển thị thông báo dành riêng cho người dùng
+  - Nếu là khách: Chỉ hiển thị thông báo công khai
+- Loại thông báo (tin nhắn, cảnh báo, cập nhật)
+  - Tin nhắn: Hiển thị người gửi và xem trước
+  - Cảnh báo: Hiển thị với biểu tượng cảnh báo
+  - Cập nhật: Hiển thị với biểu tượng thông tin
+- Trạng thái đọc (đã đọc, chưa đọc)
+  - Chưa đọc: Đậm và nổi bật
+  - Đã đọc: Kiểu dáng bình thường)
 ```
 
-#### Pattern 5: Conditional Features
+#### Mẫu 5: Tính năng Có điều kiện
 
-**Example:**
+**Ví dụ:**
 ```
 Add features to the dashboard based on subscription level:
 - Free users: Basic features only
 - Pro users: Add advanced analytics and export
 - Enterprise users: Add team collaboration and API access
 Show upgrade prompts for features locked to higher tiers
+(Thêm các tính năng vào bảng điều khiển dựa trên cấp độ đăng ký:
+- Người dùng miễn phí: Chỉ các tính năng cơ bản
+- Người dùng Pro: Thêm phân tích nâng cao và xuất dữ liệu
+- Người dùng Doanh nghiệp: Thêm cộng tác nhóm và truy cập API
+Hiển thị lời nhắc nâng cấp cho các tính năng bị khóa ở các cấp cao hơn)
 ```
 
-**💡 Beginner Tip:** Break complex conditions into smaller parts. Build one condition at a time, test it, then add the next.
+**💡 Mẹo cho người mới bắt đầu:** Chia các điều kiện phức tạp thành các phần nhỏ hơn. Xây dựng từng điều kiện một, kiểm thử nó, sau đó thêm điều kiện tiếp theo.
 
 ---
 
-## 📖 Lesson 3: Loops and Iterations
+## 📖 Bài học 3: Vòng lặp và Lặp lại
 
-### What are Loops?
+### Vòng lặp là gì?
 
-**Loops** repeat actions for multiple items. Like saying "do this for each item in the list."
+**Vòng lặp (Loops)** lặp lại các hành động cho nhiều mục. Giống như nói "làm điều này cho mỗi mục trong danh sách".
 
-### Basic Loop Patterns
+### Các Mẫu Vòng lặp Cơ bản
 
-#### Pattern 1: Display List Items
+#### Mẫu 1: Hiển thị Danh sách Mục
 
-**Example:**
+**Ví dụ:**
 ```
 Create a blog listing page that:
 - Fetches all blog posts from the database
@@ -178,11 +232,21 @@ Create a blog listing page that:
   - Publication date
   - Read more button
 - Show 10 posts per page with pagination
+(Tạo một trang danh sách blog:
+- Lấy tất cả các bài viết blog từ cơ sở dữ liệu
+- Đối với mỗi bài viết, hiển thị:
+  - Tiêu đề bài viết (dưới dạng liên kết có thể nhấp)
+  - Hình ảnh nổi bật
+  - Đoạn trích (150 ký tự đầu tiên)
+  - Tên tác giả
+  - Ngày xuất bản
+  - Nút đọc thêm
+- Hiển thị 10 bài viết mỗi trang với phân trang)
 ```
 
-#### Pattern 2: Generate Multiple Components
+#### Mẫu 2: Tạo Nhiều Component
 
-**Example:**
+**Ví dụ:**
 ```
 Create a services page that displays:
 - For each service in the database, create a service card showing:
@@ -191,11 +255,18 @@ Create a services page that displays:
   - Price
   - "Learn More" button
 - Arrange cards in a responsive grid (3 columns on desktop, 1 on mobile)
+(Tạo một trang dịch vụ hiển thị:
+- Đối với mỗi dịch vụ trong cơ sở dữ liệu, tạo một thẻ dịch vụ hiển thị:
+  - Tên dịch vụ
+  - Mô tả
+  - Giá
+  - Nút "Tìm hiểu thêm"
+- Sắp xếp các thẻ trong lưới responsive (3 cột trên máy tính để bàn, 1 trên di động))
 ```
 
-#### Pattern 3: Dynamic Forms
+#### Mẫu 3: Form Động
 
-**Example:**
+**Ví dụ:**
 ```
 Create a dynamic survey form that:
 - Loads questions from the database
@@ -204,13 +275,20 @@ Create a dynamic survey form that:
   - Appropriate input type (text, multiple choice, rating, etc.)
   - Required/optional indicator
 - Validates and submits all answers together
+(Tạo một form khảo sát động:
+- Tải các câu hỏi từ cơ sở dữ liệu
+- Đối với mỗi câu hỏi, hiển thị:
+  - Văn bản câu hỏi
+  - Loại đầu vào phù hợp (văn bản, trắc nghiệm, đánh giá, v.v.)
+  - Chỉ báo bắt buộc/tùy chọn
+- Xác thực và gửi tất cả các câu trả lời cùng nhau)
 ```
 
-### Advanced Loop Patterns
+### Các Mẫu Vòng lặp Nâng cao
 
-#### Pattern 4: Nested Loops
+#### Mẫu 4: Vòng lặp Lồng nhau
 
-**Example:**
+**Ví dụ:**
 ```
 Create a category page that shows:
 - For each category:
@@ -219,11 +297,18 @@ Create a category page that shows:
     - Product card with image, name, price
   - "View All" link for the category
 - Organize categories in sections
+(Tạo một trang danh mục hiển thị:
+- Đối với mỗi danh mục:
+  - Tên và mô tả danh mục
+  - Đối với mỗi sản phẩm trong danh mục đó:
+    - Thẻ sản phẩm với hình ảnh, tên, giá
+  - Liên kết "Xem tất cả" cho danh mục
+- Tổ chức các danh mục thành các phần)
 ```
 
-#### Pattern 5: Conditional Loops
+#### Mẫu 5: Vòng lặp Có điều kiện
 
-**Example:**
+**Ví dụ:**
 ```
 Create a task dashboard that:
 - For each task category (Work, Personal, Shopping):
@@ -232,23 +317,30 @@ Create a task dashboard that:
     - If task is not completed: Show full task card
     - If task is completed: Show collapsed/minimized card
   - Show category statistics (total, completed, pending)
+(Tạo một bảng điều khiển công việc:
+- Đối với mỗi danh mục công việc (Công việc, Cá nhân, Mua sắm):
+  - Hiển thị tiêu đề danh mục
+  - Đối với mỗi công việc trong danh mục đó:
+    - Nếu công việc chưa hoàn thành: Hiển thị thẻ công việc đầy đủ
+    - Nếu công việc đã hoàn thành: Hiển thị thẻ thu gọn/tối thiểu hóa
+  - Hiển thị thống kê danh mục (tổng số, đã hoàn thành, đang chờ))
 ```
 
-**💡 Beginner Tip:** Loops are powerful! Use them whenever you need to display multiple similar items.
+**💡 Mẹo cho người mới bắt đầu:** Vòng lặp rất mạnh mẽ! Sử dụng chúng bất cứ khi nào bạn cần hiển thị nhiều mục tương tự.
 
 ---
 
-## 📖 Lesson 4: Complex User Flows
+## 📖 Bài học 4: Luồng Người dùng Phức tạp
 
-### What are User Flows?
+### Luồng Người dùng là gì?
 
-**User flows** are the paths users take through your app to complete tasks. Complex flows have multiple steps and decisions.
+**Luồng người dùng (User flows)** là các đường dẫn người dùng đi qua ứng dụng của bạn để hoàn thành các tác vụ. Các luồng phức tạp có nhiều bước và quyết định.
 
-### Multi-Step Flow Patterns
+### Các Mẫu Luồng Nhiều Bước
 
-#### Pattern 1: Wizard/Onboarding Flow
+#### Mẫu 1: Wizard/Luồng Onboarding
 
-**Example:**
+**Ví dụ:**
 ```
 Create a multi-step onboarding wizard:
 - Step 1: Welcome and account setup
@@ -261,11 +353,22 @@ Each step should:
 - Show progress indicator
 - Have "Next" and "Back" buttons
 - Validate before proceeding
+(Tạo một trình hướng dẫn onboarding nhiều bước:
+- Bước 1: Chào mừng và thiết lập tài khoản
+- Bước 2: Thông tin hồ sơ (tên, tiểu sử, sở thích)
+- Bước 3: Chọn sở thích/danh mục
+- Bước 4: Thiết lập tùy chọn và thông báo
+- Bước 5: Xác nhận và hoàn thành
+Mỗi bước nên:
+- Lưu tiến trình (để người dùng có thể quay lại)
+- Hiển thị chỉ báo tiến trình
+- Có các nút "Tiếp theo" và "Quay lại"
+- Xác thực trước khi tiếp tục)
 ```
 
-#### Pattern 2: Checkout Flow
+#### Mẫu 2: Luồng Thanh toán
 
-**Example:**
+**Ví dụ:**
 ```
 Create a checkout process with steps:
 - Step 1: Review cart items
@@ -276,11 +379,20 @@ Create a checkout process with steps:
 - Show progress: "Step 2 of 4"
 - Allow going back to previous steps
 - Save information as user progresses
+(Tạo một quy trình thanh toán với các bước:
+- Bước 1: Xem lại các mục trong giỏ hàng
+- Bước 2: Thông tin vận chuyển
+- Bước 3: Phương thức thanh toán
+- Bước 4: Xác nhận đơn hàng
+- Mỗi bước xác thực trước khi cho phép bước tiếp theo
+- Hiển thị tiến trình: "Bước 2 trên 4"
+- Cho phép quay lại các bước trước
+- Lưu thông tin khi người dùng tiến hành)
 ```
 
-#### Pattern 3: Approval Workflow
+#### Mẫu 3: Quy trình Phê duyệt
 
-**Example:**
+**Ví dụ:**
 ```
 Create a content approval system:
 - Author creates content → Status: "Draft"
@@ -288,13 +400,19 @@ Create a content approval system:
 - Reviewer approves → Status: "Approved" → Published
 - Reviewer rejects → Status: "Rejected" → Returned to author with comments
 - Show different views based on status and user role
+(Tạo một hệ thống phê duyệt nội dung:
+- Tác giả tạo nội dung → Trạng thái: "Bản nháp"
+- Tác giả gửi để xem xét → Trạng thái: "Đang chờ xem xét"
+- Người xem xét phê duyệt → Trạng thái: "Đã phê duyệt" → Đã xuất bản
+- Người xem xét từ chối → Trạng thái: "Đã từ chối" → Trả lại cho tác giả với nhận xét
+- Hiển thị các chế độ xem khác nhau dựa trên trạng thái và vai trò người dùng)
 ```
 
-### State Management Patterns
+### Các Mẫu Quản lý Trạng thái
 
-#### Pattern 4: Form State Management
+#### Mẫu 4: Quản lý Trạng thái Form
 
-**Example:**
+**Ví dụ:**
 ```
 Create a complex form that:
 - Saves progress automatically as user types
@@ -303,11 +421,18 @@ Create a complex form that:
 - Shows error messages immediately
 - Allows saving as draft
 - Prevents data loss if user navigates away
+(Tạo một form phức tạp:
+- Lưu tiến trình tự động khi người dùng nhập
+- Hiển thị các trường nào đã hoàn thành
+- Xác thực các trường trong thời gian thực
+- Hiển thị thông báo lỗi ngay lập tức
+- Cho phép lưu dưới dạng bản nháp
+- Ngăn mất dữ liệu nếu người dùng điều hướng đi nơi khác)
 ```
 
-#### Pattern 5: Multi-Select with Dependencies
+#### Mẫu 5: Đa chọn với Phụ thuộc
 
-**Example:**
+**Ví dụ:**
 ```
 Create a product configuration form where:
 - User selects product type → Shows relevant options
@@ -316,17 +441,24 @@ Create a product configuration form where:
 - Each selection updates what's available next
 - Shows running total price
 - Validates that all required selections are made
+(Tạo một form cấu hình sản phẩm nơi:
+- Người dùng chọn loại sản phẩm → Hiển thị các tùy chọn liên quan
+- Người dùng chọn kích thước → Cập nhật các màu có sẵn
+- Người dùng chọn màu → Cập nhật các vật liệu có sẵn
+- Mỗi lựa chọn cập nhật những gì có sẵn tiếp theo
+- Hiển thị tổng giá đang chạy
+- Xác thực rằng tất cả các lựa chọn bắt buộc đã được thực hiện)
 ```
 
-**💡 Beginner Tip:** Break complex flows into clear steps. Test each step before building the next.
+**💡 Mẹo cho người mới bắt đầu:** Chia các luồng phức tạp thành các bước rõ ràng. Kiểm thử từng bước trước khi xây dựng bước tiếp theo.
 
 ---
 
-## 📖 Lesson 5: Advanced Prompt Structures
+## 📖 Bài học 5: Cấu trúc Prompt Nâng cao
 
-### Pattern 1: Template-Based Generation
+### Mẫu 1: Tạo Dựa trên Mẫu (Template-Based Generation)
 
-**Example:**
+**Ví dụ:**
 ```
 Create email templates for different scenarios:
 - Welcome email (when user signs up)
@@ -338,11 +470,21 @@ Each template should:
 - Include relevant information
 - Match brand styling
 - Be responsive for email clients
+(Tạo các mẫu email cho các kịch bản khác nhau:
+- Email chào mừng (khi người dùng đăng ký)
+- Email đặt lại mật khẩu
+- Email xác nhận đơn hàng
+- Email bản tin
+Mỗi mẫu nên:
+- Sử dụng tên người dùng một cách linh hoạt
+- Bao gồm thông tin liên quan
+- Phù hợp với phong cách thương hiệu
+- Responsive cho các ứng dụng email)
 ```
 
-### Pattern 2: Component Composition
+### Mẫu 2: Kết hợp Component (Component Composition)
 
-**Example:**
+**Ví dụ:**
 ```
 Build a dashboard using reusable components:
 - Header component (used on all pages)
@@ -350,11 +492,17 @@ Build a dashboard using reusable components:
 - Chart component (used for different data visualizations)
 - Action button component (consistent across app)
 Each component should be flexible and reusable
+(Xây dựng một bảng điều khiển sử dụng các component tái sử dụng:
+- Component Header (được sử dụng trên tất cả các trang)
+- Component thẻ thống kê (được tái sử dụng cho các chỉ số khác nhau)
+- Component biểu đồ (được sử dụng cho các trực quan hóa dữ liệu khác nhau)
+- Component nút hành động (nhất quán trên toàn ứng dụng)
+Mỗi component nên linh hoạt và có thể tái sử dụng)
 ```
 
-### Pattern 3: Data Transformation
+### Mẫu 3: Chuyển đổi Dữ liệu (Data Transformation)
 
-**Example:**
+**Ví dụ:**
 ```
 Create a data display that:
 - Fetches raw data from API
@@ -364,11 +512,19 @@ Create a data display that:
   - Tables for structured data
   - Cards for individual items
 - Updates when data changes
+(Tạo một màn hình hiển thị dữ liệu:
+- Lấy dữ liệu thô từ API
+- Chuyển đổi nó: định dạng ngày tháng, tính tổng, nhóm theo danh mục
+- Hiển thị ở định dạng thân thiện với người dùng:
+  - Biểu đồ cho dữ liệu số
+  - Bảng cho dữ liệu có cấu trúc
+  - Thẻ cho các mục riêng lẻ
+- Cập nhật khi dữ liệu thay đổi)
 ```
 
-### Pattern 4: Event-Driven Patterns
+### Mẫu 4: Các Mẫu Hướng Sự kiện (Event-Driven Patterns)
 
-**Example:**
+**Ví dụ:**
 ```
 Create an interactive app where:
 - User actions trigger updates:
@@ -377,93 +533,99 @@ Create an interactive app where:
   - Submitting form shows success message
 - Multiple components update based on same action
 - Changes reflect immediately without page refresh
+(Tạo một ứng dụng tương tác nơi:
+- Hành động của người dùng kích hoạt cập nhật:
+  - Nhấp vào "Thích" cập nhật số lượt thích ngay lập tức
+  - Thêm vào giỏ hàng cập nhật huy hiệu biểu tượng giỏ hàng
+  - Gửi form hiển thị thông báo thành công
+- Nhiều component cập nhật dựa trên cùng một hành động
+- Các thay đổi phản ánh ngay lập tức mà không cần tải lại trang)
 ```
 
 ---
 
-## 🛠️ Hands-On Practice
+## 🛠️ Thực hành
 
-### Practice 1: Dynamic Product Display
+### Thực hành 1: Hiển thị Sản phẩm Động
 
-**Challenge:** Create a product listing that shows different information based on product status.
+**Thử thách:** Tạo một danh sách sản phẩm hiển thị thông tin khác nhau dựa trên trạng thái sản phẩm.
 
-**Requirements:**
-- Display products from database
-- Show "In Stock" badge for available products
-- Show "Sale" badge for discounted products
-- Show "New" badge for recently added products
-- Different styling for each status
-- Products can have multiple badges
+**Yêu cầu:**
+- Hiển thị sản phẩm từ cơ sở dữ liệu
+- Hiển thị huy hiệu "Còn hàng" cho các sản phẩm có sẵn
+- Hiển thị huy hiệu "Giảm giá" cho các sản phẩm được giảm giá
+- Hiển thị huy hiệu "Mới" cho các sản phẩm mới được thêm vào
+- Kiểu dáng khác nhau cho mỗi trạng thái
+- Sản phẩm có thể có nhiều huy hiệu
 
-**💡 Hint:** Use conditional logic in your prompt to handle different statuses.
+**💡 Gợi ý:** Sử dụng logic điều kiện trong prompt của bạn để xử lý các trạng thái khác nhau.
 
-### Practice 2: Multi-Step Form
+### Thực hành 2: Form Nhiều Bước
 
-**Challenge:** Create a registration form with 3 steps.
+**Thử thách:** Tạo một form đăng ký với 3 bước.
 
-**Requirements:**
-- Step 1: Basic info (name, email)
-- Step 2: Preferences (interests, newsletter)
-- Step 3: Confirmation
-- Progress indicator
-- Can go back to previous steps
-- Validates each step
+**Yêu cầu:**
+- Bước 1: Thông tin cơ bản (tên, email)
+- Bước 2: Sở thích (sở thích, bản tin)
+- Bước 3: Xác nhận
+- Chỉ báo tiến trình
+- Có thể quay lại các bước trước
+- Xác thực từng bước
 
-**💡 Hint:** Build one step at a time, then connect them.
+**💡 Gợi ý:** Xây dựng từng bước một, sau đó kết nối chúng.
 
-### Practice 3: Conditional Dashboard
+### Thực hành 3: Bảng điều khiển Có điều kiện
 
-**Challenge:** Create a dashboard that changes based on user role.
+**Thử thách:** Tạo một bảng điều khiển thay đổi dựa trên vai trò người dùng.
 
-**Requirements:**
-- Admin users see: All users, system stats, admin tools
-- Regular users see: Their own data, personal stats
-- Guest users see: Limited preview, sign up prompt
-- Same page, different content
+**Yêu cầu:**
+- Người dùng quản trị thấy: Tất cả người dùng, thống kê hệ thống, công cụ quản trị
+- Người dùng thường thấy: Dữ liệu của riêng họ, thống kê cá nhân
+- Người dùng khách thấy: Bản xem trước hạn chế, lời nhắc đăng ký
+- Cùng một trang, nội dung khác nhau
 
-**💡 Hint:** Use conditional logic to show/hide sections based on user role.
-
----
-
-## ✅ Module 11 Checklist
-
-Before moving to the next module, make sure you can:
-
-- [ ] Create dynamic content that changes based on data
-- [ ] Use conditional logic in prompts
-- [ ] Create loops for displaying multiple items
-- [ ] Build multi-step user flows
-- [ ] Handle complex state management
-- [ ] Use advanced prompt patterns effectively
+**💡 Gợi ý:** Sử dụng logic điều kiện để hiển thị/ẩn các phần dựa trên vai trò người dùng.
 
 ---
 
-## 🤔 Common Questions (FAQ)
+## ✅ Danh sách Kiểm tra Module 11
 
-### Q: How complex can prompts get?
-**A:** Very complex! But start simple and build up. Break complex requests into smaller parts.
+Trước khi chuyển sang module tiếp theo, hãy đảm bảo bạn có thể:
 
-### Q: Should I use these patterns for simple projects?
-**A:** Not always. Use simple prompts for simple projects. Use advanced patterns when you need the complexity.
-
-### Q: What if my conditional logic doesn't work?
-**A:** Break it down. Test each condition separately, then combine them.
-
-### Q: Can I combine multiple patterns?
-**A:** Yes! Advanced apps often use multiple patterns together.
+- [ ] Tạo nội dung động thay đổi dựa trên dữ liệu
+- [ ] Sử dụng logic điều kiện trong các prompt
+- [ ] Tạo các vòng lặp để hiển thị nhiều mục
+- [ ] Xây dựng các luồng người dùng nhiều bước
+- [ ] Xử lý quản lý trạng thái phức tạp
+- [ ] Sử dụng các mẫu prompt nâng cao một cách hiệu quả
 
 ---
 
-## 🎯 What's Next?
+## 🤔 Các Câu Hỏi Thường Gặp (FAQ)
 
-Great work! You now understand advanced prompt patterns. These techniques help you build more sophisticated applications.
+### Q: Các prompt có thể phức tạp đến mức nào?
+**A:** Rất phức tạp! Nhưng hãy bắt đầu đơn giản và xây dựng dần lên. Chia các yêu cầu phức tạp thành các phần nhỏ hơn.
 
-**Continue learning with:**
-- Module 12: Performance and Optimization
-- Module 13: Advanced API Integration
-- Or go back to Module 9 to build your capstone project!
+### Q: Tôi có nên sử dụng các mẫu này cho các dự án đơn giản không?
+**A:** Không phải lúc nào cũng vậy. Sử dụng các prompt đơn giản cho các dự án đơn giản. Sử dụng các mẫu nâng cao khi bạn cần sự phức tạp.
+
+### Q: Nếu logic điều kiện của tôi không hoạt động thì sao?
+**A:** Hãy chia nhỏ nó ra. Kiểm thử từng điều kiện riêng biệt, sau đó kết hợp chúng.
+
+### Q: Tôi có thể kết hợp nhiều mẫu không?
+**A:** Có! Các ứng dụng nâng cao thường sử dụng nhiều mẫu cùng nhau.
 
 ---
 
-*Module 11 Complete! 🎉*
+## 🎯 Tiếp theo là gì?
 
+Làm tốt lắm! Bây giờ bạn đã hiểu các mẫu prompt nâng cao. Những kỹ thuật này giúp bạn xây dựng các ứng dụng tinh vi hơn.
+
+**Tiếp tục học với:**
+- Module 12: Hiệu suất và Tối ưu hóa
+- Module 13: Tích hợp API Nâng cao
+- Hoặc quay lại Module 9 để xây dựng dự án capstone của bạn!
+
+---
+
+*Module 11 Hoàn thành! 🎉*

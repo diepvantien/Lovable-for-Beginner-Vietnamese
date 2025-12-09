@@ -1,829 +1,759 @@
-# Module 6: Adding Full-Stack Capabilities
+# Module 6: Adding Full-Stack Capabilities - Sức mạnh của Backend
 
-**Goal:** Add powerful backend features to your applications
+**Mục tiêu:** Hiểu cách thêm xác thực, cơ sở dữ liệu và tích hợp
 
-**Estimated Time:** 45-60 minutes
-
----
-
-## 🎯 What You'll Learn in This Module
-
-By the end of this module, you will:
-- Understand what "full-stack" means
-- Know how to use Lovable Cloud for backend features
-- Understand how to use Connectors (Supabase, Stripe, etc.)
-- Learn about MCP Servers for context
-- Know how to integrate any API
-- Be able to add authentication to your apps
-- Understand how to add databases and storage
-- Follow security best practices
-- Store API keys securely
-- Understand public vs. private API keys
-- Build a complete payment integration project
+**Thời gian ước tính:** 45-60 phút
 
 ---
 
-## 📖 Lesson 1: Understanding Full-Stack
+## 🎯 Bạn sẽ học được gì trong module này
 
-### What Does "Full-Stack" Mean?
-
-**Full-stack** means your application has both:
-- **Frontend** - What users see and interact with (the website/app)
-- **Backend** - What happens behind the scenes (data storage, authentication, etc.)
-
-### Simple Analogy
-
-Think of a restaurant:
-- **Frontend** = The dining room (what customers see)
-- **Backend** = The kitchen (where the work happens)
-
-Both are needed for a complete restaurant!
-
-### What Backend Features Do You Need?
-
-Common backend needs:
-- **User accounts** - Sign up, login, logout
-- **Data storage** - Save information (user data, posts, products, etc.)
-- **Authentication** - Verify who users are
-- **Payments** - Process transactions
-- **Email** - Send notifications
-- **File storage** - Store images, documents, etc.
-
-**💡 Beginner Tip:** Don't worry if this sounds complex! Lovable makes it much easier than traditional coding.
+Vào cuối module này, bạn sẽ:
+- Hiểu "full-stack" nghĩa là gì
+- Biết cách kích hoạt Lovable Cloud
+- Hiểu về Connectors (Bộ kết nối) và cách sử dụng chúng
+- Học cách thêm xác thực người dùng
+- Học cách thêm cơ sở dữ liệu
+- Hiểu cách tích hợp API
+- Biết các phương pháp bảo mật tốt nhất
+- Có thể xây dựng các ứng dụng mạnh mẽ hơn
 
 ---
 
-## 📖 Lesson 2: Lovable Cloud - Built-in Backend
+## 📖 Bài học 1: Full-Stack là gì?
 
-### What is Lovable Cloud?
+### Frontend vs. Backend
 
-**Lovable Cloud** is Lovable's built-in backend service. It provides everything you need for most applications without setting up separate services.
+- **Frontend:** Những gì người dùng nhìn thấy và tương tác (nút, văn bản, hình ảnh). Đây là những gì chúng ta đã xây dựng cho đến nay.
+- **Backend:** "Bộ não" đằng sau hậu trường (lưu trữ dữ liệu, xử lý thanh toán, đăng nhập người dùng).
+- **Full-Stack:** Kết hợp cả hai!
 
-### What Lovable Cloud Provides
+### Tại sao bạn cần Full-Stack?
 
-- ✅ **Authentication** - User sign up, login, logout
-- ✅ **Database** - Store and retrieve data
-- ✅ **File Storage** - Store images and files
-- ✅ **API** - Connect your frontend to backend
-- ✅ **Hosting** - Deploy your app
+Bạn cần các khả năng backend nếu bạn muốn:
+- Người dùng đăng nhập và có tài khoản
+- Lưu trữ dữ liệu (bài đăng blog, bình luận, hồ sơ)
+- Xử lý thanh toán
+- Gửi email
+- Kết nối với các dịch vụ khác (Google Maps, AI, v.v.)
 
-### When to Use Lovable Cloud
-
-Use Lovable Cloud when:
-- You need user accounts
-- You need to store data
-- You need file uploads
-- You want everything in one place
-- You're building a standard web app
-
-### How to Enable Lovable Cloud
-
-#### Step 1: Check if Cloud is Available
-
-1. In your project, look for **"Cloud"** or **"Backend"** in settings
-2. Or simply ask Lovable:
-   ```
-   Enable Lovable Cloud for this project
-   ```
-
-#### Step 2: Lovable Sets It Up
-
-Lovable will:
-- Create the backend infrastructure
-- Set up the database
-- Configure authentication
-- Connect everything together
-
-#### Step 3: Start Using It
-
-Once enabled, you can ask for features:
-
-```
-Add user authentication - sign up, login, and logout
-```
-
-```
-Create a database to store blog posts
-```
-
-```
-Add file upload so users can upload profile pictures
-```
-
-**💡 Beginner Tip:** Lovable Cloud is the easiest way to add backend features. Start here!
+**Tin tốt:** Lovable làm cho việc thêm các tính năng backend trở nên dễ dàng như việc yêu cầu chúng!
 
 ---
 
-## 📖 Lesson 3: Connectors - Add External Services
+## 📖 Bài học 2: Lovable Cloud - Backend tích hợp sẵn của bạn
 
-### What are Connectors?
+### Lovable Cloud là gì?
 
-**Connectors** are like plugins that connect your app to external services. They add powerful capabilities without you having to build them yourself.
+**Lovable Cloud** là giải pháp backend tích hợp sẵn của Lovable. Nó cung cấp cho bạn mọi thứ bạn cần mà không cần thiết lập phức tạp.
 
-### Popular Connectors
+### Nó bao gồm những gì?
 
-#### 1. Supabase - Authentication & Database
+- **Cơ sở dữ liệu:** Để lưu trữ dữ liệu của bạn
+- **Xác thực:** Để đăng nhập người dùng
+- **Lưu trữ:** Để tải lên tệp và hình ảnh
+- **Edge Functions:** Để chạy mã backend an toàn
 
-**What it does:**
-- User authentication (sign up, login)
-- Database for storing data
-- Real-time updates
-- File storage
+### Cách kích hoạt Lovable Cloud
 
-**When to use:**
-- You need a powerful database
-- You want real-time features
-- You need advanced authentication
+1. Mở dự án của bạn
+2. Nhấp vào biểu tượng **Cloud** (đám mây) trên thanh công cụ
+3. Nhấp vào **"Enable Lovable Cloud"** (Kích hoạt Lovable Cloud)
 
-**How to add:**
-```
-Connect Supabase to this project for authentication and database
-```
+Đó là tất cả! Bây giờ dự án của bạn đã có một backend đầy đủ sức mạnh.
 
-#### 2. Stripe - Payments
+### Khi nào nên sử dụng Lovable Cloud
 
-**What it does:**
-- Process payments
-- Handle subscriptions
-- Manage customers
-- Process refunds
+- ✅ Hầu hết các dự án mới
+- ✅ Khi bạn muốn thiết lập nhanh nhất
+- ✅ Khi bạn cần xác thực và cơ sở dữ liệu tiêu chuẩn
+- ✅ Khi bạn không muốn quản lý các máy chủ riêng biệt
 
-**When to use:**
-- You're selling products
-- You need subscriptions
-- You're accepting payments
+---
 
-**How to add:**
-```
-Add Stripe payment processing to this project
-```
+## 📖 Bài học 3: Connectors - Kết nối với thế giới
 
-#### 3. Shopify - E-commerce
+### Connectors là gì?
 
-**What it does:**
-- Manage products
-- Handle orders
-- Process payments
-- Manage inventory
+**Connectors** (Bộ kết nối) giống như những cây cầu nối dự án Lovable của bạn với các dịch vụ bên ngoài. Chúng cho phép bạn sử dụng các công cụ mạnh mẽ mà không cần viết mã phức tạp.
 
-**When to use:**
-- Building an online store
-- Selling products
-- Need e-commerce features
+### Các Connector phổ biến
 
-**How to add:**
-```
-Connect Shopify for e-commerce functionality
-```
+- **Supabase:** Cơ sở dữ liệu và xác thực mạnh mẽ (nếu bạn cần nhiều hơn Lovable Cloud)
+- **Stripe:** Xử lý thanh toán
+- **Resend:** Gửi email
+- **OpenAI:** Các tính năng AI
+- **Google Maps:** Bản đồ và vị trí
 
-#### 4. Resend - Email
+### Cách Connectors hoạt động
 
-**What it does:**
-- Send emails
-- Email notifications
-- Transactional emails
-- Marketing emails
+1. **Cấu hình một lần** - Thiết lập connector trong cài đặt không gian làm việc của bạn
+2. **Sử dụng mọi nơi** - Sử dụng nó trong bất kỳ dự án nào
+3. **Lovable xử lý kết nối** - Bạn chỉ cần yêu cầu các tính năng
+4. **An toàn** - Thông tin xác thực được lưu trữ an toàn
 
-**When to use:**
-- Sending confirmation emails
-- User notifications
-- Contact form submissions
-- Password resets
+### Thiết lập một Connector
 
-**How to add:**
-```
-Add Resend for email capabilities
-```
+#### Bước 1: Lấy khóa API
 
-### How Connectors Work
+Hầu hết các connector yêu cầu khóa API (giống như mật khẩu cho các dịch vụ):
+1. Đăng ký dịch vụ (Supabase, Stripe, v.v.)
+2. Lấy khóa API của bạn từ bảng điều khiển của họ
+3. Giữ chúng an toàn (như mật khẩu)
 
-1. **Configure once** - Set up the connector in your workspace settings
-2. **Use anywhere** - Use it in any project
-3. **Lovable handles the connection** - You just ask for features
-4. **Secure** - Credentials are stored safely
+#### Bước 2: Thêm vào Lovable
 
-### Setting Up a Connector
+1. Đi tới **Settings** (Cài đặt) → **Integrations** (Tích hợp) → **Connectors**
+2. Nhấp vào **"Add Connector"** (Thêm Connector)
+3. Chọn dịch vụ (Supabase, Stripe, v.v.)
+4. Nhập khóa API của bạn
+5. Lưu
 
-#### Step 1: Get API Keys
+#### Bước 3: Sử dụng trong dự án của bạn
 
-Most connectors require API keys (like passwords for services):
-1. Sign up for the service (Supabase, Stripe, etc.)
-2. Get your API keys from their dashboard
-3. Keep them safe (like passwords)
-
-#### Step 2: Add to Lovable
-
-1. Go to **Settings** → **Integrations** → **Connectors**
-2. Click **"Add Connector"**
-3. Select the service (Supabase, Stripe, etc.)
-4. Enter your API keys
-5. Save
-
-#### Step 3: Use in Your Project
-
-Once configured, just ask:
+Sau khi cấu hình, chỉ cần yêu cầu:
 
 ```
 Add Stripe checkout to this product page
+(Thêm thanh toán Stripe vào trang sản phẩm này)
 ```
 
 ```
 Use Supabase for user authentication
+(Sử dụng Supabase để xác thực người dùng)
 ```
 
-### Real Examples: Connecting Services
+### Ví dụ thực tế: Kết nối dịch vụ
 
-#### Example 1: Connecting Supabase
+#### Ví dụ 1: Kết nối Supabase
 
-**Step 1: Get Supabase Credentials**
-1. Sign up at [supabase.com](https://supabase.com)
-2. Create a new project
-3. Go to **Settings** → **API**
-4. Copy your:
-   - **Project URL** (e.g., `https://yourproject.supabase.co`)
-   - **Anon/Public Key** (safe to use in frontend)
-   - **Service Role Key** (keep secret - for backend only)
+**Bước 1: Lấy thông tin xác thực Supabase**
+1. Đăng ký tại [supabase.com](https://supabase.com)
+2. Tạo một dự án mới
+3. Đi tới **Settings** → **API**
+4. Sao chép:
+   - **Project URL** (ví dụ: `https://yourproject.supabase.co`)
+   - **Anon/Public Key** (an toàn để sử dụng ở frontend)
+   - **Service Role Key** (giữ bí mật - chỉ dành cho backend)
 
-**Step 2: Add to Lovable**
-1. Go to **Settings** → **Integrations** → **Connectors**
-2. Click **"Add Connector"**
-3. Select **"Supabase"**
-4. Enter your Project URL and API keys
-5. Save
+**Bước 2: Thêm vào Lovable**
+1. Đi tới **Settings** → **Integrations** → **Connectors**
+2. Nhấp vào **"Add Connector"**
+3. Chọn **"Supabase"**
+4. Nhập Project URL và khóa API của bạn
+5. Lưu
 
-**Step 3: Use Supabase in Your Project**
+**Bước 3: Sử dụng Supabase trong dự án của bạn**
 
-**For Authentication:**
+**Cho Xác thực:**
 ```
 Use Supabase for user authentication. Create sign up and login pages that connect to Supabase Auth.
+(Sử dụng Supabase để xác thực người dùng. Tạo các trang đăng ký và đăng nhập kết nối với Supabase Auth.)
 ```
 
-**For Database:**
+**Cho Cơ sở dữ liệu:**
 ```
 Set up Supabase database for storing blog posts. Create a table called 'posts' with fields: id, title, content, author_id, created_at.
+(Thiết lập cơ sở dữ liệu Supabase để lưu trữ các bài đăng blog. Tạo một bảng gọi là 'posts' với các trường: id, title, content, author_id, created_at.)
 ```
 
-**For Storage:**
+**Cho Lưu trữ:**
 ```
 Use Supabase Storage for uploading user profile pictures. Add an upload component to the profile page.
+(Sử dụng Supabase Storage để tải lên ảnh hồ sơ người dùng. Thêm thành phần tải lên vào trang hồ sơ.)
 ```
 
-#### Example 2: Connecting Stripe
+#### Ví dụ 2: Kết nối Stripe
 
-**Step 1: Get Stripe Keys**
-1. Sign up at [stripe.com](https://stripe.com)
-2. Go to **Developers** → **API keys**
-3. Copy your:
-   - **Publishable Key** (starts with `pk_` - safe for frontend)
-   - **Secret Key** (starts with `sk_` - keep secret!)
+**Bước 1: Lấy khóa Stripe**
+1. Đăng ký tại [stripe.com](https://stripe.com)
+2. Đi tới **Developers** → **API keys**
+3. Sao chép:
+   - **Publishable Key** (bắt đầu bằng `pk_` - an toàn cho frontend)
+   - **Secret Key** (bắt đầu bằng `sk_` - giữ bí mật!)
 
-**⚠️ IMPORTANT:** Never share your Secret Key! It's like a password.
+**⚠️ QUAN TRỌNG:** Không bao giờ chia sẻ Secret Key của bạn! Nó giống như một mật khẩu.
 
-**Step 2: Add to Lovable**
-1. Go to **Settings** → **Integrations** → **Connectors**
-2. Click **"Add Connector"**
-3. Select **"Stripe"**
-4. Enter your **Publishable Key** and **Secret Key**
-5. Save
+**Bước 2: Thêm vào Lovable**
+1. Đi tới **Settings** → **Integrations** → **Connectors**
+2. Nhấp vào **"Add Connector"**
+3. Chọn **"Stripe"**
+4. Nhập **Publishable Key** và **Secret Key** của bạn
+5. Lưu
 
-**Step 3: Use Stripe in Your Project**
+**Bước 3: Sử dụng Stripe trong dự án của bạn**
 
-**For One-Time Payments:**
+**Cho Thanh toán một lần:**
 ```
 Add Stripe payment to this product page. When user clicks "Buy Now", show Stripe checkout for $29.99.
+(Thêm thanh toán Stripe vào trang sản phẩm này. Khi người dùng nhấp vào "Mua ngay", hiển thị thanh toán Stripe với giá $29.99.)
 ```
 
-**For Subscriptions:**
+**Cho Đăng ký:**
 ```
 Add Stripe subscription to this page. Create a monthly subscription plan for $9.99/month with Stripe Checkout.
+(Thêm đăng ký Stripe vào trang này. Tạo gói đăng ký hàng tháng với giá $9.99/tháng với Stripe Checkout.)
 ```
 
-**For Payment Forms:**
+**Cho Biểu mẫu thanh toán:**
 ```
 Create a payment form using Stripe Elements. Include card number, expiry, and CVC fields. Process payment when form is submitted.
+(Tạo biểu mẫu thanh toán sử dụng Stripe Elements. Bao gồm các trường số thẻ, ngày hết hạn và CVC. Xử lý thanh toán khi biểu mẫu được gửi.)
 ```
 
-**💡 Beginner Tip:** Start with Lovable Cloud. Add connectors only when you need specific features they provide.
+**💡 Mẹo cho người mới:** Bắt đầu với Lovable Cloud. Chỉ thêm các connector khi bạn cần các tính năng cụ thể mà chúng cung cấp.
 
 ---
 
-## 📖 Lesson 4: MCP Servers - Provide Context
+## 📖 Bài học 4: MCP Servers - Cung cấp ngữ cảnh
 
-### What are MCP Servers?
+### MCP Servers là gì?
 
-**MCP Servers** (Model Context Protocol) give Lovable access to your existing tools and data. They help Lovable understand your context better.
+**MCP Servers** (Model Context Protocol) cung cấp cho Lovable quyền truy cập vào các công cụ và dữ liệu hiện có của bạn. Chúng giúp Lovable hiểu ngữ cảnh của bạn tốt hơn.
 
-### What MCP Servers Do
+### MCP Servers làm gì
 
 MCP Servers:
-- Connect to your existing tools (Linear, Notion, etc.)
-- Provide context during app creation
-- Help Lovable understand your workflows
-- Are used only while building (not in the final app)
+- Kết nối với các công cụ hiện có của bạn (Linear, Notion, v.v.)
+- Cung cấp ngữ cảnh trong quá trình tạo ứng dụng
+- Giúp Lovable hiểu quy trình làm việc của bạn
+- Chỉ được sử dụng trong khi xây dựng (không có trong ứng dụng cuối cùng)
 
-### Popular MCP Servers
+### Các MCP Server phổ biến
 
-#### Linear - Project Management
+#### Linear - Quản lý dự án
 
-**What it does:**
-- Imports issues and specs
-- Understands your project requirements
-- Builds features based on your tickets
+**Nó làm gì:**
+- Nhập các vấn đề và thông số kỹ thuật
+- Hiểu các yêu cầu dự án của bạn
+- Xây dựng các tính năng dựa trên vé (ticket) của bạn
 
-**When to use:**
-- You use Linear for project management
-- You want to build from your tickets
-- You have detailed specs in Linear
+**Khi nào nên sử dụng:**
+- Bạn sử dụng Linear để quản lý dự án
+- Bạn muốn xây dựng từ các vé của mình
+- Bạn có thông số kỹ thuật chi tiết trong Linear
 
-#### Notion - Documentation
+#### Notion - Tài liệu
 
-**What it does:**
-- Reads your Notion pages
-- Uses your documentation as context
-- Builds based on your notes
+**Nó làm gì:**
+- Đọc các trang Notion của bạn
+- Sử dụng tài liệu của bạn làm ngữ cảnh
+- Xây dựng dựa trên ghi chú của bạn
 
-**When to use:**
-- You document in Notion
-- You want to build from your docs
-- You have requirements in Notion
+**Khi nào nên sử dụng:**
+- Bạn ghi chép tài liệu trong Notion
+- Bạn muốn xây dựng từ tài liệu của mình
+- Bạn có các yêu cầu trong Notion
 
 #### Atlassian (Jira/Confluence)
 
-**What it does:**
-- Accesses Jira tickets
-- Reads Confluence documentation
-- Builds from your specs
+**Nó làm gì:**
+- Truy cập vé Jira
+- Đọc tài liệu Confluence
+- Xây dựng từ thông số kỹ thuật của bạn
 
-**When to use:**
-- Your team uses Atlassian tools
-- You have specs in Jira/Confluence
-- You want to build from tickets
+**Khi nào nên sử dụng:**
+- Nhóm của bạn sử dụng các công cụ Atlassian
+- Bạn có thông số kỹ thuật trong Jira/Confluence
+- Bạn muốn xây dựng từ vé
 
-### How MCP Servers Work
+### Cách MCP Servers hoạt động
 
-1. **Configure the server** - Connect it to your tool
-2. **Lovable uses it while building** - Provides context
-3. **Not included in final app** - Only used during development
-4. **Helps build better apps** - Lovable understands your needs
+1. **Cấu hình máy chủ** - Kết nối nó với công cụ của bạn
+2. **Lovable sử dụng nó trong khi xây dựng** - Cung cấp ngữ cảnh
+3. **Không bao gồm trong ứng dụng cuối cùng** - Chỉ được sử dụng trong quá trình phát triển
+4. **Giúp xây dựng ứng dụng tốt hơn** - Lovable hiểu nhu cầu của bạn
 
-**💡 Beginner Tip:** MCP Servers are advanced. You can skip them for now and add them later if needed.
+**💡 Mẹo cho người mới:** MCP Servers là nâng cao. Bạn có thể bỏ qua chúng bây giờ và thêm chúng sau nếu cần.
 
 ---
 
-## 📖 Lesson 5: Integrating Any API
+## 📖 Bài học 5: Tích hợp bất kỳ API nào
 
-### What is an API?
+### API là gì?
 
-**API** (Application Programming Interface) is how different services talk to each other. Think of it like a menu at a restaurant - it tells you what you can order.
+**API** (Application Programming Interface) là cách các dịch vụ khác nhau nói chuyện với nhau. Hãy nghĩ về nó giống như một thực đơn tại nhà hàng - nó cho bạn biết bạn có thể gọi món gì.
 
-### Why Integrate APIs?
+### Tại sao tích hợp API?
 
-APIs let you:
-- Use data from other services
-- Add features you didn't build
-- Connect to external tools
-- Extend your app's capabilities
+API cho phép bạn:
+- Sử dụng dữ liệu từ các dịch vụ khác
+- Thêm các tính năng bạn không tự xây dựng
+- Kết nối với các công cụ bên ngoài
+- Mở rộng khả năng của ứng dụng
 
-### Types of APIs
+### Các loại API
 
-#### Public APIs (No Authentication)
+#### API Công khai (Không cần xác thực)
 
-These don't require passwords/keys:
+Những API này không yêu cầu mật khẩu/khóa:
 
-**Examples:**
-- Weather data
-- Public information
-- Free services
+**Ví dụ:**
+- Dữ liệu thời tiết
+- Thông tin công cộng
+- Dịch vụ miễn phí
 
-**How to use:**
+**Cách sử dụng:**
 ```
 Integrate the weather API: https://api.weather.com/forecast
+(Tích hợp API thời tiết: https://api.weather.com/forecast)
 ```
 
-Lovable detects no authentication needed and adds it directly!
+Lovable phát hiện không cần xác thực và thêm nó trực tiếp!
 
-#### Private APIs (Require Authentication)
+#### API Riêng tư (Yêu cầu xác thực)
 
-These need API keys (like passwords):
+Những API này cần khóa API (giống như mật khẩu):
 
-**Examples:**
-- Payment processing
-- User data
-- Private services
+**Ví dụ:**
+- Xử lý thanh toán
+- Dữ liệu người dùng
+- Dịch vụ riêng tư
 
-**How to use:**
-1. **Ask Lovable to integrate:**
+**Cách sử dụng:**
+1. **Yêu cầu Lovable tích hợp:**
    ```
    Integrate the OpenWeatherMap API for weather data.
    Base URL: https://api.openweathermap.org/data/2.5
    Auth: API key passed as appid parameter
+   (Tích hợp API OpenWeatherMap cho dữ liệu thời tiết.
+   URL cơ sở: https://api.openweathermap.org/data/2.5
+   Xác thực: Khóa API được truyền dưới dạng tham số appid)
    ```
-2. **Enable Lovable Cloud** (if not already enabled)
-3. **Add your API key:**
-   - Go to **Cloud** → **Secrets**
-   - Add your API key
-   - Save it securely
-4. **Lovable creates the integration** - Uses Edge Functions to keep keys safe
+2. **Kích hoạt Lovable Cloud** (nếu chưa kích hoạt)
+3. **Thêm khóa API của bạn:**
+   - Đi tới **Cloud** → **Secrets**
+   - Thêm khóa API của bạn
+   - Lưu nó an toàn
+4. **Lovable tạo tích hợp** - Sử dụng Edge Functions để giữ an toàn cho các khóa
 
-### Understanding Public vs. Private API Keys
+### Hiểu về Khóa API Công khai vs. Riêng tư
 
-**Public API Keys:**
-- ✅ Safe to use in frontend code
-- ✅ Can be visible in browser
-- ✅ Limited permissions
-- ✅ Examples: Stripe Publishable Key (starts with `pk_`), Supabase Anon Key
-- ⚠️ Still should be kept reasonably secure
+**Khóa API Công khai:**
+- ✅ An toàn để sử dụng trong mã frontend
+- ✅ Có thể hiển thị trong trình duyệt
+- ✅ Quyền hạn hạn chế
+- ✅ Ví dụ: Stripe Publishable Key (bắt đầu bằng `pk_`), Supabase Anon Key
+- ⚠️ Vẫn nên được giữ an toàn hợp lý
 
-**Private/Secret API Keys:**
-- ❌ **NEVER** expose in frontend code
-- ❌ **NEVER** put in prompts or code
-- ❌ **MUST** be stored in secrets manager
-- ✅ Full access to account
-- ✅ Examples: Stripe Secret Key (starts with `sk_`), Supabase Service Role Key
+**Khóa API Riêng tư/Bí mật:**
+- ❌ **KHÔNG BAO GIỜ** để lộ trong mã frontend
+- ❌ **KHÔNG BAO GIỜ** đặt trong câu lệnh hoặc mã
+- ❌ **PHẢI** được lưu trữ trong trình quản lý bí mật (secrets manager)
+- ✅ Quyền truy cập đầy đủ vào tài khoản
+- ✅ Ví dụ: Stripe Secret Key (bắt đầu bằng `sk_`), Supabase Service Role Key
 
-**⚠️ CRITICAL RULE:** Private keys must ALWAYS be stored in Lovable's Secrets Manager, never in your code or prompts!
+**⚠️ QUY TẮC QUAN TRỌNG:** Khóa riêng tư PHẢI LUÔN được lưu trữ trong Trình quản lý bí mật của Lovable, không bao giờ trong mã hoặc câu lệnh của bạn!
 
-**How Lovable Protects Keys:**
-- Keys stored in **Cloud → Secrets**
-- Accessed only through **Edge Functions** (server-side)
-- Never exposed to frontend
-- Encrypted and secure
+**Cách Lovable bảo vệ khóa:**
+- Khóa được lưu trữ trong **Cloud → Secrets**
+- Chỉ truy cập thông qua **Edge Functions** (phía máy chủ)
+- Không bao giờ để lộ cho frontend
+- Được mã hóa và an toàn
 
-### Common APIs You Might Use
+### Các API phổ biến bạn có thể sử dụng
 
-- **Weather APIs** - Show weather data
-- **Maps APIs** - Show locations
-- **Social Media APIs** - Share to social platforms
-- **Payment APIs** - Process payments
-- **Email APIs** - Send emails
-- **Analytics APIs** - Track usage
+- **Weather APIs** - Hiển thị dữ liệu thời tiết
+- **Maps APIs** - Hiển thị vị trí
+- **Social Media APIs** - Chia sẻ lên các nền tảng xã hội
+- **Payment APIs** - Xử lý thanh toán
+- **Email APIs** - Gửi email
+- **Analytics APIs** - Theo dõi việc sử dụng
 
-**💡 Beginner Tip:** Start with simple, public APIs to learn. Then move to authenticated APIs when needed.
+**💡 Mẹo cho người mới:** Bắt đầu với các API công khai đơn giản để học. Sau đó chuyển sang các API có xác thực khi cần.
 
 ---
 
-## 📖 Lesson 6: Security Best Practices
+## 📖 Bài học 6: Các phương pháp bảo mật tốt nhất
 
-### Why Security Matters
+### Tại sao bảo mật lại quan trọng
 
-**Security** protects your app and users from:
-- Unauthorized access
-- Data breaches
-- Payment fraud
-- Malicious attacks
+**Bảo mật** bảo vệ ứng dụng và người dùng của bạn khỏi:
+- Truy cập trái phép
+- Vi phạm dữ liệu
+- Gian lận thanh toán
+- Các cuộc tấn công độc hại
 
-**Building secure apps is essential!** Even beginners need to understand security basics.
+**Xây dựng ứng dụng an toàn là điều cần thiết!** Ngay cả người mới bắt đầu cũng cần hiểu những điều cơ bản về bảo mật.
 
-### How Lovable Handles Security
+### Cách Lovable xử lý bảo mật
 
-**Good news:** Lovable handles many security concerns automatically! But you still need to follow best practices.
+**Tin tốt:** Lovable tự động xử lý nhiều mối lo ngại về bảo mật! Nhưng bạn vẫn cần tuân theo các phương pháp tốt nhất.
 
-#### Automatic Security Features
+#### Các tính năng bảo mật tự động
 
-Lovable automatically:
-- ✅ **Hashes passwords** - Passwords are never stored in plain text
-- ✅ **Protects API keys** - Keys stored securely in secrets manager
-- ✅ **Uses HTTPS** - All connections are encrypted
-- ✅ **Validates inputs** - Prevents common attacks
-- ✅ **Manages sessions** - Secure user sessions
+Lovable tự động:
+- ✅ **Băm mật khẩu** - Mật khẩu không bao giờ được lưu trữ dưới dạng văn bản thuần túy
+- ✅ **Bảo vệ khóa API** - Khóa được lưu trữ an toàn trong trình quản lý bí mật
+- ✅ **Sử dụng HTTPS** - Tất cả các kết nối đều được mã hóa
+- ✅ **Xác thực đầu vào** - Ngăn chặn các cuộc tấn công phổ biến
+- ✅ **Quản lý phiên** - Phiên người dùng an toàn
 
-**You don't need to code these!** Lovable does it for you.
+**Bạn không cần phải viết mã cho những thứ này!** Lovable làm điều đó cho bạn.
 
-### Security Best Practices
+### Các phương pháp bảo mật tốt nhất
 
-#### 1. Protecting API Keys
+#### 1. Bảo vệ khóa API
 
-**❌ NEVER Do This:**
+**❌ KHÔNG BAO GIỜ làm điều này:**
 ```
 Add my Stripe key: sk_live_1234567890
 ```
 
-**❌ NEVER Put Keys in Prompts:**
+**❌ KHÔNG BAO GIỜ đặt khóa trong câu lệnh:**
 ```
 Use API key abc123xyz in the code
 ```
 
-**✅ ALWAYS Do This:**
-1. **Store keys in Secrets Manager:**
-   - Go to **Cloud** → **Secrets**
-   - Add your key
-   - Give it a name (e.g., "STRIPE_SECRET_KEY")
-   - Save
+**✅ LUÔN LUÔN làm điều này:**
+1. **Lưu trữ khóa trong Secrets Manager:**
+   - Đi tới **Cloud** → **Secrets**
+   - Thêm khóa của bạn
+   - Đặt tên cho nó (ví dụ: "STRIPE_SECRET_KEY")
+   - Lưu
 
-2. **Reference keys by name:**
+2. **Tham chiếu khóa theo tên:**
    ```
    Use the Stripe connector I've configured in settings
+   (Sử dụng connector Stripe tôi đã cấu hình trong cài đặt)
    ```
 
-3. **Lovable accesses keys securely:**
-   - Keys stay in secrets manager
-   - Accessed only server-side
-   - Never exposed to frontend
+3. **Lovable truy cập khóa an toàn:**
+   - Khóa ở trong trình quản lý bí mật
+   - Chỉ truy cập phía máy chủ
+   - Không bao giờ để lộ cho frontend
 
-**Example - Correct Way:**
+**Ví dụ - Cách đúng:**
 ```
 1. Add Stripe Secret Key to Cloud → Secrets (name it STRIPE_SECRET_KEY)
 2. Then ask: "Add Stripe payment processing using the configured Stripe connector"
+(1. Thêm Stripe Secret Key vào Cloud → Secrets (đặt tên là STRIPE_SECRET_KEY)
+2. Sau đó yêu cầu: "Thêm xử lý thanh toán Stripe sử dụng connector Stripe đã cấu hình")
 ```
 
-#### 2. Password Security
+#### 2. Bảo mật mật khẩu
 
-**How Lovable Handles Passwords:**
+**Cách Lovable xử lý mật khẩu:**
 
-- ✅ **Automatic hashing** - Passwords are hashed (encrypted) before storage
-- ✅ **Never stored in plain text** - You can't see actual passwords
-- ✅ **Secure comparison** - Passwords verified securely
-- ✅ **Best practices built-in** - No need to code this yourself
+- ✅ **Tự động băm** - Mật khẩu được băm (mã hóa) trước khi lưu trữ
+- ✅ **Không bao giờ lưu trữ văn bản thuần túy** - Bạn không thể nhìn thấy mật khẩu thực tế
+- ✅ **So sánh an toàn** - Mật khẩu được xác minh an toàn
+- ✅ **Tích hợp các phương pháp tốt nhất** - Không cần tự viết mã này
 
-**What You Should Do:**
-- ✅ Require strong passwords (Lovable can enforce this)
-- ✅ Use password confirmation fields
-- ✅ Add password reset functionality
-- ✅ Never log or display passwords
+**Những gì bạn nên làm:**
+- ✅ Yêu cầu mật khẩu mạnh (Lovable có thể thực thi điều này)
+- ✅ Sử dụng các trường xác nhận mật khẩu
+- ✅ Thêm chức năng đặt lại mật khẩu
+- ✅ Không bao giờ ghi nhật ký hoặc hiển thị mật khẩu
 
-**Example Prompt:**
+**Ví dụ câu lệnh:**
 ```
 Add password requirements: minimum 8 characters, must include uppercase, lowercase, and number
+(Thêm yêu cầu mật khẩu: tối thiểu 8 ký tự, phải bao gồm chữ hoa, chữ thường và số)
 ```
 
-#### 3. Rate Limiting
+#### 3. Giới hạn tốc độ (Rate Limiting)
 
-**What is Rate Limiting?**
+**Giới hạn tốc độ là gì?**
 
-Rate limiting prevents abuse by limiting how many requests a user can make.
+Giới hạn tốc độ ngăn chặn lạm dụng bằng cách giới hạn số lượng yêu cầu mà người dùng có thể thực hiện.
 
-**Why It Matters:**
-- Prevents spam
-- Stops brute force attacks
-- Protects your resources
-- Keeps costs down
+**Tại sao nó quan trọng:**
+- Ngăn chặn thư rác
+- Ngăn chặn các cuộc tấn công brute force
+- Bảo vệ tài nguyên của bạn
+- Giữ chi phí thấp
 
-**How Lovable Handles It:**
+**Cách Lovable xử lý nó:**
 
-Lovable Cloud includes rate limiting automatically:
-- ✅ Limits login attempts
-- ✅ Prevents API abuse
-- ✅ Protects against attacks
-- ✅ Configurable limits
+Lovable Cloud bao gồm giới hạn tốc độ tự động:
+- ✅ Giới hạn nỗ lực đăng nhập
+- ✅ Ngăn chặn lạm dụng API
+- ✅ Bảo vệ chống lại các cuộc tấn công
+- ✅ Giới hạn có thể cấu hình
 
-**What You Can Do:**
+**Những gì bạn có thể làm:**
 ```
 Add rate limiting to the contact form: maximum 5 submissions per hour per user
+(Thêm giới hạn tốc độ vào biểu mẫu liên hệ: tối đa 5 lần gửi mỗi giờ cho mỗi người dùng)
 ```
 
-#### 4. Input Validation
+#### 4. Xác thực đầu vào
 
-**What is Input Validation?**
+**Xác thực đầu vào là gì?**
 
-Checking that user input is safe and correct before using it.
+Kiểm tra xem đầu vào của người dùng có an toàn và chính xác không trước khi sử dụng nó.
 
-**Why It Matters:**
-- Prevents malicious code injection
-- Ensures data is correct format
-- Protects your database
-- Improves user experience
+**Tại sao nó quan trọng:**
+- Ngăn chặn tiêm mã độc hại
+- Đảm bảo dữ liệu đúng định dạng
+- Bảo vệ cơ sở dữ liệu của bạn
+- Cải thiện trải nghiệm người dùng
 
-**How Lovable Handles It:**
+**Cách Lovable xử lý nó:**
 
-Lovable automatically:
-- ✅ Validates form inputs
-- ✅ Sanitizes user data
-- ✅ Prevents SQL injection
-- ✅ Blocks malicious code
+Lovable tự động:
+- ✅ Xác thực đầu vào biểu mẫu
+- ✅ Làm sạch dữ liệu người dùng
+- ✅ Ngăn chặn SQL injection
+- ✅ Chặn mã độc hại
 
-**What You Should Do:**
-- ✅ Specify validation requirements in prompts
-- ✅ Test forms with invalid data
-- ✅ Add helpful error messages
+**Những gì bạn nên làm:**
+- ✅ Chỉ định yêu cầu xác thực trong câu lệnh
+- ✅ Kiểm tra biểu mẫu với dữ liệu không hợp lệ
+- ✅ Thêm thông báo lỗi hữu ích
 
-**Example:**
+**Ví dụ:**
 ```
 Create a contact form with validation:
 - Email must be valid email format
 - Name must be at least 2 characters
 - Message must be between 10 and 1000 characters
 - Show clear error messages for invalid inputs
+(Tạo biểu mẫu liên hệ với xác thực:
+- Email phải đúng định dạng email
+- Tên phải có ít nhất 2 ký tự
+- Tin nhắn phải từ 10 đến 1000 ký tự
+- Hiển thị thông báo lỗi rõ ràng cho đầu vào không hợp lệ)
 ```
 
-#### 5. User Authentication Security
+#### 5. Bảo mật xác thực người dùng
 
-**Best Practices:**
+**Các phương pháp tốt nhất:**
 
-**✅ Do:**
-- Use strong password requirements
-- Implement session timeouts
-- Add "Remember Me" securely
-- Use HTTPS (automatic with Lovable)
-- Log out users after inactivity
+**✅ Nên:**
+- Sử dụng yêu cầu mật khẩu mạnh
+- Triển khai thời gian chờ phiên
+- Thêm "Ghi nhớ tôi" một cách an toàn
+- Sử dụng HTTPS (tự động với Lovable)
+- Đăng xuất người dùng sau khi không hoạt động
 
-**❌ Don't:**
-- Store passwords in plain text (Lovable prevents this)
-- Show password errors that reveal if email exists
-- Allow unlimited login attempts
-- Store sensitive data in frontend
+**❌ Không nên:**
+- Lưu trữ mật khẩu dưới dạng văn bản thuần túy (Lovable ngăn chặn điều này)
+- Hiển thị lỗi mật khẩu tiết lộ email có tồn tại hay không
+- Cho phép nỗ lực đăng nhập không giới hạn
+- Lưu trữ dữ liệu nhạy cảm ở frontend
 
-**Example Prompts:**
+**Ví dụ câu lệnh:**
 ```
 Add session timeout: log users out after 30 minutes of inactivity
+(Thêm thời gian chờ phiên: đăng xuất người dùng sau 30 phút không hoạt động)
 ```
 
 ```
 Add login attempt limiting: lock account after 5 failed attempts
+(Thêm giới hạn nỗ lực đăng nhập: khóa tài khoản sau 5 lần thử thất bại)
 ```
 
-#### 6. Data Protection
+#### 6. Bảo vệ dữ liệu
 
-**What to Protect:**
-- User personal information
-- Payment data
-- API keys and secrets
-- Authentication tokens
+**Những gì cần bảo vệ:**
+- Thông tin cá nhân người dùng
+- Dữ liệu thanh toán
+- Khóa API và bí mật
+- Mã thông báo xác thực
 
-**How to Protect:**
+**Cách bảo vệ:**
 
-**✅ Use Environment Variables:**
-- Store sensitive config in secrets
-- Never hard-code sensitive data
-- Use different keys for development/production
+**✅ Sử dụng Biến môi trường:**
+- Lưu trữ cấu hình nhạy cảm trong secrets
+- Không bao giờ mã hóa cứng dữ liệu nhạy cảm
+- Sử dụng các khóa khác nhau cho phát triển/sản xuất
 
-**✅ Encrypt Sensitive Data:**
-- Lovable encrypts data in transit (HTTPS)
-- Database encryption handled automatically
-- File storage is secure
+**✅ Mã hóa dữ liệu nhạy cảm:**
+- Lovable mã hóa dữ liệu khi truyền tải (HTTPS)
+- Mã hóa cơ sở dữ liệu được xử lý tự động
+- Lưu trữ tệp an toàn
 
-**✅ Limit Data Access:**
+**✅ Giới hạn truy cập dữ liệu:**
 ```
 Make sure users can only see and edit their own data, not other users' data
+(Đảm bảo người dùng chỉ có thể xem và chỉnh sửa dữ liệu của chính họ, không phải dữ liệu của người dùng khác)
 ```
 
-#### 7. API Security
+#### 7. Bảo mật API
 
-**For Public APIs:**
-- ✅ Usually safe to use directly
-- ✅ No authentication needed
-- ✅ Limited functionality
-- ⚠️ Still validate responses
+**Cho API Công khai:**
+- ✅ Thường an toàn để sử dụng trực tiếp
+- ✅ Không cần xác thực
+- ✅ Chức năng hạn chế
+- ⚠️ Vẫn xác thực phản hồi
 
-**For Private APIs:**
-- ✅ **ALWAYS** use secrets manager
-- ✅ **NEVER** put keys in code
-- ✅ Use Edge Functions (Lovable does this)
-- ✅ Validate all API responses
+**Cho API Riêng tư:**
+- ✅ **LUÔN LUÔN** sử dụng trình quản lý bí mật
+- ✅ **KHÔNG BAO GIỜ** đặt khóa trong mã
+- ✅ Sử dụng Edge Functions (Lovable làm điều này)
+- ✅ Xác thực tất cả các phản hồi API
 
-**Example - Secure API Integration:**
+**Ví dụ - Tích hợp API an toàn:**
 ```
 1. Add OpenWeatherMap API key to Cloud → Secrets (name it WEATHER_API_KEY)
 2. Then: "Integrate OpenWeatherMap API using the key in secrets. Create a weather widget that fetches current weather for a city."
+(1. Thêm khóa API OpenWeatherMap vào Cloud → Secrets (đặt tên là WEATHER_API_KEY)
+2. Sau đó: "Tích hợp API OpenWeatherMap sử dụng khóa trong secrets. Tạo tiện ích thời tiết lấy thời tiết hiện tại cho một thành phố.")
 ```
 
-### Security Checklist
+### Danh sách kiểm tra bảo mật
 
-Before deploying your app, check:
+Trước khi triển khai ứng dụng của bạn, hãy kiểm tra:
 
-- [ ] All API keys are in secrets manager (not in code)
-- [ ] Passwords have requirements enforced
-- [ ] User data is protected (users can't access others' data)
-- [ ] Forms have validation
-- [ ] Rate limiting is enabled (if needed)
-- [ ] Error messages don't reveal sensitive info
-- [ ] HTTPS is enabled (automatic with Lovable)
-- [ ] Authentication is working correctly
-- [ ] No sensitive data in frontend code
+- [ ] Tất cả các khóa API đều nằm trong trình quản lý bí mật (không phải trong mã)
+- [ ] Mật khẩu có các yêu cầu được thực thi
+- [ ] Dữ liệu người dùng được bảo vệ (người dùng không thể truy cập dữ liệu của người khác)
+- [ ] Các biểu mẫu có xác thực
+- [ ] Giới hạn tốc độ được bật (nếu cần)
+- [ ] Thông báo lỗi không tiết lộ thông tin nhạy cảm
+- [ ] HTTPS được bật (tự động với Lovable)
+- [ ] Xác thực hoạt động chính xác
+- [ ] Không có dữ liệu nhạy cảm trong mã frontend
 
-### Common Security Mistakes to Avoid
+### Những sai lầm bảo mật phổ biến cần tránh
 
-**❌ Mistake 1: Putting API Keys in Prompts**
+**❌ Sai lầm 1: Đặt khóa API trong câu lệnh**
 ```
 Add Stripe with key sk_live_12345
 ```
-**✅ Fix:** Store in secrets, reference by name
+**✅ Sửa:** Lưu trữ trong secrets, tham chiếu theo tên
 
-**❌ Mistake 2: No Input Validation**
+**❌ Sai lầm 2: Không xác thực đầu vào**
 ```
 Create a form (no validation mentioned)
 ```
-**✅ Fix:** Always specify validation requirements
+**✅ Sửa:** Luôn chỉ định yêu cầu xác thực
 
-**❌ Mistake 3: Exposing User Data**
+**❌ Sai lầm 3: Để lộ dữ liệu người dùng**
 ```
 Show all users' data to everyone
 ```
-**✅ Fix:** Restrict data access to owners
+**✅ Sửa:** Hạn chế truy cập dữ liệu cho chủ sở hữu
 
-**❌ Mistake 4: Weak Passwords**
+**❌ Sai lầm 4: Mật khẩu yếu**
 ```
 Allow any password
 ```
-**✅ Fix:** Require strong passwords
+**✅ Sửa:** Yêu cầu mật khẩu mạnh
 
-**❌ Mistake 5: No Rate Limiting**
+**❌ Sai lầm 5: Không giới hạn tốc độ**
 ```
 Allow unlimited form submissions
 ```
-**✅ Fix:** Add rate limiting for public forms
+**✅ Sửa:** Thêm giới hạn tốc độ cho các biểu mẫu công khai
 
-### Getting Help with Security
+### Nhận trợ giúp về bảo mật
 
-If you're unsure about security:
+Nếu bạn không chắc chắn về bảo mật:
 
-1. **Ask Chat Mode:**
+1. **Hỏi Chế độ Chat:**
    ```
    I'm adding payment processing. What security measures should I have in place?
+   (Tôi đang thêm xử lý thanh toán. Tôi nên áp dụng các biện pháp bảo mật nào?)
    ```
 
-2. **Check Documentation:**
-   - Lovable security docs
-   - Service-specific security guides (Stripe, Supabase, etc.)
+2. **Kiểm tra Tài liệu:**
+   - Tài liệu bảo mật Lovable
+   - Hướng dẫn bảo mật cụ thể của dịch vụ (Stripe, Supabase, v.v.)
 
-3. **Test Thoroughly:**
-   - Try to break your own app
-   - Test with invalid inputs
-   - Check error handling
+3. **Kiểm tra kỹ lưỡng:**
+   - Cố gắng phá vỡ ứng dụng của chính bạn
+   - Kiểm tra với đầu vào không hợp lệ
+   - Kiểm tra xử lý lỗi
 
-**💡 Beginner Tip:** Don't worry about implementing security code yourself! Lovable handles most of it. Just follow best practices in how you use it.
+**💡 Mẹo cho người mới:** Đừng lo lắng về việc tự triển khai mã bảo mật! Lovable xử lý hầu hết. Chỉ cần tuân theo các phương pháp tốt nhất trong cách bạn sử dụng nó.
 
 ---
 
-## 🛠️ Hands-On Practice: Adding Authentication
+## 🛠️ Thực hành thực tế: Thêm xác thực
 
-Let's add user authentication to a project!
+Hãy thêm xác thực người dùng vào một dự án!
 
-### Practice: Add User Authentication
+### Thực hành: Thêm xác thực người dùng
 
-#### Step 1: Enable Backend
+#### Bước 1: Kích hoạt Backend
 
-Ask Lovable:
+Yêu cầu Lovable:
 ```
 Enable Lovable Cloud for this project
+(Kích hoạt Lovable Cloud cho dự án này)
 ```
 
-Or if using Supabase:
+Hoặc nếu sử dụng Supabase:
 ```
 Connect Supabase for authentication and database
+(Kết nối Supabase cho xác thực và cơ sở dữ liệu)
 ```
 
-#### Step 2: Add Authentication
+#### Bước 2: Thêm xác thực
 
-Ask Lovable:
+Yêu cầu Lovable:
 ```
 Add user authentication with:
 - Sign up page with email and password
 - Login page
 - Logout functionality
 - Protected routes (pages only logged-in users can see)
+(Thêm xác thực người dùng với:
+- Trang đăng ký với email và mật khẩu
+- Trang đăng nhập
+- Chức năng đăng xuất
+- Các tuyến được bảo vệ (các trang chỉ người dùng đã đăng nhập mới có thể xem))
 ```
 
-#### Step 3: Test It
+#### Bước 3: Kiểm tra nó
 
-1. **Try signing up:**
-   - Go to the sign up page
-   - Enter email and password
-   - Submit
-   - You should be logged in!
+1. **Thử đăng ký:**
+   - Đi tới trang đăng ký
+   - Nhập email và mật khẩu
+   - Gửi
+   - Bạn sẽ được đăng nhập!
 
-2. **Try logging out:**
-   - Click logout
-   - You should be logged out
+2. **Thử đăng xuất:**
+   - Nhấp đăng xuất
+   - Bạn sẽ được đăng xuất
 
-3. **Try logging in:**
-   - Go to login page
-   - Enter your credentials
-   - You should be logged in!
+3. **Thử đăng nhập:**
+   - Đi tới trang đăng nhập
+   - Nhập thông tin xác thực của bạn
+   - Bạn sẽ được đăng nhập!
 
-#### Step 4: Customize It
+#### Bước 4: Tùy chỉnh nó
 
-Ask for improvements:
+Yêu cầu cải tiến:
 ```
 Make the login page match my brand colors
 Add "Remember me" checkbox to login
 Add password reset functionality
+(Làm cho trang đăng nhập phù hợp với màu sắc thương hiệu của tôi
+Thêm hộp kiểm "Ghi nhớ tôi" vào đăng nhập
+Thêm chức năng đặt lại mật khẩu)
 ```
 
-**🎉 Congratulations!** You just added authentication to your app!
+**🎉 Chúc mừng!** Bạn vừa thêm xác thực vào ứng dụng của mình!
 
 ---
 
-## 🛠️ Hands-On Practice: Adding a Database
+## 🛠️ Thực hành thực tế: Thêm cơ sở dữ liệu
 
-Let's add a database to store data!
+Hãy thêm cơ sở dữ liệu để lưu trữ dữ liệu!
 
-### Practice: Add Database for Blog Posts
+### Thực hành: Thêm cơ sở dữ liệu cho bài đăng Blog
 
-#### Step 1: Enable Database
+#### Bước 1: Kích hoạt cơ sở dữ liệu
 
-If using Lovable Cloud:
+Nếu sử dụng Lovable Cloud:
 ```
 Add a database to store blog posts
+(Thêm cơ sở dữ liệu để lưu trữ các bài đăng blog)
 ```
 
-If using Supabase:
+Nếu sử dụng Supabase:
 ```
 Set up Supabase database for blog posts
+(Thiết lập cơ sở dữ liệu Supabase cho các bài đăng blog)
 ```
 
-#### Step 2: Define Your Data Structure
+#### Bước 2: Xác định cấu trúc dữ liệu của bạn
 
-Ask Lovable:
+Yêu cầu Lovable:
 ```
 Create a database table for blog posts with:
 - Title (text)
@@ -831,118 +761,146 @@ Create a database table for blog posts with:
 - Author (text)
 - Date published (date)
 - Featured image (image URL)
+(Tạo bảng cơ sở dữ liệu cho các bài đăng blog với:
+- Tiêu đề (văn bản)
+- Nội dung (văn bản)
+- Tác giả (văn bản)
+- Ngày xuất bản (ngày)
+- Hình ảnh nổi bật (URL hình ảnh))
 ```
 
-#### Step 3: Create Pages to Use the Database
+#### Bước 3: Tạo các trang để sử dụng cơ sở dữ liệu
 
-Ask Lovable:
+Yêu cầu Lovable:
 ```
 Create a blog listing page that shows all posts from the database
+(Tạo trang danh sách blog hiển thị tất cả các bài đăng từ cơ sở dữ liệu)
 ```
 
 ```
 Create a blog post detail page that shows a single post
+(Tạo trang chi tiết bài đăng blog hiển thị một bài đăng đơn lẻ)
 ```
 
 ```
 Create an admin page to add new blog posts to the database
+(Tạo trang quản trị để thêm các bài đăng blog mới vào cơ sở dữ liệu)
 ```
 
-#### Step 4: Test It
+#### Bước 4: Kiểm tra nó
 
-1. **Add a post:**
-   - Go to admin page
-   - Fill in the form
-   - Submit
-   - Post should be saved!
+1. **Thêm bài đăng:**
+   - Đi tới trang quản trị
+   - Điền vào biểu mẫu
+   - Gửi
+   - Bài đăng sẽ được lưu!
 
-2. **View posts:**
-   - Go to blog listing page
-   - See your posts!
+2. **Xem bài đăng:**
+   - Đi tới trang danh sách blog
+   - Xem các bài đăng của bạn!
 
-3. **View single post:**
-   - Click on a post
-   - See the full post!
+3. **Xem bài đăng đơn lẻ:**
+   - Nhấp vào một bài đăng
+   - Xem bài đăng đầy đủ!
 
-**🎉 Congratulations!** You just added a database to your app!
+**🎉 Chúc mừng!** Bạn vừa thêm cơ sở dữ liệu vào ứng dụng của mình!
 
 ---
 
-## 🛠️ Mini-Project: Adding Stripe Subscription Payments
+## 🛠️ Dự án nhỏ: Thêm thanh toán đăng ký Stripe
 
-Let's build a complete subscription page with Stripe! This demonstrates connectors in practice.
+Hãy xây dựng một trang đăng ký hoàn chỉnh với Stripe! Điều này minh họa việc sử dụng connector trong thực tế.
 
-### Project Goal
+### Mục tiêu dự án
 
-Create a subscription page where users can:
-- See subscription plans
-- Subscribe to a monthly plan
-- Process payment securely with Stripe
-- See subscription status
+Tạo một trang đăng ký nơi người dùng có thể:
+- Xem các gói đăng ký
+- Đăng ký gói hàng tháng
+- Xử lý thanh toán an toàn với Stripe
+- Xem trạng thái đăng ký
 
-### Step 1: Set Up Stripe Account
+### Bước 1: Thiết lập tài khoản Stripe
 
-**Before starting:**
-1. Sign up at [stripe.com](https://stripe.com) (free to start)
-2. Go to **Developers** → **API keys**
-3. Get your **test keys** (for development):
-   - **Publishable Key** (starts with `pk_test_`)
-   - **Secret Key** (starts with `sk_test_`)
+**Trước khi bắt đầu:**
+1. Đăng ký tại [stripe.com](https://stripe.com) (miễn phí để bắt đầu)
+2. Đi tới **Developers** → **API keys**
+3. Lấy **khóa thử nghiệm** (test keys) của bạn (để phát triển):
+   - **Publishable Key** (bắt đầu bằng `pk_test_`)
+   - **Secret Key** (bắt đầu bằng `sk_test_`)
 
-**💡 Note:** Use test keys for development. Switch to live keys when ready for production.
+**💡 Lưu ý:** Sử dụng khóa thử nghiệm để phát triển. Chuyển sang khóa trực tiếp (live keys) khi sẵn sàng cho sản xuất.
 
-### Step 2: Configure Stripe in Lovable
+### Bước 2: Cấu hình Stripe trong Lovable
 
-1. **Go to Settings** → **Integrations** → **Connectors**
-2. **Click "Add Connector"**
-3. **Select "Stripe"**
-4. **Enter your keys:**
-   - Publishable Key: `pk_test_...` (your test key)
-   - Secret Key: `sk_test_...` (your test key)
-5. **Save**
+1. **Đi tới Settings** → **Integrations** → **Connectors**
+2. **Nhấp "Add Connector"**
+3. **Chọn "Stripe"**
+4. **Nhập khóa của bạn:**
+   - Publishable Key: `pk_test_...` (khóa thử nghiệm của bạn)
+   - Secret Key: `sk_test_...` (khóa thử nghiệm của bạn)
+5. **Lưu**
 
-**⚠️ Security Reminder:** Keys are stored securely in Lovable's secrets manager, not in your code!
+**⚠️ Nhắc nhở bảo mật:** Khóa được lưu trữ an toàn trong trình quản lý bí mật của Lovable, không phải trong mã của bạn!
 
-### Step 3: Create Subscription Plans Page
+### Bước 3: Tạo trang các gói đăng ký
 
-Ask Lovable:
+Yêu cầu Lovable:
 ```
 Create a subscription plans page with:
 - Header: "Choose Your Plan"
 - Three subscription tiers:
   1. Basic - $9.99/month - "Perfect for individuals"
-  2. Pro - $19.99/month - "Best for professionals"  
+  2. Pro - $19.99/month - "Best for professionals"
   3. Enterprise - $49.99/month - "For teams and businesses"
 - Each plan should have a "Subscribe" button
 - Use a clean, modern card layout
 - Make it responsive for mobile
+(Tạo trang các gói đăng ký với:
+- Tiêu đề: "Chọn gói của bạn"
+- Ba cấp độ đăng ký:
+  1. Cơ bản - $9.99/tháng - "Hoàn hảo cho cá nhân"
+  2. Chuyên nghiệp - $19.99/tháng - "Tốt nhất cho chuyên gia"
+  3. Doanh nghiệp - $49.99/tháng - "Dành cho nhóm và doanh nghiệp"
+- Mỗi gói nên có nút "Đăng ký"
+- Sử dụng bố cục thẻ hiện đại, sạch sẽ
+- Làm cho nó đáp ứng cho di động)
 ```
 
-### Step 4: Add Stripe Checkout
+### Bước 4: Thêm Stripe Checkout
 
-Ask Lovable:
+Yêu cầu Lovable:
 ```
 Add Stripe Checkout to the subscription page. When a user clicks "Subscribe" on a plan:
 - Open Stripe Checkout for that plan's price
 - Use the Stripe connector I've configured
 - After successful payment, redirect to a success page
 - Store the subscription in the database with user ID and plan type
+(Thêm Stripe Checkout vào trang đăng ký. Khi người dùng nhấp vào "Đăng ký" trên một gói:
+- Mở Stripe Checkout cho giá của gói đó
+- Sử dụng connector Stripe tôi đã cấu hình
+- Sau khi thanh toán thành công, chuyển hướng đến trang thành công
+- Lưu trữ đăng ký trong cơ sở dữ liệu với ID người dùng và loại gói)
 ```
 
-### Step 5: Create Success Page
+### Bước 5: Tạo trang thành công
 
-Ask Lovable:
+Yêu cầu Lovable:
 ```
 Create a subscription success page that:
 - Shows a success message
 - Displays the plan the user subscribed to
 - Has a "Go to Dashboard" button
 - Looks professional and celebratory
+(Tạo trang đăng ký thành công:
+- Hiển thị thông báo thành công
+- Hiển thị gói người dùng đã đăng ký
+- Có nút "Đi tới Bảng điều khiển"
+- Trông chuyên nghiệp và mang tính chúc mừng)
 ```
 
-### Step 6: Add Subscription Management
+### Bước 6: Thêm quản lý đăng ký
 
-Ask Lovable:
+Yêu cầu Lovable:
 ```
 Create a "My Subscription" page that:
 - Shows the user's current subscription plan
@@ -950,45 +908,56 @@ Create a "My Subscription" page that:
 - Shows next billing date
 - Has a "Manage Subscription" button that links to Stripe customer portal
 - Only accessible to logged-in users
+(Tạo trang "Đăng ký của tôi":
+- Hiển thị gói đăng ký hiện tại của người dùng
+- Hiển thị trạng thái đăng ký (hoạt động, đã hủy, v.v.)
+- Hiển thị ngày thanh toán tiếp theo
+- Có nút "Quản lý đăng ký" liên kết đến cổng thông tin khách hàng Stripe
+- Chỉ có thể truy cập đối với người dùng đã đăng nhập)
 ```
 
-### Step 7: Secure the Implementation
+### Bước 7: Bảo mật việc triển khai
 
-Ask Lovable:
+Yêu cầu Lovable:
 ```
 Make sure the subscription implementation is secure:
 - All payment processing happens server-side
 - Stripe keys are only accessed through secrets manager
 - User can only see their own subscription
 - Add proper error handling for failed payments
+(Đảm bảo việc triển khai đăng ký được bảo mật:
+- Tất cả xử lý thanh toán diễn ra phía máy chủ
+- Khóa Stripe chỉ được truy cập thông qua trình quản lý bí mật
+- Người dùng chỉ có thể xem đăng ký của chính họ
+- Thêm xử lý lỗi thích hợp cho các khoản thanh toán thất bại)
 ```
 
-### Step 8: Test the Flow
+### Bước 8: Kiểm tra luồng
 
-**Testing Steps:**
+**Các bước kiểm tra:**
 
-1. **Test Subscription:**
-   - Go to subscription page
-   - Click "Subscribe" on a plan
-   - Use Stripe test card: `4242 4242 4242 4242`
-   - Use any future expiry date (e.g., 12/25)
-   - Use any 3-digit CVC
-   - Complete checkout
-   - Should redirect to success page
+1. **Kiểm tra Đăng ký:**
+   - Đi tới trang đăng ký
+   - Nhấp "Đăng ký" trên một gói
+   - Sử dụng thẻ thử nghiệm Stripe: `4242 4242 4242 4242`
+   - Sử dụng bất kỳ ngày hết hạn nào trong tương lai (ví dụ: 12/25)
+   - Sử dụng bất kỳ CVC 3 chữ số nào
+   - Hoàn tất thanh toán
+   - Sẽ chuyển hướng đến trang thành công
 
-2. **Test Subscription Page:**
-   - Go to "My Subscription"
-   - Should show your active plan
-   - Should show next billing date
+2. **Kiểm tra Trang đăng ký:**
+   - Đi tới "Đăng ký của tôi"
+   - Sẽ hiển thị gói hoạt động của bạn
+   - Sẽ hiển thị ngày thanh toán tiếp theo
 
-3. **Test Security:**
-   - Try accessing another user's subscription (should fail)
-   - Check that keys aren't in frontend code
-   - Verify payment processing is secure
+3. **Kiểm tra Bảo mật:**
+   - Thử truy cập đăng ký của người dùng khác (sẽ thất bại)
+   - Kiểm tra xem khóa có trong mã frontend không
+   - Xác minh xử lý thanh toán được bảo mật
 
-### Step 9: Add Polish
+### Bước 9: Thêm sự hoàn thiện
 
-Ask Lovable:
+Yêu cầu Lovable:
 ```
 Improve the subscription experience:
 - Add loading states during payment processing
@@ -996,224 +965,229 @@ Improve the subscription experience:
 - Add confirmation before subscribing
 - Improve the design and user experience
 - Add email confirmation after successful subscription
+(Cải thiện trải nghiệm đăng ký:
+- Thêm trạng thái đang tải trong quá trình xử lý thanh toán
+- Hiển thị thông báo lỗi rõ ràng nếu thanh toán thất bại
+- Thêm xác nhận trước khi đăng ký
+- Cải thiện thiết kế và trải nghiệm người dùng
+- Thêm xác nhận email sau khi đăng ký thành công)
 ```
 
-### What You Learned
+### Những gì bạn đã học
 
-This mini-project taught you:
-- ✅ How to configure Stripe connector
-- ✅ How to use connectors in prompts
-- ✅ How to process payments securely
-- ✅ How to store subscription data
-- ✅ Security best practices for payments
-- ✅ Real-world payment integration
+Dự án nhỏ này đã dạy bạn:
+- ✅ Cách cấu hình connector Stripe
+- ✅ Cách sử dụng connector trong câu lệnh
+- ✅ Cách xử lý thanh toán an toàn
+- ✅ Cách lưu trữ dữ liệu đăng ký
+- ✅ Các phương pháp bảo mật tốt nhất cho thanh toán
+- ✅ Tích hợp thanh toán trong thế giới thực
 
-### Common Issues and Solutions
+### Các vấn đề phổ biến và giải pháp
 
-**Issue: "Stripe not working"**
-- Check that keys are in Connectors settings
-- Verify you're using test keys for testing
-- Make sure Lovable Cloud is enabled
+**Vấn đề: "Stripe không hoạt động"**
+- Kiểm tra xem khóa có trong cài đặt Connectors không
+- Xác minh bạn đang sử dụng khóa thử nghiệm để kiểm tra
+- Đảm bảo Lovable Cloud được kích hoạt
 
-**Issue: "Payment not processing"**
-- Check Stripe dashboard for errors
-- Verify keys are correct
-- Test with Stripe test cards
+**Vấn đề: "Thanh toán không xử lý"**
+- Kiểm tra bảng điều khiển Stripe để tìm lỗi
+- Xác minh khóa là chính xác
+- Kiểm tra với thẻ thử nghiệm Stripe
 
-**Issue: "Subscription not saving"**
-- Check database is set up
-- Verify user authentication is working
-- Check that subscription data is being stored
+**Vấn đề: "Đăng ký không lưu"**
+- Kiểm tra cơ sở dữ liệu đã được thiết lập chưa
+- Xác minh xác thực người dùng đang hoạt động
+- Kiểm tra xem dữ liệu đăng ký có đang được lưu trữ không
 
-**💡 Pro Tip:** Always test with Stripe test mode first! Use test cards and test keys before going live.
-
----
-
-## 🎯 Module 6 Challenges
-
-**Build your backend skills with these progressive challenges!**
-
-### Challenge 1: Basic Database Feature (Beginner)
-
-**Your Task:** Build a comments system for a blog using Lovable Cloud.
-
-**Requirements:**
-- Create a database table for comments
-- Comments should have: author name, comment text, date, and post ID
-- Create a form to add comments
-- Display comments below blog posts
-- Only show comments for the current post
-
-**💡 Hints:**
-- Enable Lovable Cloud first
-- Define your database structure clearly
-- Link comments to posts using post ID
-- Test adding and viewing comments
-
-**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-6-challenge-1)
+**💡 Mẹo chuyên nghiệp:** Luôn kiểm tra với chế độ thử nghiệm Stripe trước! Sử dụng thẻ thử nghiệm và khóa thử nghiệm trước khi đi vào hoạt động.
 
 ---
 
-### Challenge 2: Extend with Email Notifications (Intermediate)
+## 🎯 Thử thách Module 6
 
-**Your Task:** Extend the comments system from Challenge 1 by adding email notifications using Resend connector.
+**Xây dựng kỹ năng backend của bạn với các thử thách lũy tiến này!**
 
-**Requirements:**
-- When someone adds a comment, send an email to the blog post author
-- Email should include: commenter name, comment text, link to the post
-- Configure Resend connector properly
-- Store email in secrets manager (not in code!)
+### Thử thách 1: Tính năng cơ sở dữ liệu cơ bản (Người mới bắt đầu)
 
-**💡 Hints:**
-- Set up Resend account and get API key
-- Add Resend connector in Lovable settings
-- Store API key in secrets manager
-- Use Resend to send email when comment is created
+**Nhiệm vụ của bạn:** Xây dựng hệ thống bình luận cho blog sử dụng Lovable Cloud.
 
-**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-6-challenge-2)
+**Yêu cầu:**
+- Tạo bảng cơ sở dữ liệu cho bình luận
+- Bình luận nên có: tên tác giả, văn bản bình luận, ngày tháng và ID bài đăng
+- Tạo biểu mẫu để thêm bình luận
+- Hiển thị bình luận bên dưới bài đăng blog
+- Chỉ hiển thị bình luận cho bài đăng hiện tại
 
----
+**💡 Gợi ý:**
+- Kích hoạt Lovable Cloud trước
+- Xác định cấu trúc cơ sở dữ liệu của bạn rõ ràng
+- Liên kết bình luận với bài đăng bằng ID bài đăng
+- Kiểm tra thêm và xem bình luận
 
-### Challenge 3: Secure User Data (Advanced)
-
-**Your Task:** Build a user profile system with proper security.
-
-**Requirements:**
-- Users can create profiles with: name, bio, avatar
-- Users can only view and edit their own profile
-- Add authentication (sign up/login)
-- Protect profile pages (only owner can access)
-- Store profile data securely
-
-**💡 Hints:**
-- Enable authentication first
-- Link profiles to user IDs
-- Add authorization checks
-- Test that users can't access others' profiles
-
-**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-6-challenge-3)
+**Kiểm tra giải pháp của bạn:** Xem [Giải pháp thử thách](supplement-challenge-solutions.md#module-6-challenge-1)
 
 ---
 
-### Challenge 4: Complete Feature with API Integration (Expert)
+### Thử thách 2: Mở rộng với Thông báo Email (Trung cấp)
 
-**Your Task:** Build a "Contact Us" feature that:
-- Has a contact form (name, email, message)
-- Stores submissions in database
-- Sends email notification using Resend
-- Integrates with a maps API to show your location
-- Has rate limiting (max 3 submissions per hour)
+**Nhiệm vụ của bạn:** Mở rộng hệ thống bình luận từ Thử thách 1 bằng cách thêm thông báo email sử dụng connector Resend.
 
-**💡 Hints:**
-- Use Lovable Cloud for database
-- Configure Resend connector
-- Use a public maps API (like Google Maps)
-- Add rate limiting to prevent spam
-- Test the complete flow
+**Yêu cầu:**
+- Khi ai đó thêm bình luận, gửi email cho tác giả bài đăng blog
+- Email nên bao gồm: tên người bình luận, văn bản bình luận, liên kết đến bài đăng
+- Cấu hình connector Resend đúng cách
+- Lưu trữ email trong trình quản lý bí mật (không phải trong mã!)
 
-**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-6-challenge-4)
+**💡 Gợi ý:**
+- Thiết lập tài khoản Resend và lấy khóa API
+- Thêm connector Resend trong cài đặt Lovable
+- Lưu trữ khóa API trong trình quản lý bí mật
+- Sử dụng Resend để gửi email khi bình luận được tạo
 
----
-
-**💡 Pro Tip:** Start with Challenge 1, test it thoroughly, then move to the next. Each challenge builds on the previous one!
+**Kiểm tra giải pháp của bạn:** Xem [Giải pháp thử thách](supplement-challenge-solutions.md#module-6-challenge-2)
 
 ---
 
-## ✅ Module 6 Checklist
+### Thử thách 3: Bảo mật dữ liệu người dùng (Nâng cao)
 
-Before moving to Module 7, make sure you can:
+**Nhiệm vụ của bạn:** Xây dựng hệ thống hồ sơ người dùng với bảo mật thích hợp.
 
-- [ ] Explain what "full-stack" means
-- [ ] Enable Lovable Cloud
-- [ ] Understand what connectors are
-- [ ] Know when to use different backend options
-- [ ] Add authentication to a project
-- [ ] Add a database to a project
-- [ ] Understand how to integrate APIs
-- [ ] Store API keys securely in secrets manager
-- [ ] Understand the difference between public and private API keys
-- [ ] Follow security best practices
-- [ ] Configure and use connectors (Stripe, Supabase)
-- [ ] Understand how Lovable handles security automatically
+**Yêu cầu:**
+- Người dùng có thể tạo hồ sơ với: tên, tiểu sử, hình đại diện
+- Người dùng chỉ có thể xem và chỉnh sửa hồ sơ của chính họ
+- Thêm xác thực (đăng ký/đăng nhập)
+- Bảo vệ trang hồ sơ (chỉ chủ sở hữu mới có thể truy cập)
+- Lưu trữ dữ liệu hồ sơ an toàn
 
----
+**💡 Gợi ý:**
+- Kích hoạt xác thực trước
+- Liên kết hồ sơ với ID người dùng
+- Thêm kiểm tra ủy quyền
+- Kiểm tra xem người dùng không thể truy cập hồ sơ của người khác
 
-## 🤔 Common Questions (FAQ)
-
-### Q: Do I need to know how to set up databases?
-**A:** No! Lovable handles it for you. Just describe what data you want to store.
-
-### Q: Which backend should I use?
-**A:** Start with Lovable Cloud - it's the easiest. Add connectors if you need specific features.
-
-### Q: Are API keys safe?
-**A:** Yes! Lovable stores them securely and uses Edge Functions to protect them.
-
-### Q: Do I need to pay for these services?
-**A:** Many have free tiers to start. Check each service's pricing.
-
-### Q: Can I use multiple backends?
-**A:** Usually you pick one main backend, but you can use connectors for specific features.
-
-### Q: What if I don't need a backend?
-**A:** That's fine! Simple websites don't always need backends. Add one when you need user accounts or data storage.
-
-### Q: Where should I store my API keys?
-**A:** ALWAYS in Lovable's Secrets Manager (Cloud → Secrets). NEVER in your code or prompts. Lovable handles the security for you.
-
-### Q: What's the difference between public and private API keys?
-**A:** Public keys (like Stripe Publishable Key) are safe for frontend. Private keys (like Stripe Secret Key) must stay in secrets manager and never be exposed.
-
-### Q: Does Lovable handle password security?
-**A:** Yes! Lovable automatically hashes passwords, so they're never stored in plain text. You don't need to code this yourself.
-
-### Q: How do I know if my app is secure?
-**A:** Use the security checklist in this module. Lovable handles most security automatically, but you should follow best practices like storing keys in secrets.
-
-### Q: Can I put my Stripe key directly in a prompt?
-**A:** NO! Never put private keys in prompts. Store them in Secrets Manager, then reference the connector in your prompts.
-
-### Q: What if I accidentally exposed an API key?
-**A:** Immediately revoke it in the service's dashboard and create a new one. Then update it in Lovable's secrets manager.
+**Kiểm tra giải pháp của bạn:** Xem [Giải pháp thử thách](supplement-challenge-solutions.md#module-6-challenge-3)
 
 ---
 
-## 🎯 What's Next?
+### Thử thách 4: Tính năng hoàn chỉnh với Tích hợp API (Chuyên gia)
 
-Fantastic work! You now understand how to add powerful backend features to your applications. You can:
-- Use Lovable Cloud for built-in backend
-- Add connectors for external services
-- Integrate APIs securely
-- Add authentication
-- Add databases
-- Follow security best practices
-- Build payment integrations
+**Nhiệm vụ của bạn:** Xây dựng tính năng "Liên hệ với chúng tôi" mà:
+- Có biểu mẫu liên hệ (tên, email, tin nhắn)
+- Lưu trữ các lần gửi trong cơ sở dữ liệu
+- Gửi thông báo email sử dụng Resend
+- Tích hợp với API bản đồ để hiển thị vị trí của bạn
+- Có giới hạn tốc độ (tối đa 3 lần gửi mỗi giờ)
 
-**Ready for Module 7?** In the next module, we'll learn about Code Mode - viewing and editing code directly (optional for beginners, but useful to know about)!
+**💡 Gợi ý:**
+- Sử dụng Lovable Cloud cho cơ sở dữ liệu
+- Cấu hình connector Resend
+- Sử dụng API bản đồ công khai (như Google Maps)
+- Thêm giới hạn tốc độ để ngăn chặn thư rác
+- Kiểm tra luồng hoàn chỉnh
 
----
-
-## 💡 Pro Tips for Beginners
-
-1. **Start with Lovable Cloud** - It's the easiest way to add backend features
-
-2. **Add features gradually** - Don't try to add everything at once
-
-3. **Test as you go** - Make sure things work before adding more
-
-4. **Use connectors when needed** - They add powerful features easily
-
-5. **Keep API keys safe** - ALWAYS store in secrets manager, NEVER in code or prompts
-
-6. **Start simple** - Basic authentication and database first, then add complexity
-
-7. **Follow security practices** - Lovable handles most security, but you need to use it correctly
-
-8. **Test with test keys first** - Always use test mode (Stripe test keys, etc.) before going live
-
-9. **Understand public vs. private keys** - Know which keys are safe for frontend and which must stay secret
+**Kiểm tra giải pháp của bạn:** Xem [Giải pháp thử thách](supplement-challenge-solutions.md#module-6-challenge-4)
 
 ---
 
-*Module 6 Complete! 🎉*
+**💡 Mẹo chuyên nghiệp:** Bắt đầu với Thử thách 1, kiểm tra kỹ lưỡng, sau đó chuyển sang thử thách tiếp theo. Mỗi thử thách xây dựng dựa trên thử thách trước đó!
 
+---
+
+## ✅ Danh sách kiểm tra Module 6
+
+Trước khi chuyển sang Module 7, hãy đảm bảo bạn có thể:
+
+- [ ] Giải thích "full-stack" nghĩa là gì
+- [ ] Kích hoạt Lovable Cloud
+- [ ] Hiểu connector là gì
+- [ ] Biết khi nào nên sử dụng các tùy chọn backend khác nhau
+- [ ] Thêm xác thực vào dự án
+- [ ] Thêm cơ sở dữ liệu vào dự án
+- [ ] Hiểu cách tích hợp API
+- [ ] Lưu trữ khóa API an toàn trong trình quản lý bí mật
+- [ ] Hiểu sự khác biệt giữa khóa API công khai và riêng tư
+- [ ] Tuân theo các phương pháp bảo mật tốt nhất
+- [ ] Cấu hình và sử dụng connector (Stripe, Supabase)
+- [ ] Hiểu cách Lovable tự động xử lý bảo mật
+
+---
+
+## 🤔 Các câu hỏi thường gặp (FAQ)
+
+### Hỏi: Tôi có cần biết cách thiết lập cơ sở dữ liệu không?
+**Đáp:** Không! Lovable xử lý nó cho bạn. Chỉ cần mô tả dữ liệu bạn muốn lưu trữ.
+
+### Hỏi: Tôi nên sử dụng backend nào?
+**Đáp:** Bắt đầu với Lovable Cloud - đó là cách dễ nhất. Thêm connector nếu bạn cần các tính năng cụ thể.
+
+### Hỏi: Khóa API có an toàn không?
+**Đáp:** Có! Lovable lưu trữ chúng an toàn và sử dụng Edge Functions để bảo vệ chúng.
+
+### Hỏi: Tôi có cần trả tiền cho các dịch vụ này không?
+**Đáp:** Nhiều dịch vụ có gói miễn phí để bắt đầu. Kiểm tra giá của từng dịch vụ.
+
+### Hỏi: Tôi có thể sử dụng nhiều backend không?
+**Đáp:** Thông thường bạn chọn một backend chính, nhưng bạn có thể sử dụng connector cho các tính năng cụ thể.
+
+### Hỏi: Nếu tôi không cần backend thì sao?
+**Đáp:** Không sao cả! Các trang web đơn giản không phải lúc nào cũng cần backend. Thêm một cái khi bạn cần tài khoản người dùng hoặc lưu trữ dữ liệu.
+
+### Hỏi: Tôi nên lưu trữ khóa API của mình ở đâu?
+**Đáp:** LUÔN LUÔN trong Trình quản lý bí mật của Lovable (Cloud → Secrets). KHÔNG BAO GIỜ trong mã hoặc câu lệnh của bạn. Lovable xử lý bảo mật cho bạn.
+
+### Hỏi: Sự khác biệt giữa khóa API công khai và riêng tư là gì?
+**Đáp:** Khóa công khai (như Stripe Publishable Key) an toàn cho frontend. Khóa riêng tư (như Stripe Secret Key) phải ở trong trình quản lý bí mật và không bao giờ được để lộ.
+
+### Hỏi: Lovable có xử lý bảo mật mật khẩu không?
+**Đáp:** Có! Lovable tự động băm mật khẩu, vì vậy chúng không bao giờ được lưu trữ dưới dạng văn bản thuần túy. Bạn không cần tự viết mã này.
+
+### Hỏi: Làm sao tôi biết ứng dụng của mình có an toàn không?
+**Đáp:** Sử dụng danh sách kiểm tra bảo mật trong module này. Lovable xử lý hầu hết bảo mật tự động, nhưng bạn nên tuân theo các phương pháp tốt nhất như lưu trữ khóa trong secrets.
+
+### Hỏi: Tôi có thể đặt khóa Stripe trực tiếp trong câu lệnh không?
+**Đáp:** KHÔNG! Không bao giờ đặt khóa riêng tư trong câu lệnh. Lưu trữ chúng trong Secrets Manager, sau đó tham chiếu connector trong câu lệnh của bạn.
+
+### Hỏi: Nếu tôi vô tình để lộ khóa API thì sao?
+**Đáp:** Thu hồi ngay lập tức trong bảng điều khiển của dịch vụ và tạo một cái mới. Sau đó cập nhật nó trong trình quản lý bí mật của Lovable.
+
+---
+
+## 🎯 Tiếp theo là gì?
+
+Làm việc tuyệt vời! Bây giờ bạn đã hiểu cách thêm các tính năng backend mạnh mẽ vào ứng dụng của mình. Bạn có thể:
+- Sử dụng Lovable Cloud cho backend tích hợp sẵn
+- Thêm connector cho các dịch vụ bên ngoài
+- Tích hợp API an toàn
+- Thêm xác thực
+- Thêm cơ sở dữ liệu
+- Tuân theo các phương pháp bảo mật tốt nhất
+- Xây dựng tích hợp thanh toán
+
+**Sẵn sàng cho Module 7?** Trong module tiếp theo, chúng ta sẽ tìm hiểu về Chế độ Code - xem và chỉnh sửa mã trực tiếp (tùy chọn cho người mới bắt đầu, nhưng hữu ích để biết)!
+
+---
+
+## 💡 Mẹo chuyên nghiệp cho người mới bắt đầu
+
+1. **Bắt đầu với Lovable Cloud** - Đó là cách dễ nhất để thêm các tính năng backend
+
+2. **Thêm tính năng dần dần** - Đừng cố gắng thêm mọi thứ cùng một lúc
+
+3. **Kiểm tra khi bạn thực hiện** - Đảm bảo mọi thứ hoạt động trước khi thêm nhiều hơn
+
+4. **Sử dụng connector khi cần thiết** - Chúng thêm các tính năng mạnh mẽ một cách dễ dàng
+
+5. **Giữ an toàn cho khóa API** - LUÔN lưu trữ trong trình quản lý bí mật, KHÔNG BAO GIỜ trong mã hoặc câu lệnh
+
+6. **Bắt đầu đơn giản** - Xác thực và cơ sở dữ liệu cơ bản trước, sau đó thêm độ phức tạp
+
+7. **Tuân theo các thực hành bảo mật** - Lovable xử lý hầu hết bảo mật, nhưng bạn cần sử dụng nó đúng cách
+
+8. **Kiểm tra với khóa thử nghiệm trước** - Luôn sử dụng chế độ thử nghiệm (khóa thử nghiệm Stripe, v.v.) trước khi đi vào hoạt động
+
+9. **Hiểu khóa công khai vs. riêng tư** - Biết khóa nào an toàn cho frontend và khóa nào phải giữ bí mật
+
+---
+
+*Module 6 Hoàn thành! 🎉*

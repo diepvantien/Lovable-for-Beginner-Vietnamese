@@ -1,294 +1,293 @@
-# Pricing and Plans Guide
+# Hướng dẫn Giá cả và Gói dịch vụ
 
-**Understanding Lovable's pricing model and what you can do on each plan.**
-
----
-
-## 📊 Plan Comparison
-
-### Free Plan
-
-**What's Included:**
-- ✅ Create unlimited projects
-- ✅ Use Chat Mode (1 credit per message)
-- ✅ Use Agent Mode (usage-based pricing)
-- ✅ View code in Code Mode
-- ✅ All core features (prompts, remixing, templates)
-- ✅ Visual Edits
-- ✅ Deploy and publish apps
-- ✅ Free hosting with Lovable subdomain
-- ✅ Basic integrations
-- ✅ Community support
-
-**Limitations:**
-- ❌ Cannot edit code directly (Code Mode is view-only)
-- ❌ Limited credits per month (varies)
-- ❌ Some advanced features may require credits
-
-**Best For:**
-- Learning and experimenting
-- Building personal projects
-- Testing ideas
-- Building your portfolio
+**Hiểu mô hình giá cả của Lovable và những gì bạn có thể làm trên mỗi gói.**
 
 ---
 
-### Paid Plans
+## 📊 So sánh Gói
 
-**What's Included (Everything in Free, Plus):**
-- ✅ Direct code editing in Code Mode
-- ✅ More credits per month
-- ✅ Priority support
-- ✅ Advanced features
-- ✅ Custom domains
-- ✅ Higher usage limits
-- ✅ Advanced integrations
+### Gói Miễn phí (Free Plan)
 
-**Best For:**
-- Professional development
-- Building client projects
-- Advanced customization needs
-- Higher usage requirements
+**Những gì được bao gồm:**
+- ✅ Tạo không giới hạn dự án
+- ✅ Sử dụng Chat Mode (1 tín dụng mỗi tin nhắn)
+- ✅ Sử dụng Agent Mode (giá dựa trên mức sử dụng)
+- ✅ Xem mã trong Code Mode
+- ✅ Tất cả các tính năng cốt lõi (prompt, remix, mẫu)
+- ✅ Chỉnh sửa Trực quan (Visual Edits)
+- ✅ Triển khai và xuất bản ứng dụng
+- ✅ Hosting miễn phí với tên miền phụ Lovable
+- ✅ Các tích hợp cơ bản
+- ✅ Hỗ trợ cộng đồng
 
-**💡 Note:** Check [Lovable's official pricing page](https://lovable.dev/pricing?via=promocode5) for current pricing and detailed feature comparison.
+**Hạn chế:**
+- ❌ Không thể chỉnh sửa mã trực tiếp (Code Mode chỉ xem)
+- ❌ Giới hạn tín dụng mỗi tháng (thay đổi)
+- ❌ Một số tính năng nâng cao có thể yêu cầu tín dụng
+
+**Tốt nhất cho:**
+- Học tập và thử nghiệm
+- Xây dựng dự án cá nhân
+- Kiểm thử ý tưởng
+- Xây dựng portfolio của bạn
 
 ---
 
-## 💰 Understanding Credits
+### Gói Trả phí (Paid Plans)
 
-### What Are Credits?
+**Những gì được bao gồm (Mọi thứ trong Gói Miễn phí, Cộng thêm):**
+- ✅ Chỉnh sửa mã trực tiếp trong Code Mode
+- ✅ Nhiều tín dụng hơn mỗi tháng
+- ✅ Hỗ trợ ưu tiên
+- ✅ Các tính năng nâng cao
+- ✅ Tên miền tùy chỉnh
+- ✅ Giới hạn sử dụng cao hơn
+- ✅ Các tích hợp nâng cao
 
-**Credits** are Lovable's currency for using AI features. Different actions cost different amounts of credits.
+**Tốt nhất cho:**
+- Phát triển chuyên nghiệp
+- Xây dựng dự án khách hàng
+- Nhu cầu tùy chỉnh nâng cao
+- Yêu cầu sử dụng cao hơn
 
-### Credit Costs
+**💡 Lưu ý:** Kiểm tra [trang giá cả chính thức của Lovable](https://lovable.dev/pricing?via=promocode5) để biết giá hiện tại và so sánh tính năng chi tiết.
 
-| Action | Cost | Notes |
+---
+
+## 💰 Hiểu về Tín dụng (Credits)
+
+### Tín dụng là gì?
+
+**Tín dụng** là đơn vị tiền tệ của Lovable để sử dụng các tính năng AI. Các hành động khác nhau tốn số lượng tín dụng khác nhau.
+
+### Chi phí Tín dụng
+
+| Hành động | Chi phí | Ghi chú |
 |-------|------|-------|
-| **Chat Mode message** | 1 credit | Per message/question |
-| **Agent Mode (simple)** | < 1 credit | Simple tasks cost less |
-| **Agent Mode (complex)** | 1-5+ credits | Complex tasks cost more |
-| **Code viewing** | Free | Viewing code costs nothing |
-| **Code editing** | Included in paid plans | Free plan: view only |
+| **Tin nhắn Chat Mode** | 1 tín dụng | Mỗi tin nhắn/câu hỏi |
+| **Agent Mode (đơn giản)** | < 1 tín dụng | Các tác vụ đơn giản tốn ít hơn |
+| **Agent Mode (phức tạp)** | 1-5+ tín dụng | Các tác vụ phức tạp tốn nhiều hơn |
+| **Xem mã** | Miễn phí | Xem mã không tốn phí |
+| **Chỉnh sửa mã** | Bao gồm trong gói trả phí | Gói miễn phí: chỉ xem |
 
-### How Credits Work
+### Cách Tín dụng Hoạt động
 
-- **Free plan:** You get a monthly credit allowance
-- **Paid plans:** Higher credit allowances
-- **Usage varies:** Simple tasks cost less, complex tasks cost more
-- **Credits reset:** Monthly allowance refreshes each month
+- **Gói miễn phí:** Bạn nhận được hạn mức tín dụng hàng tháng
+- **Gói trả phí:** Hạn mức tín dụng cao hơn
+- **Mức sử dụng thay đổi:** Các tác vụ đơn giản tốn ít hơn, tác vụ phức tạp tốn nhiều hơn
+- **Tín dụng đặt lại:** Hạn mức hàng tháng được làm mới mỗi tháng
 
-**💡 Beginner Tip:** Most simple tasks cost very little. You can build a lot with the free plan!
-
----
-
-## 🎯 What You Can Build on Free Plan
-
-### ✅ You CAN Build on Free:
-
-- **Full-stack applications** - Complete apps with frontend and backend
-- **User authentication** - Sign up, login, logout
-- **Databases** - Store and retrieve data
-- **Multiple pages** - As many pages as you need
-- **Beautiful designs** - Professional-looking interfaces
-- **Deploy and publish** - Make apps live on the internet
-- **Use templates** - Start from pre-built examples
-- **Remix projects** - Learn from others' work
-- **Add integrations** - Connect external services
-- **Everything with prompts** - Build anything using prompts
-
-### ❌ You CANNOT Do on Free:
-
-- **Edit code directly** - Code Mode is view-only
-- **Unlimited usage** - Monthly credit limits apply
-- **Some advanced features** - May require paid plan
-
-**💡 Key Point:** You can build **almost everything** using prompts on the free plan! Code editing is optional and mainly for advanced users.
+**💡 Mẹo cho Người mới bắt đầu:** Hầu hết các tác vụ đơn giản tốn rất ít. Bạn có thể xây dựng rất nhiều với gói miễn phí!
 
 ---
 
-## 📈 Monitoring Your Usage
+## 🎯 Những gì Bạn có thể Xây dựng trên Gói Miễn phí
 
-### How to Check Your Credits
+### ✅ Bạn CÓ THỂ Xây dựng trên Gói Miễn phí:
 
-1. **Go to your account settings**
-2. **Look for "Credits" or "Usage" section**
-3. **See your:**
-   - Current credit balance
-   - Monthly allowance
-   - Usage history
-   - When credits reset
+- **Ứng dụng full-stack** - Ứng dụng hoàn chỉnh với frontend và backend
+- **Xác thực người dùng** - Đăng ký, đăng nhập, đăng xuất
+- **Cơ sở dữ liệu** - Lưu trữ và truy xuất dữ liệu
+- **Nhiều trang** - Bao nhiêu trang tùy bạn cần
+- **Thiết kế đẹp** - Giao diện trông chuyên nghiệp
+- **Triển khai và xuất bản** - Đưa ứng dụng lên internet
+- **Sử dụng mẫu** - Bắt đầu từ các ví dụ dựng sẵn
+- **Remix dự án** - Học hỏi từ công việc của người khác
+- **Thêm tích hợp** - Kết nối các dịch vụ bên ngoài
+- **Mọi thứ với prompt** - Xây dựng bất cứ thứ gì bằng cách sử dụng prompt
 
-### Tips for Managing Credits
+### ❌ Bạn KHÔNG THỂ Làm trên Gói Miễn phí:
 
-**Save Credits:**
-- ✅ Use Chat Mode efficiently (plan before building)
-- ✅ Break complex tasks into smaller steps
-- ✅ Test locally before deploying
-- ✅ Use templates and remixes (saves building from scratch)
-- ✅ Review before implementing (use Chat Mode to plan)
+- **Chỉnh sửa mã trực tiếp** - Code Mode chỉ xem
+- **Sử dụng không giới hạn** - Áp dụng giới hạn tín dụng hàng tháng
+- **Một số tính năng nâng cao** - Có thể yêu cầu gói trả phí
 
-**Avoid Wasting Credits:**
-- ❌ Don't make the same request multiple times
-- ❌ Don't build features you'll delete
-- ❌ Don't use Agent Mode for simple questions (use Chat Mode)
-- ❌ Don't forget to test before asking for changes
-
-**💡 Beginner Tip:** Start with Chat Mode to plan, then use Agent Mode to build. This saves credits!
+**💡 Điểm Chính:** Bạn có thể xây dựng **hầu hết mọi thứ** bằng cách sử dụng prompt trên gói miễn phí! Chỉnh sửa mã là tùy chọn và chủ yếu dành cho người dùng nâng cao.
 
 ---
 
-## 🔒 Understanding Plan Limitations
+## 📈 Theo dõi Mức sử dụng của Bạn
 
-### Code Editing
+### Cách Kiểm tra Tín dụng của Bạn
 
-**Free Plan:**
-- ✅ Can view code
-- ✅ Can understand structure
-- ❌ Cannot edit code directly
+1. **Đi tới cài đặt tài khoản của bạn**
+2. **Tìm phần "Credits" hoặc "Usage"**
+3. **Xem:**
+   - Số dư tín dụng hiện tại
+   - Hạn mức hàng tháng
+   - Lịch sử sử dụng
+   - Khi nào tín dụng đặt lại
 
-**Paid Plan:**
-- ✅ Can view code
-- ✅ Can edit code directly
-- ✅ Full Code Mode access
+### Mẹo Quản lý Tín dụng
 
-**Workaround on Free Plan:**
-- Use prompts to make code changes
-- Ask Lovable to modify code
-- Works for almost everything!
+**Tiết kiệm Tín dụng:**
+- ✅ Sử dụng Chat Mode hiệu quả (lập kế hoạch trước khi xây dựng)
+- ✅ Chia nhỏ các tác vụ phức tạp thành các bước nhỏ hơn
+- ✅ Kiểm thử cục bộ trước khi triển khai
+- ✅ Sử dụng mẫu và remix (tiết kiệm việc xây dựng từ đầu)
+- ✅ Xem xét trước khi thực hiện (sử dụng Chat Mode để lập kế hoạch)
 
-### Usage Limits
+**Tránh Lãng phí Tín dụng:**
+- ❌ Đừng thực hiện cùng một yêu cầu nhiều lần
+- ❌ Đừng xây dựng các tính năng bạn sẽ xóa
+- ❌ Đừng sử dụng Agent Mode cho các câu hỏi đơn giản (sử dụng Chat Mode)
+- ❌ Đừng quên kiểm thử trước khi yêu cầu thay đổi
 
-**Free Plan:**
-- Monthly credit allowance
-- May have project limits
-- Basic support
-
-**Paid Plan:**
-- Higher credit allowance
-- More projects
-- Priority support
-
-### Advanced Features
-
-Some features may require:
-- Paid plan
-- Additional credits
-- Specific connectors
-
-**Always check:** If a feature doesn't work, it might be plan-related. Check the documentation or ask in Chat Mode.
+**💡 Mẹo cho Người mới bắt đầu:** Bắt đầu với Chat Mode để lập kế hoạch, sau đó sử dụng Agent Mode để xây dựng. Điều này tiết kiệm tín dụng!
 
 ---
 
-## 💡 Making the Most of Free Plan
+## 🔒 Hiểu về Giới hạn Gói
 
-### Strategy 1: Plan Before Building
+### Chỉnh sửa Mã
 
-1. **Use Chat Mode** to plan (1 credit)
-2. **Get a clear plan** from Lovable
-3. **Then use Agent Mode** to build (more efficient)
+**Gói Miễn phí:**
+- ✅ Có thể xem mã
+- ✅ Có thể hiểu cấu trúc
+- ❌ Không thể chỉnh sửa mã trực tiếp
 
-### Strategy 2: Use Templates and Remixes
+**Gói Trả phí:**
+- ✅ Có thể xem mã
+- ✅ Có thể chỉnh sửa mã trực tiếp
+- ✅ Truy cập Code Mode đầy đủ
 
-- **Start from templates** - Saves building from scratch
-- **Remix existing projects** - Learn and customize
-- **Saves credits** - Less building needed
+**Giải pháp thay thế trên Gói Miễn phí:**
+- Sử dụng prompt để thực hiện thay đổi mã
+- Yêu cầu Lovable sửa đổi mã
+- Hoạt động cho hầu hết mọi thứ!
 
-### Strategy 3: Iterate Efficiently
+### Giới hạn Sử dụng
 
-- **Test before asking for changes** - Make sure you need the change
-- **Be specific** - Reduces back-and-forth
-- **Use "ask questions" technique** - Gets it right the first time
+**Gói Miễn phí:**
+- Hạn mức tín dụng hàng tháng
+- Có thể có giới hạn dự án
+- Hỗ trợ cơ bản
 
-### Strategy 4: Build Incrementally
+**Gói Trả phí:**
+- Hạn mức tín dụng cao hơn
+- Nhiều dự án hơn
+- Hỗ trợ ưu tiên
 
-- **Start simple** - Basic features first
-- **Add complexity gradually** - One feature at a time
-- **Test as you go** - Catch issues early
+### Các Tính năng Nâng cao
 
----
+Một số tính năng có thể yêu cầu:
+- Gói trả phí
+- Tín dụng bổ sung
+- Các kết nối cụ thể
 
-## 🚀 When to Consider Upgrading
-
-Consider upgrading to a paid plan if:
-
-- ✅ You need to edit code directly
-- ✅ You're building client projects professionally
-- ✅ You need higher credit limits
-- ✅ You want priority support
-- ✅ You need advanced features
-- ✅ You're using Lovable heavily
-
-**💡 Beginner Tip:** Start with the free plan! You can always upgrade later when you need more features.
-
----
-
-## 📚 Official Resources
-
-For the most up-to-date pricing information:
-
-- **Official Pricing:** [lovable.dev/pricing](https://lovable.dev/pricing?via=promocode5)
-- **Plans & Credits Docs:** [docs.lovable.dev/introduction/plans-and-credits](https://docs.lovable.dev/introduction/plans-and-credits?via=promocode5)
-- **Support:** Contact Lovable support for plan questions
+**Luôn kiểm tra:** Nếu một tính năng không hoạt động, nó có thể liên quan đến gói. Kiểm tra tài liệu hoặc hỏi trong Chat Mode.
 
 ---
 
-## ✅ Quick Reference
+## 💡 Tận dụng Tối đa Gói Miễn phí
 
-### Free Plan Checklist
+### Chiến lược 1: Lập kế hoạch Trước khi Xây dựng
 
-- [ ] Can build full-stack apps ✅
-- [ ] Can use Chat Mode ✅
-- [ ] Can use Agent Mode ✅
-- [ ] Can view code ✅
-- [ ] Can deploy apps ✅
-- [ ] Cannot edit code directly ❌
-- [ ] Has credit limits ⚠️
+1. **Sử dụng Chat Mode** để lập kế hoạch (1 tín dụng)
+2. **Nhận một kế hoạch rõ ràng** từ Lovable
+3. **Sau đó sử dụng Agent Mode** để xây dựng (hiệu quả hơn)
 
-### Paid Plan Checklist
+### Chiến lược 2: Sử dụng Mẫu và Remix
 
-- [ ] Everything in free plan ✅
-- [ ] Can edit code directly ✅
-- [ ] Higher credit limits ✅
-- [ ] Priority support ✅
-- [ ] Advanced features ✅
+- **Bắt đầu từ mẫu** - Tiết kiệm việc xây dựng từ đầu
+- **Remix các dự án hiện có** - Học hỏi và tùy chỉnh
+- **Tiết kiệm tín dụng** - Cần xây dựng ít hơn
 
----
+### Chiến lược 3: Lặp lại Hiệu quả
 
-## 🤔 Common Questions
+- **Kiểm thử trước khi yêu cầu thay đổi** - Đảm bảo bạn cần thay đổi
+- **Cụ thể** - Giảm thiểu việc qua lại
+- **Sử dụng kỹ thuật "đặt câu hỏi"** - Làm đúng ngay lần đầu tiên
 
-### Q: Do I need a paid plan to build apps?
-**A:** No! You can build complete apps on the free plan using prompts.
+### Chiến lược 4: Xây dựng Dần dần
 
-### Q: How many credits do I get?
-**A:** Check your account settings or Lovable's pricing page for current limits.
-
-### Q: Can I build everything with prompts?
-**A:** Yes! Almost everything can be built with prompts. Code editing is optional.
-
-### Q: What happens if I run out of credits?
-**A:** You'll need to wait for the monthly reset or upgrade to a paid plan.
-
-### Q: Should I upgrade?
-**A:** Only if you need code editing or higher limits. Free plan works for most learners!
-
-### Q: Can I downgrade later?
-**A:** Yes, you can change plans anytime. Check Lovable's terms for details.
+- **Bắt đầu đơn giản** - Các tính năng cơ bản trước
+- **Thêm độ phức tạp dần dần** - Mỗi lần một tính năng
+- **Kiểm thử khi bạn làm** - Bắt lỗi sớm
 
 ---
 
-## 💡 Pro Tips
+## 🚀 Khi nào Nên Cân nhắc Nâng cấp
 
-1. **Start free** - Learn on the free plan first
-2. **Monitor usage** - Check credits regularly
-3. **Use efficiently** - Plan before building
-4. **Upgrade when needed** - Don't upgrade until you need paid features
-5. **Read the docs** - Official pricing is always most accurate
+Cân nhắc nâng cấp lên gói trả phí nếu:
+
+- ✅ Bạn cần chỉnh sửa mã trực tiếp
+- ✅ Bạn đang xây dựng dự án khách hàng một cách chuyên nghiệp
+- ✅ Bạn cần hạn mức tín dụng cao hơn
+- ✅ Bạn muốn hỗ trợ ưu tiên
+- ✅ Bạn cần các tính năng nâng cao
+- ✅ Bạn đang sử dụng Lovable nhiều
+
+**💡 Mẹo cho Người mới bắt đầu:** Bắt đầu với gói miễn phí! Bạn luôn có thể nâng cấp sau khi bạn cần nhiều tính năng hơn.
 
 ---
 
-**Remember:** The free plan is powerful! You can build amazing apps without paying. Only upgrade when you need specific paid features.
+## 📚 Tài nguyên Chính thức
+
+Để có thông tin giá cả cập nhật nhất:
+
+- **Giá cả Chính thức:** [lovable.dev/pricing](https://lovable.dev/pricing?via=promocode5)
+- **Tài liệu Gói & Tín dụng:** [docs.lovable.dev/introduction/plans-and-credits](https://docs.lovable.dev/introduction/plans-and-credits?via=promocode5)
+- **Hỗ trợ:** Liên hệ hỗ trợ Lovable cho các câu hỏi về gói
 
 ---
 
-*Last updated: December 2024*
+## ✅ Tham khảo Nhanh
 
+### Danh sách kiểm tra Gói Miễn phí
+
+- [ ] Có thể xây dựng ứng dụng full-stack ✅
+- [ ] Có thể sử dụng Chat Mode ✅
+- [ ] Có thể sử dụng Agent Mode ✅
+- [ ] Có thể xem mã ✅
+- [ ] Có thể triển khai ứng dụng ✅
+- [ ] Không thể chỉnh sửa mã trực tiếp ❌
+- [ ] Có giới hạn tín dụng ⚠️
+
+### Danh sách kiểm tra Gói Trả phí
+
+- [ ] Mọi thứ trong gói miễn phí ✅
+- [ ] Có thể chỉnh sửa mã trực tiếp ✅
+- [ ] Hạn mức tín dụng cao hơn ✅
+- [ ] Hỗ trợ ưu tiên ✅
+- [ ] Các tính năng nâng cao ✅
+
+---
+
+## 🤔 Các Câu hỏi Thường gặp
+
+### Q: Tôi có cần gói trả phí để xây dựng ứng dụng không?
+**A:** Không! Bạn có thể xây dựng các ứng dụng hoàn chỉnh trên gói miễn phí bằng cách sử dụng prompt.
+
+### Q: Tôi nhận được bao nhiêu tín dụng?
+**A:** Kiểm tra cài đặt tài khoản của bạn hoặc trang giá cả của Lovable để biết giới hạn hiện tại.
+
+### Q: Tôi có thể xây dựng mọi thứ bằng prompt không?
+**A:** Có! Hầu hết mọi thứ đều có thể được xây dựng bằng prompt. Chỉnh sửa mã là tùy chọn.
+
+### Q: Điều gì xảy ra nếu tôi hết tín dụng?
+**A:** Bạn sẽ cần đợi đến lần đặt lại hàng tháng hoặc nâng cấp lên gói trả phí.
+
+### Q: Tôi có nên nâng cấp không?
+**A:** Chỉ khi bạn cần chỉnh sửa mã hoặc giới hạn cao hơn. Gói miễn phí hoạt động cho hầu hết người học!
+
+### Q: Tôi có thể hạ cấp sau này không?
+**A:** Có, bạn có thể thay đổi gói bất cứ lúc nào. Kiểm tra điều khoản của Lovable để biết chi tiết.
+
+---
+
+## 💡 Mẹo Chuyên nghiệp
+
+1. **Bắt đầu miễn phí** - Học trên gói miễn phí trước
+2. **Theo dõi mức sử dụng** - Kiểm tra tín dụng thường xuyên
+3. **Sử dụng hiệu quả** - Lập kế hoạch trước khi xây dựng
+4. **Nâng cấp khi cần thiết** - Đừng nâng cấp cho đến khi bạn cần các tính năng trả phí
+5. **Đọc tài liệu** - Giá cả chính thức luôn chính xác nhất
+
+---
+
+**Hãy nhớ:** Gói miễn phí rất mạnh mẽ! Bạn có thể xây dựng các ứng dụng tuyệt vời mà không phải trả tiền. Chỉ nâng cấp khi bạn cần các tính năng trả phí cụ thể.
+
+---
+
+*Cập nhật lần cuối: Tháng 12 năm 2024*

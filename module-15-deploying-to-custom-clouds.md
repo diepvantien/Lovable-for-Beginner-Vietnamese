@@ -1,332 +1,331 @@
-# Module 15: Deploying to Custom Clouds
+# Module 15: Triển khai lên Đám mây Tùy chỉnh
 
-**Goal:** Understand deployment options beyond Lovable's built-in hosting
+**Mục tiêu:** Hiểu các tùy chọn triển khai ngoài hosting tích hợp sẵn của Lovable
 
-**Estimated Time:** 30-40 minutes
+**Thời gian ước tính:** 30-40 phút
 
-**Prerequisites:** Complete Modules 1-8 first
-
----
-
-## 🎯 What You'll Learn in This Module
-
-By the end of this module, you will:
-- Understand Lovable's built-in hosting
-- Know when to consider custom cloud deployment
-- Learn about alternative hosting platforms
-- Understand how to export your code
-- Know how to deploy to Vercel, Netlify, etc.
-- Understand migration considerations
+**Điều kiện tiên quyết:** Hoàn thành Module 1-8 trước
 
 ---
 
-## 📖 Lesson 1: Lovable's Built-in Hosting
+## 🎯 Bạn Sẽ Học Được Gì Trong Module Này
 
-### What Lovable Provides
-
-**Lovable's hosting includes:**
-- ✅ Automatic deployment
-- ✅ Free subdomain (yourproject.lovable.app)
-- ✅ HTTPS (secure connections)
-- ✅ CDN (fast global delivery)
-- ✅ Automatic updates
-- ✅ No configuration needed
-
-### When Lovable Hosting is Perfect
-
-**Use Lovable hosting when:**
-- ✅ You're learning and building
-- ✅ You want simplicity
-- ✅ Free subdomain is fine
-- ✅ You want automatic updates
-- ✅ You're building personal projects
-
-**💡 Beginner Tip:** Lovable's hosting is excellent for most projects! Only consider alternatives if you have specific needs.
+Vào cuối module này, bạn sẽ:
+- Hiểu về hosting tích hợp sẵn của Lovable
+- Biết khi nào nên xem xét triển khai đám mây tùy chỉnh
+- Tìm hiểu về các nền tảng hosting thay thế
+- Hiểu cách xuất mã của bạn
+- Biết cách triển khai lên Vercel, Netlify, v.v.
+- Hiểu các cân nhắc khi di chuyển
 
 ---
 
-## 📖 Lesson 2: When to Consider Custom Clouds
+## 📖 Bài học 1: Hosting Tích hợp sẵn của Lovable
 
-### Reasons to Use Custom Clouds
+### Những Gì Lovable Cung cấp
 
-**Consider custom deployment if you need:**
-- Custom domain requirements
-- Specific platform features
-- Integration with existing infrastructure
-- More control over deployment
-- Different pricing model
-- Team/organization requirements
+**Hosting của Lovable bao gồm:**
+- ✅ Triển khai tự động
+- ✅ Tên miền phụ miễn phí (yourproject.lovable.app)
+- ✅ HTTPS (kết nối an toàn)
+- ✅ CDN (phân phối toàn cầu nhanh chóng)
+- ✅ Cập nhật tự động
+- ✅ Không cần cấu hình
 
-### Popular Alternatives
+### Khi nào Hosting của Lovable là Hoàn hảo
+
+**Sử dụng hosting của Lovable khi:**
+- ✅ Bạn đang học và xây dựng
+- ✅ Bạn muốn sự đơn giản
+- ✅ Tên miền phụ miễn phí là ổn
+- ✅ Bạn muốn cập nhật tự động
+- ✅ Bạn đang xây dựng các dự án cá nhân
+
+**💡 Mẹo cho người mới bắt đầu:** Hosting của Lovable là tuyệt vời cho hầu hết các dự án! Chỉ xem xét các lựa chọn thay thế nếu bạn có nhu cầu cụ thể.
+
+---
+
+## 📖 Bài học 2: Khi nào nên Xem xét Đám mây Tùy chỉnh
+
+### Lý do Sử dụng Đám mây Tùy chỉnh
+
+**Xem xét triển khai tùy chỉnh nếu bạn cần:**
+- Yêu cầu tên miền tùy chỉnh
+- Các tính năng nền tảng cụ thể
+- Tích hợp với cơ sở hạ tầng hiện có
+- Kiểm soát nhiều hơn đối với việc triển khai
+- Mô hình định giá khác nhau
+- Yêu cầu của nhóm/tổ chức
+
+### Các Lựa chọn Thay thế Phổ biến
 
 #### Vercel
-- **Best for:** Next.js, React apps
-- **Features:** Automatic deployments, edge functions
-- **Pricing:** Free tier available
+- **Tốt nhất cho:** Ứng dụng Next.js, React
+- **Tính năng:** Triển khai tự động, edge functions
+- **Giá cả:** Có gói miễn phí
 
 #### Netlify
-- **Best for:** Static sites, JAMstack
-- **Features:** Forms, functions, split testing
-- **Pricing:** Free tier available
+- **Tốt nhất cho:** Trang web tĩnh, JAMstack
+- **Tính năng:** Form, functions, split testing
+- **Giá cả:** Có gói miễn phí
 
 #### AWS/Google Cloud/Azure
-- **Best for:** Enterprise, complex needs
-- **Features:** Full cloud infrastructure
-- **Pricing:** Pay-as-you-go
+- **Tốt nhất cho:** Doanh nghiệp, nhu cầu phức tạp
+- **Tính năng:** Cơ sở hạ tầng đám mây đầy đủ
+- **Giá cả:** Trả tiền theo mức sử dụng (Pay-as-you-go)
 
-**💡 Beginner Tip:** Most beginners don't need custom clouds. Lovable's hosting works great!
-
----
-
-## 📖 Lesson 3: Exporting Your Code
-
-### How to Get Your Code
-
-**Option 1: From GitHub**
-- If connected to GitHub, code is already there
-- Clone repository
-- Use the code anywhere
-
-**Option 2: Download from Lovable**
-- Go to project settings
-- Look for "Export" or "Download"
-- Download your code
-
-**Option 3: Use Code Mode**
-- View code in Code Mode
-- Copy files you need
-- (Requires paid plan for editing)
-
-### What You Get
-
-**Exported code includes:**
-- All source files
-- Configuration files
-- Dependencies list
-- Project structure
-
-**💡 Beginner Tip:** If you're connected to GitHub, your code is already exported there!
+**💡 Mẹo cho người mới bắt đầu:** Hầu hết người mới bắt đầu không cần đám mây tùy chỉnh. Hosting của Lovable hoạt động rất tốt!
 
 ---
 
-## 📖 Lesson 4: Deploying to Vercel
+## 📖 Bài học 3: Xuất Mã của Bạn
 
-### Why Vercel?
+### Cách Lấy Mã của Bạn
 
-**Vercel is great for:**
-- React/Next.js apps
-- Fast deployments
-- Automatic CI/CD
+**Tùy chọn 1: Từ GitHub**
+- Nếu đã kết nối với GitHub, mã đã ở đó
+- Clone kho lưu trữ
+- Sử dụng mã ở bất cứ đâu
+
+**Tùy chọn 2: Tải xuống từ Lovable**
+- Đi tới cài đặt dự án
+- Tìm "Export" hoặc "Download"
+- Tải xuống mã của bạn
+
+**Tùy chọn 3: Sử dụng Code Mode**
+- Xem mã trong Code Mode
+- Sao chép các tệp bạn cần
+- (Yêu cầu gói trả phí để chỉnh sửa)
+
+### Những Gì Bạn Nhận Được
+
+**Mã được xuất bao gồm:**
+- Tất cả các tệp nguồn
+- Các tệp cấu hình
+- Danh sách phụ thuộc (dependencies)
+- Cấu trúc dự án
+
+**💡 Mẹo cho người mới bắt đầu:** Nếu bạn đã kết nối với GitHub, mã của bạn đã được xuất ở đó!
+
+---
+
+## 📖 Bài học 4: Triển khai lên Vercel
+
+### Tại sao là Vercel?
+
+**Vercel rất tuyệt cho:**
+- Ứng dụng React/Next.js
+- Triển khai nhanh chóng
+- CI/CD tự động
 - Edge functions
-- Great developer experience
+- Trải nghiệm nhà phát triển tuyệt vời
 
-### How to Deploy
+### Cách Triển khai
 
-#### Step 1: Prepare Your Code
+#### Bước 1: Chuẩn bị Mã của Bạn
 
-1. **Connect to GitHub** (if not already)
-2. **Ensure code is pushed** to GitHub
-3. **Check that it builds** locally (optional)
+1. **Kết nối với GitHub** (nếu chưa)
+2. **Đảm bảo mã đã được push** lên GitHub
+3. **Kiểm tra xem nó có build được không** cục bộ (tùy chọn)
 
-#### Step 2: Deploy to Vercel
+#### Bước 2: Triển khai lên Vercel
 
-1. **Sign up at [vercel.com](https://vercel.com)**
-2. **Import from GitHub:**
-   - Click "Import Project"
-   - Select your repository
-   - Vercel detects settings
-3. **Configure:**
-   - Framework preset (if needed)
-   - Build settings
-   - Environment variables
-4. **Deploy:**
-   - Click "Deploy"
-   - Wait for build
-   - Get your URL!
+1. **Đăng ký tại [vercel.com](https://vercel.com)**
+2. **Nhập từ GitHub:**
+   - Nhấp "Import Project"
+   - Chọn kho lưu trữ của bạn
+   - Vercel phát hiện cài đặt
+3. **Cấu hình:**
+   - Cài đặt sẵn framework (nếu cần)
+   - Cài đặt build
+   - Biến môi trường
+4. **Triển khai:**
+   - Nhấp "Deploy"
+   - Đợi build
+   - Nhận URL của bạn!
 
-#### Step 3: Custom Domain (Optional)
+#### Bước 3: Tên miền Tùy chỉnh (Tùy chọn)
 
-1. **Add domain** in Vercel dashboard
-2. **Configure DNS** as instructed
-3. **Wait for propagation**
-4. **Your app is live!**
+1. **Thêm tên miền** trong bảng điều khiển Vercel
+2. **Cấu hình DNS** theo hướng dẫn
+3. **Đợi lan truyền**
+4. **Ứng dụng của bạn đã hoạt động!**
 
-**💡 Beginner Tip:** Vercel makes deployment easy! It auto-detects most settings.
+**💡 Mẹo cho người mới bắt đầu:** Vercel làm cho việc triển khai trở nên dễ dàng! Nó tự động phát hiện hầu hết các cài đặt.
 
 ---
 
-## 📖 Lesson 5: Deploying to Netlify
+## 📖 Bài học 5: Triển khai lên Netlify
 
-### Why Netlify?
+### Tại sao là Netlify?
 
-**Netlify is great for:**
-- Static sites
-- JAMstack apps
-- Forms and functions
+**Netlify rất tuyệt cho:**
+- Trang web tĩnh
+- Ứng dụng JAMstack
+- Form và functions
 - Split testing
-- Easy deployment
+- Triển khai dễ dàng
 
-### How to Deploy
+### Cách Triển khai
 
-#### Step 1: Prepare Your Code
+#### Bước 1: Chuẩn bị Mã của Bạn
 
-1. **Ensure code is in GitHub**
-2. **Check build settings**
-3. **Prepare environment variables** (if needed)
+1. **Đảm bảo mã ở trong GitHub**
+2. **Kiểm tra cài đặt build**
+3. **Chuẩn bị biến môi trường** (nếu cần)
 
-#### Step 2: Deploy to Netlify
+#### Bước 2: Triển khai lên Netlify
 
-1. **Sign up at [netlify.com](https://netlify.com)**
-2. **Import from GitHub:**
-   - Click "New site from Git"
-   - Connect GitHub
-   - Select repository
-3. **Configure:**
-   - Build command (if needed)
-   - Publish directory
-   - Environment variables
-4. **Deploy:**
-   - Click "Deploy site"
-   - Wait for build
-   - Get your URL!
+1. **Đăng ký tại [netlify.com](https://netlify.com)**
+2. **Nhập từ GitHub:**
+   - Nhấp "New site from Git"
+   - Kết nối GitHub
+   - Chọn kho lưu trữ
+3. **Cấu hình:**
+   - Lệnh build (nếu cần)
+   - Thư mục xuất bản (publish directory)
+   - Biến môi trường
+4. **Triển khai:**
+   - Nhấp "Deploy site"
+   - Đợi build
+   - Nhận URL của bạn!
 
-#### Step 3: Custom Domain
+#### Bước 3: Tên miền Tùy chỉnh
 
-1. **Add domain** in Netlify
-2. **Follow DNS instructions**
-3. **Enable HTTPS** (automatic)
-4. **Done!**
+1. **Thêm tên miền** trong Netlify
+2. **Làm theo hướng dẫn DNS**
+3. **Bật HTTPS** (tự động)
+4. **Xong!**
 
-**💡 Beginner Tip:** Netlify is very beginner-friendly with great documentation!
-
----
-
-## 📖 Lesson 6: Migration Considerations
-
-### What to Consider
-
-**Before migrating, think about:**
-- ✅ Why are you migrating?
-- ✅ What features do you need?
-- ✅ What will you lose/gain?
-- ✅ Is it worth the effort?
-
-### What You Might Lose
-
-**Lovable-specific features:**
-- Visual editing in Lovable
-- Some Lovable integrations
-- Lovable's update system
-- Easy re-deployment from Lovable
-
-### What You Might Gain
-
-**Custom platform features:**
-- Platform-specific tools
-- Different pricing
-- More control
-- Team features
-
-### Migration Process
-
-**If you decide to migrate:**
-
-1. **Export your code** (from GitHub or Lovable)
-2. **Set up new hosting** (Vercel, Netlify, etc.)
-3. **Configure environment variables**
-4. **Set up custom domain** (if needed)
-5. **Test thoroughly**
-6. **Update DNS** (if using custom domain)
-7. **Monitor** for issues
-
-**💡 Beginner Tip:** Most people don't need to migrate! Lovable's hosting is excellent. Only migrate if you have specific requirements.
+**💡 Mẹo cho người mới bắt đầu:** Netlify rất thân thiện với người mới bắt đầu với tài liệu tuyệt vời!
 
 ---
 
-## 🛠️ Hands-On Practice (Optional)
+## 📖 Bài học 6: Cân nhắc khi Di chuyển
 
-### Practice: Deploy to Vercel
+### Những Gì Cần Cân nhắc
 
-**Task:** Deploy a Lovable project to Vercel.
+**Trước khi di chuyển, hãy nghĩ về:**
+- ✅ Tại sao bạn lại di chuyển?
+- ✅ Bạn cần những tính năng gì?
+- ✅ Bạn sẽ mất/được gì?
+- ✅ Có đáng công sức không?
 
-**Steps:**
+### Những Gì Bạn Có thể Mất
 
-1. **Ensure GitHub connection:**
-   - Connect project to GitHub
-   - Verify code is synced
+**Các tính năng đặc thù của Lovable:**
+- Chỉnh sửa trực quan trong Lovable
+- Một số tích hợp của Lovable
+- Hệ thống cập nhật của Lovable
+- Triển khai lại dễ dàng từ Lovable
 
-2. **Sign up for Vercel:**
-   - Go to vercel.com
-   - Sign up with GitHub
+### Những Gì Bạn Có thể Nhận được
 
-3. **Import project:**
-   - Click "Import Project"
-   - Select your repository
-   - Configure settings
-   - Deploy
+**Các tính năng nền tảng tùy chỉnh:**
+- Các công cụ đặc thù của nền tảng
+- Định giá khác nhau
+- Kiểm soát nhiều hơn
+- Các tính năng nhóm
 
-4. **Test deployment:**
-   - Visit your Vercel URL
-   - Test all features
-   - Verify everything works
+### Quy trình Di chuyển
 
-5. **Add custom domain (optional):**
-   - Add your domain
-   - Configure DNS
-   - Wait for propagation
+**Nếu bạn quyết định di chuyển:**
 
-**What You Learned:**
-- ✅ How to export code
-- ✅ How to deploy to alternative platform
-- ✅ How to configure deployment
-- ✅ How to add custom domain
+1. **Xuất mã của bạn** (từ GitHub hoặc Lovable)
+2. **Thiết lập hosting mới** (Vercel, Netlify, v.v.)
+3. **Cấu hình biến môi trường**
+4. **Thiết lập tên miền tùy chỉnh** (nếu cần)
+5. **Kiểm thử kỹ lưỡng**
+6. **Cập nhật DNS** (nếu sử dụng tên miền tùy chỉnh)
+7. **Giám sát** các vấn đề
 
----
-
-## ✅ Module 15 Checklist
-
-Before completing the course, make sure you can:
-
-- [ ] Understand Lovable's hosting benefits
-- [ ] Know when to consider alternatives
-- [ ] Understand how to export code
-- [ ] Know how to deploy to Vercel/Netlify
-- [ ] Understand migration considerations
-- [ ] Know when to stay with Lovable hosting
+**💡 Mẹo cho người mới bắt đầu:** Hầu hết mọi người không cần phải di chuyển! Hosting của Lovable là tuyệt vời. Chỉ di chuyển nếu bạn có yêu cầu cụ thể.
 
 ---
 
-## 🤔 Common Questions (FAQ)
+## 🛠️ Thực hành (Tùy chọn)
 
-### Q: Should I use custom cloud or Lovable hosting?
-**A:** For most beginners, Lovable hosting is perfect! Only use custom clouds if you have specific needs.
+### Thực hành: Triển khai lên Vercel
 
-### Q: Can I use both?
-**A:** Yes! You can deploy to multiple platforms. Some people use Lovable for development and custom cloud for production.
+**Nhiệm vụ:** Triển khai một dự án Lovable lên Vercel.
 
-### Q: Will I lose my Lovable project if I deploy elsewhere?
-**A:** No! Your project stays in Lovable. You're just deploying a copy elsewhere.
+**Các bước:**
 
-### Q: Is it hard to migrate?
-**A:** It depends on your app's complexity. Simple apps are easy, complex apps with many integrations take more work.
+1. **Đảm bảo kết nối GitHub:**
+   - Kết nối dự án với GitHub
+   - Xác minh mã đã được đồng bộ
 
-### Q: Can I come back to Lovable hosting?
-**A:** Yes! Your project is always in Lovable. You can deploy from Lovable anytime.
+2. **Đăng ký Vercel:**
+   - Truy cập vercel.com
+   - Đăng ký bằng GitHub
+
+3. **Nhập dự án:**
+   - Nhấp "Import Project"
+   - Chọn kho lưu trữ của bạn
+   - Cấu hình cài đặt
+   - Triển khai
+
+4. **Kiểm thử triển khai:**
+   - Truy cập URL Vercel của bạn
+   - Kiểm thử tất cả các tính năng
+   - Xác minh mọi thứ hoạt động
+
+5. **Thêm tên miền tùy chỉnh (tùy chọn):**
+   - Thêm tên miền của bạn
+   - Cấu hình DNS
+   - Đợi lan truyền
+
+**Những Gì Bạn Đã Học:**
+- ✅ Cách xuất mã
+- ✅ Cách triển khai lên nền tảng thay thế
+- ✅ Cách cấu hình triển khai
+- ✅ Cách thêm tên miền tùy chỉnh
 
 ---
 
-## 🎯 What's Next?
+## ✅ Danh sách Kiểm tra Module 15
 
-Excellent! You now understand deployment options. For most projects, Lovable's hosting is perfect. Custom clouds are there when you need them.
+Trước khi hoàn thành khóa học, hãy đảm bảo bạn có thể:
 
-**You've completed all advanced modules!** 🎉
-
-**Next steps:**
-- Apply everything to Module 9's capstone project
-- Build your own projects
-- Continue learning and experimenting!
+- [ ] Hiểu lợi ích hosting của Lovable
+- [ ] Biết khi nào nên xem xét các lựa chọn thay thế
+- [ ] Hiểu cách xuất mã
+- [ ] Biết cách triển khai lên Vercel/Netlify
+- [ ] Hiểu các cân nhắc khi di chuyển
+- [ ] Biết khi nào nên ở lại với hosting của Lovable
 
 ---
 
-*Module 15 Complete! 🎉*
+## 🤔 Các Câu Hỏi Thường Gặp (FAQ)
 
+### Q: Tôi nên sử dụng đám mây tùy chỉnh hay hosting của Lovable?
+**A:** Đối với hầu hết người mới bắt đầu, hosting của Lovable là hoàn hảo! Chỉ sử dụng đám mây tùy chỉnh nếu bạn có nhu cầu cụ thể.
+
+### Q: Tôi có thể sử dụng cả hai không?
+**A:** Có! Bạn có thể triển khai lên nhiều nền tảng. Một số người sử dụng Lovable để phát triển và đám mây tùy chỉnh cho sản xuất.
+
+### Q: Tôi có bị mất dự án Lovable nếu tôi triển khai ở nơi khác không?
+**A:** Không! Dự án của bạn vẫn ở trong Lovable. Bạn chỉ đang triển khai một bản sao ở nơi khác.
+
+### Q: Di chuyển có khó không?
+**A:** Nó phụ thuộc vào độ phức tạp của ứng dụng của bạn. Các ứng dụng đơn giản thì dễ, các ứng dụng phức tạp với nhiều tích hợp tốn nhiều công sức hơn.
+
+### Q: Tôi có thể quay lại hosting của Lovable không?
+**A:** Có! Dự án của bạn luôn ở trong Lovable. Bạn có thể triển khai từ Lovable bất cứ lúc nào.
+
+---
+
+## 🎯 Tiếp theo là gì?
+
+Tuyệt vời! Bây giờ bạn đã hiểu các tùy chọn triển khai. Đối với hầu hết các dự án, hosting của Lovable là hoàn hảo. Các đám mây tùy chỉnh ở đó khi bạn cần chúng.
+
+**Bạn đã hoàn thành tất cả các module nâng cao!** 🎉
+
+**Các bước tiếp theo:**
+- Áp dụng mọi thứ vào dự án capstone của Module 9
+- Xây dựng các dự án của riêng bạn
+- Tiếp tục học hỏi và thử nghiệm!
+
+---
+
+*Module 15 Hoàn thành! 🎉*

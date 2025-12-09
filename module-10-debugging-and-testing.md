@@ -1,908 +1,925 @@
-# Module 10: Debugging and Testing Your Applications
+# Module 10: Gỡ lỗi và Kiểm thử Ứng dụng của Bạn
 
-**Goal:** Learn how to find and fix problems, and test your apps thoroughly
+**Mục tiêu:** Học cách tìm và sửa lỗi, và kiểm thử ứng dụng của bạn một cách kỹ lưỡng
 
-**Estimated Time:** 30-40 minutes
-
----
-
-## 🎯 What You'll Learn in This Module
-
-By the end of this module, you will:
-- Understand how to read and interpret error messages
-- Know how to use Chat Mode for debugging
-- Master using History to revert changes
-- Learn how to edit messages to undo mistakes
-- Understand testing strategies
-- Be able to debug common issues
-- Know how to test your apps thoroughly
+**Thời gian ước tính:** 30-40 phút
 
 ---
 
-## 📖 Lesson 1: Understanding Error Messages
+## 🎯 Bạn Sẽ Học Được Gì Trong Module Này
 
-### What Are Error Messages?
+Vào cuối module này, bạn sẽ:
+- Hiểu cách đọc và diễn giải các thông báo lỗi
+- Biết cách sử dụng Chat Mode để gỡ lỗi
+- Thành thạo việc sử dụng Lịch sử (History) để hoàn tác các thay đổi
+- Học cách chỉnh sửa tin nhắn để sửa chữa sai lầm
+- Hiểu các chiến lược kiểm thử
+- Có khả năng gỡ lỗi các vấn đề phổ biến
+- Biết cách kiểm thử ứng dụng của bạn một cách kỹ lưỡng
 
-**Error messages** are Lovable's way of telling you something went wrong. They might look scary at first, but they're actually helpful clues!
+---
 
-### Common Types of Errors
+## 📖 Bài học 1: Hiểu về Thông báo Lỗi
 
-#### 1. Build Errors
+### Thông báo Lỗi là gì?
 
-**What they look like:**
-- Red text or error indicators
-- Messages like "Failed to build" or "Error in code"
-- Line numbers or file names
+**Thông báo lỗi (Error messages)** là cách Lovable cho bạn biết có điều gì đó không ổn. Ban đầu chúng có vẻ đáng sợ, nhưng thực ra chúng là những manh mối hữu ích!
 
-**What they mean:**
-- Something in your code has a problem
-- Usually a syntax error or missing piece
+### Các Loại Lỗi Phổ Biến
 
-**Example:**
+#### 1. Lỗi Build (Build Errors)
+
+**Chúng trông như thế nào:**
+- Văn bản màu đỏ hoặc chỉ báo lỗi
+- Các thông báo như "Failed to build" (Không thể build) hoặc "Error in code" (Lỗi trong mã)
+- Số dòng hoặc tên tệp
+
+**Ý nghĩa của chúng:**
+- Có vấn đề gì đó trong mã của bạn
+- Thường là lỗi cú pháp hoặc thiếu một phần nào đó
+
+**Ví dụ:**
 ```
 Error: Missing closing bracket in Header.jsx line 15
 ```
 
-**What to do:**
-1. Read the error message carefully
-2. Note the file and line number
-3. Ask Chat Mode: "What does this error mean and how do I fix it?"
-4. Or ask Agent Mode: "Fix the error in Header.jsx line 15"
+**Cần làm gì:**
+1. Đọc kỹ thông báo lỗi
+2. Ghi lại tên tệp và số dòng
+3. Hỏi Chat Mode: "Lỗi này có nghĩa là gì và làm thế nào để sửa nó?"
+4. Hoặc yêu cầu Agent Mode: "Sửa lỗi trong Header.jsx dòng 15"
 
-#### 2. Runtime Errors
+#### 2. Lỗi Runtime (Runtime Errors)
 
-**What they look like:**
-- Errors that happen when your app is running
-- Messages in the browser console
-- Things not working as expected
+**Chúng trông như thế nào:**
+- Lỗi xảy ra khi ứng dụng của bạn đang chạy
+- Thông báo trong console của trình duyệt
+- Mọi thứ không hoạt động như mong đợi
 
-**What they mean:**
-- Your app built successfully, but something breaks when used
-- Usually a logic error or missing connection
+**Ý nghĩa của chúng:**
+- Ứng dụng của bạn đã build thành công, nhưng có gì đó bị hỏng khi sử dụng
+- Thường là lỗi logic hoặc thiếu kết nối
 
-**Example:**
+**Ví dụ:**
 ```
 Error: Cannot read property 'name' of undefined
 ```
 
-**What to do:**
-1. Check what action caused the error
-2. Use Chat Mode to investigate: "Why is this error happening?"
-3. Fix the underlying issue
+**Cần làm gì:**
+1. Kiểm tra hành động nào đã gây ra lỗi
+2. Sử dụng Chat Mode để điều tra: "Tại sao lỗi này lại xảy ra?"
+3. Sửa vấn đề cơ bản
 
-#### 3. Connection Errors
+#### 3. Lỗi Kết nối (Connection Errors)
 
-**What they look like:**
-- "Failed to connect" messages
-- API errors
-- Database connection issues
+**Chúng trông như thế nào:**
+- Thông báo "Failed to connect" (Không thể kết nối)
+- Lỗi API
+- Vấn đề kết nối cơ sở dữ liệu
 
-**What they mean:**
-- Can't reach a service (database, API, etc.)
-- Usually a configuration issue
+**Ý nghĩa của chúng:**
+- Không thể tiếp cận dịch vụ (cơ sở dữ liệu, API, v.v.)
+- Thường là vấn đề cấu hình
 
-**Example:**
+**Ví dụ:**
 ```
 Error: Failed to connect to database
 ```
 
-**What to do:**
-1. Check if backend is enabled
-2. Verify API keys are set up
-3. Ask Chat Mode: "Why can't I connect to the database?"
+**Cần làm gì:**
+1. Kiểm tra xem backend đã được bật chưa
+2. Xác minh các khóa API đã được thiết lập chưa
+3. Hỏi Chat Mode: "Tại sao tôi không thể kết nối với cơ sở dữ liệu?"
 
-### How to Read Error Messages
+### Cách Đọc Thông báo Lỗi
 
-**Step 1: Don't Panic!**
-- Errors are normal
-- They're clues, not failures
-- Every developer gets errors
+**Bước 1: Đừng Hoảng Loạn!**
+- Lỗi là bình thường
+- Chúng là manh mối, không phải thất bại
+- Mọi lập trình viên đều gặp lỗi
 
-**Step 2: Read the Whole Message**
-- Error messages usually tell you what's wrong
-- Look for file names and line numbers
-- Note any specific details
+**Bước 2: Đọc Toàn bộ Thông báo**
+- Thông báo lỗi thường cho bạn biết điều gì sai
+- Tìm tên tệp và số dòng
+- Ghi chú bất kỳ chi tiết cụ thể nào
 
-**Step 3: Understand the Context**
-- What were you doing when it happened?
-- What feature were you building?
-- What changed recently?
+**Bước 3: Hiểu Ngữ cảnh**
+- Bạn đang làm gì khi nó xảy ra?
+- Bạn đang xây dựng tính năng gì?
+- Gần đây có thay đổi gì không?
 
-**Step 4: Use Chat Mode**
+**Bước 4: Sử dụng Chat Mode**
 ```
-[Paste the error message]
+[Dán thông báo lỗi vào đây]
 
-Can you help me understand what this error means and how to fix it?
+Bạn có thể giúp tôi hiểu lỗi này có nghĩa là gì và cách sửa nó không?
 ```
 
-**💡 Beginner Tip:** Error messages are your friends! They tell you exactly what's wrong. Learn to read them, and debugging becomes much easier.
+**💡 Mẹo cho người mới bắt đầu:** Thông báo lỗi là bạn của bạn! Chúng cho bạn biết chính xác điều gì sai. Hãy học cách đọc chúng, và việc gỡ lỗi sẽ trở nên dễ dàng hơn nhiều.
 
 ---
 
-## 📖 Lesson 2: Using Chat Mode for Debugging
+## 📖 Bài học 2: Sử dụng Chat Mode để Gỡ lỗi
 
-### Why Chat Mode is Perfect for Debugging
+### Tại sao Chat Mode lại Hoàn hảo cho việc Gỡ lỗi
 
-Chat Mode is ideal for debugging because:
-- ✅ It investigates without making changes
-- ✅ It explains what's wrong
-- ✅ It suggests solutions
-- ✅ It helps you understand the problem
+Chat Mode rất lý tưởng để gỡ lỗi vì:
+- ✅ Nó điều tra mà không thực hiện thay đổi
+- ✅ Nó giải thích điều gì sai
+- ✅ Nó đề xuất các giải pháp
+- ✅ Nó giúp bạn hiểu vấn đề
 
-### Debugging Workflow with Chat Mode
+### Quy trình Gỡ lỗi với Chat Mode
 
-#### Step 1: Describe the Problem
+#### Bước 1: Mô tả Vấn đề
 
-**Be specific:**
+**Hãy cụ thể:**
 ```
-The contact form isn't submitting. When I click submit, nothing happens and I don't see any error message.
-```
-
-**Not helpful:**
-```
-It's broken
+Form liên hệ không gửi đi được. Khi tôi nhấp vào gửi, không có gì xảy ra và tôi không thấy thông báo lỗi nào.
 ```
 
-#### Step 2: Provide Context
-
-**Include relevant information:**
+**Không hữu ích:**
 ```
-I just added a contact form to my homepage. It has name, email, and message fields. When users click submit, nothing happens. The form validation seems to work (shows errors for empty fields), but submission doesn't work.
+Nó bị hỏng
 ```
 
-#### Step 3: Let Chat Mode Investigate
+#### Bước 2: Cung cấp Ngữ cảnh
 
-Chat Mode will:
-- Look at your code
-- Check the form setup
-- Identify the problem
-- Explain what's wrong
-
-#### Step 4: Get the Solution
-
-Chat Mode will:
-- Explain the issue
-- Suggest how to fix it
-- Provide a plan
-- You can then implement it
-
-### Example Debugging Conversation
-
-**You (Chat Mode):**
+**Bao gồm thông tin liên quan:**
 ```
-My login page isn't working. When I enter credentials and click login, nothing happens. Can you help me debug this?
+Tôi vừa thêm một form liên hệ vào trang chủ. Nó có các trường tên, email và tin nhắn. Khi người dùng nhấp vào gửi, không có gì xảy ra. Việc xác thực form có vẻ hoạt động (hiển thị lỗi cho các trường trống), nhưng việc gửi đi thì không hoạt động.
 ```
 
-**Chat Mode:**
-- Investigates the login code
-- Checks authentication setup
-- Looks for issues
+#### Bước 3: Để Chat Mode Điều tra
 
-**Chat Mode Response:**
+Chat Mode sẽ:
+- Xem xét mã của bạn
+- Kiểm tra thiết lập form
+- Xác định vấn đề
+- Giải thích điều gì sai
+
+#### Bước 4: Nhận Giải pháp
+
+Chat Mode sẽ:
+- Giải thích vấn đề
+- Đề xuất cách sửa nó
+- Cung cấp một kế hoạch
+- Sau đó bạn có thể thực hiện nó
+
+### Ví dụ về Cuộc hội thoại Gỡ lỗi
+
+**Bạn (Chat Mode):**
 ```
-I found the issue. The login form isn't connected to the authentication backend. The form submits, but there's no handler to process it. 
-
-Here's what needs to be fixed:
-1. Connect the form to the authentication service
-2. Add error handling for wrong credentials
-3. Add loading state during login
-4. Redirect after successful login
-
-Would you like me to implement this fix?
-```
-
-**You:**
-```
-Yes, please implement the fix
+Trang đăng nhập của tôi không hoạt động. Khi tôi nhập thông tin xác thực và nhấp vào đăng nhập, không có gì xảy ra. Bạn có thể giúp tôi gỡ lỗi này không?
 ```
 
 **Chat Mode:**
-- Provides plan or switches to Agent Mode
-- Fixes the issue
+- Điều tra mã đăng nhập
+- Kiểm tra thiết lập xác thực
+- Tìm kiếm các vấn đề
 
-### Advanced Debugging with Chat Mode
-
-#### Debugging Complex Issues
-
-**Example:**
+**Phản hồi của Chat Mode:**
 ```
-My task list isn't showing tasks. I can see tasks in the database, but they're not displaying on the page. Can you investigate why?
-```
+Tôi đã tìm thấy vấn đề. Form đăng nhập không được kết nối với backend xác thực. Form gửi đi, nhưng không có trình xử lý nào để xử lý nó.
 
-**Chat Mode will:**
-- Check the database query
-- Check the display component
-- Check data flow
-- Identify where the problem is
+Đây là những gì cần phải sửa:
+1. Kết nối form với dịch vụ xác thực
+2. Thêm xử lý lỗi cho thông tin xác thực sai
+3. Thêm trạng thái đang tải trong khi đăng nhập
+4. Chuyển hướng sau khi đăng nhập thành công
 
-#### Debugging Performance Issues
-
-**Example:**
-```
-My page is loading very slowly. Can you help me identify what's causing the slowdown?
+Bạn có muốn tôi thực hiện sửa lỗi này không?
 ```
 
-**Chat Mode will:**
-- Check for large images
-- Look for inefficient code
-- Suggest optimizations
-
-#### Debugging Design Issues
-
-**Example:**
+**Bạn:**
 ```
-On mobile, the navigation menu overlaps the content. Can you help me fix the responsive design?
+Vâng, hãy thực hiện sửa lỗi
 ```
 
-**Chat Mode will:**
-- Check CSS and layout
-- Identify responsive issues
-- Suggest fixes
+**Chat Mode:**
+- Cung cấp kế hoạch hoặc chuyển sang Agent Mode
+- Sửa vấn đề
 
-**💡 Beginner Tip:** Chat Mode is like having a debugging partner. Use it liberally when things don't work!
+### Gỡ lỗi Nâng cao với Chat Mode
+
+#### Gỡ lỗi các Vấn đề Phức tạp
+
+**Ví dụ:**
+```
+Danh sách công việc của tôi không hiển thị các công việc. Tôi có thể thấy các công việc trong cơ sở dữ liệu, nhưng chúng không hiển thị trên trang. Bạn có thể điều tra tại sao không?
+```
+
+**Chat Mode sẽ:**
+- Kiểm tra truy vấn cơ sở dữ liệu
+- Kiểm tra component hiển thị
+- Kiểm tra luồng dữ liệu
+- Xác định vấn đề nằm ở đâu
+
+#### Gỡ lỗi Vấn đề Hiệu suất
+
+**Ví dụ:**
+```
+Trang của tôi tải rất chậm. Bạn có thể giúp tôi xác định nguyên nhân gây chậm không?
+```
+
+**Chat Mode sẽ:**
+- Kiểm tra các hình ảnh lớn
+- Tìm kiếm mã không hiệu quả
+- Đề xuất tối ưu hóa
+
+#### Gỡ lỗi Vấn đề Thiết kế
+
+**Ví dụ:**
+```
+Trên thiết bị di động, menu điều hướng bị chồng lên nội dung. Bạn có thể giúp tôi sửa thiết kế responsive không?
+```
+
+**Chat Mode sẽ:**
+- Kiểm tra CSS và bố cục
+- Xác định các vấn đề responsive
+- Đề xuất các bản sửa lỗi
+
+**💡 Mẹo cho người mới bắt đầu:** Chat Mode giống như một đối tác gỡ lỗi. Hãy sử dụng nó thoải mái khi mọi thứ không hoạt động!
 
 ---
 
-## 📖 Lesson 3: Using History to Revert Changes
+## 📖 Bài học 3: Sử dụng Lịch sử (History) để Hoàn tác Thay đổi
 
-### What is History?
+### Lịch sử là gì?
 
-**History** is a record of all changes made to your project. It's like a time machine - you can go back to any previous version!
+**Lịch sử (History)** là bản ghi của tất cả các thay đổi được thực hiện đối với dự án của bạn. Nó giống như một cỗ máy thời gian - bạn có thể quay lại bất kỳ phiên bản nào trước đó!
 
-### Why History is Important
+### Tại sao Lịch sử lại Quan trọng
 
-- ✅ **Safety net** - Undo mistakes easily
-- ✅ **Experiment freely** - Try things without fear
-- ✅ **Compare versions** - See what changed
-- ✅ **Recover work** - Get back to a working state
+- ✅ **Lưới an toàn** - Hoàn tác sai lầm dễ dàng
+- ✅ **Thử nghiệm tự do** - Thử mọi thứ mà không sợ hãi
+- ✅ **So sánh các phiên bản** - Xem những gì đã thay đổi
+- ✅ **Khôi phục công việc** - Quay lại trạng thái hoạt động tốt
 
-### How to Access History
+### Cách Truy cập Lịch sử
 
-#### Step 1: Find History
+#### Bước 1: Tìm Lịch sử
 
-1. Look for **"History"** or **"Version History"** in your project
-2. Usually in:
-   - Top menu
-   - Sidebar
-   - Project settings
-   - Or ask Lovable: "Show me the project history"
+1. Tìm **"History"** hoặc **"Version History"** trong dự án của bạn
+2. Thường ở:
+   - Menu trên cùng
+   - Thanh bên
+   - Cài đặt dự án
+   - Hoặc hỏi Lovable: "Show me the project history" (Cho tôi xem lịch sử dự án)
 
-#### Step 2: View History
+#### Bước 2: Xem Lịch sử
 
-You'll see:
-- **Timeline** - Changes listed chronologically
-- **Descriptions** - What was changed in each version
-- **Timestamps** - When changes were made
-- **Preview** - See what each version looked like
+Bạn sẽ thấy:
+- **Dòng thời gian (Timeline)** - Các thay đổi được liệt kê theo trình tự thời gian
+- **Mô tả** - Những gì đã thay đổi trong mỗi phiên bản
+- **Dấu thời gian** - Khi nào các thay đổi được thực hiện
+- **Xem trước** - Xem mỗi phiên bản trông như thế nào
 
-#### Step 3: Understand the Timeline
+#### Bước 3: Hiểu Dòng thời gian
 
-**Most recent at top:**
-- Latest changes first
-- Older changes below
-- Easy to see progression
+**Gần đây nhất ở trên cùng:**
+- Các thay đổi mới nhất trước
+- Các thay đổi cũ hơn ở dưới
+- Dễ dàng xem sự tiến triển
 
-### How to Revert to a Previous Version
+### Cách Hoàn tác về Phiên bản Trước
 
-#### Method 1: Revert from History
+#### Phương pháp 1: Hoàn tác từ Lịch sử
 
-1. **Open History**
-2. **Find the version** you want to go back to
-3. **Preview it** - Click to see what it looked like
-4. **Click "Revert"** or "Restore"
-5. **Confirm** - You'll be asked to confirm
-6. **Your project reverts** - Goes back to that version
+1. **Mở Lịch sử**
+2. **Tìm phiên bản** bạn muốn quay lại
+3. **Xem trước nó** - Nhấp để xem nó trông như thế nào
+4. **Nhấp "Revert"** hoặc "Restore"
+5. **Xác nhận** - Bạn sẽ được yêu cầu xác nhận
+6. **Dự án của bạn hoàn tác** - Quay lại phiên bản đó
 
-#### Method 2: Ask to Revert
+#### Phương pháp 2: Yêu cầu Hoàn tác
 
 ```
 Revert to the version before I added the navigation menu
+(Hoàn tác về phiên bản trước khi tôi thêm menu điều hướng)
 ```
 
-or
+hoặc
 
 ```
 Go back to yesterday's version
+(Quay lại phiên bản ngày hôm qua)
 ```
 
-#### Method 3: Revert Specific Changes
+#### Phương pháp 3: Hoàn tác Các thay đổi Cụ thể
 
 ```
 Undo the last change I made
+(Hoàn tác thay đổi cuối cùng tôi đã thực hiện)
 ```
 
-or
+hoặc
 
 ```
 Remove the feature I just added
+(Xóa tính năng tôi vừa thêm)
 ```
 
-### Example Workflow: Make Mistake → Revert → Iterate
+### Ví dụ Quy trình: Mắc lỗi → Hoàn tác → Lặp lại
 
-**Scenario:** You're building a homepage and make a change that breaks the layout.
+**Kịch bản:** Bạn đang xây dựng trang chủ và thực hiện một thay đổi làm hỏng bố cục.
 
-#### Step 1: Make a Change
+#### Bước 1: Thực hiện Thay đổi
 
-You ask:
+Bạn yêu cầu:
 ```
 Change the homepage layout to a three-column grid
+(Thay đổi bố cục trang chủ thành lưới ba cột)
 ```
 
-**Result:** The layout breaks - columns are misaligned, content overlaps.
+**Kết quả:** Bố cục bị hỏng - các cột bị lệch, nội dung chồng chéo.
 
-#### Step 2: Identify the Problem
+#### Bước 2: Xác định Vấn đề
 
-You notice:
-- Layout looks wrong
-- Content is overlapping
-- Mobile view is broken
+Bạn nhận thấy:
+- Bố cục trông sai
+- Nội dung bị chồng chéo
+- Chế độ xem di động bị hỏng
 
-#### Step 3: Use Chat Mode to Understand
+#### Bước 3: Sử dụng Chat Mode để Hiểu
 
-**You (Chat Mode):**
+**Bạn (Chat Mode):**
 ```
 The homepage layout I just changed looks broken. Can you help me understand what went wrong?
+(Bố cục trang chủ tôi vừa thay đổi trông bị hỏng. Bạn có thể giúp tôi hiểu điều gì đã sai không?)
 ```
 
 **Chat Mode:**
-- Explains the issue
-- Suggests the layout needs adjustment
-- Recommends reverting and trying a different approach
+- Giải thích vấn đề
+- Đề xuất bố cục cần điều chỉnh
+- Khuyên nên hoàn tác và thử một cách tiếp cận khác
 
-#### Step 4: Revert the Change
+#### Bước 4: Hoàn tác Thay đổi
 
-**Option A: Use History**
-1. Go to History
-2. Find version before the grid change
-3. Click "Revert"
-4. Project goes back to working state
+**Tùy chọn A: Sử dụng Lịch sử**
+1. Đi tới Lịch sử
+2. Tìm phiên bản trước khi thay đổi lưới
+3. Nhấp "Revert"
+4. Dự án quay lại trạng thái hoạt động tốt
 
-**Option B: Ask to Revert**
+**Tùy chọn B: Yêu cầu Hoàn tác**
 ```
 Revert the last change - go back to before I changed the layout to three columns
+(Hoàn tác thay đổi cuối cùng - quay lại trước khi tôi thay đổi bố cục thành ba cột)
 ```
 
-#### Step 5: Try a Different Approach
+#### Bước 5: Thử một Cách tiếp cận Khác
 
-**You:**
+**Bạn:**
 ```
 The three-column grid didn't work. Let me try a different approach. Create a two-column layout with the main content on the left and sidebar on the right, but make sure it's responsive.
+(Lưới ba cột không hoạt động. Hãy để tôi thử một cách tiếp cận khác. Tạo bố cục hai cột với nội dung chính bên trái và thanh bên bên phải, nhưng hãy đảm bảo nó responsive.)
 ```
 
-**Result:** Better layout that works!
+**Kết quả:** Bố cục tốt hơn và hoạt động!
 
-#### Step 6: Iterate and Improve
+#### Bước 6: Lặp lại và Cải thiện
 
-**You:**
+**Bạn:**
 ```
 The two-column layout works, but can you add more spacing and make the sidebar slightly narrower?
+(Bố cục hai cột hoạt động, nhưng bạn có thể thêm khoảng cách và làm cho thanh bên hẹp hơn một chút không?)
 ```
 
-**Result:** Perfect layout!
+**Kết quả:** Bố cục hoàn hảo!
 
-**What You Learned:**
-- ✅ Made a mistake (that's okay!)
-- ✅ Identified the problem
-- ✅ Reverted safely
-- ✅ Tried a better approach
-- ✅ Iterated to perfection
+**Những Gì Bạn Đã Học:**
+- ✅ Đã mắc lỗi (điều đó không sao cả!)
+- ✅ Đã xác định vấn đề
+- ✅ Đã hoàn tác an toàn
+- ✅ Đã thử một cách tiếp cận tốt hơn
+- ✅ Đã lặp lại để hoàn thiện
 
-**💡 Beginner Tip:** Reverting is not failure - it's learning! Every developer reverts changes regularly.
+**💡 Mẹo cho người mới bắt đầu:** Hoàn tác không phải là thất bại - đó là học hỏi! Mọi lập trình viên đều hoàn tác các thay đổi thường xuyên.
 
 ---
 
-## 📖 Lesson 4: Editing Messages to Undo Mistakes
+## 📖 Bài học 4: Chỉnh sửa Tin nhắn để Sửa chữa Sai lầm
 
-### What is Message Editing?
+### Chỉnh sửa Tin nhắn là gì?
 
-**Message editing** lets you modify or delete previous messages to change what Lovable did.
+**Chỉnh sửa tin nhắn** cho phép bạn sửa đổi hoặc xóa các tin nhắn trước đó để thay đổi những gì Lovable đã làm.
 
-### When to Edit Messages
+### Khi nào nên Chỉnh sửa Tin nhắn
 
-Edit messages when:
-- ✅ You asked for something you don't want
-- ✅ You want to refine a previous request
-- ✅ You made a mistake in your prompt
-- ✅ You want to try a different approach
+Chỉnh sửa tin nhắn khi:
+- ✅ Bạn đã yêu cầu điều gì đó mà bạn không muốn
+- ✅ Bạn muốn tinh chỉnh một yêu cầu trước đó
+- ✅ Bạn đã mắc lỗi trong prompt của mình
+- ✅ Bạn muốn thử một cách tiếp cận khác
 
-### How to Edit Messages
+### Cách Chỉnh sửa Tin nhắn
 
-#### Step 1: Find the Message
+#### Bước 1: Tìm Tin nhắn
 
-1. **Look at your message history** - Usually visible in the chat/input area
-2. **Find the message** that made the change you want to undo
-3. **Look for edit option** - Usually an edit icon or button
+1. **Xem lịch sử tin nhắn của bạn** - Thường hiển thị trong khu vực chat/nhập liệu
+2. **Tìm tin nhắn** đã thực hiện thay đổi mà bạn muốn hoàn tác
+3. **Tìm tùy chọn chỉnh sửa** - Thường là biểu tượng chỉnh sửa hoặc nút
 
-#### Step 2: Edit the Message
+#### Bước 2: Chỉnh sửa Tin nhắn
 
-**Option A: Modify the Message**
-- Click edit
-- Change the text
-- Save
-- Lovable will adjust based on the new message
+**Tùy chọn A: Sửa đổi Tin nhắn**
+- Nhấp chỉnh sửa
+- Thay đổi văn bản
+- Lưu
+- Lovable sẽ điều chỉnh dựa trên tin nhắn mới
 
-**Option B: Delete the Message**
-- Click delete
-- Remove the message
-- Lovable will undo that change
+**Tùy chọn B: Xóa Tin nhắn**
+- Nhấp xóa
+- Xóa tin nhắn
+- Lovable sẽ hoàn tác thay đổi đó
 
-#### Step 3: See the Result
+#### Bước 3: Xem Kết quả
 
-- Changes update automatically
-- Your project adjusts
-- You can continue from there
+- Các thay đổi cập nhật tự động
+- Dự án của bạn điều chỉnh
+- Bạn có thể tiếp tục từ đó
 
-### Example: Editing to Fix a Mistake
+### Ví dụ: Chỉnh sửa để Sửa lỗi
 
-**Original Message:**
+**Tin nhắn Gốc:**
 ```
 Change all buttons to red
+(Thay đổi tất cả các nút thành màu đỏ)
 ```
 
-**Result:** All buttons are now red, but you realize you only wanted one button red.
+**Kết quả:** Tất cả các nút bây giờ đều màu đỏ, nhưng bạn nhận ra bạn chỉ muốn một nút màu đỏ.
 
-**Fix by Editing:**
-1. **Find the message** "Change all buttons to red"
-2. **Edit it to:**
+**Sửa bằng cách Chỉnh sửa:**
+1. **Tìm tin nhắn** "Change all buttons to red"
+2. **Chỉnh sửa nó thành:**
    ```
    Change only the "Submit" button to red, keep all other buttons blue
+   (Chỉ thay đổi nút "Gửi" thành màu đỏ, giữ tất cả các nút khác màu xanh)
    ```
-3. **Save** - Lovable updates accordingly
+3. **Lưu** - Lovable cập nhật tương ứng
 
-### Example: Refining a Request
+### Ví dụ: Tinh chỉnh Yêu cầu
 
-**Original Message:**
+**Tin nhắn Gốc:**
 ```
 Add a contact form
+(Thêm một form liên hệ)
 ```
 
-**Later, you realize you want more:**
-1. **Find the message** "Add a contact form"
-2. **Edit it to:**
+**Sau đó, bạn nhận ra bạn muốn nhiều hơn:**
+1. **Tìm tin nhắn** "Add a contact form"
+2. **Chỉnh sửa nó thành:**
    ```
    Add a contact form with name, email, phone, and message fields. Include validation and a success message.
+   (Thêm một form liên hệ với các trường tên, email, điện thoại và tin nhắn. Bao gồm xác thực và thông báo thành công.)
    ```
-3. **Save** - Lovable enhances the form
+3. **Lưu** - Lovable cải thiện form
 
-**💡 Beginner Tip:** Don't be afraid to edit messages! It's a powerful way to refine and fix things.
-
----
-
-## 📖 Lesson 5: Testing Strategies
-
-### Why Testing Matters
-
-**Testing** ensures your app:
-- ✅ Works as expected
-- ✅ Doesn't break
-- ✅ Provides good user experience
-- ✅ Is ready for users
-
-### When to Test
-
-**Test:**
-- ✅ After building a new feature
-- ✅ After making changes
-- ✅ Before deploying
-- ✅ When something seems wrong
-- ✅ Regularly throughout development
-
-### What to Test
-
-#### 1. Functionality Testing
-
-**Does it work?**
-- ✅ All buttons work
-- ✅ Forms submit correctly
-- ✅ Links navigate properly
-- ✅ Features function as intended
-
-**How to test:**
-- Click everything
-- Fill out all forms
-- Try all interactions
-- Test edge cases
-
-#### 2. Visual Testing
-
-**Does it look right?**
-- ✅ Layout is correct
-- ✅ Colors are right
-- ✅ Spacing is good
-- ✅ Text is readable
-
-**How to test:**
-- View on different screen sizes
-- Check all pages
-- Verify images load
-- Test on different browsers
-
-#### 3. User Flow Testing
-
-**Can users complete tasks?**
-- ✅ Sign up works
-- ✅ Login works
-- ✅ Can create content
-- ✅ Can navigate easily
-
-**How to test:**
-- Go through complete user journeys
-- Test as a new user
-- Test as a logged-in user
-- Try different paths
-
-#### 4. Error Testing
-
-**What happens when things go wrong?**
-- ✅ Error messages are helpful
-- ✅ Forms validate correctly
-- ✅ Invalid inputs are handled
-- ✅ App doesn't crash
-
-**How to test:**
-- Submit empty forms
-- Enter invalid data
-- Try to break things
-- Test error scenarios
-
-### Testing Checklist
-
-**Before deploying, test:**
-
-**Functionality:**
-- [ ] All buttons work
-- [ ] All forms submit
-- [ ] All links work
-- [ ] Navigation works
-- [ ] Features function correctly
-
-**Visual:**
-- [ ] Looks good on desktop
-- [ ] Looks good on mobile
-- [ ] Looks good on tablet
-- [ ] Colors are correct
-- [ ] Text is readable
-
-**User Experience:**
-- [ ] Easy to use
-- [ ] Clear instructions
-- [ ] Helpful error messages
-- [ ] Fast loading
-- [ ] Smooth interactions
-
-**Security:**
-- [ ] Authentication works
-- [ ] Users can only access their data
-- [ ] Forms are secure
-- [ ] No sensitive data exposed
-
-**💡 Beginner Tip:** Test as you build! Don't wait until the end. Catch issues early when they're easier to fix.
+**💡 Mẹo cho người mới bắt đầu:** Đừng ngại chỉnh sửa tin nhắn! Đó là một cách mạnh mẽ để tinh chỉnh và sửa chữa mọi thứ.
 
 ---
 
-## 📖 Lesson 6: Common Debugging Scenarios
+## 📖 Bài học 5: Chiến lược Kiểm thử
 
-### Scenario 1: Feature Not Working
+### Tại sao Kiểm thử lại Quan trọng
 
-**Problem:** You added a feature, but it doesn't work.
+**Kiểm thử** đảm bảo ứng dụng của bạn:
+- ✅ Hoạt động như mong đợi
+- ✅ Không bị lỗi
+- ✅ Cung cấp trải nghiệm người dùng tốt
+- ✅ Sẵn sàng cho người dùng
 
-**Debugging Steps:**
+### Khi nào nên Kiểm thử
 
-1. **Check if it was built:**
-   - Is the code there?
-   - Are the files created?
-   - Use Chat Mode: "Did the feature get added correctly?"
+**Kiểm thử:**
+- ✅ Sau khi xây dựng một tính năng mới
+- ✅ Sau khi thực hiện thay đổi
+- ✅ Trước khi triển khai
+- ✅ Khi có điều gì đó có vẻ sai
+- ✅ Thường xuyên trong suốt quá trình phát triển
 
-2. **Check for errors:**
-   - Look for error messages
-   - Check browser console
-   - Ask Chat Mode: "Are there any errors in this feature?"
+### Kiểm thử Cái gì
 
-3. **Test the feature:**
-   - Try using it
-   - See what happens
-   - Note any error messages
+#### 1. Kiểm thử Chức năng (Functionality Testing)
 
-4. **Fix the issue:**
-   - Use Chat Mode to understand the problem
-   - Use Agent Mode to fix it
-   - Test again
+**Nó có hoạt động không?**
+- ✅ Tất cả các nút đều hoạt động
+- ✅ Các form gửi đi chính xác
+- ✅ Các liên kết điều hướng đúng
+- ✅ Các tính năng hoạt động như dự định
 
-### Scenario 2: Something Broke After a Change
+**Cách kiểm thử:**
+- Nhấp vào mọi thứ
+- Điền vào tất cả các form
+- Thử tất cả các tương tác
+- Kiểm thử các trường hợp biên (edge cases)
 
-**Problem:** Everything worked, you made a change, now something is broken.
+#### 2. Kiểm thử Trực quan (Visual Testing)
 
-**Debugging Steps:**
+**Nó trông có đúng không?**
+- ✅ Bố cục chính xác
+- ✅ Màu sắc đúng
+- ✅ Khoảng cách tốt
+- ✅ Văn bản dễ đọc
 
-1. **Identify what changed:**
-   - Check History
-   - See what you modified
-   - Use Chat Mode: "What did I change that might have broken this?"
+**Cách kiểm thử:**
+- Xem trên các kích thước màn hình khác nhau
+- Kiểm tra tất cả các trang
+- Xác minh hình ảnh tải được
+- Kiểm thử trên các trình duyệt khác nhau
 
-2. **Revert if needed:**
-   - Go back to working version
-   - Or revert just the problematic change
+#### 3. Kiểm thử Luồng Người dùng (User Flow Testing)
 
-3. **Try a different approach:**
-   - Make the change differently
-   - Break it into smaller steps
-   - Test as you go
+**Người dùng có thể hoàn thành các tác vụ không?**
+- ✅ Đăng ký hoạt động
+- ✅ Đăng nhập hoạt động
+- ✅ Có thể tạo nội dung
+- ✅ Có thể điều hướng dễ dàng
 
-### Scenario 3: Data Not Saving
+**Cách kiểm thử:**
+- Đi qua các hành trình người dùng hoàn chỉnh
+- Kiểm thử như một người dùng mới
+- Kiểm thử như một người dùng đã đăng nhập
+- Thử các đường dẫn khác nhau
 
-**Problem:** Users can submit forms, but data isn't being saved.
+#### 4. Kiểm thử Lỗi (Error Testing)
 
-**Debugging Steps:**
+**Điều gì xảy ra khi mọi thứ đi sai hướng?**
+- ✅ Thông báo lỗi hữu ích
+- ✅ Các form xác thực chính xác
+- ✅ Đầu vào không hợp lệ được xử lý
+- ✅ Ứng dụng không bị crash
 
-1. **Check backend:**
-   - Is Lovable Cloud enabled?
-   - Is database set up?
-   - Ask Chat Mode: "Is the database configured correctly?"
+**Cách kiểm thử:**
+- Gửi các form trống
+- Nhập dữ liệu không hợp lệ
+- Cố gắng làm hỏng mọi thứ
+- Kiểm thử các kịch bản lỗi
 
-2. **Check form connection:**
-   - Is form connected to backend?
-   - Are fields mapped correctly?
-   - Use Chat Mode: "Is the contact form saving to the database?"
+### Danh sách Kiểm tra (Checklist) Kiểm thử
 
-3. **Check database:**
-   - Can you see data in database?
-   - Are fields correct?
-   - Test manually
+**Trước khi triển khai, hãy kiểm thử:**
 
-4. **Fix the connection:**
-   - Reconnect form to database
-   - Verify field mapping
-   - Test again
+**Chức năng:**
+- [ ] Tất cả các nút đều hoạt động
+- [ ] Tất cả các form đều gửi được
+- [ ] Tất cả các liên kết đều hoạt động
+- [ ] Điều hướng hoạt động
+- [ ] Các tính năng hoạt động chính xác
 
-### Scenario 4: Design Looks Wrong
+**Trực quan:**
+- [ ] Trông tốt trên máy tính để bàn
+- [ ] Trông tốt trên di động
+- [ ] Trông tốt trên máy tính bảng
+- [ ] Màu sắc chính xác
+- [ ] Văn bản dễ đọc
 
-**Problem:** The design doesn't match what you wanted.
+**Trải nghiệm Người dùng:**
+- [ ] Dễ sử dụng
+- [ ] Hướng dẫn rõ ràng
+- [ ] Thông báo lỗi hữu ích
+- [ ] Tải nhanh
+- [ ] Tương tác mượt mà
 
-**Debugging Steps:**
+**Bảo mật:**
+- [ ] Xác thực hoạt động
+- [ ] Người dùng chỉ có thể truy cập dữ liệu của họ
+- [ ] Các form được bảo mật
+- [ ] Không lộ dữ liệu nhạy cảm
 
-1. **Check what was built:**
-   - Compare to your request
-   - See what's different
-   - Use Chat Mode: "Why doesn't this match my design request?"
-
-2. **Identify specific issues:**
-   - Colors wrong?
-   - Layout wrong?
-   - Spacing wrong?
-   - Be specific
-
-3. **Fix incrementally:**
-   - Fix one issue at a time
-   - Test after each fix
-   - Iterate until perfect
-
-### Scenario 5: Performance Issues
-
-**Problem:** App is slow or laggy.
-
-**Debugging Steps:**
-
-1. **Identify the problem:**
-   - What's slow? (loading, interactions, etc.)
-   - When does it happen?
-   - Use Chat Mode: "Why is my app running slowly?"
-
-2. **Check common issues:**
-   - Large images?
-   - Too many requests?
-   - Inefficient code?
-   - Chat Mode can identify these
-
-3. **Optimize:**
-   - Fix identified issues
-   - Test performance
-   - Iterate
-
-**💡 Beginner Tip:** Most problems have patterns. As you debug more, you'll recognize common issues faster.
+**💡 Mẹo cho người mới bắt đầu:** Kiểm thử khi bạn xây dựng! Đừng đợi đến cuối cùng. Bắt lỗi sớm khi chúng dễ sửa hơn.
 
 ---
 
-## 🛠️ Hands-On Practice: Complete Debugging Workflow
+## 📖 Bài học 6: Các Kịch bản Gỡ lỗi Phổ biến
 
-Let's practice the complete debugging process!
+### Kịch bản 1: Tính năng Không Hoạt động
 
-### Practice: Debug a Broken Feature
+**Vấn đề:** Bạn đã thêm một tính năng, nhưng nó không hoạt động.
 
-**Scenario:** You have a contact form that isn't working.
+**Các bước Gỡ lỗi:**
 
-#### Step 1: Identify the Problem
+1. **Kiểm tra xem nó đã được xây dựng chưa:**
+   - Mã có ở đó không?
+   - Các tệp đã được tạo chưa?
+   - Sử dụng Chat Mode: "Did the feature get added correctly?" (Tính năng đã được thêm chính xác chưa?)
 
-1. **Try to use the form:**
-   - Fill it out
-   - Submit it
-   - See what happens (or doesn't happen)
+2. **Kiểm tra lỗi:**
+   - Tìm kiếm thông báo lỗi
+   - Kiểm tra console trình duyệt
+   - Hỏi Chat Mode: "Are there any errors in this feature?" (Có lỗi nào trong tính năng này không?)
 
-2. **Note the symptoms:**
-   - Does nothing happen?
-   - Shows an error?
-   - Submits but doesn't save?
+3. **Kiểm thử tính năng:**
+   - Thử sử dụng nó
+   - Xem điều gì xảy ra
+   - Ghi lại bất kỳ thông báo lỗi nào
 
-#### Step 2: Investigate with Chat Mode
+4. **Sửa vấn đề:**
+   - Sử dụng Chat Mode để hiểu vấn đề
+   - Sử dụng Agent Mode để sửa nó
+   - Kiểm thử lại
 
-**Ask Chat Mode:**
+### Kịch bản 2: Có gì đó Bị hỏng Sau khi Thay đổi
+
+**Vấn đề:** Mọi thứ đã hoạt động, bạn thực hiện một thay đổi, bây giờ có gì đó bị hỏng.
+
+**Các bước Gỡ lỗi:**
+
+1. **Xác định những gì đã thay đổi:**
+   - Kiểm tra Lịch sử
+   - Xem những gì bạn đã sửa đổi
+   - Sử dụng Chat Mode: "What did I change that might have broken this?" (Tôi đã thay đổi gì mà có thể làm hỏng cái này?)
+
+2. **Hoàn tác nếu cần:**
+   - Quay lại phiên bản hoạt động
+   - Hoặc chỉ hoàn tác thay đổi có vấn đề
+
+3. **Thử một cách tiếp cận khác:**
+   - Thực hiện thay đổi theo cách khác
+   - Chia nhỏ nó thành các bước nhỏ hơn
+   - Kiểm thử khi bạn làm
+
+### Kịch bản 3: Dữ liệu Không Lưu
+
+**Vấn đề:** Người dùng có thể gửi form, nhưng dữ liệu không được lưu.
+
+**Các bước Gỡ lỗi:**
+
+1. **Kiểm tra backend:**
+   - Lovable Cloud đã được bật chưa?
+   - Cơ sở dữ liệu đã được thiết lập chưa?
+   - Hỏi Chat Mode: "Is the database configured correctly?" (Cơ sở dữ liệu có được cấu hình chính xác không?)
+
+2. **Kiểm tra kết nối form:**
+   - Form có được kết nối với backend không?
+   - Các trường có được ánh xạ chính xác không?
+   - Sử dụng Chat Mode: "Is the contact form saving to the database?" (Form liên hệ có đang lưu vào cơ sở dữ liệu không?)
+
+3. **Kiểm tra cơ sở dữ liệu:**
+   - Bạn có thể thấy dữ liệu trong cơ sở dữ liệu không?
+   - Các trường có chính xác không?
+   - Kiểm thử thủ công
+
+4. **Sửa kết nối:**
+   - Kết nối lại form với cơ sở dữ liệu
+   - Xác minh ánh xạ trường
+   - Kiểm thử lại
+
+### Kịch bản 4: Thiết kế Trông Sai
+
+**Vấn đề:** Thiết kế không khớp với những gì bạn muốn.
+
+**Các bước Gỡ lỗi:**
+
+1. **Kiểm tra những gì đã được xây dựng:**
+   - So sánh với yêu cầu của bạn
+   - Xem những gì khác biệt
+   - Sử dụng Chat Mode: "Why doesn't this match my design request?" (Tại sao cái này không khớp với yêu cầu thiết kế của tôi?)
+
+2. **Xác định các vấn đề cụ thể:**
+   - Màu sắc sai?
+   - Bố cục sai?
+   - Khoảng cách sai?
+   - Hãy cụ thể
+
+3. **Sửa dần dần:**
+   - Sửa từng vấn đề một
+   - Kiểm thử sau mỗi lần sửa
+   - Lặp lại cho đến khi hoàn hảo
+
+### Kịch bản 5: Vấn đề Hiệu suất
+
+**Vấn đề:** Ứng dụng chậm hoặc lag.
+
+**Các bước Gỡ lỗi:**
+
+1. **Xác định vấn đề:**
+   - Cái gì chậm? (tải, tương tác, v.v.)
+   - Khi nào nó xảy ra?
+   - Sử dụng Chat Mode: "Why is my app running slowly?" (Tại sao ứng dụng của tôi chạy chậm?)
+
+2. **Kiểm tra các vấn đề phổ biến:**
+   - Hình ảnh lớn?
+   - Quá nhiều yêu cầu?
+   - Mã không hiệu quả?
+   - Chat Mode có thể xác định những điều này
+
+3. **Tối ưu hóa:**
+   - Sửa các vấn đề đã xác định
+   - Kiểm thử hiệu suất
+   - Lặp lại
+
+**💡 Mẹo cho người mới bắt đầu:** Hầu hết các vấn đề đều có quy luật. Khi bạn gỡ lỗi nhiều hơn, bạn sẽ nhận ra các vấn đề phổ biến nhanh hơn.
+
+---
+
+## 🛠️ Thực hành: Quy trình Gỡ lỗi Hoàn chỉnh
+
+Hãy thực hành quy trình gỡ lỗi hoàn chỉnh!
+
+### Thực hành: Gỡ lỗi một Tính năng Bị hỏng
+
+**Kịch bản:** Bạn có một form liên hệ không hoạt động.
+
+#### Bước 1: Xác định Vấn đề
+
+1. **Thử sử dụng form:**
+   - Điền vào nó
+   - Gửi nó
+   - Xem điều gì xảy ra (hoặc không xảy ra)
+
+2. **Ghi lại các triệu chứng:**
+   - Không có gì xảy ra?
+   - Hiển thị lỗi?
+   - Gửi nhưng không lưu?
+
+#### Bước 2: Điều tra với Chat Mode
+
+**Hỏi Chat Mode:**
 ```
 My contact form isn't working. When I submit it, nothing happens. Can you investigate what's wrong?
+(Form liên hệ của tôi không hoạt động. Khi tôi gửi nó, không có gì xảy ra. Bạn có thể điều tra xem có gì sai không?)
 ```
 
-**Chat Mode will:**
-- Check the form code
-- Check backend connection
-- Identify the issue
-- Explain what's wrong
+**Chat Mode sẽ:**
+- Kiểm tra mã form
+- Kiểm tra kết nối backend
+- Xác định vấn đề
+- Giải thích điều gì sai
 
-#### Step 3: Understand the Problem
+#### Bước 3: Hiểu Vấn đề
 
-**Read Chat Mode's explanation:**
-- What's the root cause?
-- Why isn't it working?
-- What needs to be fixed?
+**Đọc giải thích của Chat Mode:**
+- Nguyên nhân gốc rễ là gì?
+- Tại sao nó không hoạt động?
+- Cần sửa gì?
 
-#### Step 4: Fix the Issue
+#### Bước 4: Sửa Vấn đề
 
-**Option A: Use Agent Mode**
+**Tùy chọn A: Sử dụng Agent Mode**
 ```
 Fix the contact form based on what Chat Mode found. Connect it to the backend and make it save submissions.
+(Sửa form liên hệ dựa trên những gì Chat Mode tìm thấy. Kết nối nó với backend và làm cho nó lưu các bài gửi.)
 ```
 
-**Option B: Use Chat Mode's Plan**
-- Click "Implement the plan"
-- Let Agent Mode fix it
+**Tùy chọn B: Sử dụng Kế hoạch của Chat Mode**
+- Nhấp "Implement the plan" (Thực hiện kế hoạch)
+- Để Agent Mode sửa nó
 
-#### Step 5: Test the Fix
+#### Bước 5: Kiểm thử Bản sửa lỗi
 
-1. **Try the form again:**
-   - Fill it out
-   - Submit it
-   - Check if it works
+1. **Thử lại form:**
+   - Điền vào nó
+   - Gửi nó
+   - Kiểm tra xem nó có hoạt động không
 
-2. **Verify data is saved:**
-   - Check database
-   - Confirm submission was stored
+2. **Xác minh dữ liệu được lưu:**
+   - Kiểm tra cơ sở dữ liệu
+   - Xác nhận bài gửi đã được lưu trữ
 
-3. **Test error handling:**
-   - Submit empty form
-   - Submit invalid data
-   - See if errors are handled
+3. **Kiểm thử xử lý lỗi:**
+   - Gửi form trống
+   - Gửi dữ liệu không hợp lệ
+   - Xem lỗi có được xử lý không
 
-#### Step 6: If Still Broken
+#### Bước 6: Nếu Vẫn Bị hỏng
 
-1. **Go back to Chat Mode:**
+1. **Quay lại Chat Mode:**
    ```
    The form still isn't working. Can you check again?
+   (Form vẫn không hoạt động. Bạn có thể kiểm tra lại không?)
    ```
 
-2. **Or revert and try differently:**
-   - Go to History
-   - Revert to before the form
-   - Try a different approach
+2. **Hoặc hoàn tác và thử cách khác:**
+   - Đi tới Lịch sử
+   - Hoàn tác về trước khi có form
+   - Thử một cách tiếp cận khác
 
-**What You Learned:**
-- ✅ How to identify problems
-- ✅ How to use Chat Mode for debugging
-- ✅ How to fix issues
-- ✅ How to test fixes
-- ✅ How to iterate if needed
+**Những Gì Bạn Đã Học:**
+- ✅ Cách xác định vấn đề
+- ✅ Cách sử dụng Chat Mode để gỡ lỗi
+- ✅ Cách sửa các vấn đề
+- ✅ Cách kiểm thử các bản sửa lỗi
+- ✅ Cách lặp lại nếu cần
 
 ---
 
-## 🛠️ Hands-On Practice: Revert and Iterate
+## 🛠️ Thực hành: Hoàn tác và Lặp lại
 
-Let's practice the revert workflow!
+Hãy thực hành quy trình hoàn tác!
 
-### Practice: Make a Mistake, Revert, and Fix
+### Thực hành: Mắc lỗi, Hoàn tác và Sửa
 
-#### Step 1: Make an Intentional "Mistake"
+#### Bước 1: Tạo một "Lỗi" Cố ý
 
-**Ask Lovable:**
+**Hỏi Lovable:**
 ```
 Change all the text on the homepage to bright pink and make the font size 8px
+(Thay đổi tất cả văn bản trên trang chủ thành màu hồng sáng và đặt kích thước phông chữ là 8px)
 ```
 
-**Result:** Homepage is now unreadable (pink text, tiny font)
+**Kết quả:** Trang chủ bây giờ không thể đọc được (văn bản màu hồng, phông chữ nhỏ xíu)
 
-#### Step 2: Identify the Problem
+#### Bước 2: Xác định Vấn đề
 
-- Text is too small to read
-- Pink color is hard to read
-- Design is broken
+- Văn bản quá nhỏ để đọc
+- Màu hồng khó đọc
+- Thiết kế bị hỏng
 
-#### Step 3: Revert Using History
+#### Bước 3: Hoàn tác Sử dụng Lịch sử
 
-1. **Go to History**
-2. **Find the version** before you changed the text
-3. **Click "Revert"**
-4. **Confirm**
-5. **Homepage is restored!**
+1. **Đi tới Lịch sử**
+2. **Tìm phiên bản** trước khi bạn thay đổi văn bản
+3. **Nhấp "Revert"**
+4. **Xác nhận**
+5. **Trang chủ được khôi phục!**
 
-#### Step 4: Try a Better Approach
+#### Bước 4: Thử một Cách tiếp cận Tốt hơn
 
-**Now ask:**
+**Bây giờ hỏi:**
 ```
 Improve the homepage typography: increase heading sizes slightly, improve line spacing for readability, and use a more readable font. Keep the existing color scheme.
+(Cải thiện kiểu chữ trang chủ: tăng kích thước tiêu đề một chút, cải thiện khoảng cách dòng để dễ đọc và sử dụng phông chữ dễ đọc hơn. Giữ nguyên bảng màu hiện có.)
 ```
 
-**Result:** Much better! Readable and improved.
+**Kết quả:** Tốt hơn nhiều! Dễ đọc và được cải thiện.
 
-**What You Learned:**
-- ✅ How to use History
-- ✅ How to revert changes
-- ✅ How to try better approaches
-- ✅ That mistakes are okay - you can always fix them!
-
----
-
-## ✅ Module 10 Checklist
-
-Before moving to Module 9 (or completing the course), make sure you can:
-
-- [ ] Read and understand error messages
-- [ ] Use Chat Mode to debug problems
-- [ ] Use History to revert changes
-- [ ] Edit messages to fix mistakes
-- [ ] Test your apps thoroughly
-- [ ] Debug common issues
-- [ ] Follow a debugging workflow
-- [ ] Revert and iterate confidently
+**Những Gì Bạn Đã Học:**
+- ✅ Cách sử dụng Lịch sử
+- ✅ Cách hoàn tác các thay đổi
+- ✅ Cách thử các cách tiếp cận tốt hơn
+- ✅ Rằng sai lầm là bình thường - bạn luôn có thể sửa chúng!
 
 ---
 
-## 🤔 Common Questions (FAQ)
+## ✅ Danh sách Kiểm tra Module 10
 
-### Q: What if I can't understand an error message?
-**A:** Use Chat Mode! Paste the error and ask: "Can you explain what this error means?"
+Trước khi chuyển sang Module 9 (hoặc hoàn thành khóa học), hãy đảm bảo bạn có thể:
 
-### Q: How far back can I revert?
-**A:** You can revert to any previous version in your History. There's no limit!
-
-### Q: Will reverting delete my work?
-**A:** Reverting goes back to a previous version, but you can always go forward again. Your work isn't permanently lost.
-
-### Q: Should I test after every change?
-**A:** It's a good practice! Test frequently to catch issues early.
-
-### Q: What if Chat Mode can't find the problem?
-**A:** Try being more specific, or break the problem into smaller parts. Sometimes you need to investigate step by step.
-
-### Q: Can I revert just one feature?
-**A:** Yes! You can revert to a specific version, or ask Lovable to remove just that feature.
+- [ ] Đọc và hiểu các thông báo lỗi
+- [ ] Sử dụng Chat Mode để gỡ lỗi các vấn đề
+- [ ] Sử dụng Lịch sử để hoàn tác các thay đổi
+- [ ] Chỉnh sửa tin nhắn để sửa chữa sai lầm
+- [ ] Kiểm thử ứng dụng của bạn một cách kỹ lưỡng
+- [ ] Gỡ lỗi các vấn đề phổ biến
+- [ ] Tuân theo quy trình gỡ lỗi
+- [ ] Hoàn tác và lặp lại một cách tự tin
 
 ---
 
-## 🎯 What's Next?
+## 🤔 Các Câu Hỏi Thường Gặp (FAQ)
 
-Excellent work! You now know how to:
-- Debug problems effectively
-- Use Chat Mode for troubleshooting
-- Revert changes safely
-- Test your applications
-- Fix issues confidently
+### Q: Nếu tôi không thể hiểu thông báo lỗi thì sao?
+**A:** Sử dụng Chat Mode! Dán lỗi vào và hỏi: "Can you explain what this error means?" (Bạn có thể giải thích lỗi này có nghĩa là gì không?)
 
-**Ready for Module 9?** In the final module, you'll build a complete real-world project, applying everything you've learned including debugging and testing!
+### Q: Tôi có thể hoàn tác bao xa?
+**A:** Bạn có thể hoàn tác về bất kỳ phiên bản nào trước đó trong Lịch sử của mình. Không có giới hạn!
 
----
+### Q: Việc hoàn tác có xóa công việc của tôi không?
+**A:** Hoàn tác sẽ quay lại phiên bản trước đó, nhưng bạn luôn có thể đi tiếp một lần nữa. Công việc của bạn không bị mất vĩnh viễn.
 
-## 💡 Pro Tips for Beginners
+### Q: Tôi có nên kiểm thử sau mỗi thay đổi không?
+**A:** Đó là một thói quen tốt! Kiểm thử thường xuyên để bắt lỗi sớm.
 
-1. **Don't fear errors** - They're learning opportunities!
+### Q: Nếu Chat Mode không thể tìm thấy vấn đề thì sao?
+**A:** Hãy thử cụ thể hơn, hoặc chia vấn đề thành các phần nhỏ hơn. Đôi khi bạn cần điều tra từng bước một.
 
-2. **Use Chat Mode liberally** - It's your debugging partner
-
-3. **Test as you build** - Catch issues early
-
-4. **Revert freely** - It's not failure, it's learning
-
-5. **Read error messages** - They tell you what's wrong
-
-6. **Document what works** - Note successful approaches
-
-7. **Be patient** - Debugging takes time, but you'll get better
+### Q: Tôi có thể hoàn tác chỉ một tính năng không?
+**A:** Có! Bạn có thể hoàn tác về một phiên bản cụ thể, hoặc yêu cầu Lovable xóa chỉ tính năng đó.
 
 ---
 
-*Module 10 Complete! 🎉*
+## 🎯 Tiếp theo là gì?
 
+Làm tốt lắm! Bây giờ bạn đã biết cách:
+- Gỡ lỗi các vấn đề hiệu quả
+- Sử dụng Chat Mode để khắc phục sự cố
+- Hoàn tác các thay đổi an toàn
+- Kiểm thử các ứng dụng của bạn
+- Sửa các vấn đề một cách tự tin
+
+**Sẵn sàng cho Module 9?** Trong module cuối cùng, bạn sẽ xây dựng một dự án thực tế hoàn chỉnh, áp dụng mọi thứ bạn đã học bao gồm gỡ lỗi và kiểm thử!
+
+---
+
+## 💡 Mẹo Chuyên nghiệp cho Người mới bắt đầu
+
+1. **Đừng sợ lỗi** - Chúng là cơ hội học tập!
+
+2. **Sử dụng Chat Mode thoải mái** - Đó là đối tác gỡ lỗi của bạn
+
+3. **Kiểm thử khi bạn xây dựng** - Bắt lỗi sớm
+
+4. **Hoàn tác tự do** - Đó không phải là thất bại, đó là học hỏi
+
+5. **Đọc thông báo lỗi** - Chúng cho bạn biết điều gì sai
+
+6. **Ghi lại những gì hoạt động** - Ghi chú các cách tiếp cận thành công
+
+7. **Kiên nhẫn** - Gỡ lỗi tốn thời gian, nhưng bạn sẽ giỏi hơn
+
+---
+
+*Module 10 Hoàn thành! 🎉*

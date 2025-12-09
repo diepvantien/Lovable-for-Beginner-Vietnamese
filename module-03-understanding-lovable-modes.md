@@ -1,351 +1,373 @@
-# Module 3: Understanding Lovable's Modes - How to Talk to AI
+# Mô-đun 3: Hiểu các Chế độ của Lovable - Cách nói chuyện với AI
 
-**Goal:** Master the different ways to interact with Lovable
+**Mục tiêu:** Làm chủ các cách khác nhau để tương tác với Lovable
 
-**Estimated Time:** 25-30 minutes
-
----
-
-## 🎯 What You'll Learn in This Module
-
-By the end of this module, you will:
-- Understand what Chat Mode is and when to use it
-- Understand what Agent Mode is and when to use it
-- Know the key differences between the two modes
-- Be able to choose the right mode for different tasks
-- Understand how credits work for each mode
-- Know how to switch between modes
+**Thời gian ước tính:** 25-30 phút
 
 ---
 
-## 📖 Lesson 1: Introduction to Modes
+## 🎯 Bạn sẽ học được gì trong Mô-đun này
 
-### What Are Modes?
-
-Think of **modes** as different ways to talk to Lovable, each designed for different purposes. It's like having two different tools - one for planning and one for building.
-
-### The Two Main Modes
-
-Lovable has two main modes:
-
-1. **Chat Mode** - For talking, planning, and understanding
-2. **Agent Mode** - For building and making changes automatically
-
-**💡 Beginner Tip:** Don't worry about understanding everything right away. We'll explain each mode in detail, and you'll get the hang of it quickly!
+Vào cuối mô-đun này, bạn sẽ:
+- Hiểu Chat Mode là gì và khi nào nên sử dụng nó
+- Hiểu Agent Mode là gì và khi nào nên sử dụng nó
+- Biết những khác biệt chính giữa hai chế độ
+- Có thể chọn chế độ phù hợp cho các tác vụ khác nhau
+- Hiểu cách tính tín dụng cho từng chế độ
+- Biết cách chuyển đổi giữa các chế độ
 
 ---
 
-## 📖 Lesson 2: Chat Mode - Your Development Partner
+## 📖 Bài học 1: Giới thiệu về các Chế độ
 
-### What is Chat Mode?
+### Chế độ là gì?
 
-**Chat Mode** is like having a conversation with a helpful developer friend. You can ask questions, get advice, plan your project, and understand how things work - but Chat Mode **doesn't make changes to your code automatically**.
+Hãy nghĩ về **các chế độ (modes)** như những cách khác nhau để nói chuyện với Lovable, mỗi cách được thiết kế cho các mục đích khác nhau. Nó giống như có hai công cụ khác nhau - một để lập kế hoạch và một để xây dựng.
 
-### When to Use Chat Mode
+### Hai Chế độ Chính
 
-Use Chat Mode when you want to:
+Lovable có hai chế độ chính:
 
-✅ **Ask questions** - "How should I organize my app?"  
-✅ **Get advice** - "What's the best way to add user authentication?"  
-✅ **Plan features** - "How should I structure my database?"  
-✅ **Debug problems** - "Why isn't my button working?"  
-✅ **Understand code** - "What does this code do?"  
-✅ **Get suggestions** - "What features should I add next?"
+1. **Chat Mode** - Để trò chuyện, lập kế hoạch và hiểu
+2. **Agent Mode** - Để xây dựng và thực hiện thay đổi tự động
 
-### How Chat Mode Works
+**💡 Mẹo cho người mới:** Đừng lo lắng về việc hiểu mọi thứ ngay lập tức. Chúng tôi sẽ giải thích chi tiết từng chế độ, và bạn sẽ nắm bắt được nó nhanh chóng!
 
-#### Step 1: Activate Chat Mode
+---
 
-1. Look at the input box where you type messages
-2. You'll see a button or toggle that says **"Chat"** or shows a chat icon
-3. Click it to activate Chat Mode
-4. The button will highlight or change to show Chat Mode is active
+## 📖 Bài học 2: Chat Mode - Đối tác Phát triển của Bạn
 
-**Visual indicator:** You might see "Chat" highlighted or a different color when Chat Mode is active.
+### Chat Mode là gì?
 
-#### Step 2: Ask Your Question
+**Chat Mode** giống như có một cuộc trò chuyện với một người bạn lập trình viên hữu ích. Bạn có thể đặt câu hỏi, nhận lời khuyên, lập kế hoạch cho dự án của mình và hiểu cách mọi thứ hoạt động - nhưng Chat Mode **không tự động thay đổi mã của bạn**.
 
-Type your question or request, just like having a conversation:
+### Khi nào nên sử dụng Chat Mode
 
-**Examples:**
+Sử dụng Chat Mode khi bạn muốn:
+
+✅ **Đặt câu hỏi** - "Tôi nên tổ chức ứng dụng của mình như thế nào?"
+✅ **Nhận lời khuyên** - "Cách tốt nhất để thêm xác thực người dùng là gì?"
+✅ **Lập kế hoạch tính năng** - "Tôi nên cấu trúc cơ sở dữ liệu của mình như thế nào?"
+✅ **Gỡ lỗi vấn đề** - "Tại sao nút của tôi không hoạt động?"
+✅ **Hiểu mã** - "Đoạn mã này làm gì?"
+✅ **Nhận đề xuất** - "Tôi nên thêm tính năng nào tiếp theo?"
+
+### Cách Chat Mode hoạt động
+
+#### Bước 1: Kích hoạt Chat Mode
+
+1. Nhìn vào hộp nhập liệu nơi bạn nhập tin nhắn
+2. Bạn sẽ thấy một nút hoặc công tắc có chữ **"Chat"** hoặc hiển thị biểu tượng trò chuyện
+3. Nhấp vào nó để kích hoạt Chat Mode
+4. Nút sẽ sáng lên hoặc thay đổi để hiển thị Chat Mode đang hoạt động
+
+**Chỉ báo trực quan:** Bạn có thể thấy "Chat" được đánh dấu hoặc có màu khác khi Chat Mode đang hoạt động.
+
+#### Bước 2: Đặt câu hỏi của bạn
+
+Nhập câu hỏi hoặc yêu cầu của bạn, giống như đang trò chuyện:
+
+**Ví dụ:**
 
 ```
 How should I organize my portfolio website?
 ```
+*(Tạm dịch: Tôi nên tổ chức trang web portfolio của mình như thế nào?)*
 
 ```
 What's the best way to add a contact form?
 ```
+*(Tạm dịch: Cách tốt nhất để thêm biểu mẫu liên hệ là gì?)*
 
 ```
 Can you explain how authentication works?
 ```
+*(Tạm dịch: Bạn có thể giải thích cách xác thực hoạt động không?)*
 
 ```
 Help me plan the structure for my e-commerce site
 ```
+*(Tạm dịch: Giúp tôi lập kế hoạch cấu trúc cho trang web thương mại điện tử của tôi)*
 
-#### Step 3: Get Helpful Responses
+#### Bước 3: Nhận phản hồi hữu ích
 
-Chat Mode will:
-- Answer your questions in detail
-- Provide step-by-step guidance
-- Explain concepts clearly
-- Suggest best practices
-- Help you think through problems
+Chat Mode sẽ:
+- Trả lời câu hỏi của bạn một cách chi tiết
+- Cung cấp hướng dẫn từng bước
+- Giải thích các khái niệm rõ ràng
+- Đề xuất các thực tiễn tốt nhất
+- Giúp bạn suy nghĩ qua các vấn đề
 
-#### Step 4: The "Implement the Plan" Button
+#### Bước 4: Nút "Implement the plan"
 
-After Chat Mode helps you plan, you might see a button that says **"Implement the plan"**. 
+Sau khi Chat Mode giúp bạn lập kế hoạch, bạn có thể thấy một nút có chữ **"Implement the plan"** (Thực hiện kế hoạch).
 
-**What this does:**
-- Chat Mode switches to Agent Mode
-- Agent Mode then builds what you discussed
-- It's like saying "Okay, now actually build this!"
+**Điều này làm gì:**
+- Chat Mode chuyển sang Agent Mode
+- Agent Mode sau đó xây dựng những gì bạn đã thảo luận
+- Nó giống như nói "Được rồi, bây giờ hãy thực sự xây dựng cái này!"
 
-**Example Flow:**
+**Quy trình ví dụ:**
 
-1. **You (Chat Mode):** "How should I add a navigation menu?"
-2. **Chat Mode:** Explains the best approach and asks clarifying questions
-3. **You:** Answer the questions
-4. **Chat Mode:** Provides a detailed plan
-5. **You:** Click "Implement the plan"
-6. **Agent Mode:** Actually adds the navigation menu to your project
+1. **Bạn (Chat Mode):** "Tôi nên thêm menu điều hướng như thế nào?"
+2. **Chat Mode:** Giải thích cách tiếp cận tốt nhất và đặt câu hỏi làm rõ
+3. **Bạn:** Trả lời các câu hỏi
+4. **Chat Mode:** Cung cấp một kế hoạch chi tiết
+5. **Bạn:** Nhấp vào "Implement the plan"
+6. **Agent Mode:** Thực sự thêm menu điều hướng vào dự án của bạn
 
-### Chat Mode Pricing
+### Giá của Chat Mode
 
-- **Cost:** 1 credit per message
-- **What this means:** Each question or message you send costs 1 credit
-- **Is it worth it?** Yes! Getting help and planning saves time and prevents mistakes
+- **Chi phí:** 1 tín dụng mỗi tin nhắn
+- **Điều này có nghĩa là:** Mỗi câu hỏi hoặc tin nhắn bạn gửi tốn 1 tín dụng
+- **Nó có đáng không?** Có! Nhận trợ giúp và lập kế hoạch giúp tiết kiệm thời gian và ngăn ngừa sai lầm
 
-**📊 For complete pricing information:** See the [Pricing and Plans Guide](supplement-pricing-and-plans.md) for details on credits, plans, and how to monitor usage.
+**📊 Để biết thông tin giá đầy đủ:** Xem [Hướng dẫn Giá cả và Các gói](supplement-pricing-and-plans.md) để biết chi tiết về tín dụng, các gói và cách theo dõi mức sử dụng.
 
-**💡 Beginner Tip:** Use Chat Mode liberally when you're learning. It's like having a tutor who never gets tired of your questions!
+**💡 Mẹo cho người mới:** Sử dụng Chat Mode thoải mái khi bạn đang học. Nó giống như có một gia sư không bao giờ mệt mỏi với các câu hỏi của bạn!
 
 ---
 
-## 📖 Lesson 3: Agent Mode - The Autonomous Builder
+## 📖 Bài học 3: Agent Mode - Người xây dựng Tự chủ
 
-### What is Agent Mode?
+### Agent Mode là gì?
 
-**Agent Mode** is like having a developer who works for you. You give instructions, and Agent Mode **automatically makes changes to your code** to build what you want.
+**Agent Mode** giống như có một lập trình viên làm việc cho bạn. Bạn đưa ra hướng dẫn, và Agent Mode **tự động thực hiện thay đổi đối với mã của bạn** để xây dựng những gì bạn muốn.
 
-### When to Use Agent Mode
+### Khi nào nên sử dụng Agent Mode
 
-Use Agent Mode when you want to:
+Sử dụng Agent Mode khi bạn muốn:
 
-✅ **Build features** - "Add a login page"  
-✅ **Make changes** - "Change the colors to blue"  
-✅ **Fix bugs** - "Fix the button that's not working"  
-✅ **Add functionality** - "Add a search feature"  
-✅ **Create new pages** - "Create an about page"  
-✅ **Implement complex features** - "Add user authentication"
+✅ **Xây dựng tính năng** - "Thêm trang đăng nhập"
+✅ **Thực hiện thay đổi** - "Đổi màu sang màu xanh"
+✅ **Sửa lỗi** - "Sửa nút không hoạt động"
+✅ **Thêm chức năng** - "Thêm tính năng tìm kiếm"
+✅ **Tạo trang mới** - "Tạo trang giới thiệu"
+✅ **Triển khai các tính năng phức tạp** - "Thêm xác thực người dùng"
 
-### How Agent Mode Works
+### Cách Agent Mode hoạt động
 
-#### Step 1: Activate Agent Mode
+#### Bước 1: Kích hoạt Agent Mode
 
-1. Look at the input box where you type messages
-2. You'll see a button or toggle for **"Agent"** or an agent icon
-3. Click it to activate Agent Mode
-4. The button will highlight or change to show Agent Mode is active
+1. Nhìn vào hộp nhập liệu nơi bạn nhập tin nhắn
+2. Bạn sẽ thấy một nút hoặc công tắc cho **"Agent"** hoặc biểu tượng agent
+3. Nhấp vào nó để kích hoạt Agent Mode
+4. Nút sẽ sáng lên hoặc thay đổi để hiển thị Agent Mode đang hoạt động
 
-**Visual indicator:** You might see "Agent" highlighted or a different color when Agent Mode is active.
+**Chỉ báo trực quan:** Bạn có thể thấy "Agent" được đánh dấu hoặc có màu khác khi Agent Mode đang hoạt động.
 
-#### Step 2: Give Your Instructions
+#### Bước 2: Đưa ra hướng dẫn của bạn
 
-Type what you want built, clearly and specifically:
+Nhập những gì bạn muốn xây dựng, rõ ràng và cụ thể:
 
-**Examples:**
+**Ví dụ:**
 
 ```
 Add a navigation menu at the top with links to Home, About, and Contact
 ```
+*(Tạm dịch: Thêm menu điều hướng ở trên cùng với các liên kết đến Trang chủ, Giới thiệu và Liên hệ)*
 
 ```
 Create a contact form with fields for name, email, and message
 ```
+*(Tạm dịch: Tạo biểu mẫu liên hệ với các trường tên, email và tin nhắn)*
 
 ```
 Change the background color to dark blue and the text to white
 ```
+*(Tạm dịch: Đổi màu nền sang xanh đậm và văn bản sang màu trắng)*
 
 ```
 Add a footer with social media icons
 ```
+*(Tạm dịch: Thêm chân trang với các biểu tượng mạng xã hội)*
 
-#### Step 3: Watch Agent Mode Work
+#### Bước 3: Xem Agent Mode làm việc
 
-Agent Mode will:
-- Understand your request
-- Explore your codebase to understand the structure
-- Make the necessary changes
-- Test to make sure it works
-- Show you what was changed
+Agent Mode sẽ:
+- Hiểu yêu cầu của bạn
+- Khám phá cơ sở mã của bạn để hiểu cấu trúc
+- Thực hiện các thay đổi cần thiết
+- Kiểm tra để đảm bảo nó hoạt động
+- Hiển thị cho bạn những gì đã được thay đổi
 
-**What you'll see:**
-- A loading indicator while Agent Mode works
-- Changes appearing in your project
-- A summary of what was done
+**Những gì bạn sẽ thấy:**
+- Chỉ báo đang tải trong khi Agent Mode làm việc
+- Các thay đổi xuất hiện trong dự án của bạn
+- Tóm tắt về những gì đã được thực hiện
 
-#### Step 4: Review the Changes
+#### Bước 4: Xem lại các thay đổi
 
-After Agent Mode finishes:
-- **Check the preview** - See if it looks right
-- **Test functionality** - Make sure it works as expected
-- **Ask for adjustments** - If something isn't quite right, ask for changes
+Sau khi Agent Mode hoàn thành:
+- **Kiểm tra bản xem trước** - Xem nó có đúng không
+- **Kiểm tra chức năng** - Đảm bảo nó hoạt động như mong đợi
+- **Yêu cầu điều chỉnh** - Nếu có gì đó chưa đúng, hãy yêu cầu thay đổi
 
 ---
 
-## 📖 Lesson 3.5: Agent Mode for Complex Operations
+## 📖 Bài học 3.5: Agent Mode cho các Hoạt động Phức tạp
 
-### Understanding Complex Operations
+### Hiểu các Hoạt động Phức tạp
 
-**Complex operations** are multi-step tasks that require Agent Mode to:
-- Work on multiple files
-- Make coordinated changes
-- Build interconnected features
-- Handle dependencies between features
+**Các hoạt động phức tạp** là các tác vụ nhiều bước yêu cầu Agent Mode phải:
+- Làm việc trên nhiều tệp
+- Thực hiện các thay đổi phối hợp
+- Xây dựng các tính năng liên kết với nhau
+- Xử lý các phụ thuộc giữa các tính năng
 
-### How Agent Mode Handles Complex Tasks
+### Cách Agent Mode xử lý các Tác vụ Phức tạp
 
-When you give Agent Mode a complex task, it:
+Khi bạn giao cho Agent Mode một tác vụ phức tạp, nó sẽ:
 
-1. **Analyzes the request** - Understands what needs to be built
-2. **Explores your codebase** - Reads relevant files to understand structure
-3. **Creates a plan** - Decides the order of operations
-4. **Executes step by step** - Makes changes systematically
-5. **Tests as it goes** - Ensures each step works before moving on
-6. **Reports progress** - Shows you what it's doing
+1. **Phân tích yêu cầu** - Hiểu những gì cần được xây dựng
+2. **Khám phá cơ sở mã của bạn** - Đọc các tệp liên quan để hiểu cấu trúc
+3. **Tạo kế hoạch** - Quyết định thứ tự các hoạt động
+4. **Thực hiện từng bước** - Thực hiện thay đổi một cách có hệ thống
+5. **Kiểm tra khi thực hiện** - Đảm bảo từng bước hoạt động trước khi tiếp tục
+6. **Báo cáo tiến độ** - Hiển thị cho bạn những gì nó đang làm
 
-**What you'll see during complex operations:**
-- Progress updates
-- Files being modified
-- Steps being completed
-- Any issues encountered
+**Những gì bạn sẽ thấy trong các hoạt động phức tạp:**
+- Cập nhật tiến độ
+- Các tệp đang được sửa đổi
+- Các bước đang được hoàn thành
+- Bất kỳ vấn đề nào gặp phải
 
-### Multi-Step Planning Examples
+### Ví dụ Lập kế hoạch Nhiều bước
 
-#### Example 1: Building Authentication System
+#### Ví dụ 1: Xây dựng Hệ thống Xác thực
 
-**Single Complex Request:**
+**Yêu cầu Phức tạp Đơn lẻ:**
 ```
 Add complete user authentication: sign up page, login page, logout functionality, and protect the dashboard so only logged-in users can access it.
 ```
+*(Tạm dịch: Thêm xác thực người dùng hoàn chỉnh: trang đăng ký, trang đăng nhập, chức năng đăng xuất và bảo vệ bảng điều khiển để chỉ người dùng đã đăng nhập mới có thể truy cập.)*
 
-**What Agent Mode does:**
-1. Creates sign up page with form
-2. Creates login page with form
-3. Sets up authentication backend
-4. Adds logout button
-5. Protects dashboard route
-6. Updates navigation to show different items for logged-in users
-7. Tests the flow
+**Những gì Agent Mode làm:**
+1. Tạo trang đăng ký với biểu mẫu
+2. Tạo trang đăng nhập với biểu mẫu
+3. Thiết lập backend xác thực
+4. Thêm nút đăng xuất
+5. Bảo vệ route bảng điều khiển
+6. Cập nhật điều hướng để hiển thị các mục khác nhau cho người dùng đã đăng nhập
+7. Kiểm tra luồng
 
-**Better Approach - Step by Step:**
+**Cách tiếp cận Tốt hơn - Từng bước:**
 
-**Step 1:**
+**Bước 1:**
 ```
 Create a sign up page with email and password fields, and connect it to authentication
 ```
+*(Tạm dịch: Tạo trang đăng ký với các trường email và mật khẩu, và kết nối nó với xác thực)*
 
-**Step 2:**
+**Bước 2:**
 ```
 Create a login page that matches the sign up page design
 ```
+*(Tạm dịch: Tạo trang đăng nhập khớp với thiết kế trang đăng ký)*
 
-**Step 3:**
+**Bước 3:**
 ```
 Add logout functionality and update the navigation to show user name and logout button when logged in
 ```
+*(Tạm dịch: Thêm chức năng đăng xuất và cập nhật điều hướng để hiển thị tên người dùng và nút đăng xuất khi đã đăng nhập)*
 
-**Step 4:**
+**Bước 4:**
 ```
 Protect the dashboard page so only logged-in users can access it. Redirect others to login.
 ```
+*(Tạm dịch: Bảo vệ trang bảng điều khiển để chỉ người dùng đã đăng nhập mới có thể truy cập. Chuyển hướng những người khác đến trang đăng nhập.)*
 
-**Why step-by-step is better:**
-- ✅ You can review each step
-- ✅ Easier to catch issues early
-- ✅ More control over the process
-- ✅ Can adjust direction if needed
+**Tại sao từng bước lại tốt hơn:**
+- ✅ Bạn có thể xem lại từng bước
+- ✅ Dễ dàng bắt lỗi sớm hơn
+- ✅ Kiểm soát quy trình tốt hơn
+- ✅ Có thể điều chỉnh hướng đi nếu cần
 
-#### Example 2: Building E-commerce Features
+#### Ví dụ 2: Xây dựng Tính năng Thương mại điện tử
 
-**Complex Request:**
+**Yêu cầu Phức tạp:**
 ```
 Add e-commerce functionality: product listing page, product detail page, shopping cart, and checkout with Stripe payment integration.
 ```
+*(Tạm dịch: Thêm chức năng thương mại điện tử: trang danh sách sản phẩm, trang chi tiết sản phẩm, giỏ hàng và thanh toán với tích hợp Stripe.)*
 
-**What Agent Mode does:**
-1. Creates product database structure
-2. Builds product listing page
-3. Creates product detail pages
-4. Implements shopping cart
-5. Connects Stripe
-6. Builds checkout flow
-7. Tests payment processing
+**Những gì Agent Mode làm:**
+1. Tạo cấu trúc cơ sở dữ liệu sản phẩm
+2. Xây dựng trang danh sách sản phẩm
+3. Tạo các trang chi tiết sản phẩm
+4. Triển khai giỏ hàng
+5. Kết nối Stripe
+6. Xây dựng luồng thanh toán
+7. Kiểm tra xử lý thanh toán
 
-**Better Approach - Incremental:**
+**Cách tiếp cận Tốt hơn - Tăng dần:**
 
-**Step 1:**
+**Bước 1:**
 ```
 Create a product listing page that displays products from a database
 ```
+*(Tạm dịch: Tạo trang danh sách sản phẩm hiển thị sản phẩm từ cơ sở dữ liệu)*
 
-**Step 2:**
+**Bước 2:**
 ```
 Add product detail pages that show full product information
 ```
+*(Tạm dịch: Thêm các trang chi tiết sản phẩm hiển thị thông tin sản phẩm đầy đủ)*
 
-**Step 3:**
+**Bước 3:**
 ```
 Add a shopping cart that stores selected products
 ```
+*(Tạm dịch: Thêm giỏ hàng lưu trữ các sản phẩm đã chọn)*
 
-**Step 4:**
+**Bước 4:**
 ```
 Integrate Stripe and create a checkout page for payment processing
 ```
+*(Tạm dịch: Tích hợp Stripe và tạo trang thanh toán để xử lý thanh toán)*
 
-#### Example 3: Refining UI After Building Features
+#### Ví dụ 3: Tinh chỉnh UI Sau khi Xây dựng Tính năng
 
-**Workflow:**
-1. **Build the feature** (Agent Mode)
-2. **Review the result** (You)
-3. **Refine the UI** (Agent Mode)
-4. **Add polish** (Agent Mode)
+**Quy trình làm việc:**
+1. **Xây dựng tính năng** (Agent Mode)
+2. **Xem lại kết quả** (Bạn)
+3. **Tinh chỉnh UI** (Agent Mode)
+4. **Thêm sự trau chuốt** (Agent Mode)
 
-**Example:**
+**Ví dụ:**
 
-**Step 1 - Build:**
+**Bước 1 - Xây dựng:**
 ```
 Add user authentication with sign up and login pages
 ```
+*(Tạm dịch: Thêm xác thực người dùng với các trang đăng ký và đăng nhập)*
 
-**Step 2 - Review:**
-You check the pages and notice they're functional but need design improvements.
+**Bước 2 - Xem lại:**
+Bạn kiểm tra các trang và nhận thấy chúng hoạt động nhưng cần cải thiện thiết kế.
 
-**Step 3 - Refine:**
+**Bước 3 - Tinh chỉnh:**
 ```
 Improve the design of the sign up and login pages: add better spacing, improve colors, make the forms more visually appealing, and add error message styling
 ```
+*(Tạm dịch: Cải thiện thiết kế của các trang đăng ký và đăng nhập: thêm khoảng cách tốt hơn, cải thiện màu sắc, làm cho các biểu mẫu hấp dẫn hơn về mặt trực quan và thêm kiểu dáng thông báo lỗi)*
 
-**Step 4 - Polish:**
+**Bước 4 - Trau chuốt:**
 ```
 Add smooth animations to the authentication forms and improve the user experience with loading states
 ```
+*(Tạm dịch: Thêm hoạt ảnh mượt mà vào các biểu mẫu xác thực và cải thiện trải nghiệm người dùng với các trạng thái đang tải)*
 
-### Best Practices for Writing Instructions to Agent Mode
+### Các Thực tiễn Tốt nhất để Viết Hướng dẫn cho Agent Mode
 
-#### 1. Break Tasks into Smaller Steps
+#### 1. Chia nhỏ Tác vụ thành Các bước Nhỏ hơn
 
-**❌ Too Complex:**
+**❌ Quá Phức tạp:**
 ```
 Build a complete blog with posts, categories, tags, comments, author profiles, search, and admin panel
 ```
+*(Tạm dịch: Xây dựng một blog hoàn chỉnh với bài viết, danh mục, thẻ, bình luận, hồ sơ tác giả, tìm kiếm và bảng quản trị)*
 
-**✅ Better - Broken Down:**
+**✅ Tốt hơn - Đã chia nhỏ:**
 ```
 Step 1: Create a blog post database and listing page
 Step 2: Add individual post pages
@@ -356,14 +378,15 @@ Step 6: Add search feature
 Step 7: Build admin panel for managing posts
 ```
 
-#### 2. Be Specific About Requirements
+#### 2. Cụ thể về Yêu cầu
 
-**❌ Vague:**
+**❌ Mơ hồ:**
 ```
 Add a form
 ```
+*(Tạm dịch: Thêm một biểu mẫu)*
 
-**✅ Specific:**
+**✅ Cụ thể:**
 ```
 Create a contact form with:
 - Name field (required, text input)
@@ -374,42 +397,46 @@ Create a contact form with:
 - Error handling for invalid inputs
 Make it match the design of the rest of the site
 ```
+*(Tạm dịch: Tạo biểu mẫu liên hệ với: Trường tên (bắt buộc), Trường email (bắt buộc, xác thực email), Trường tin nhắn (bắt buộc), Nút gửi, Thông báo thành công sau khi gửi, Xử lý lỗi cho đầu vào không hợp lệ. Làm cho nó khớp với thiết kế của phần còn lại của trang web)*
 
-#### 3. Provide Context
+#### 3. Cung cấp Ngữ cảnh
 
-**❌ No Context:**
+**❌ Không có Ngữ cảnh:**
 ```
 Add authentication
 ```
+*(Tạm dịch: Thêm xác thực)*
 
-**✅ With Context:**
+**✅ Có Ngữ cảnh:**
 ```
 Add user authentication for my task manager app. Users need to sign up and login to access their tasks. The authentication should work with the existing database structure and match the app's blue and white color scheme.
 ```
+*(Tạm dịch: Thêm xác thực người dùng cho ứng dụng quản lý tác vụ của tôi. Người dùng cần đăng ký và đăng nhập để truy cập tác vụ của họ. Xác thực nên hoạt động với cấu trúc cơ sở dữ liệu hiện có và khớp với bảng màu xanh và trắng của ứng dụng.)*
 
-#### 4. Review Intermediate Changes
+#### 4. Xem lại Các thay đổi Trung gian
 
-**Best Practice:**
-- Build one feature
-- Test it
-- Review it
-- Then build the next feature
+**Thực tiễn Tốt nhất:**
+- Xây dựng một tính năng
+- Kiểm tra nó
+- Xem lại nó
+- Sau đó xây dựng tính năng tiếp theo
 
-**Example:**
+**Ví dụ:**
 ```
 1. "Add a navigation menu" → Test → Review
 2. "Add a hero section" → Test → Review  
 3. "Add a footer" → Test → Review
 ```
 
-#### 5. Use Clear, Action-Oriented Language
+#### 5. Sử dụng Ngôn ngữ Rõ ràng, Hướng hành động
 
-**❌ Unclear:**
+**❌ Không rõ ràng:**
 ```
 Maybe make the page better
 ```
+*(Tạm dịch: Có lẽ làm cho trang tốt hơn)*
 
-**✅ Clear:**
+**✅ Rõ ràng:**
 ```
 Improve the homepage by:
 - Increasing spacing between sections
@@ -417,547 +444,564 @@ Improve the homepage by:
 - Adding hover effects to buttons
 - Improving color contrast for readability
 ```
+*(Tạm dịch: Cải thiện trang chủ bằng cách: Tăng khoảng cách giữa các phần, Làm cho tiêu đề lớn hơn và đậm hơn, Thêm hiệu ứng hover vào các nút, Cải thiện độ tương phản màu để dễ đọc)*
 
-#### 6. Specify What NOT to Change
+#### 6. Chỉ định Những gì KHÔNG thay đổi
 
-**Example:**
+**Ví dụ:**
 ```
 Add a new "Services" page, but don't change the existing navigation or homepage design
 ```
+*(Tạm dịch: Thêm trang "Dịch vụ" mới, nhưng không thay đổi điều hướng hiện có hoặc thiết kế trang chủ)*
 
-#### 7. Ask for Confirmation on Major Changes
+#### 7. Yêu cầu Xác nhận về Các thay đổi Lớn
 
-**Example:**
+**Ví dụ:**
 ```
 I want to restructure the entire navigation. Before you do it, can you show me what the new structure will look like?
 ```
+*(Tạm dịch: Tôi muốn cấu trúc lại toàn bộ điều hướng. Trước khi bạn làm điều đó, bạn có thể cho tôi xem cấu trúc mới sẽ trông như thế nào không?)*
 
-### How to Cancel or Roll Back Agent Operations
+### Cách Hủy hoặc Khôi phục Các hoạt động của Agent
 
-#### Canceling an Operation
+#### Hủy một Hoạt động
 
-**If Agent Mode is still working:**
+**Nếu Agent Mode vẫn đang làm việc:**
 
-1. **Look for a "Cancel" or "Stop" button** - Usually near the progress indicator
-2. **Click it** - Agent Mode will stop what it's doing
-3. **Review what was done** - Check what changes were made before canceling
-4. **Decide next steps** - Continue, revert, or try a different approach
+1. **Tìm nút "Cancel" hoặc "Stop"** - Thường ở gần chỉ báo tiến độ
+2. **Nhấp vào nó** - Agent Mode sẽ dừng những gì nó đang làm
+3. **Xem lại những gì đã được thực hiện** - Kiểm tra những thay đổi nào đã được thực hiện trước khi hủy
+4. **Quyết định các bước tiếp theo** - Tiếp tục, hoàn tác hoặc thử một cách tiếp cận khác
 
-**What happens:**
-- Agent Mode stops immediately
-- Changes made so far remain (unless you revert)
-- You can start a new operation
+**Điều gì xảy ra:**
+- Agent Mode dừng ngay lập tức
+- Các thay đổi đã thực hiện cho đến nay vẫn còn (trừ khi bạn hoàn tác)
+- Bạn có thể bắt đầu một hoạt động mới
 
-#### Rolling Back Changes
+#### Khôi phục Các thay đổi
 
-**If Agent Mode completed but you don't like the result:**
+**Nếu Agent Mode đã hoàn thành nhưng bạn không thích kết quả:**
 
-**Option 1: Use History**
-1. Go to **History** or **Version History**
-2. Find the version before Agent Mode made changes
-3. Click **"Revert"** or **"Restore"**
-4. Your project goes back to that version
+**Tùy chọn 1: Sử dụng Lịch sử**
+1. Đi tới **History** hoặc **Version History**
+2. Tìm phiên bản trước khi Agent Mode thực hiện thay đổi
+3. Nhấp vào **"Revert"** hoặc **"Restore"**
+4. Dự án của bạn quay lại phiên bản đó
 
-**Option 2: Ask to Undo**
+**Tùy chọn 2: Yêu cầu Hoàn tác**
 ```
 Revert the last change Agent Mode made
 ```
+*(Tạm dịch: Hoàn tác thay đổi cuối cùng mà Agent Mode đã thực hiện)*
 
-or
+hoặc
 
 ```
 Undo the changes you just made to the navigation
 ```
+*(Tạm dịch: Hoàn tác các thay đổi bạn vừa thực hiện đối với điều hướng)*
 
-**Option 3: Edit Your Message**
-1. Find the message that triggered the change
-2. Edit or delete it
-3. Lovable will adjust accordingly
+**Tùy chọn 3: Chỉnh sửa Tin nhắn của Bạn**
+1. Tìm tin nhắn đã kích hoạt thay đổi
+2. Chỉnh sửa hoặc xóa nó
+3. Lovable sẽ điều chỉnh tương ứng
 
-**Option 4: Ask for the Opposite**
+**Tùy chọn 4: Yêu cầu Ngược lại**
 ```
 Remove the feature I just added
 ```
+*(Tạm dịch: Xóa tính năng tôi vừa thêm)*
 
-or
+hoặc
 
 ```
 Change it back to how it was before
 ```
+*(Tạm dịch: Đổi lại như trước đây)*
 
-### Monitoring Agent Mode Progress
+### Theo dõi Tiến độ Agent Mode
 
-**What to watch for:**
+**Những gì cần theo dõi:**
 
-1. **Progress indicators** - Shows what step Agent Mode is on
-2. **File changes** - See which files are being modified
-3. **Status messages** - Read what Agent Mode is doing
-4. **Error messages** - If something goes wrong, you'll see it
+1. **Chỉ báo tiến độ** - Hiển thị bước mà Agent Mode đang thực hiện
+2. **Thay đổi tệp** - Xem tệp nào đang được sửa đổi
+3. **Thông báo trạng thái** - Đọc những gì Agent Mode đang làm
+4. **Thông báo lỗi** - Nếu có sự cố, bạn sẽ thấy nó
 
-**If something seems wrong:**
-- **Cancel the operation** - Stop it before more changes
-- **Check error messages** - Read what went wrong
-- **Ask Chat Mode** - "What went wrong with that operation?"
-- **Try a different approach** - Break it into smaller steps
+**Nếu có vẻ gì đó sai:**
+- **Hủy hoạt động** - Dừng nó trước khi có thêm thay đổi
+- **Kiểm tra thông báo lỗi** - Đọc những gì đã xảy ra
+- **Hỏi Chat Mode** - "Điều gì đã xảy ra với hoạt động đó?"
+- **Thử cách tiếp cận khác** - Chia nhỏ nó thành các bước nhỏ hơn
 
-### Working with Agent Mode on Large Projects
+### Làm việc với Agent Mode trên Các dự án Lớn
 
-**For complex, multi-feature projects:**
+**Đối với các dự án phức tạp, nhiều tính năng:**
 
-1. **Plan in Chat Mode first**
+1. **Lập kế hoạch trong Chat Mode trước**
    ```
    I want to build an e-commerce site. Can you help me plan the features and order?
    ```
+   *(Tạm dịch: Tôi muốn xây dựng một trang web thương mại điện tử. Bạn có thể giúp tôi lập kế hoạch các tính năng và thứ tự không?)*
 
-2. **Build incrementally**
-   - One feature at a time
-   - Test each feature
-   - Review before moving on
+2. **Xây dựng tăng dần**
+   - Một tính năng tại một thời điểm
+   - Kiểm tra từng tính năng
+   - Xem lại trước khi tiếp tục
 
-3. **Use version control**
-   - Save good versions in History
-   - Mark milestones
-   - Easy to revert if needed
+3. **Sử dụng kiểm soát phiên bản**
+   - Lưu các phiên bản tốt trong Lịch sử
+   - Đánh dấu các mốc quan trọng
+   - Dễ dàng hoàn tác nếu cần
 
-4. **Review regularly**
-   - Check what Agent Mode built
-   - Test functionality
-   - Request adjustments before building more
+4. **Xem lại thường xuyên**
+   - Kiểm tra những gì Agent Mode đã xây dựng
+   - Kiểm tra chức năng
+   - Yêu cầu điều chỉnh trước khi xây dựng thêm
 
-5. **Communicate clearly**
-   - Be specific about what you want
-   - Provide context
-   - Specify constraints
+5. **Giao tiếp rõ ràng**
+   - Cụ thể về những gì bạn muốn
+   - Cung cấp ngữ cảnh
+   - Chỉ định các ràng buộc
 
-### Agent Mode Pricing
+### Giá của Agent Mode
 
-- **Cost:** Usage-based (varies by complexity)
-- **What this means:** Simple tasks might cost less than 1 credit, complex tasks might cost more
-- **Why it varies:** More complex tasks require more AI processing
+- **Chi phí:** Dựa trên mức sử dụng (thay đổi theo độ phức tạp)
+- **Điều này có nghĩa là:** Các tác vụ đơn giản có thể tốn ít hơn 1 tín dụng, các tác vụ phức tạp có thể tốn nhiều hơn
+- **Tại sao nó thay đổi:** Các tác vụ phức tạp hơn yêu cầu xử lý AI nhiều hơn
 
-**📊 For complete pricing information:** See the [Pricing and Plans Guide](supplement-pricing-and-plans.md) for details on credits, plans, and how to monitor usage.
+**📊 Để biết thông tin giá đầy đủ:** Xem [Hướng dẫn Giá cả và Các gói](supplement-pricing-and-plans.md) để biết chi tiết về tín dụng, các gói và cách theo dõi mức sử dụng.
 
-**💡 Beginner Tip:** Don't worry about credits too much when starting. Focus on learning - you'll get a feel for what costs what as you use Lovable more. Most simple tasks cost very little!
+**💡 Mẹo cho người mới:** Đừng lo lắng quá nhiều về tín dụng khi bắt đầu. Tập trung vào việc học - bạn sẽ cảm nhận được chi phí khi sử dụng Lovable nhiều hơn. Hầu hết các tác vụ đơn giản tốn rất ít!
 
 ---
 
-## 📖 Lesson 4: Key Differences Between Chat and Agent Mode
+## 📖 Bài học 4: Những khác biệt chính giữa Chat và Agent Mode
 
-### Quick Comparison
+### So sánh Nhanh
 
-| Feature | Chat Mode | Agent Mode |
+| Tính năng | Chat Mode | Agent Mode |
 |---------|-----------|------------|
-| **Makes changes?** | ❌ No - just talks | ✅ Yes - builds automatically |
-| **Best for** | Questions, planning | Building, implementing |
-| **Cost** | 1 credit per message | Varies by complexity |
-| **Speed** | Instant responses | Takes time to build |
-| **Use when** | You need help/advice | You want something built |
+| **Thực hiện thay đổi?** | ❌ Không - chỉ nói chuyện | ✅ Có - xây dựng tự động |
+| **Tốt nhất cho** | Câu hỏi, lập kế hoạch | Xây dựng, triển khai |
+| **Chi phí** | 1 tín dụng mỗi tin nhắn | Thay đổi theo độ phức tạp |
+| **Tốc độ** | Phản hồi tức thì | Mất thời gian để xây dựng |
+| **Sử dụng khi** | Bạn cần trợ giúp/lời khuyên | Bạn muốn xây dựng thứ gì đó |
 
-### Real-World Examples
+### Ví dụ Thực tế
 
-#### Example 1: Adding a Contact Form
+#### Ví dụ 1: Thêm Biểu mẫu Liên hệ
 
-**Using Chat Mode:**
+**Sử dụng Chat Mode:**
 ```
-You: "How should I add a contact form?"
-Chat Mode: Explains the best approach, asks about fields, suggests design
-You: Get advice and understand the process
-Result: You understand how to do it, but nothing is built yet
-```
-
-**Using Agent Mode:**
-```
-You: "Add a contact form with name, email, and message fields"
-Agent Mode: Builds the form automatically
-Result: Contact form is added to your project
+Bạn: "Tôi nên thêm biểu mẫu liên hệ như thế nào?"
+Chat Mode: Giải thích cách tiếp cận tốt nhất, hỏi về các trường, đề xuất thiết kế
+Bạn: Nhận lời khuyên và hiểu quy trình
+Kết quả: Bạn hiểu cách làm, nhưng chưa có gì được xây dựng
 ```
 
-#### Example 2: Fixing a Bug
-
-**Using Chat Mode:**
+**Sử dụng Agent Mode:**
 ```
-You: "My button isn't working. Why?"
-Chat Mode: Investigates, explains the problem, suggests solutions
-You: Understand what's wrong
-Result: You know how to fix it
+Bạn: "Thêm biểu mẫu liên hệ với các trường tên, email và tin nhắn"
+Agent Mode: Tự động xây dựng biểu mẫu
+Kết quả: Biểu mẫu liên hệ được thêm vào dự án của bạn
 ```
 
-**Using Agent Mode:**
+#### Ví dụ 2: Sửa lỗi
+
+**Sử dụng Chat Mode:**
 ```
-You: "Fix the button that's not working"
-Agent Mode: Finds the problem, fixes it automatically
-Result: Button is fixed
+Bạn: "Nút của tôi không hoạt động. Tại sao?"
+Chat Mode: Điều tra, giải thích vấn đề, đề xuất giải pháp
+Bạn: Hiểu những gì sai
+Kết quả: Bạn biết cách sửa nó
 ```
 
-### When to Use Which Mode
+**Sử dụng Agent Mode:**
+```
+Bạn: "Sửa nút không hoạt động"
+Agent Mode: Tìm vấn đề, tự động sửa nó
+Kết quả: Nút đã được sửa
+```
 
-**Use Chat Mode when:**
-- You're not sure what you want
-- You need to understand something
-- You want to plan before building
-- You're learning and asking questions
-- You want advice on best practices
+### Khi nào nên sử dụng Chế độ nào
 
-**Use Agent Mode when:**
-- You know exactly what you want
-- You're ready to build something
-- You want changes made automatically
-- You're implementing a feature
-- You're fixing something specific
+**Sử dụng Chat Mode khi:**
+- Bạn không chắc mình muốn gì
+- Bạn cần hiểu điều gì đó
+- Bạn muốn lập kế hoạch trước khi xây dựng
+- Bạn đang học và đặt câu hỏi
+- Bạn muốn lời khuyên về các thực tiễn tốt nhất
 
-**💡 Beginner Tip:** A common workflow is: Use Chat Mode to plan, then use Agent Mode (or click "Implement the plan") to build it!
+**Sử dụng Agent Mode khi:**
+- Bạn biết chính xác mình muốn gì
+- Bạn đã sẵn sàng để xây dựng thứ gì đó
+- Bạn muốn thay đổi được thực hiện tự động
+- Bạn đang triển khai một tính năng
+- Bạn đang sửa một cái gì đó cụ thể
+
+**💡 Mẹo cho người mới:** Một quy trình làm việc phổ biến là: Sử dụng Chat Mode để lập kế hoạch, sau đó sử dụng Agent Mode (hoặc nhấp vào "Implement the plan") để xây dựng nó!
 
 ---
 
-## 📖 Lesson 5: Switching Between Modes
+## 📖 Bài học 5: Chuyển đổi giữa các Chế độ
 
-### How to Switch
+### Cách Chuyển đổi
 
-Switching between modes is easy:
+Chuyển đổi giữa các chế độ rất dễ dàng:
 
-1. **Look at the input box** - You'll see buttons or toggles for Chat and Agent
-2. **Click the mode you want** - Click "Chat" for Chat Mode, "Agent" for Agent Mode
-3. **The active mode will be highlighted** - You'll see which mode is currently selected
+1. **Nhìn vào hộp nhập liệu** - Bạn sẽ thấy các nút hoặc công tắc cho Chat và Agent
+2. **Nhấp vào chế độ bạn muốn** - Nhấp vào "Chat" cho Chat Mode, "Agent" cho Agent Mode
+3. **Chế độ hoạt động sẽ được đánh dấu** - Bạn sẽ thấy chế độ nào hiện đang được chọn
 
-### When to Switch
+### Khi nào nên Chuyển đổi
 
-**Switch to Chat Mode when:**
-- You're stuck and need help
-- You want to understand something
-- You need to plan before building
-- You want advice
+**Chuyển sang Chat Mode khi:**
+- Bạn bị mắc kẹt và cần giúp đỡ
+- Bạn muốn hiểu điều gì đó
+- Bạn cần lập kế hoạch trước khi xây dựng
+- Bạn muốn lời khuyên
 
-**Switch to Agent Mode when:**
-- You're ready to build something
-- You have clear instructions
-- You want changes made
-- You're implementing a feature
+**Chuyển sang Agent Mode khi:**
+- Bạn đã sẵn sàng để xây dựng thứ gì đó
+- Bạn có hướng dẫn rõ ràng
+- Bạn muốn thay đổi được thực hiện
+- Bạn đang triển khai một tính năng
 
-### Using Both Modes Together
+### Sử dụng Cả hai Chế độ Cùng nhau
 
-A great workflow is to use both modes:
+Một quy trình làm việc tuyệt vời là sử dụng cả hai chế độ:
 
-1. **Start in Chat Mode** - Ask questions and plan
-2. **Get advice** - Understand what you need to do
-3. **Switch to Agent Mode** - Actually build it
-4. **Go back to Chat Mode** - If you need to understand or adjust
+1. **Bắt đầu trong Chat Mode** - Đặt câu hỏi và lập kế hoạch
+2. **Nhận lời khuyên** - Hiểu những gì bạn cần làm
+3. **Chuyển sang Agent Mode** - Thực sự xây dựng nó
+4. **Quay lại Chat Mode** - Nếu bạn cần hiểu hoặc điều chỉnh
 
-**Example Workflow:**
+**Quy trình Ví dụ:**
 
 ```
-1. Chat Mode: "How should I add user authentication?"
-2. Chat Mode: Explains the process, asks questions
-3. You: Answer questions
-4. Chat Mode: Provides a plan
-5. Click "Implement the plan" OR switch to Agent Mode
-6. Agent Mode: Builds the authentication system
-7. Chat Mode: "Can you explain how this works?"
-8. Chat Mode: Explains the authentication system
+1. Chat Mode: "Tôi nên thêm xác thực người dùng như thế nào?"
+2. Chat Mode: Giải thích quy trình, đặt câu hỏi
+3. Bạn: Trả lời câu hỏi
+4. Chat Mode: Cung cấp một kế hoạch
+5. Nhấp vào "Implement the plan" HOẶC chuyển sang Agent Mode
+6. Agent Mode: Xây dựng hệ thống xác thực
+7. Chat Mode: "Bạn có thể giải thích cách này hoạt động không?"
+8. Chat Mode: Giải thích hệ thống xác thực
 ```
 
 ---
 
-## 🛠️ Hands-On Practice
+## 🛠️ Thực hành
 
-Let's practice using both modes!
+Hãy thực hành sử dụng cả hai chế độ!
 
-### Practice 1: Using Chat Mode
+### Thực hành 1: Sử dụng Chat Mode
 
-**Task:** Get help planning a feature
+**Nhiệm vụ:** Nhận trợ giúp lập kế hoạch cho một tính năng
 
-1. **Activate Chat Mode** (click the Chat button)
-2. **Ask this question:**
+1. **Kích hoạt Chat Mode** (nhấp vào nút Chat)
+2. **Đặt câu hỏi này:**
    ```
    I want to create a blog. How should I structure it? What pages do I need?
    ```
-3. **Read the response** - Chat Mode will explain and ask questions
-4. **Answer any questions** it asks
-5. **Review the plan** it provides
+   *(Tạm dịch: Tôi muốn tạo một blog. Tôi nên cấu trúc nó như thế nào? Tôi cần những trang nào?)*
+3. **Đọc phản hồi** - Chat Mode sẽ giải thích và đặt câu hỏi
+4. **Trả lời bất kỳ câu hỏi nào** nó hỏi
+5. **Xem lại kế hoạch** nó cung cấp
 
-**What you learned:** Chat Mode helps you think through and plan your project.
+**Những gì bạn đã học:** Chat Mode giúp bạn suy nghĩ và lập kế hoạch cho dự án của mình.
 
-### Practice 2: Using Agent Mode
+### Thực hành 2: Sử dụng Agent Mode
 
-**Task:** Build a simple feature
+**Nhiệm vụ:** Xây dựng một tính năng đơn giản
 
-1. **Activate Agent Mode** (click the Agent button)
-2. **Give this instruction:**
+1. **Kích hoạt Agent Mode** (nhấp vào nút Agent)
+2. **Đưa ra hướng dẫn này:**
    ```
    Add a header to my page with a logo on the left and navigation menu on the right
    ```
-3. **Watch Agent Mode work** - It will build the header
-4. **Check the result** - See if it looks good
-5. **Ask for adjustments if needed:**
+   *(Tạm dịch: Thêm tiêu đề vào trang của tôi với logo bên trái và menu điều hướng bên phải)*
+3. **Xem Agent Mode làm việc** - Nó sẽ xây dựng tiêu đề
+4. **Kiểm tra kết quả** - Xem nó có đẹp không
+5. **Yêu cầu điều chỉnh nếu cần:**
    ```
    Make the header background darker and the text white
    ```
+   *(Tạm dịch: Làm cho nền tiêu đề tối hơn và văn bản màu trắng)*
 
-**What you learned:** Agent Mode automatically builds what you ask for.
+**Những gì bạn đã học:** Agent Mode tự động xây dựng những gì bạn yêu cầu.
 
-### Practice 3: Using Both Modes Together
+### Thực hành 3: Sử dụng Cả hai Chế độ Cùng nhau
 
-**Task:** Plan and build a feature
+**Nhiệm vụ:** Lập kế hoạch và xây dựng một tính năng
 
-1. **Start in Chat Mode:**
+1. **Bắt đầu trong Chat Mode:**
    ```
    I want to add a testimonials section to my website. What's the best way to do this?
    ```
-2. **Get advice** from Chat Mode
-3. **Click "Implement the plan"** or switch to Agent Mode
-4. **Watch it get built**
-5. **Go back to Chat Mode** if you need to understand something:
+   *(Tạm dịch: Tôi muốn thêm phần lời chứng thực vào trang web của mình. Cách tốt nhất để làm điều này là gì?)*
+2. **Nhận lời khuyên** từ Chat Mode
+3. **Nhấp vào "Implement the plan"** hoặc chuyển sang Agent Mode
+4. **Xem nó được xây dựng**
+5. **Quay lại Chat Mode** nếu bạn cần hiểu điều gì đó:
    ```
    How does this testimonials section work?
    ```
+   *(Tạm dịch: Phần lời chứng thực này hoạt động như thế nào?)*
 
-**What you learned:** Using both modes together gives you the best of both worlds - understanding and building.
+**Những gì bạn đã học:** Sử dụng cả hai chế độ cùng nhau mang lại cho bạn điều tốt nhất của cả hai thế giới - hiểu biết và xây dựng.
 
-### Practice 4: Complex Multi-Step Operation
+### Thực hành 4: Hoạt động Nhiều bước Phức tạp
 
-**Task:** Build a feature incrementally using best practices
+**Nhiệm vụ:** Xây dựng một tính năng tăng dần bằng cách sử dụng các thực tiễn tốt nhất
 
-**Step 1 - Plan in Chat Mode:**
-1. **Ask Chat Mode:**
+**Bước 1 - Lập kế hoạch trong Chat Mode:**
+1. **Hỏi Chat Mode:**
    ```
    I want to add a contact section with a form and a map. Can you help me plan how to build this step by step?
    ```
-2. **Get a plan** from Chat Mode
-3. **Review the plan** - Understand the steps
+   *(Tạm dịch: Tôi muốn thêm phần liên hệ với biểu mẫu và bản đồ. Bạn có thể giúp tôi lập kế hoạch cách xây dựng từng bước không?)*
+2. **Nhận kế hoạch** từ Chat Mode
+3. **Xem lại kế hoạch** - Hiểu các bước
 
-**Step 2 - Build Step by Step:**
+**Bước 2 - Xây dựng Từng bước:**
 
-**Step 2a: Build the form first**
-1. **Switch to Agent Mode**
-2. **Give this instruction:**
+**Bước 2a: Xây dựng biểu mẫu trước**
+1. **Chuyển sang Agent Mode**
+2. **Đưa ra hướng dẫn này:**
    ```
    Create a contact form with name, email, phone, and message fields. Add form validation and a submit button.
    ```
-3. **Wait for it to complete**
-4. **Test the form** - Make sure it works
-5. **Review** - Does it look good?
+   *(Tạm dịch: Tạo biểu mẫu liên hệ với các trường tên, email, điện thoại và tin nhắn. Thêm xác thực biểu mẫu và nút gửi.)*
+3. **Đợi nó hoàn thành**
+4. **Kiểm tra biểu mẫu** - Đảm bảo nó hoạt động
+5. **Xem lại** - Nó có đẹp không?
 
-**Step 2b: Add the map**
-1. **Still in Agent Mode**
-2. **Give this instruction:**
+**Bước 2b: Thêm bản đồ**
+1. **Vẫn trong Agent Mode**
+2. **Đưa ra hướng dẫn này:**
    ```
    Add a map section below the contact form showing our business location
    ```
-3. **Wait for it to complete**
-4. **Test** - Check if the map displays
-5. **Review** - Does it look good?
+   *(Tạm dịch: Thêm phần bản đồ bên dưới biểu mẫu liên hệ hiển thị vị trí doanh nghiệp của chúng tôi)*
+3. **Đợi nó hoàn thành**
+4. **Kiểm tra** - Kiểm tra xem bản đồ có hiển thị không
+5. **Xem lại** - Nó có đẹp không?
 
-**Step 2c: Refine the design**
-1. **Still in Agent Mode**
-2. **Give this instruction:**
+**Bước 2c: Tinh chỉnh thiết kế**
+1. **Vẫn trong Agent Mode**
+2. **Đưa ra hướng dẫn này:**
    ```
    Improve the contact section design: make the form and map side by side on desktop, stack them on mobile, and improve spacing and colors
    ```
-3. **Wait for it to complete**
-4. **Test on different screen sizes**
-5. **Review** - Does it look good?
+   *(Tạm dịch: Cải thiện thiết kế phần liên hệ: làm cho biểu mẫu và bản đồ nằm cạnh nhau trên máy tính để bàn, xếp chồng lên nhau trên thiết bị di động, và cải thiện khoảng cách và màu sắc)*
+3. **Đợi nó hoàn thành**
+4. **Kiểm tra trên các kích thước màn hình khác nhau**
+5. **Xem lại** - Nó có đẹp không?
 
-**What you learned:** Breaking complex features into steps gives you more control and better results.
+**Những gì bạn đã học:** Chia nhỏ các tính năng phức tạp thành các bước giúp bạn kiểm soát nhiều hơn và kết quả tốt hơn.
 
-### Practice 5: Canceling and Rolling Back
+### Thực hành 5: Hủy và Khôi phục
 
-**Task:** Practice canceling and reverting operations
+**Nhiệm vụ:** Thực hành hủy và hoàn tác các hoạt động
 
-**Part A: Cancel an Operation (if needed)**
-1. **Start Agent Mode** on a simple task
-2. **If you change your mind** while it's working:
-   - Look for "Cancel" or "Stop" button
-   - Click it
-   - Operation stops
+**Phần A: Hủy một Hoạt động (nếu cần)**
+1. **Bắt đầu Agent Mode** trên một tác vụ đơn giản
+2. **Nếu bạn đổi ý** trong khi nó đang làm việc:
+   - Tìm nút "Cancel" hoặc "Stop"
+   - Nhấp vào nó
+   - Hoạt động dừng lại
 
-**Part B: Roll Back Changes**
-1. **Make a change** with Agent Mode:
+**Phần B: Khôi phục Các thay đổi**
+1. **Thực hiện thay đổi** với Agent Mode:
    ```
    Change all the text colors to red
    ```
-2. **Review the change** - See if you like it
-3. **If you don't like it, revert:**
-   - Go to **History**
-   - Find the version before the change
-   - Click **"Revert"**
-   - Or ask: "Revert the last change"
+   *(Tạm dịch: Đổi tất cả màu văn bản thành màu đỏ)*
+2. **Xem lại thay đổi** - Xem bạn có thích nó không
+3. **Nếu bạn không thích nó, hãy hoàn tác:**
+   - Đi tới **History**
+   - Tìm phiên bản trước khi thay đổi
+   - Nhấp vào **"Revert"**
+   - Hoặc hỏi: "Revert the last change" *(Hoàn tác thay đổi cuối cùng)*
 
-**What you learned:** You can always undo changes, so don't be afraid to experiment!
-
----
-
-## 🎯 Module 3 Challenges
-
-**Master Chat and Agent Mode with these challenges!**
-
-### Challenge 1: Plan Then Build (Beginner)
-
-**Your Task:** Use Chat Mode to plan, then Agent Mode to build a feature.
-
-**Feature:** Add a newsletter signup section to your homepage
-
-**Steps:**
-1. Use Chat Mode to plan the feature
-2. Get advice on design and functionality
-3. Click "Implement the plan" or switch to Agent Mode
-4. Review what was built
-5. Use Chat Mode to understand how it works
-
-**💡 Hints:**
-- Start with Chat Mode questions
-- Let it ask you clarifying questions
-- Review the plan before implementing
-- Test after building
-
-**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-3-challenge-1)
+**Những gì bạn đã học:** Bạn luôn có thể hoàn tác các thay đổi, vì vậy đừng ngại thử nghiệm!
 
 ---
 
-### Challenge 2: Complex Multi-Step Build (Intermediate)
+## 🎯 Thử thách Mô-đun 3
 
-**Your Task:** Build a complete feature using Agent Mode, breaking it into steps.
+**Làm chủ Chat và Agent Mode với các thử thách này!**
 
-**Feature:** User profile system with avatar upload
+### Thử thách 1: Lập kế hoạch Sau đó Xây dựng (Người mới bắt đầu)
 
-**Requirements:**
-- Build step 1: Create profile page
-- Test and review
-- Build step 2: Add avatar upload
-- Test and review
-- Build step 3: Add profile editing
-- Test and review
+**Nhiệm vụ của bạn:** Sử dụng Chat Mode để lập kế hoạch, sau đó Agent Mode để xây dựng một tính năng.
 
-**💡 Hints:**
-- Don't build everything at once
-- Test after each step
-- Ask for adjustments if needed
-- Use clear, specific instructions
+**Tính năng:** Thêm phần đăng ký bản tin vào trang chủ của bạn
 
-**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-3-challenge-2)
+**Các bước:**
+1. Sử dụng Chat Mode để lập kế hoạch tính năng
+2. Nhận lời khuyên về thiết kế và chức năng
+3. Nhấp vào "Implement the plan" hoặc chuyển sang Agent Mode
+4. Xem lại những gì đã được xây dựng
+5. Sử dụng Chat Mode để hiểu cách nó hoạt động
 
----
+**💡 Gợi ý:**
+- Bắt đầu với các câu hỏi Chat Mode
+- Để nó hỏi bạn các câu hỏi làm rõ
+- Xem lại kế hoạch trước khi thực hiện
+- Kiểm tra sau khi xây dựng
 
-### Challenge 3: Debug and Fix Workflow (Advanced)
-
-**Your Task:** Practice the complete workflow of debugging and fixing.
-
-**Scenario:** Your contact form isn't working properly
-
-**Steps:**
-1. Use Chat Mode to investigate the problem
-2. Get explanation of what's wrong
-3. Use Agent Mode to fix it
-4. Test the fix
-5. If needed, revert and try again
-
-**💡 Hints:**
-- Chat Mode for understanding
-- Agent Mode for fixing
-- Test thoroughly
-- Use History if needed
-
-**Check your solution:** See [Challenge Solutions](supplement-challenge-solutions.md#module-3-challenge-3)
+**Kiểm tra giải pháp của bạn:** Xem [Giải pháp Thử thách](supplement-challenge-solutions.md#module-3-challenge-1)
 
 ---
 
-**💡 Pro Tip:** These challenges help you practice the workflow you'll use in real projects!
+### Thử thách 2: Xây dựng Nhiều bước Phức tạp (Trung cấp)
+
+**Nhiệm vụ của bạn:** Xây dựng một tính năng hoàn chỉnh bằng cách sử dụng Agent Mode, chia nhỏ nó thành các bước.
+
+**Tính năng:** Hệ thống hồ sơ người dùng với tải lên avatar
+
+**Yêu cầu:**
+- Xây dựng bước 1: Tạo trang hồ sơ
+- Kiểm tra và xem lại
+- Xây dựng bước 2: Thêm tải lên avatar
+- Kiểm tra và xem lại
+- Xây dựng bước 3: Thêm chỉnh sửa hồ sơ
+- Kiểm tra và xem lại
+
+**💡 Gợi ý:**
+- Đừng xây dựng mọi thứ cùng một lúc
+- Kiểm tra sau mỗi bước
+- Yêu cầu điều chỉnh nếu cần
+- Sử dụng hướng dẫn rõ ràng, cụ thể
+
+**Kiểm tra giải pháp của bạn:** Xem [Giải pháp Thử thách](supplement-challenge-solutions.md#module-3-challenge-2)
 
 ---
 
-## ✅ Module 3 Checklist
+### Thử thách 3: Quy trình Gỡ lỗi và Sửa lỗi (Nâng cao)
 
-Before moving to Module 4, make sure you can:
+**Nhiệm vụ của bạn:** Thực hành quy trình hoàn chỉnh của việc gỡ lỗi và sửa lỗi.
 
-- [ ] Explain the difference between Chat Mode and Agent Mode
-- [ ] Know when to use Chat Mode
-- [ ] Know when to use Agent Mode
-- [ ] Successfully switch between modes
-- [ ] Use Chat Mode to get help and plan
-- [ ] Use Agent Mode to build features
-- [ ] Understand the "Implement the plan" button
-- [ ] Use both modes together effectively
-- [ ] Break complex tasks into smaller steps
-- [ ] Write clear, specific instructions for Agent Mode
-- [ ] Cancel an Agent Mode operation if needed
-- [ ] Roll back changes using History
-- [ ] Review intermediate changes before building more
+**Tình huống:** Biểu mẫu liên hệ của bạn không hoạt động bình thường
 
----
+**Các bước:**
+1. Sử dụng Chat Mode để điều tra vấn đề
+2. Nhận giải thích về những gì sai
+3. Sử dụng Agent Mode để sửa nó
+4. Kiểm tra bản sửa lỗi
+5. Nếu cần, hoàn tác và thử lại
 
-## 🤔 Common Questions (FAQ)
+**💡 Gợi ý:**
+- Chat Mode để hiểu
+- Agent Mode để sửa
+- Kiểm tra kỹ lưỡng
+- Sử dụng Lịch sử nếu cần
 
-### Q: Which mode should I use most?
-**A:** It depends! Use Chat Mode when learning and planning, Agent Mode when building. Many people use both throughout a project.
-
-### Q: Can I use Chat Mode to build things?
-**A:** Chat Mode doesn't build automatically, but it can help you plan, and then you can click "Implement the plan" to have Agent Mode build it.
-
-### Q: What if Agent Mode doesn't build what I want?
-**A:** That's okay! Ask for adjustments. You can say "That's not quite right, can you change it to..." and Agent Mode will fix it.
-
-### Q: Do I need to switch modes manually?
-**A:** Usually yes, but if you click "Implement the plan" in Chat Mode, it switches to Agent Mode automatically.
-
-### Q: Can I use both modes in the same conversation?
-**A:** Yes! You can switch back and forth as needed. That's actually a great way to work.
-
-### Q: How do I know which mode I'm in?
-**A:** Look at the mode buttons - the active one will be highlighted or shown differently.
-
-### Q: How do I handle complex, multi-step features?
-**A:** Break them into smaller steps! Build one feature at a time, test it, then build the next. This gives you more control and better results.
-
-### Q: Can I cancel Agent Mode if it's doing something wrong?
-**A:** Yes! Look for a "Cancel" or "Stop" button while Agent Mode is working. Click it to stop the operation immediately.
-
-### Q: What if Agent Mode builds something I don't like?
-**A:** You can roll it back! Go to History and revert to a previous version, or ask Agent Mode to undo the change.
-
-### Q: Should I build everything at once or step by step?
-**A:** Step by step is usually better! Build one feature, test it, review it, then build the next. This prevents issues and gives you more control.
-
-### Q: How do I know if my instructions to Agent Mode are clear enough?
-**A:** If Agent Mode builds what you want with minimal adjustments needed, your instructions were clear! If not, try being more specific or breaking it into smaller steps.
-
-### Q: What if Agent Mode seems stuck or is taking too long?
-**A:** Complex tasks take time. Check the progress indicators. If it's truly stuck, you can cancel and try breaking the task into smaller steps.
+**Kiểm tra giải pháp của bạn:** Xem [Giải pháp Thử thách](supplement-challenge-solutions.md#module-3-challenge-3)
 
 ---
 
-## 🎯 What's Next?
-
-Fantastic! You now understand how to communicate with Lovable using both Chat Mode and Agent Mode. You can:
-- Get help and advice with Chat Mode
-- Build features automatically with Agent Mode
-- Switch between modes as needed
-- Use both modes together effectively
-
-**Ready for Module 4?** In the next module, we'll learn how to edit and refine your projects - making changes, adding features, and improving your apps!
+**💡 Mẹo chuyên nghiệp:** Những thử thách này giúp bạn thực hành quy trình làm việc bạn sẽ sử dụng trong các dự án thực tế!
 
 ---
 
-## 💡 Pro Tips for Beginners
+## ✅ Danh sách kiểm tra Mô-đun 3
 
-1. **Start with Chat Mode** - When learning, use Chat Mode to understand things before building
+Trước khi chuyển sang Mô-đun 4, hãy đảm bảo bạn có thể:
 
-2. **Don't be afraid to ask questions** - Chat Mode is there to help! Ask as many questions as you need
-
-3. **Be specific with Agent Mode** - The clearer your instructions, the better the results
-
-4. **Use "Implement the plan"** - It's a great way to go from planning to building seamlessly
-
-5. **Switch modes freely** - Don't feel locked into one mode. Switch as needed!
-
-6. **Learn from both** - Chat Mode teaches you, Agent Mode shows you how it's done
-
-7. **Break complex tasks into steps** - Build incrementally for better control and results
-
-8. **Review as you go** - Test each feature before building the next one
-
-9. **Don't fear mistakes** - You can always cancel or roll back changes
-
-10. **Plan before building** - Use Chat Mode to plan complex features, then build step by step
+- [ ] Giải thích sự khác biệt giữa Chat Mode và Agent Mode
+- [ ] Biết khi nào nên sử dụng Chat Mode
+- [ ] Biết khi nào nên sử dụng Agent Mode
+- [ ] Chuyển đổi thành công giữa các chế độ
+- [ ] Sử dụng Chat Mode để nhận trợ giúp và lập kế hoạch
+- [ ] Sử dụng Agent Mode để xây dựng các tính năng
+- [ ] Hiểu nút "Implement the plan"
+- [ ] Sử dụng cả hai chế độ cùng nhau hiệu quả
+- [ ] Chia nhỏ các tác vụ phức tạp thành các bước nhỏ hơn
+- [ ] Viết hướng dẫn rõ ràng, cụ thể cho Agent Mode
+- [ ] Hủy hoạt động Agent Mode nếu cần
+- [ ] Khôi phục các thay đổi bằng cách sử dụng Lịch sử
+- [ ] Xem lại các thay đổi trung gian trước khi xây dựng thêm
 
 ---
 
-*Module 3 Complete! 🎉*
+## 🤔 Câu hỏi thường gặp (FAQ)
 
+### Q: Tôi nên sử dụng chế độ nào nhiều nhất?
+**A:** Nó phụ thuộc! Sử dụng Chat Mode khi học và lập kế hoạch, Agent Mode khi xây dựng. Nhiều người sử dụng cả hai trong suốt dự án.
+
+### Q: Tôi có thể sử dụng Chat Mode để xây dựng mọi thứ không?
+**A:** Chat Mode không tự động xây dựng, nhưng nó có thể giúp bạn lập kế hoạch, và sau đó bạn có thể nhấp vào "Implement the plan" để Agent Mode xây dựng nó.
+
+### Q: Nếu Agent Mode không xây dựng những gì tôi muốn thì sao?
+**A:** Không sao cả! Hãy yêu cầu điều chỉnh. Bạn có thể nói "That's not quite right, can you change it to..." (Điều đó chưa đúng lắm, bạn có thể đổi nó thành...) và Agent Mode sẽ sửa nó.
+
+### Q: Tôi có cần chuyển đổi chế độ thủ công không?
+**A:** Thường là có, nhưng nếu bạn nhấp vào "Implement the plan" trong Chat Mode, nó sẽ tự động chuyển sang Agent Mode.
+
+### Q: Tôi có thể sử dụng cả hai chế độ trong cùng một cuộc trò chuyện không?
+**A:** Có! Bạn có thể chuyển đổi qua lại khi cần thiết. Đó thực sự là một cách tuyệt vời để làm việc.
+
+### Q: Làm thế nào để tôi biết tôi đang ở chế độ nào?
+**A:** Nhìn vào các nút chế độ - nút đang hoạt động sẽ được đánh dấu hoặc hiển thị khác đi.
+
+### Q: Làm thế nào để tôi xử lý các tính năng phức tạp, nhiều bước?
+**A:** Chia nhỏ chúng thành các bước nhỏ hơn! Xây dựng một tính năng tại một thời điểm, kiểm tra nó, sau đó xây dựng tính năng tiếp theo. Điều này mang lại cho bạn nhiều quyền kiểm soát hơn và kết quả tốt hơn.
+
+### Q: Tôi có thể hủy Agent Mode nếu nó đang làm gì đó sai không?
+**A:** Có! Tìm nút "Cancel" hoặc "Stop" trong khi Agent Mode đang làm việc. Nhấp vào nó để dừng hoạt động ngay lập tức.
+
+### Q: Nếu Agent Mode xây dựng thứ gì đó tôi không thích thì sao?
+**A:** Bạn có thể khôi phục nó! Đi tới Lịch sử và hoàn tác về phiên bản trước đó, hoặc yêu cầu Agent Mode hoàn tác thay đổi.
+
+### Q: Tôi nên xây dựng mọi thứ cùng một lúc hay từng bước?
+**A:** Từng bước thường tốt hơn! Xây dựng một tính năng, kiểm tra nó, xem lại nó, sau đó xây dựng tính năng tiếp theo. Điều này ngăn ngừa các vấn đề và mang lại cho bạn nhiều quyền kiểm soát hơn.
+
+### Q: Làm thế nào để tôi biết hướng dẫn của mình cho Agent Mode có đủ rõ ràng không?
+**A:** Nếu Agent Mode xây dựng những gì bạn muốn với ít điều chỉnh cần thiết, hướng dẫn của bạn đã rõ ràng! Nếu không, hãy thử cụ thể hơn hoặc chia nhỏ nó thành các bước nhỏ hơn.
+
+### Q: Nếu Agent Mode có vẻ bị kẹt hoặc mất quá nhiều thời gian thì sao?
+**A:** Các tác vụ phức tạp mất thời gian. Kiểm tra các chỉ báo tiến độ. Nếu nó thực sự bị kẹt, bạn có thể hủy và thử chia nhỏ tác vụ thành các bước nhỏ hơn.
+
+---
+
+## 🎯 Tiếp theo là gì?
+
+Tuyệt vời! Bây giờ bạn đã hiểu cách giao tiếp với Lovable bằng cả Chat Mode và Agent Mode. Bạn có thể:
+- Nhận trợ giúp và lời khuyên với Chat Mode
+- Xây dựng các tính năng tự động với Agent Mode
+- Chuyển đổi giữa các chế độ khi cần thiết
+- Sử dụng cả hai chế độ cùng nhau hiệu quả
+
+**Sẵn sàng cho Mô-đun 4?** Trong mô-đun tiếp theo, chúng ta sẽ tìm hiểu cách chỉnh sửa và tinh chỉnh các dự án của bạn - thực hiện thay đổi, thêm tính năng và cải thiện ứng dụng của bạn!
+
+---
+
+## 💡 Mẹo chuyên nghiệp cho người mới bắt đầu
+
+1. **Bắt đầu với Chat Mode** - Khi học, hãy sử dụng Chat Mode để hiểu mọi thứ trước khi xây dựng
+
+2. **Đừng ngại đặt câu hỏi** - Chat Mode ở đó để giúp đỡ! Hãy hỏi bao nhiêu câu hỏi tùy thích
+
+3. **Cụ thể với Agent Mode** - Hướng dẫn của bạn càng rõ ràng, kết quả càng tốt
+
+4. **Sử dụng "Implement the plan"** - Đó là một cách tuyệt vời để đi từ lập kế hoạch đến xây dựng một cách liền mạch
+
+5. **Chuyển đổi chế độ tự do** - Đừng cảm thấy bị khóa vào một chế độ. Chuyển đổi khi cần thiết!
+
+6. **Học từ cả hai** - Chat Mode dạy bạn, Agent Mode chỉ cho bạn cách nó được thực hiện
+
+7. **Chia nhỏ các tác vụ phức tạp thành các bước** - Xây dựng tăng dần để kiểm soát tốt hơn và kết quả tốt hơn
+
+8. **Xem lại khi bạn thực hiện** - Kiểm tra từng tính năng trước khi xây dựng tính năng tiếp theo
+
+9. **Đừng sợ sai lầm** - Bạn luôn có thể hủy hoặc khôi phục các thay đổi
+
+10. **Lập kế hoạch trước khi xây dựng** - Sử dụng Chat Mode để lập kế hoạch các tính năng phức tạp, sau đó xây dựng từng bước
+
+---
+
+*Mô-đun 3 Hoàn thành! 🎉*

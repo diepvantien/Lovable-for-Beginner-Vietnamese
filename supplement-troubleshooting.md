@@ -1,323 +1,322 @@
-# Troubleshooting Guide - Common Issues and Solutions
+# Hướng dẫn Gỡ lỗi - Các Vấn đề Phổ biến và Giải pháp
 
-**Having trouble? You're not alone!** This guide helps you solve common problems when learning Lovable.
-
----
-
-## 🔧 General Issues
-
-### "I don't understand what Lovable built"
-
-**Problem:** Lovable created something, but you're not sure what it is or how it works.
-
-**Solutions:**
-1. **Use Chat Mode** - Ask: "Can you explain what this does?"
-2. **Ask for a walkthrough** - "Show me how this feature works"
-3. **Break it down** - "What does each part of this page do?"
-4. **Review the code** - Open Code Mode to see the structure (optional)
-
-**Prevention:** Use the "ask questions" technique in your prompts to ensure Lovable explains what it's building.
+**Gặp rắc rối? Bạn không đơn độc!** Hướng dẫn này giúp bạn giải quyết các vấn đề phổ biến khi học Lovable.
 
 ---
 
-### "Lovable didn't build what I wanted"
+## 🔧 Các Vấn đề Chung
 
-**Problem:** The result doesn't match what you envisioned.
+### "Tôi không hiểu Lovable đã xây dựng cái gì"
 
-**Solutions:**
-1. **Be more specific** - Add more details to your prompt
-2. **Use the question technique** - "Ask me questions to understand what I want"
-3. **Break it into steps** - Instead of one big request, make several smaller ones
-4. **Provide examples** - "Make it look like [reference website]"
-5. **Iterate** - Ask for changes: "That's close, but can you change X to Y?"
+**Vấn đề:** Lovable đã tạo ra một cái gì đó, nhưng bạn không chắc nó là gì hoặc nó hoạt động như thế nào.
 
-**Prevention:** Start with detailed prompts and use the question technique.
+**Giải pháp:**
+1. **Sử dụng Chat Mode** - Hỏi: "Bạn có thể giải thích cái này làm gì không?"
+2. **Yêu cầu hướng dẫn** - "Chỉ cho tôi cách tính năng này hoạt động"
+3. **Chia nhỏ nó** - "Mỗi phần của trang này làm gì?"
+4. **Xem lại mã** - Mở Code Mode để xem cấu trúc (tùy chọn)
 
----
-
-### "I made a mistake and want to undo it"
-
-**Problem:** You made a change you don't like.
-
-**Solutions:**
-1. **Use History** - Go to History and revert to a previous version
-2. **Ask to undo** - "Revert the last change" or "Go back to before I added X"
-3. **Edit your message** - Find the message that made the change and edit/delete it
-4. **Ask for the opposite** - "Remove the feature I just added"
-
-**Prevention:** Test changes on a copy or save important versions.
+**Phòng ngừa:** Sử dụng kỹ thuật "đặt câu hỏi" trong prompt của bạn để đảm bảo Lovable giải thích những gì nó đang xây dựng.
 
 ---
 
-## 💬 Chat Mode Issues
+### "Lovable không xây dựng những gì tôi muốn"
 
-### "Chat Mode isn't helping"
+**Vấn đề:** Kết quả không khớp với những gì bạn hình dung.
 
-**Problem:** Chat Mode isn't giving useful answers.
+**Giải pháp:**
+1. **Cụ thể hơn** - Thêm nhiều chi tiết vào prompt của bạn
+2. **Sử dụng kỹ thuật đặt câu hỏi** - "Hỏi tôi các câu hỏi để hiểu những gì tôi muốn"
+3. **Chia nhỏ thành các bước** - Thay vì một yêu cầu lớn, hãy thực hiện nhiều yêu cầu nhỏ hơn
+4. **Cung cấp ví dụ** - "Làm cho nó trông giống như [trang web tham chiếu]"
+5. **Lặp lại** - Yêu cầu thay đổi: "Gần đúng rồi, nhưng bạn có thể thay đổi X thành Y không?"
 
-**Solutions:**
-1. **Be more specific** - Ask detailed questions
-2. **Provide context** - Explain your situation
-3. **Ask follow-up questions** - Dig deeper into the response
-4. **Try rephrasing** - Sometimes a different way of asking helps
-5. **Use examples** - "Like when I do X, I want Y to happen"
-
----
-
-### "I don't know what to ask"
-
-**Problem:** You're stuck and don't know how to proceed.
-
-**Solutions:**
-1. **Ask for guidance** - "I want to build X, but I don't know where to start. Can you help me plan?"
-2. **Ask for options** - "What are different ways I could do this?"
-3. **Ask for examples** - "Can you show me an example of how to do this?"
-4. **Break it down** - "What are the steps to build this feature?"
+**Phòng ngừa:** Bắt đầu với các prompt chi tiết và sử dụng kỹ thuật đặt câu hỏi.
 
 ---
 
-## 🤖 Agent Mode Issues
+### "Tôi đã mắc lỗi và muốn hoàn tác"
 
-### "Agent Mode didn't build what I asked for"
+**Vấn đề:** Bạn đã thực hiện một thay đổi mà bạn không thích.
 
-**Problem:** Agent Mode created something different than requested.
+**Giải pháp:**
+1. **Sử dụng Lịch sử (History)** - Đi tới Lịch sử và hoàn tác về phiên bản trước đó
+2. **Yêu cầu hoàn tác** - "Hoàn tác thay đổi cuối cùng" hoặc "Quay lại trước khi tôi thêm X"
+3. **Chỉnh sửa tin nhắn của bạn** - Tìm tin nhắn đã thực hiện thay đổi và chỉnh sửa/xóa nó
+4. **Yêu cầu ngược lại** - "Xóa tính năng tôi vừa thêm"
 
-**Solutions:**
-1. **Be more specific** - Add details about what you want
-2. **Provide context** - Explain the purpose and requirements
-3. **Ask for adjustments** - "That's not quite right. Can you change X to Y?"
-4. **Break it down** - Request features one at a time
-5. **Use references** - "Make it similar to [example]"
-
----
-
-### "Agent Mode is taking too long"
-
-**Problem:** Agent Mode seems stuck or is taking a very long time.
-
-**Solutions:**
-1. **Be patient** - Complex tasks take time
-2. **Check if it's still working** - Look for progress indicators
-3. **Simplify your request** - Break complex tasks into smaller ones
-4. **Cancel and retry** - If truly stuck, cancel and try a simpler approach
+**Phòng ngừa:** Kiểm thử các thay đổi trên một bản sao hoặc lưu các phiên bản quan trọng.
 
 ---
 
-## 🎨 Design Issues
+## 💬 Các Vấn đề Chat Mode
 
-### "The colors don't look right"
+### "Chat Mode không giúp ích"
 
-**Problem:** Colors aren't matching your vision.
+**Vấn đề:** Chat Mode không đưa ra câu trả lời hữu ích.
 
-**Solutions:**
-1. **Be specific about colors** - Use color codes: "Use #0066CC for blue"
-2. **Provide examples** - "Use colors similar to [website]"
-3. **Ask for adjustments** - "Make the background darker" or "Use warmer colors"
-4. **Use Visual Edits** - Click and change colors directly
-
----
-
-### "It doesn't look good on mobile"
-
-**Problem:** The design breaks or looks bad on phones.
-
-**Solutions:**
-1. **Ask for responsiveness** - "Make this fully responsive for mobile devices"
-2. **Test and report** - "The menu doesn't work on mobile, can you fix it?"
-3. **Request mobile-first** - "Design this to work well on mobile first"
-4. **Ask for specific fixes** - "On mobile, the text is too small" or "Buttons are too close together"
+**Giải pháp:**
+1. **Cụ thể hơn** - Hỏi các câu hỏi chi tiết
+2. **Cung cấp ngữ cảnh** - Giải thích tình huống của bạn
+3. **Hỏi các câu hỏi tiếp theo** - Đào sâu hơn vào câu trả lời
+4. **Thử diễn đạt lại** - Đôi khi một cách hỏi khác sẽ giúp ích
+5. **Sử dụng ví dụ** - "Giống như khi tôi làm X, tôi muốn Y xảy ra"
 
 ---
 
-## 🔐 Authentication Issues
+### "Tôi không biết phải hỏi gì"
 
-### "I can't sign up"
+**Vấn đề:** Bạn bị kẹt và không biết làm thế nào để tiếp tục.
 
-**Problem:** Sign up isn't working.
-
-**Solutions:**
-1. **Check if backend is enabled** - "Is Lovable Cloud enabled for this project?"
-2. **Ask Lovable** - "The sign up form isn't working, can you check it?"
-3. **Test the form** - "Add validation to the sign up form"
-4. **Check error messages** - "Show better error messages if sign up fails"
+**Giải pháp:**
+1. **Yêu cầu hướng dẫn** - "Tôi muốn xây dựng X, nhưng tôi không biết bắt đầu từ đâu. Bạn có thể giúp tôi lập kế hoạch không?"
+2. **Yêu cầu các tùy chọn** - "Có những cách nào khác nhau để tôi có thể làm điều này?"
+3. **Yêu cầu ví dụ** - "Bạn có thể chỉ cho tôi một ví dụ về cách làm điều này không?"
+4. **Chia nhỏ nó** - "Các bước để xây dựng tính năng này là gì?"
 
 ---
 
-### "I'm logged in but can't access pages"
+## 🤖 Các Vấn đề Agent Mode
 
-**Problem:** Protected pages aren't working correctly.
+### "Agent Mode không xây dựng những gì tôi yêu cầu"
 
-**Solutions:**
-1. **Ask to check protection** - "Make sure only logged-in users can access the dashboard"
-2. **Test the flow** - "If I'm not logged in and try to access X, redirect me to login"
-3. **Check navigation** - "Update the navigation to show different items for logged-in vs logged-out users"
+**Vấn đề:** Agent Mode đã tạo ra một cái gì đó khác với yêu cầu.
 
----
-
-## 💾 Database Issues
-
-### "My data isn't saving"
-
-**Problem:** Information isn't being stored in the database.
-
-**Solutions:**
-1. **Verify database setup** - "Is the database set up correctly for storing tasks?"
-2. **Check the form** - "Make sure the form submits data to the database"
-3. **Test saving** - "When I create a task, it should save to the database"
-4. **Ask for debugging** - "Data isn't saving, can you check what's wrong?"
+**Giải pháp:**
+1. **Cụ thể hơn** - Thêm chi tiết về những gì bạn muốn
+2. **Cung cấp ngữ cảnh** - Giải thích mục đích và yêu cầu
+3. **Yêu cầu điều chỉnh** - "Không hoàn toàn đúng. Bạn có thể thay đổi X thành Y không?"
+4. **Chia nhỏ nó** - Yêu cầu từng tính năng một
+5. **Sử dụng tham chiếu** - "Làm cho nó tương tự như [ví dụ]"
 
 ---
 
-### "I can't see my saved data"
+### "Agent Mode mất quá nhiều thời gian"
 
-**Problem:** Data is saved but not displaying.
+**Vấn đề:** Agent Mode có vẻ bị kẹt hoặc mất rất nhiều thời gian.
 
-**Solutions:**
-1. **Check the query** - "Make sure the page loads data from the database"
-2. **Verify user association** - "Show only tasks that belong to the logged-in user"
-3. **Test the display** - "The tasks should appear in a list on the dashboard"
-4. **Ask for debugging** - "My tasks aren't showing up, can you fix it?"
-
----
-
-## 🚀 Deployment Issues
-
-### "My app won't publish"
-
-**Problem:** Publishing fails or gets stuck.
-
-**Solutions:**
-1. **Check for errors** - Look for error messages
-2. **Fix obvious issues** - Resolve any errors shown
-3. **Try again** - Sometimes it's a temporary issue
-4. **Contact support** - If it keeps failing, reach out to Lovable support
+**Giải pháp:**
+1. **Kiên nhẫn** - Các tác vụ phức tạp tốn thời gian
+2. **Kiểm tra xem nó có còn hoạt động không** - Tìm các chỉ báo tiến trình
+3. **Đơn giản hóa yêu cầu của bạn** - Chia nhỏ các tác vụ phức tạp thành các bước nhỏ hơn
+4. **Hủy và thử lại** - Nếu thực sự bị kẹt, hãy hủy và thử cách tiếp cận đơn giản hơn
 
 ---
 
-### "My published app doesn't work"
+## 🎨 Các Vấn đề Thiết kế
 
-**Problem:** The live version has issues.
+### "Màu sắc trông không đúng"
 
-**Solutions:**
-1. **Test locally first** - Make sure it works before publishing
-2. **Check the live URL** - Visit it and test everything
-3. **Compare to local version** - See what's different
-4. **Republish** - Make fixes and republish
-5. **Clear cache** - Sometimes browser cache causes issues
+**Vấn đề:** Màu sắc không khớp với tầm nhìn của bạn.
 
----
-
-## 🔗 Integration Issues
-
-### "My API isn't working"
-
-**Problem:** External API integration isn't functioning.
-
-**Solutions:**
-1. **Check API key** - Make sure it's set up correctly in secrets
-2. **Verify the endpoint** - "Is the API endpoint correct?"
-3. **Test the connection** - "Can you test if the API is accessible?"
-4. **Check error messages** - Look for specific error information
-5. **Ask for help** - "The weather API isn't working, can you debug it?"
+**Giải pháp:**
+1. **Cụ thể về màu sắc** - Sử dụng mã màu: "Sử dụng #0066CC cho màu xanh"
+2. **Cung cấp ví dụ** - "Sử dụng màu sắc tương tự như [trang web]"
+3. **Yêu cầu điều chỉnh** - "Làm cho nền tối hơn" hoặc "Sử dụng màu ấm hơn"
+4. **Sử dụng Chỉnh sửa Trực quan** - Nhấp và thay đổi màu sắc trực tiếp
 
 ---
 
-### "Connector isn't connecting"
+### "Nó trông không đẹp trên di động"
 
-**Problem:** A connector (Stripe, Supabase, etc.) isn't working.
+**Vấn đề:** Thiết kế bị vỡ hoặc trông xấu trên điện thoại.
 
-**Solutions:**
-1. **Verify setup** - Check if connector is configured in settings
-2. **Check API keys** - Make sure they're correct and active
-3. **Test the connection** - "Can you test the Supabase connection?"
-4. **Review documentation** - Check Lovable's integration docs
-5. **Ask for help** - "Stripe isn't working, can you check the setup?"
-
----
-
-## 📱 General Tips for Troubleshooting
-
-### 1. Use Chat Mode First
-
-When something doesn't work, start with Chat Mode:
-- "Why isn't X working?"
-- "Can you help me debug this?"
-- "What might be causing this issue?"
-
-### 2. Be Specific About Problems
-
-Instead of "it's broken," say:
-- "The button doesn't do anything when clicked"
-- "The form doesn't submit"
-- "The page shows an error message"
-
-### 3. Test Incrementally
-
-Build and test one feature at a time:
-- Add a feature
-- Test it
-- Fix any issues
-- Move to the next feature
-
-### 4. Use the History Feature
-
-If something breaks:
-- Check what changed
-- Revert if needed
-- Try a different approach
-
-### 5. Ask for Explanations
-
-Don't just ask for fixes, ask to understand:
-- "Why did this happen?"
-- "How can I prevent this?"
-- "What's the best way to do this?"
+**Giải pháp:**
+1. **Yêu cầu khả năng responsive** - "Làm cho cái này hoàn toàn responsive cho thiết bị di động"
+2. **Kiểm thử và báo cáo** - "Menu không hoạt động trên di động, bạn có thể sửa nó không?"
+3. **Yêu cầu mobile-first** - "Thiết kế cái này để hoạt động tốt trên di động trước"
+4. **Yêu cầu các sửa lỗi cụ thể** - "Trên di động, văn bản quá nhỏ" hoặc "Các nút quá gần nhau"
 
 ---
 
-## 🆘 When to Get More Help
+## 🔐 Các Vấn đề Xác thực
 
-If you've tried troubleshooting and still stuck:
+### "Tôi không thể đăng ký"
 
-1. **Use Chat Mode** - Ask Lovable for help
-2. **Check Documentation** - Visit docs.lovable.dev
-3. **Join the Community** - Discord, Reddit, forums
-4. **Contact Support** - Lovable's support team
-5. **Search for Similar Issues** - Others might have had the same problem
+**Vấn đề:** Đăng ký không hoạt động.
 
----
-
-## 💡 Prevention Tips
-
-**Avoid problems before they happen:**
-
-1. **Start simple** - Build basic features first, then add complexity
-2. **Test frequently** - Check things as you build
-3. **Use clear prompts** - Specific instructions prevent misunderstandings
-4. **Save important versions** - Use History to mark good versions
-5. **Read error messages** - They often tell you exactly what's wrong
-6. **Ask questions early** - Don't wait until you're completely stuck
+**Giải pháp:**
+1. **Kiểm tra xem backend có được bật không** - "Lovable Cloud có được bật cho dự án này không?"
+2. **Hỏi Lovable** - "Form đăng ký không hoạt động, bạn có thể kiểm tra nó không?"
+3. **Kiểm thử form** - "Thêm xác thực vào form đăng ký"
+4. **Kiểm tra thông báo lỗi** - "Hiển thị thông báo lỗi tốt hơn nếu đăng ký thất bại"
 
 ---
 
-## 🎯 Quick Problem-Solving Checklist
+### "Tôi đã đăng nhập nhưng không thể truy cập các trang"
 
-When something doesn't work:
+**Vấn đề:** Các trang được bảo vệ không hoạt động chính xác.
 
-- [ ] Can I describe the problem clearly?
-- [ ] Have I tried Chat Mode to understand it?
-- [ ] Have I checked for error messages?
-- [ ] Have I tested if it works in a simple case?
-- [ ] Have I tried reverting to see if it worked before?
-- [ ] Have I asked Lovable for help?
-- [ ] Have I checked the documentation?
-- [ ] Have I reached out to the community?
+**Giải pháp:**
+1. **Yêu cầu kiểm tra bảo vệ** - "Đảm bảo chỉ người dùng đã đăng nhập mới có thể truy cập bảng điều khiển"
+2. **Kiểm thử luồng** - "Nếu tôi chưa đăng nhập và cố gắng truy cập X, hãy chuyển hướng tôi đến đăng nhập"
+3. **Kiểm tra điều hướng** - "Cập nhật điều hướng để hiển thị các mục khác nhau cho người dùng đã đăng nhập so với đã đăng xuất"
 
 ---
 
-**Remember:** Every problem has a solution! Don't give up - use these troubleshooting techniques, and you'll get unstuck. 🚀
+## 💾 Các Vấn đề Cơ sở dữ liệu
+
+### "Dữ liệu của tôi không được lưu"
+
+**Vấn đề:** Thông tin không được lưu trữ trong cơ sở dữ liệu.
+
+**Giải pháp:**
+1. **Xác minh thiết lập cơ sở dữ liệu** - "Cơ sở dữ liệu có được thiết lập chính xác để lưu trữ công việc không?"
+2. **Kiểm tra form** - "Đảm bảo form gửi dữ liệu đến cơ sở dữ liệu"
+3. **Kiểm thử lưu** - "Khi tôi tạo một công việc, nó nên lưu vào cơ sở dữ liệu"
+4. **Yêu cầu gỡ lỗi** - "Dữ liệu không được lưu, bạn có thể kiểm tra xem có gì sai không?"
 
 ---
 
-*Last updated: December 2024*
+### "Tôi không thể thấy dữ liệu đã lưu của mình"
 
+**Vấn đề:** Dữ liệu được lưu nhưng không hiển thị.
+
+**Giải pháp:**
+1. **Kiểm tra truy vấn** - "Đảm bảo trang tải dữ liệu từ cơ sở dữ liệu"
+2. **Xác minh liên kết người dùng** - "Chỉ hiển thị các công việc thuộc về người dùng đã đăng nhập"
+3. **Kiểm thử hiển thị** - "Các công việc nên xuất hiện trong danh sách trên bảng điều khiển"
+4. **Yêu cầu gỡ lỗi** - "Các công việc của tôi không hiển thị, bạn có thể sửa nó không?"
+
+---
+
+## 🚀 Các Vấn đề Triển khai
+
+### "Ứng dụng của tôi sẽ không xuất bản"
+
+**Vấn đề:** Xuất bản thất bại hoặc bị kẹt.
+
+**Giải pháp:**
+1. **Kiểm tra lỗi** - Tìm thông báo lỗi
+2. **Sửa các vấn đề rõ ràng** - Giải quyết bất kỳ lỗi nào được hiển thị
+3. **Thử lại** - Đôi khi đó là vấn đề tạm thời
+4. **Liên hệ hỗ trợ** - Nếu nó tiếp tục thất bại, hãy liên hệ với hỗ trợ Lovable
+
+---
+
+### "Ứng dụng đã xuất bản của tôi không hoạt động"
+
+**Vấn đề:** Phiên bản trực tiếp có vấn đề.
+
+**Giải pháp:**
+1. **Kiểm thử cục bộ trước** - Đảm bảo nó hoạt động trước khi xuất bản
+2. **Kiểm tra URL trực tiếp** - Truy cập nó và kiểm thử mọi thứ
+3. **So sánh với phiên bản cục bộ** - Xem những gì khác biệt
+4. **Xuất bản lại** - Thực hiện sửa lỗi và xuất bản lại
+5. **Xóa bộ nhớ cache** - Đôi khi bộ nhớ cache trình duyệt gây ra vấn đề
+
+---
+
+## 🔗 Các Vấn đề Tích hợp
+
+### "API của tôi không hoạt động"
+
+**Vấn đề:** Tích hợp API bên ngoài không hoạt động.
+
+**Giải pháp:**
+1. **Kiểm tra khóa API** - Đảm bảo nó được thiết lập chính xác trong secrets
+2. **Xác minh endpoint** - "Endpoint API có chính xác không?"
+3. **Kiểm thử kết nối** - "Bạn có thể kiểm thử xem API có thể truy cập được không?"
+4. **Kiểm tra thông báo lỗi** - Tìm thông tin lỗi cụ thể
+5. **Yêu cầu trợ giúp** - "API thời tiết không hoạt động, bạn có thể gỡ lỗi nó không?"
+
+---
+
+### "Connector không kết nối"
+
+**Vấn đề:** Một connector (Stripe, Supabase, v.v.) không hoạt động.
+
+**Giải pháp:**
+1. **Xác minh thiết lập** - Kiểm tra xem connector có được cấu hình trong cài đặt không
+2. **Kiểm tra khóa API** - Đảm bảo chúng chính xác và đang hoạt động
+3. **Kiểm thử kết nối** - "Bạn có thể kiểm thử kết nối Supabase không?"
+4. **Xem lại tài liệu** - Kiểm tra tài liệu tích hợp của Lovable
+5. **Yêu cầu trợ giúp** - "Stripe không hoạt động, bạn có thể kiểm tra thiết lập không?"
+
+---
+
+## 📱 Mẹo Chung để Gỡ lỗi
+
+### 1. Sử dụng Chat Mode Trước
+
+Khi một cái gì đó không hoạt động, hãy bắt đầu với Chat Mode:
+- "Tại sao X không hoạt động?"
+- "Bạn có thể giúp tôi gỡ lỗi cái này không?"
+- "Điều gì có thể gây ra vấn đề này?"
+
+### 2. Cụ thể Về Các Vấn đề
+
+Thay vì "nó bị hỏng", hãy nói:
+- "Nút không làm gì khi được nhấp"
+- "Form không gửi"
+- "Trang hiển thị thông báo lỗi"
+
+### 3. Kiểm thử Dần dần
+
+Xây dựng và kiểm thử từng tính năng một:
+- Thêm một tính năng
+- Kiểm thử nó
+- Sửa bất kỳ vấn đề nào
+- Chuyển sang tính năng tiếp theo
+
+### 4. Sử dụng Tính năng Lịch sử
+
+Nếu một cái gì đó bị hỏng:
+- Kiểm tra những gì đã thay đổi
+- Hoàn tác nếu cần thiết
+- Thử một cách tiếp cận khác
+
+### 5. Yêu cầu Giải thích
+
+Đừng chỉ yêu cầu sửa lỗi, hãy yêu cầu để hiểu:
+- "Tại sao điều này lại xảy ra?"
+- "Làm thế nào tôi có thể ngăn chặn điều này?"
+- "Cách tốt nhất để làm điều này là gì?"
+
+---
+
+## 🆘 Khi nào Cần Nhận Thêm Trợ giúp
+
+Nếu bạn đã thử gỡ lỗi và vẫn bị kẹt:
+
+1. **Sử dụng Chat Mode** - Hỏi Lovable để được giúp đỡ
+2. **Kiểm tra Tài liệu** - Truy cập docs.lovable.dev
+3. **Tham gia Cộng đồng** - Discord, Reddit, diễn đàn
+4. **Liên hệ Hỗ trợ** - Nhóm hỗ trợ của Lovable
+5. **Tìm kiếm các Vấn đề Tương tự** - Những người khác có thể đã gặp vấn đề tương tự
+
+---
+
+## 💡 Mẹo Phòng ngừa
+
+**Tránh các vấn đề trước khi chúng xảy ra:**
+
+1. **Bắt đầu đơn giản** - Xây dựng các tính năng cơ bản trước, sau đó thêm độ phức tạp
+2. **Kiểm thử thường xuyên** - Kiểm tra mọi thứ khi bạn xây dựng
+3. **Sử dụng prompt rõ ràng** - Hướng dẫn cụ thể ngăn ngừa hiểu lầm
+4. **Lưu các phiên bản quan trọng** - Sử dụng Lịch sử để đánh dấu các phiên bản tốt
+5. **Đọc thông báo lỗi** - Chúng thường cho bạn biết chính xác những gì sai
+6. **Hỏi câu hỏi sớm** - Đừng đợi cho đến khi bạn hoàn toàn bị kẹt
+
+---
+
+## 🎯 Danh sách kiểm tra Giải quyết Vấn đề Nhanh
+
+Khi một cái gì đó không hoạt động:
+
+- [ ] Tôi có thể mô tả vấn đề rõ ràng không?
+- [ ] Tôi đã thử Chat Mode để hiểu nó chưa?
+- [ ] Tôi đã kiểm tra các thông báo lỗi chưa?
+- [ ] Tôi đã kiểm thử xem nó có hoạt động trong trường hợp đơn giản không?
+- [ ] Tôi đã thử hoàn tác để xem nó có hoạt động trước đó không?
+- [ ] Tôi đã yêu cầu Lovable giúp đỡ chưa?
+- [ ] Tôi đã kiểm tra tài liệu chưa?
+- [ ] Tôi đã liên hệ với cộng đồng chưa?
+
+---
+
+**Hãy nhớ:** Mọi vấn đề đều có giải pháp! Đừng bỏ cuộc - sử dụng các kỹ thuật gỡ lỗi này, và bạn sẽ thoát khỏi bế tắc. 🚀
+
+---
+
+*Cập nhật lần cuối: Tháng 12 năm 2024*

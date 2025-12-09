@@ -1,423 +1,430 @@
-# Module 8: Deploying and Publishing Your App
+# Module 8: Deploying and Publishing Your App - Triển khai và Xuất bản Ứng dụng của bạn
 
-**Goal:** Get your application live on the internet
+**Mục tiêu:** Đưa ứng dụng của bạn trực tuyến trên internet
 
-**Estimated Time:** 30-40 minutes
-
----
-
-## 🎯 What You'll Learn in This Module
-
-By the end of this module, you will:
-- Understand what "deploying" means
-- Know how to publish your project
-- Understand how Lovable hosts your app
-- Learn how to set up SEO
-- Know how to add a custom domain
-- Understand how to share your app
-- Be able to make your app live on the internet
+**Thời gian ước tính:** 30-40 phút
 
 ---
 
-## 📖 Lesson 1: Understanding Deployment
+## 🎯 Bạn sẽ học được gì trong module này
 
-### What Does "Deploy" Mean?
-
-**Deploying** means making your app live on the internet so people can visit it. It's like publishing a book - once it's deployed, anyone with the link can see it!
-
-### Before Deployment vs. After Deployment
-
-**Before Deployment:**
-- Only you can see it
-- It's in "development" mode
-- You're still building and testing
-- It's not accessible to the public
-
-**After Deployment:**
-- Anyone can visit it
-- It's live on the internet
-- It has a public URL (web address)
-- People can use it!
-
-### Why Deploy?
-
-- ✅ **Share your work** - Show others what you built
-- ✅ **Get feedback** - Let people test it
-- ✅ **Use it for real** - Actually use your app
-- ✅ **Build your portfolio** - Showcase your skills
-- ✅ **Launch your business** - Go live with your product
-
-**💡 Beginner Tip:** Don't worry about deploying until your app is ready! You can work on it as long as you need before going live.
+Vào cuối module này, bạn sẽ:
+- Hiểu "triển khai" (deploying) nghĩa là gì
+- Biết cách xuất bản dự án của bạn
+- Hiểu cách Lovable lưu trữ ứng dụng của bạn
+- Học cách thiết lập SEO
+- Biết cách thêm tên miền tùy chỉnh
+- Hiểu cách chia sẻ ứng dụng của bạn
+- Có thể đưa ứng dụng của bạn trực tuyến trên internet
 
 ---
 
-## 📖 Lesson 2: How Lovable Hosting Works
+## 📖 Bài học 1: Hiểu về Triển khai
 
-### What is Hosting?
+### "Triển khai" nghĩa là gì?
 
-**Hosting** means storing your website on servers (powerful computers) that are always connected to the internet, so people can access it anytime.
+**Triển khai** có nghĩa là đưa ứng dụng của bạn trực tuyến trên internet để mọi người có thể truy cập. Nó giống như xuất bản một cuốn sách - một khi nó được triển khai, bất kỳ ai có liên kết đều có thể xem nó!
 
-### Lovable's Built-in Hosting
+### Trước khi Triển khai vs. Sau khi Triển khai
 
-Lovable provides hosting automatically! This means:
-- ✅ **No setup needed** - Lovable handles everything
-- ✅ **Always online** - Your app is always accessible
-- ✅ **Fast and reliable** - Professional hosting
-- ✅ **Automatic updates** - Changes deploy automatically
-- ✅ **Free subdomain** - You get a free web address
+**Trước khi Triển khai:**
+- Chỉ bạn mới có thể xem nó
+- Nó đang ở chế độ "phát triển"
+- Bạn vẫn đang xây dựng và thử nghiệm
+- Nó không thể truy cập công khai
 
-### Your App's URL
+**Sau khi Triển khai:**
+- Bất kỳ ai cũng có thể truy cập nó
+- Nó trực tuyến trên internet
+- Nó có một URL công khai (địa chỉ web)
+- Mọi người có thể sử dụng nó!
 
-When you deploy, Lovable gives you a URL like:
+### Tại sao phải Triển khai?
+
+- ✅ **Chia sẻ công việc của bạn** - Cho người khác thấy những gì bạn đã xây dựng
+- ✅ **Nhận phản hồi** - Để mọi người thử nghiệm nó
+- ✅ **Sử dụng nó thực tế** - Thực sự sử dụng ứng dụng của bạn
+- ✅ **Xây dựng danh mục đầu tư** - Giới thiệu kỹ năng của bạn
+- ✅ **Ra mắt doanh nghiệp của bạn** - Đi vào hoạt động với sản phẩm của bạn
+
+**💡 Mẹo cho người mới:** Đừng lo lắng về việc triển khai cho đến khi ứng dụng của bạn sẵn sàng! Bạn có thể làm việc trên nó bao lâu tùy thích trước khi đi vào hoạt động.
+
+---
+
+## 📖 Bài học 2: Cách Lovable Hosting hoạt động
+
+### Hosting là gì?
+
+**Hosting** (Lưu trữ) có nghĩa là lưu trữ trang web của bạn trên các máy chủ (máy tính mạnh mẽ) luôn kết nối với internet, để mọi người có thể truy cập bất cứ lúc nào.
+
+### Hosting tích hợp sẵn của Lovable
+
+Lovable cung cấp hosting tự động! Điều này có nghĩa là:
+- ✅ **Không cần thiết lập** - Lovable xử lý mọi thứ
+- ✅ **Luôn trực tuyến** - Ứng dụng của bạn luôn có thể truy cập
+- ✅ **Nhanh chóng và đáng tin cậy** - Hosting chuyên nghiệp
+- ✅ **Cập nhật tự động** - Các thay đổi được triển khai tự động
+- ✅ **Tên miền phụ miễn phí** - Bạn nhận được một địa chỉ web miễn phí
+
+### URL ứng dụng của bạn
+
+Khi bạn triển khai, Lovable cung cấp cho bạn một URL như:
 ```
 https://your-project-name.lovable.app
 ```
 
-This is your app's address on the internet!
+Đây là địa chỉ ứng dụng của bạn trên internet!
 
-**💡 Beginner Tip:** The free URL is perfect for testing and sharing. You can add a custom domain later if you want.
-
----
-
-## 📖 Lesson 3: Publishing Your Project
-
-### How to Publish Your Project
-
-#### Step 1: Make Sure Your Project is Ready
-
-Before publishing, check:
-- ✅ Does everything work?
-- ✅ Are there any obvious bugs?
-- ✅ Is the content complete?
-- ✅ Does it look good on mobile?
-- ✅ Are you happy with it?
-
-**Don't worry about perfection!** You can always update it after publishing.
-
-#### Step 2: Find the Publish Button
-
-1. In your Lovable project, look for:
-   - **"Publish"** button
-   - **"Deploy"** button
-   - **"Go Live"** button
-   - Usually in the top menu or project settings
-
-2. Click it!
-
-#### Step 3: Configure Publishing Settings
-
-You might be asked:
-
-**Project Name:**
-- Choose a name for your project
-- This becomes part of your URL
-- Make it descriptive but short
-
-**Privacy Settings:**
-- **Public** - Anyone can see it
-- **Private** - Only people with the link can see it
-
-**Description:**
-- Add a brief description
-- Helps people understand what your app does
-
-#### Step 4: Publish!
-
-1. **Click "Publish"** or "Deploy"
-2. **Wait a moment** - Lovable is setting everything up
-3. **Get your URL** - You'll receive your live link!
-
-#### Step 5: Test Your Live App
-
-1. **Click the link** - Opens your live app
-2. **Test everything** - Make sure it works
-3. **Check on mobile** - See how it looks on phones
-4. **Share with friends** - Get feedback!
-
-**💡 Beginner Tip:** Your first deployment is exciting! Don't stress - you can always update it.
+**💡 Mẹo cho người mới:** URL miễn phí là hoàn hảo để thử nghiệm và chia sẻ. Bạn có thể thêm tên miền tùy chỉnh sau nếu muốn.
 
 ---
 
-## 📖 Lesson 4: Setting Up SEO
+## 📖 Bài học 3: Xuất bản Dự án của bạn
 
-### What is SEO?
+### Cách xuất bản Dự án của bạn
 
-**SEO** (Search Engine Optimization) helps your website appear in search results when people search for relevant topics.
+#### Bước 1: Đảm bảo Dự án của bạn đã sẵn sàng
 
-### Why SEO Matters
+Trước khi xuất bản, hãy kiểm tra:
+- ✅ Mọi thứ có hoạt động không?
+- ✅ Có lỗi rõ ràng nào không?
+- ✅ Nội dung có đầy đủ không?
+- ✅ Nó trông có ổn trên di động không?
+- ✅ Bạn có hài lòng với nó không?
 
-- ✅ **More visitors** - People find you through search
-- ✅ **Better visibility** - Your app shows up in Google
-- ✅ **Professional appearance** - Proper SEO looks professional
-- ✅ **Better sharing** - Links look good when shared
+**Đừng lo lắng về sự hoàn hảo!** Bạn luôn có thể cập nhật nó sau khi xuất bản.
 
-### Basic SEO Setup
+#### Bước 2: Tìm nút Xuất bản
 
-#### Step 1: Add a Title
+1. Trong dự án Lovable của bạn, hãy tìm:
+   - Nút **"Publish"** (Xuất bản)
+   - Nút **"Deploy"** (Triển khai)
+   - Nút **"Go Live"** (Trực tuyến)
+   - Thường nằm trong menu trên cùng hoặc cài đặt dự án
 
-The title appears in:
-- Browser tabs
-- Search results
-- When shared on social media
+2. Nhấp vào nó!
 
-**How to add:**
+#### Bước 3: Cấu hình Cài đặt Xuất bản
+
+Bạn có thể được hỏi:
+
+**Tên dự án:**
+- Chọn tên cho dự án của bạn
+- Tên này trở thành một phần của URL của bạn
+- Làm cho nó mô tả nhưng ngắn gọn
+
+**Cài đặt quyền riêng tư:**
+- **Public** (Công khai) - Bất kỳ ai cũng có thể xem nó
+- **Private** (Riêng tư) - Chỉ những người có liên kết mới có thể xem nó
+
+**Mô tả:**
+- Thêm mô tả ngắn gọn
+- Giúp mọi người hiểu ứng dụng của bạn làm gì
+
+#### Bước 4: Xuất bản!
+
+1. **Nhấp "Publish"** hoặc "Deploy"
+2. **Đợi một chút** - Lovable đang thiết lập mọi thứ
+3. **Nhận URL của bạn** - Bạn sẽ nhận được liên kết trực tiếp của mình!
+
+#### Bước 5: Kiểm tra Ứng dụng trực tiếp của bạn
+
+1. **Nhấp vào liên kết** - Mở ứng dụng trực tiếp của bạn
+2. **Kiểm tra mọi thứ** - Đảm bảo nó hoạt động
+3. **Kiểm tra trên di động** - Xem nó trông như thế nào trên điện thoại
+4. **Chia sẻ với bạn bè** - Nhận phản hồi!
+
+**💡 Mẹo cho người mới:** Lần triển khai đầu tiên của bạn rất thú vị! Đừng căng thẳng - bạn luôn có thể cập nhật nó.
+
+---
+
+## 📖 Bài học 4: Thiết lập SEO
+
+### SEO là gì?
+
+**SEO** (Tối ưu hóa Công cụ Tìm kiếm) giúp trang web của bạn xuất hiện trong kết quả tìm kiếm khi mọi người tìm kiếm các chủ đề liên quan.
+
+### Tại sao SEO quan trọng
+
+- ✅ **Nhiều khách truy cập hơn** - Mọi người tìm thấy bạn qua tìm kiếm
+- ✅ **Khả năng hiển thị tốt hơn** - Ứng dụng của bạn hiển thị trên Google
+- ✅ **Vẻ ngoài chuyên nghiệp** - SEO đúng cách trông chuyên nghiệp
+- ✅ **Chia sẻ tốt hơn** - Các liên kết trông đẹp khi được chia sẻ
+
+### Thiết lập SEO cơ bản
+
+#### Bước 1: Thêm Tiêu đề
+
+Tiêu đề xuất hiện trong:
+- Các tab trình duyệt
+- Kết quả tìm kiếm
+- Khi được chia sẻ trên mạng xã hội
+
+**Cách thêm:**
 ```
 Set the page title to "My Awesome App - The Best Solution for [Your Topic]"
+(Đặt tiêu đề trang thành "Ứng dụng tuyệt vời của tôi - Giải pháp tốt nhất cho [Chủ đề của bạn]")
 ```
 
-#### Step 2: Add a Description
+#### Bước 2: Thêm Mô tả
 
-The description appears in:
-- Search results (under the title)
-- Social media shares
-- Helps people understand what your app does
+Mô tả xuất hiện trong:
+- Kết quả tìm kiếm (bên dưới tiêu đề)
+- Chia sẻ trên mạng xã hội
+- Giúp mọi người hiểu ứng dụng của bạn làm gì
 
-**How to add:**
+**Cách thêm:**
 ```
 Add a meta description: "My Awesome App helps you [what it does]. [Brief benefit]. Try it free today!"
+(Thêm mô tả meta: "Ứng dụng tuyệt vời của tôi giúp bạn [nó làm gì]. [Lợi ích ngắn gọn]. Dùng thử miễn phí ngay hôm nay!")
 ```
 
-#### Step 3: Add Keywords (Optional)
+#### Bước 3: Thêm Từ khóa (Tùy chọn)
 
-Keywords help search engines understand your content:
+Từ khóa giúp các công cụ tìm kiếm hiểu nội dung của bạn:
 
-**How to add:**
+**Cách thêm:**
 ```
 Add SEO keywords: [keyword1], [keyword2], [keyword3]
+(Thêm từ khóa SEO: [từ khóa 1], [từ khóa 2], [từ khóa 3])
 ```
 
-#### Step 4: Add Open Graph Tags (For Social Sharing)
+#### Bước 4: Thêm Thẻ Open Graph (Cho Chia sẻ Mạng xã hội)
 
-Makes your links look good when shared:
+Làm cho các liên kết của bạn trông đẹp khi được chia sẻ:
 
-**How to add:**
+**Cách thêm:**
 ```
 Add Open Graph tags for social media sharing with title, description, and image
+(Thêm thẻ Open Graph cho chia sẻ mạng xã hội với tiêu đề, mô tả và hình ảnh)
 ```
 
-**💡 Beginner Tip:** Start with title and description. That's enough for most apps!
+**💡 Mẹo cho người mới:** Bắt đầu với tiêu đề và mô tả. Đó là đủ cho hầu hết các ứng dụng!
 
 ---
 
-## 📖 Lesson 5: Adding a Custom Domain
+## 📖 Bài học 5: Thêm Tên miền Tùy chỉnh
 
-### What is a Custom Domain?
+### Tên miền Tùy chỉnh là gì?
 
-A **custom domain** is your own website address, like:
+Một **tên miền tùy chỉnh** là địa chỉ trang web của riêng bạn, như:
 - `www.yourname.com`
 - `yourbusiness.com`
 - `yourapp.io`
 
-Instead of the default:
+Thay vì mặc định:
 - `your-project.lovable.app`
 
-### Why Use a Custom Domain?
+### Tại sao sử dụng Tên miền Tùy chỉnh?
 
-- ✅ **More professional** - Looks more credible
-- ✅ **Brand recognition** - Matches your brand
-- ✅ **Easier to remember** - Your own name
-- ✅ **Better for business** - More trustworthy
+- ✅ **Chuyên nghiệp hơn** - Trông đáng tin cậy hơn
+- ✅ **Nhận diện thương hiệu** - Phù hợp với thương hiệu của bạn
+- ✅ **Dễ nhớ hơn** - Tên riêng của bạn
+- ✅ **Tốt hơn cho doanh nghiệp** - Đáng tin cậy hơn
 
-### How to Add a Custom Domain
+### Cách thêm Tên miền Tùy chỉnh
 
-#### Step 1: Get a Domain
+#### Bước 1: Mua Tên miền
 
-You need to buy a domain from a registrar like:
-- **Namecheap** - Popular and affordable
-- **GoDaddy** - Well-known
-- **Google Domains** - Simple interface
-- **Cloudflare** - Good prices
+Bạn cần mua tên miền từ nhà đăng ký như:
+- **Namecheap** - Phổ biến và giá cả phải chăng
+- **GoDaddy** - Nổi tiếng
+- **Google Domains** - Giao diện đơn giản
+- **Cloudflare** - Giá tốt
 
-**Cost:** Usually $10-15 per year
+**Chi phí:** Thường là $10-15 mỗi năm
 
-#### Step 2: Configure DNS Settings
+#### Bước 2: Cấu hình Cài đặt DNS
 
-1. **Go to your domain registrar**
-2. **Find DNS settings**
-3. **Add a CNAME record:**
-   - Type: CNAME
-   - Name: www (or @ for root domain)
-   - Value: Your Lovable project URL
-   - Save
+1. **Đi tới nhà đăng ký tên miền của bạn**
+2. **Tìm cài đặt DNS**
+3. **Thêm bản ghi CNAME:**
+   - Loại: CNAME
+   - Tên: www (hoặc @ cho tên miền gốc)
+   - Giá trị: URL dự án Lovable của bạn
+   - Lưu
 
-#### Step 3: Add Domain in Lovable
+#### Bước 3: Thêm Tên miền trong Lovable
 
-1. **Go to Project Settings** → **Domain**
-2. **Click "Add Custom Domain"**
-3. **Enter your domain** (e.g., `www.yourname.com`)
-4. **Lovable verifies it** - Checks the DNS settings
-5. **Once verified, it's live!**
+1. **Đi tới Project Settings** (Cài đặt Dự án) → **Domain** (Tên miền)
+2. **Nhấp "Add Custom Domain"** (Thêm Tên miền Tùy chỉnh)
+3. **Nhập tên miền của bạn** (ví dụ: `www.yourname.com`)
+4. **Lovable xác minh nó** - Kiểm tra cài đặt DNS
+5. **Sau khi xác minh, nó sẽ trực tuyến!**
 
-#### Step 4: Wait for Propagation
+#### Bước 4: Đợi lan truyền
 
-DNS changes can take:
-- **A few minutes** to **48 hours**
-- Usually works within an hour
-- Be patient!
+Thay đổi DNS có thể mất:
+- **Vài phút** đến **48 giờ**
+- Thường hoạt động trong vòng một giờ
+- Hãy kiên nhẫn!
 
-**💡 Beginner Tip:** Custom domains are optional! The free Lovable URL works perfectly fine for most projects.
+**💡 Mẹo cho người mới:** Tên miền tùy chỉnh là tùy chọn! URL Lovable miễn phí hoạt động hoàn hảo cho hầu hết các dự án.
 
 ---
 
-## 📖 Lesson 6: Sharing Your App
+## 📖 Bài học 6: Chia sẻ Ứng dụng của bạn
 
-### How to Share Your Published App
+### Cách chia sẻ Ứng dụng đã xuất bản của bạn
 
-#### Method 1: Share the Link Directly
+#### Phương pháp 1: Chia sẻ Liên kết Trực tiếp
 
-1. **Copy your app's URL**
-2. **Share it anywhere:**
+1. **Sao chép URL ứng dụng của bạn**
+2. **Chia sẻ nó ở bất cứ đâu:**
    - Email
-   - Social media
-   - Messages
-   - Forums
+   - Mạng xã hội
+   - Tin nhắn
+   - Diễn đàn
 
-#### Method 2: Create a Share Card
+#### Phương pháp 2: Tạo Thẻ Chia sẻ
 
-When you share your link on social media, it should show:
-- Your app's title
-- Description
-- Preview image
-- Looks professional!
+Khi bạn chia sẻ liên kết của mình trên mạng xã hội, nó sẽ hiển thị:
+- Tiêu đề ứng dụng của bạn
+- Mô tả
+- Hình ảnh xem trước
+- Trông chuyên nghiệp!
 
-#### Method 3: Embed in Websites
+#### Phương pháp 3: Nhúng vào Trang web
 
-You can embed your app in other websites:
+Bạn có thể nhúng ứng dụng của mình vào các trang web khác:
 
-**How to:**
+**Cách làm:**
 ```
 Generate an embed code for this app
+(Tạo mã nhúng cho ứng dụng này)
 ```
 
-Then use the code on other sites!
+Sau đó sử dụng mã trên các trang web khác!
 
-### Best Practices for Sharing
+### Các phương pháp tốt nhất để chia sẻ
 
-- ✅ **Test the link first** - Make sure it works
-- ✅ **Add context** - Tell people what it is
-- ✅ **Ask for feedback** - Get opinions
-- ✅ **Update regularly** - Keep improving
-- ✅ **Monitor usage** - See how people use it
+- ✅ **Kiểm tra liên kết trước** - Đảm bảo nó hoạt động
+- ✅ **Thêm ngữ cảnh** - Cho mọi người biết nó là gì
+- ✅ **Hỏi ý kiến phản hồi** - Nhận ý kiến
+- ✅ **Cập nhật thường xuyên** - Tiếp tục cải thiện
+- ✅ **Theo dõi việc sử dụng** - Xem cách mọi người sử dụng nó
 
-**💡 Beginner Tip:** Share with friends and family first! Get feedback before sharing widely.
+**💡 Mẹo cho người mới:** Chia sẻ với bạn bè và gia đình trước! Nhận phản hồi trước khi chia sẻ rộng rãi.
 
 ---
 
-## 🛠️ Hands-On Practice: Deploy Your First App
+## 🛠️ Thực hành thực tế: Triển khai Ứng dụng đầu tiên của bạn
 
-Let's actually deploy a project!
+Hãy thực sự triển khai một dự án!
 
-### Practice: Publish a Simple Project
+### Thực hành: Xuất bản một Dự án Đơn giản
 
-#### Step 1: Create or Choose a Project
+#### Bước 1: Tạo hoặc Chọn một Dự án
 
-1. **Create a simple project** (or use one you already have)
-2. **Make sure it works** - Test everything
-3. **Add some content** - Make it presentable
+1. **Tạo một dự án đơn giản** (hoặc sử dụng dự án bạn đã có)
+2. **Đảm bảo nó hoạt động** - Kiểm tra mọi thứ
+3. **Thêm một số nội dung** - Làm cho nó đoan trang
 
-#### Step 2: Set Up Basic SEO
+#### Bước 2: Thiết lập SEO cơ bản
 
-Ask Lovable:
+Yêu cầu Lovable:
 ```
 Add SEO:
 - Title: "My First Lovable App"
 - Description: "A simple app built with Lovable to showcase my skills"
+(Thêm SEO:
+- Tiêu đề: "Ứng dụng Lovable đầu tiên của tôi"
+- Mô tả: "Một ứng dụng đơn giản được xây dựng với Lovable để giới thiệu kỹ năng của tôi")
 ```
 
-#### Step 3: Publish
+#### Bước 3: Xuất bản
 
-1. **Find the Publish button**
-2. **Click it**
-3. **Fill in the details:**
-   - Project name
-   - Description
-   - Privacy settings
-4. **Click "Publish"**
+1. **Tìm nút Xuất bản**
+2. **Nhấp vào nó**
+3. **Điền chi tiết:**
+   - Tên dự án
+   - Mô tả
+   - Cài đặt quyền riêng tư
+4. **Nhấp "Publish"**
 
-#### Step 4: Get Your URL
+#### Bước 4: Nhận URL của bạn
 
-1. **Copy your live URL**
-2. **Open it in a new tab**
-3. **Test everything**
-4. **Celebrate!** 🎉
+1. **Sao chép URL trực tiếp của bạn**
+2. **Mở nó trong tab mới**
+3. **Kiểm tra mọi thứ**
+4. **Ăn mừng!** 🎉
 
-#### Step 5: Share It
+#### Bước 5: Chia sẻ nó
 
-1. **Share with a friend**
-2. **Get feedback**
-3. **Make improvements**
-4. **Update and redeploy**
+1. **Chia sẻ với một người bạn**
+2. **Nhận phản hồi**
+3. **Thực hiện cải tiến**
+4. **Cập nhật và triển khai lại**
 
-**🎉 Congratulations!** You just published your first app!
-
----
-
-## ✅ Module 8 Checklist
-
-Before moving to Module 9, make sure you can:
-
-- [ ] Explain what "deploying" means
-- [ ] Publish a project
-- [ ] Understand how Lovable hosting works
-- [ ] Set up basic SEO
-- [ ] Understand how to add a custom domain (even if you don't do it)
-- [ ] Share your published app
-- [ ] Test a live app
+**🎉 Chúc mừng!** Bạn vừa xuất bản ứng dụng đầu tiên của mình!
 
 ---
 
-## 🤔 Common Questions (FAQ)
+## ✅ Danh sách kiểm tra Module 8
 
-### Q: Is publishing free?
-**A:** Yes! Lovable provides free hosting with a free subdomain.
+Trước khi chuyển sang Module 9, hãy đảm bảo bạn có thể:
 
-### Q: Can I update my app after publishing?
-**A:** Yes! Make changes and republish. Updates are usually instant.
-
-### Q: Do I need a custom domain?
-**A:** No! The free Lovable URL works perfectly. Custom domains are optional.
-
-### Q: Can I unpublish my app?
-**A:** Yes! You can unpublish or make it private anytime.
-
-### Q: How long does deployment take?
-**A:** Usually just a few minutes! Sometimes instant.
-
-### Q: Can I have multiple published apps?
-**A:** Yes! You can publish as many projects as you want.
-
-### Q: Will my app always be online?
-**A:** Yes! Once published, it stays online unless you unpublish it.
+- [ ] Giải thích "triển khai" nghĩa là gì
+- [ ] Xuất bản một dự án
+- [ ] Hiểu cách Lovable hosting hoạt động
+- [ ] Thiết lập SEO cơ bản
+- [ ] Hiểu cách thêm tên miền tùy chỉnh (ngay cả khi bạn không làm điều đó)
+- [ ] Chia sẻ ứng dụng đã xuất bản của bạn
+- [ ] Kiểm tra một ứng dụng trực tuyến
 
 ---
 
-## 🎯 What's Next?
+## 🤔 Các câu hỏi thường gặp (FAQ)
 
-Amazing work! You now know how to:
-- Deploy your applications
-- Set up SEO
-- Add custom domains
-- Share your work
+### Hỏi: Xuất bản có miễn phí không?
+**Đáp:** Có! Lovable cung cấp hosting miễn phí với tên miền phụ miễn phí.
 
-**Ready for Module 9?** In the final module, we'll build a complete real-world project from start to finish - applying everything you've learned!
+### Hỏi: Tôi có thể cập nhật ứng dụng của mình sau khi xuất bản không?
+**Đáp:** Có! Thực hiện thay đổi và xuất bản lại. Cập nhật thường là ngay lập tức.
 
----
+### Hỏi: Tôi có cần tên miền tùy chỉnh không?
+**Đáp:** Không! URL Lovable miễn phí hoạt động hoàn hảo. Tên miền tùy chỉnh là tùy chọn.
 
-## 💡 Pro Tips for Beginners
+### Hỏi: Tôi có thể hủy xuất bản ứng dụng của mình không?
+**Đáp:** Có! Bạn có thể hủy xuất bản hoặc đặt nó ở chế độ riêng tư bất cứ lúc nào.
 
-1. **Don't wait for perfection** - Publish and iterate! You can always update.
+### Hỏi: Triển khai mất bao lâu?
+**Đáp:** Thường chỉ vài phút! Đôi khi ngay lập tức.
 
-2. **Test before sharing** - Make sure everything works on the live version.
+### Hỏi: Tôi có thể có nhiều ứng dụng đã xuất bản không?
+**Đáp:** Có! Bạn có thể xuất bản bao nhiêu dự án tùy thích.
 
-3. **Start with free hosting** - Custom domains can come later.
-
-4. **Get feedback early** - Share with friends to get opinions.
-
-5. **Update regularly** - Keep improving your published apps.
-
-6. **Celebrate your wins** - Publishing your first app is a big achievement!
+### Hỏi: Ứng dụng của tôi có luôn trực tuyến không?
+**Đáp:** Có! Sau khi xuất bản, nó vẫn trực tuyến trừ khi bạn hủy xuất bản.
 
 ---
 
-*Module 8 Complete! 🎉*
+## 🎯 Tiếp theo là gì?
 
+Làm việc tuyệt vời! Bây giờ bạn đã biết cách:
+- Triển khai các ứng dụng của bạn
+- Thiết lập SEO
+- Thêm tên miền tùy chỉnh
+- Chia sẻ công việc của bạn
+
+**Sẵn sàng cho Module 9?** Trong module cuối cùng, chúng ta sẽ xây dựng một dự án thực tế hoàn chỉnh từ đầu đến cuối - áp dụng mọi thứ bạn đã học!
+
+---
+
+## 💡 Mẹo chuyên nghiệp cho người mới bắt đầu
+
+1. **Đừng chờ đợi sự hoàn hảo** - Xuất bản và lặp lại! Bạn luôn có thể cập nhật.
+
+2. **Kiểm tra trước khi chia sẻ** - Đảm bảo mọi thứ hoạt động trên phiên bản trực tiếp.
+
+3. **Bắt đầu với hosting miễn phí** - Tên miền tùy chỉnh có thể đến sau.
+
+4. **Nhận phản hồi sớm** - Chia sẻ với bạn bè để nhận ý kiến.
+
+5. **Cập nhật thường xuyên** - Tiếp tục cải thiện các ứng dụng đã xuất bản của bạn.
+
+6. **Ăn mừng chiến thắng của bạn** - Xuất bản ứng dụng đầu tiên của bạn là một thành tựu lớn!
+
+---
+
+*Module 8 Hoàn thành! 🎉*

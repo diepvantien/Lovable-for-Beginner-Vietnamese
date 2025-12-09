@@ -1,154 +1,179 @@
-# Module 12: Performance and Optimization
+# Module 12: Hiệu suất và Tối ưu hóa
 
-**Goal:** Learn how to make your apps fast and efficient
+**Mục tiêu:** Học cách làm cho ứng dụng của bạn nhanh và hiệu quả
 
-**Estimated Time:** 30-40 minutes
+**Thời gian ước tính:** 30-40 phút
 
-**Prerequisites:** Complete Modules 1-6 first
-
----
-
-## 🎯 What You'll Learn in This Module
-
-By the end of this module, you will:
-- Understand why performance matters
-- Know how to optimize images
-- Learn about code splitting and lazy loading
-- Understand caching strategies
-- Be able to optimize database queries
-- Know how to measure and improve performance
-- Understand how to instruct Lovable to optimize
+**Điều kiện tiên quyết:** Hoàn thành Module 1-6 trước
 
 ---
 
-## 📖 Lesson 1: Why Performance Matters
+## 🎯 Bạn Sẽ Học Được Gì Trong Module Này
 
-### What is Performance?
-
-**Performance** is how fast and efficiently your app works. Good performance means:
-- ✅ Pages load quickly
-- ✅ Interactions are smooth
-- ✅ No lag or delays
-- ✅ Works well on slower connections
-- ✅ Uses resources efficiently
-
-### Why It Matters
-
-**User Experience:**
-- Fast apps = Happy users
-- Slow apps = Users leave
-- Performance affects user satisfaction
-
-**Business Impact:**
-- Better performance = More users
-- Faster sites = Better search rankings
-- Optimized apps = Lower costs
-
-**💡 Beginner Tip:** Don't worry about optimization at first! Build your app, then optimize. But it's good to know these concepts.
+Vào cuối module này, bạn sẽ:
+- Hiểu tại sao hiệu suất lại quan trọng
+- Biết cách tối ưu hóa hình ảnh
+- Tìm hiểu về phân tách mã (code splitting) và tải lười (lazy loading)
+- Hiểu các chiến lược bộ nhớ đệm (caching)
+- Có khả năng tối ưu hóa các truy vấn cơ sở dữ liệu
+- Biết cách đo lường và cải thiện hiệu suất
+- Hiểu cách hướng dẫn Lovable tối ưu hóa
 
 ---
 
-## 📖 Lesson 2: Image Optimization
+## 📖 Bài học 1: Tại sao Hiệu suất lại Quan trọng
 
-### Why Optimize Images?
+### Hiệu suất là gì?
 
-**Large images:**
-- ❌ Slow down page loading
-- ❌ Use lots of data
-- ❌ Make mobile experience poor
-- ❌ Increase hosting costs
+**Hiệu suất (Performance)** là tốc độ và hiệu quả hoạt động của ứng dụng của bạn. Hiệu suất tốt có nghĩa là:
+- ✅ Các trang tải nhanh chóng
+- ✅ Các tương tác mượt mà
+- ✅ Không bị lag hoặc trễ
+- ✅ Hoạt động tốt trên các kết nối chậm hơn
+- ✅ Sử dụng tài nguyên hiệu quả
 
-**Optimized images:**
-- ✅ Load quickly
-- ✅ Use less data
-- ✅ Better user experience
-- ✅ Lower costs
+### Tại sao Nó lại Quan trọng
 
-### How to Optimize Images in Lovable
+**Trải nghiệm Người dùng:**
+- Ứng dụng nhanh = Người dùng vui vẻ
+- Ứng dụng chậm = Người dùng rời đi
+- Hiệu suất ảnh hưởng đến sự hài lòng của người dùng
 
-#### Method 1: Request Optimization in Prompts
+**Tác động Kinh doanh:**
+- Hiệu suất tốt hơn = Nhiều người dùng hơn
+- Trang web nhanh hơn = Xếp hạng tìm kiếm tốt hơn
+- Ứng dụng được tối ưu hóa = Chi phí thấp hơn
 
-**Example:**
+**💡 Mẹo cho người mới bắt đầu:** Đừng lo lắng về việc tối ưu hóa ngay từ đầu! Hãy xây dựng ứng dụng của bạn, sau đó tối ưu hóa. Nhưng thật tốt khi biết những khái niệm này.
+
+---
+
+## 📖 Bài học 2: Tối ưu hóa Hình ảnh
+
+### Tại sao phải Tối ưu hóa Hình ảnh?
+
+**Hình ảnh lớn:**
+- ❌ Làm chậm quá trình tải trang
+- ❌ Sử dụng nhiều dữ liệu
+- ❌ Làm cho trải nghiệm di động kém
+- ❌ Tăng chi phí lưu trữ
+
+**Hình ảnh được tối ưu hóa:**
+- ✅ Tải nhanh chóng
+- ✅ Sử dụng ít dữ liệu hơn
+- ✅ Trải nghiệm người dùng tốt hơn
+- ✅ Chi phí thấp hơn
+
+### Cách Tối ưu hóa Hình ảnh trong Lovable
+
+#### Phương pháp 1: Yêu cầu Tối ưu hóa trong Prompt
+
+**Ví dụ:**
 ```
 Add images to the gallery, but make sure they are:
 - Compressed and optimized for web
 - Properly sized (not larger than needed)
 - In modern formats (WebP when possible)
 - Lazy loaded (load as user scrolls)
+(Thêm hình ảnh vào thư viện, nhưng hãy đảm bảo chúng:
+- Được nén và tối ưu hóa cho web
+- Có kích thước phù hợp (không lớn hơn mức cần thiết)
+- Ở các định dạng hiện đại (WebP khi có thể)
+- Được tải lười (tải khi người dùng cuộn))
 ```
 
-#### Method 2: Specify Image Requirements
+#### Phương pháp 2: Chỉ định Yêu cầu Hình ảnh
 
-**Example:**
+**Ví dụ:**
 ```
 Use images that are:
 - Maximum 1200px wide for hero images
 - Maximum 800px wide for gallery images
 - Compressed to reduce file size
 - With appropriate alt text for accessibility
+(Sử dụng hình ảnh:
+- Rộng tối đa 1200px cho hình ảnh hero
+- Rộng tối đa 800px cho hình ảnh thư viện
+- Được nén để giảm kích thước tệp
+- Với văn bản thay thế (alt text) phù hợp cho khả năng truy cập)
 ```
 
-#### Method 3: Request Responsive Images
+#### Phương pháp 3: Yêu cầu Hình ảnh Responsive
 
-**Example:**
+**Ví dụ:**
 ```
 Create responsive images that:
 - Load smaller versions on mobile devices
 - Load larger versions on desktop
 - Use srcset for different screen sizes
 - Maintain aspect ratio
+(Tạo hình ảnh responsive:
+- Tải các phiên bản nhỏ hơn trên thiết bị di động
+- Tải các phiên bản lớn hơn trên máy tính để bàn
+- Sử dụng srcset cho các kích thước màn hình khác nhau
+- Duy trì tỷ lệ khung hình)
 ```
 
-### Image Optimization Checklist
+### Danh sách Kiểm tra Tối ưu hóa Hình ảnh
 
-When adding images, ask for:
-- ✅ Compression and optimization
-- ✅ Proper sizing (not too large)
-- ✅ Lazy loading (load as needed)
-- ✅ Responsive images (different sizes for different screens)
-- ✅ Modern formats (WebP, AVIF when supported)
+Khi thêm hình ảnh, hãy yêu cầu:
+- ✅ Nén và tối ưu hóa
+- ✅ Kích thước phù hợp (không quá lớn)
+- ✅ Tải lười (tải khi cần thiết)
+- ✅ Hình ảnh responsive (kích thước khác nhau cho các màn hình khác nhau)
+- ✅ Các định dạng hiện đại (WebP, AVIF khi được hỗ trợ)
 
-**💡 Beginner Tip:** Always ask Lovable to optimize images. It's easy to add to your prompts!
+**💡 Mẹo cho người mới bắt đầu:** Luôn yêu cầu Lovable tối ưu hóa hình ảnh. Rất dễ để thêm vào prompt của bạn!
 
 ---
 
-## 📖 Lesson 3: Code Splitting and Lazy Loading
+## 📖 Bài học 3: Phân tách Mã và Tải lười
 
-### What is Code Splitting?
+### Phân tách Mã là gì?
 
-**Code splitting** means breaking your app into smaller pieces that load only when needed.
+**Phân tách mã (Code splitting)** có nghĩa là chia ứng dụng của bạn thành các phần nhỏ hơn chỉ tải khi cần thiết.
 
-**Benefits:**
-- ✅ Faster initial page load
-- ✅ Load features on demand
-- ✅ Better performance
-- ✅ Lower data usage
+**Lợi ích:**
+- ✅ Tải trang ban đầu nhanh hơn
+- ✅ Tải các tính năng theo yêu cầu
+- ✅ Hiệu suất tốt hơn
+- ✅ Sử dụng dữ liệu thấp hơn
 
-### How to Request Code Splitting
+### Cách Yêu cầu Phân tách Mã
 
-**Example:**
+**Ví dụ:**
 ```
 Optimize the app performance by:
 - Splitting code into smaller chunks
 - Loading pages only when needed (lazy loading)
 - Loading heavy components on demand
 - Reducing initial bundle size
+(Tối ưu hóa hiệu suất ứng dụng bằng cách:
+- Chia mã thành các phần nhỏ hơn
+- Chỉ tải các trang khi cần thiết (tải lười)
+- Tải các component nặng theo yêu cầu
+- Giảm kích thước gói ban đầu)
 ```
 
-### Lazy Loading Components
+### Tải lười Component
 
-**Example:**
+**Ví dụ:**
 ```
 Implement lazy loading for:
 - Images (load as user scrolls)
 - Heavy components (load when needed)
 - Third-party scripts (load after page loads)
 - Non-critical features (load on demand)
+(Thực hiện tải lười cho:
+- Hình ảnh (tải khi người dùng cuộn)
+- Các component nặng (tải khi cần thiết)
+- Các tập lệnh của bên thứ ba (tải sau khi trang tải)
+- Các tính năng không quan trọng (tải theo yêu cầu))
 ```
 
-### Requesting Performance Optimizations
+### Yêu cầu Tối ưu hóa Hiệu suất
 
-**Example:**
+**Ví dụ:**
 ```
 Optimize this page for performance:
 - Split JavaScript into smaller chunks
@@ -156,64 +181,75 @@ Optimize this page for performance:
 - Defer non-critical scripts
 - Minimize CSS and JavaScript
 - Use code splitting for routes
+(Tối ưu hóa trang này cho hiệu suất:
+- Chia JavaScript thành các phần nhỏ hơn
+- Tải lười hình ảnh bên dưới màn hình đầu tiên
+- Trì hoãn các tập lệnh không quan trọng
+- Tối thiểu hóa CSS và JavaScript
+- Sử dụng phân tách mã cho các tuyến đường (routes))
 ```
 
-**💡 Beginner Tip:** Lovable can handle most optimization automatically. Just ask for it!
+**💡 Mẹo cho người mới bắt đầu:** Lovable có thể xử lý hầu hết việc tối ưu hóa một cách tự động. Chỉ cần yêu cầu nó!
 
 ---
 
-## 📖 Lesson 4: Caching Strategies
+## 📖 Bài học 4: Chiến lược Bộ nhớ đệm (Caching)
 
-### What is Caching?
+### Bộ nhớ đệm là gì?
 
-**Caching** stores frequently used data so it loads faster next time.
+**Bộ nhớ đệm (Caching)** lưu trữ dữ liệu thường xuyên sử dụng để nó tải nhanh hơn vào lần sau.
 
-**Types of caching:**
-- **Browser caching** - Stores files in user's browser
-- **CDN caching** - Stores files on servers closer to users
-- **Database caching** - Stores query results
-- **API caching** - Stores API responses
+**Các loại bộ nhớ đệm:**
+- **Bộ nhớ đệm trình duyệt** - Lưu trữ tệp trong trình duyệt của người dùng
+- **Bộ nhớ đệm CDN** - Lưu trữ tệp trên các máy chủ gần người dùng hơn
+- **Bộ nhớ đệm cơ sở dữ liệu** - Lưu trữ kết quả truy vấn
+- **Bộ nhớ đệm API** - Lưu trữ phản hồi API
 
-### How Lovable Handles Caching
+### Cách Lovable Xử lý Bộ nhớ đệm
 
-Lovable automatically:
-- ✅ Implements browser caching
-- ✅ Uses CDN for static assets
-- ✅ Optimizes asset delivery
-- ✅ Handles caching headers
+Lovable tự động:
+- ✅ Thực hiện bộ nhớ đệm trình duyệt
+- ✅ Sử dụng CDN cho các tài sản tĩnh
+- ✅ Tối ưu hóa việc phân phối tài sản
+- ✅ Xử lý các tiêu đề bộ nhớ đệm
 
-### Requesting Caching
+### Yêu cầu Bộ nhớ đệm
 
-**Example:**
+**Ví dụ:**
 ```
 Optimize caching for this app:
 - Cache static assets (images, CSS, JS)
 - Cache API responses when appropriate
 - Set appropriate cache headers
 - Implement cache invalidation for updates
+(Tối ưu hóa bộ nhớ đệm cho ứng dụng này:
+- Lưu vào bộ nhớ đệm các tài sản tĩnh (hình ảnh, CSS, JS)
+- Lưu vào bộ nhớ đệm các phản hồi API khi thích hợp
+- Thiết lập các tiêu đề bộ nhớ đệm phù hợp
+- Thực hiện vô hiệu hóa bộ nhớ đệm cho các bản cập nhật)
 ```
 
-**💡 Beginner Tip:** Lovable handles most caching automatically. Focus on building features, and Lovable optimizes delivery.
+**💡 Mẹo cho người mới bắt đầu:** Lovable xử lý hầu hết việc lưu vào bộ nhớ đệm một cách tự động. Tập trung vào việc xây dựng các tính năng, và Lovable tối ưu hóa việc phân phối.
 
 ---
 
-## 📖 Lesson 5: Database Optimization
+## 📖 Bài học 5: Tối ưu hóa Cơ sở dữ liệu
 
-### Why Optimize Database Queries?
+### Tại sao phải Tối ưu hóa Truy vấn Cơ sở dữ liệu?
 
-**Slow queries:**
-- ❌ Make pages load slowly
-- ❌ Use too many resources
-- ❌ Create poor user experience
+**Truy vấn chậm:**
+- ❌ Làm cho các trang tải chậm
+- ❌ Sử dụng quá nhiều tài nguyên
+- ❌ Tạo ra trải nghiệm người dùng kém
 
-**Optimized queries:**
-- ✅ Fast data retrieval
-- ✅ Efficient resource use
-- ✅ Better performance
+**Truy vấn được tối ưu hóa:**
+- ✅ Truy xuất dữ liệu nhanh
+- ✅ Sử dụng tài nguyên hiệu quả
+- ✅ Hiệu suất tốt hơn
 
-### How to Request Query Optimization
+### Cách Yêu cầu Tối ưu hóa Truy vấn
 
-**Example:**
+**Ví dụ:**
 ```
 Optimize the database queries for the task list:
 - Only fetch tasks for the current user
@@ -221,22 +257,33 @@ Optimize the database queries for the task list:
 - Only fetch necessary fields (not all data)
 - Use indexes for faster lookups
 - Cache frequently accessed data
+(Tối ưu hóa các truy vấn cơ sở dữ liệu cho danh sách công việc:
+- Chỉ lấy các công việc cho người dùng hiện tại
+- Giới hạn kết quả 20 mục mỗi trang (phân trang)
+- Chỉ lấy các trường cần thiết (không phải tất cả dữ liệu)
+- Sử dụng chỉ mục để tra cứu nhanh hơn
+- Lưu vào bộ nhớ đệm dữ liệu thường xuyên truy cập)
 ```
 
-### Pagination and Limits
+### Phân trang và Giới hạn
 
-**Example:**
+**Ví dụ:**
 ```
 Implement pagination for the blog post list:
 - Show 10 posts per page
 - Load more posts as user scrolls (infinite scroll)
 - Or use page numbers for navigation
 - Only load posts for current page
+(Thực hiện phân trang cho danh sách bài viết blog:
+- Hiển thị 10 bài viết mỗi trang
+- Tải thêm bài viết khi người dùng cuộn (cuộn vô hạn)
+- Hoặc sử dụng số trang để điều hướng
+- Chỉ tải các bài viết cho trang hiện tại)
 ```
 
-### Requesting Efficient Data Loading
+### Yêu cầu Tải Dữ liệu Hiệu quả
 
-**Example:**
+**Ví dụ:**
 ```
 Optimize data loading:
 - Load data in batches (not all at once)
@@ -244,130 +291,143 @@ Optimize data loading:
 - Load additional data as needed
 - Use pagination for large lists
 - Cache frequently accessed data
+(Tối ưu hóa việc tải dữ liệu:
+- Tải dữ liệu theo lô (không phải tất cả cùng một lúc)
+- Chỉ lấy nội dung hiển thị ban đầu
+- Tải dữ liệu bổ sung khi cần thiết
+- Sử dụng phân trang cho các danh sách lớn
+- Lưu vào bộ nhớ đệm dữ liệu thường xuyên truy cập)
 ```
 
-**💡 Beginner Tip:** Always specify limits and pagination for lists. Loading everything at once is slow!
+**💡 Mẹo cho người mới bắt đầu:** Luôn chỉ định giới hạn và phân trang cho các danh sách. Tải mọi thứ cùng một lúc là chậm!
 
 ---
 
-## 📖 Lesson 6: Measuring Performance
+## 📖 Bài học 6: Đo lường Hiệu suất
 
-### How to Check Performance
+### Cách Kiểm tra Hiệu suất
 
-#### Method 1: Use Browser Tools
+#### Phương pháp 1: Sử dụng Công cụ Trình duyệt
 
-1. **Open browser DevTools** (F12 or right-click → Inspect)
-2. **Go to "Network" tab**
-3. **Reload page**
-4. **See load times** for each resource
+1. **Mở DevTools trình duyệt** (F12 hoặc chuột phải → Inspect)
+2. **Đi tới tab "Network"**
+3. **Tải lại trang**
+4. **Xem thời gian tải** cho mỗi tài nguyên
 
-#### Method 2: Ask Lovable
+#### Phương pháp 2: Hỏi Lovable
 
-**Example:**
+**Ví dụ:**
 ```
 Can you analyze the performance of this page and suggest optimizations?
+(Bạn có thể phân tích hiệu suất của trang này và đề xuất tối ưu hóa không?)
 ```
 
-#### Method 3: Use Performance Tools
+#### Phương pháp 3: Sử dụng Công cụ Hiệu suất
 
-**Example:**
+**Ví dụ:**
 ```
 Add performance monitoring to track:
 - Page load times
 - Time to first content
 - Largest contentful paint
 - User interaction responsiveness
+(Thêm giám sát hiệu suất để theo dõi:
+- Thời gian tải trang
+- Thời gian đến nội dung đầu tiên
+- Thời gian hiển thị nội dung lớn nhất (LCP)
+- Khả năng phản hồi tương tác người dùng)
 ```
 
-### Performance Metrics to Watch
+### Các Chỉ số Hiệu suất cần Theo dõi
 
-- **Page Load Time** - How long page takes to load
-- **Time to First Content** - When first content appears
-- **Largest Contentful Paint** - When main content loads
-- **Time to Interactive** - When page becomes usable
+- **Thời gian Tải Trang (Page Load Time)** - Trang mất bao lâu để tải
+- **Thời gian đến Nội dung Đầu tiên (Time to First Content)** - Khi nội dung đầu tiên xuất hiện
+- **Thời gian hiển thị Nội dung Lớn nhất (Largest Contentful Paint)** - Khi nội dung chính tải
+- **Thời gian Tương tác (Time to Interactive)** - Khi trang trở nên có thể sử dụng được
 
-**💡 Beginner Tip:** Don't obsess over metrics at first. Build your app, then optimize based on real usage.
+**💡 Mẹo cho người mới bắt đầu:** Đừng ám ảnh về các chỉ số lúc đầu. Xây dựng ứng dụng của bạn, sau đó tối ưu hóa dựa trên việc sử dụng thực tế.
 
 ---
 
-## 🛠️ Hands-On Practice
+## 🛠️ Thực hành: Tối ưu hóa một Dự án Hiện có
 
-### Practice: Optimize an Existing Project
+**Nhiệm vụ:** Lấy một dự án bạn đã xây dựng và tối ưu hóa nó.
 
-**Task:** Take a project you've built and optimize it.
+**Các bước:**
 
-**Steps:**
-
-1. **Identify Performance Issues:**
+1. **Xác định Vấn đề Hiệu suất:**
    ```
    Analyze this project for performance issues. What can be optimized?
+   (Phân tích dự án này để tìm các vấn đề hiệu suất. Có thể tối ưu hóa những gì?)
    ```
 
-2. **Optimize Images:**
+2. **Tối ưu hóa Hình ảnh:**
    ```
    Optimize all images: compress them, use appropriate sizes, implement lazy loading
+   (Tối ưu hóa tất cả hình ảnh: nén chúng, sử dụng kích thước phù hợp, thực hiện tải lười)
    ```
 
-3. **Optimize Code:**
+3. **Tối ưu hóa Mã:**
    ```
    Optimize the code: implement code splitting, lazy load components, minimize bundle size
+   (Tối ưu hóa mã: thực hiện phân tách mã, tải lười các component, tối thiểu hóa kích thước gói)
    ```
 
-4. **Optimize Data Loading:**
+4. **Tối ưu hóa Tải Dữ liệu:**
    ```
    Optimize data loading: add pagination, limit queries, cache frequently accessed data
+   (Tối ưu hóa tải dữ liệu: thêm phân trang, giới hạn truy vấn, lưu vào bộ nhớ đệm dữ liệu thường xuyên truy cập)
    ```
 
-5. **Test Performance:**
-   - Check load times
-   - Test on mobile
-   - Verify improvements
+5. **Kiểm thử Hiệu suất:**
+   - Kiểm tra thời gian tải
+   - Kiểm thử trên di động
+   - Xác minh các cải tiến
 
-**What You Learned:**
-- ✅ How to identify performance issues
-- ✅ How to request optimizations
-- ✅ How to measure improvements
-
----
-
-## ✅ Module 12 Checklist
-
-Before completing the course, make sure you can:
-
-- [ ] Understand why performance matters
-- [ ] Request image optimization
-- [ ] Understand code splitting and lazy loading
-- [ ] Request database query optimization
-- [ ] Measure basic performance
-- [ ] Know how to instruct Lovable to optimize
+**Những Gì Bạn Đã Học:**
+- ✅ Cách xác định các vấn đề hiệu suất
+- ✅ Cách yêu cầu tối ưu hóa
+- ✅ Cách đo lường các cải tiến
 
 ---
 
-## 🤔 Common Questions (FAQ)
+## ✅ Danh sách Kiểm tra Module 12
 
-### Q: Do I need to optimize everything?
-**A:** Not at first! Build your app, then optimize based on real performance needs.
+Trước khi hoàn thành khóa học, hãy đảm bảo bạn có thể:
 
-### Q: Will optimization make my app slower to build?
-**A:** No! Lovable handles optimization efficiently. Just ask for it in your prompts.
-
-### Q: How do I know if my app is slow?
-**A:** Test it! If pages load quickly and feel responsive, you're probably fine. Optimize if you notice slowness.
-
-### Q: Should I optimize from the start?
-**A:** Focus on building features first. Optimize after you have a working app.
+- [ ] Hiểu tại sao hiệu suất lại quan trọng
+- [ ] Yêu cầu tối ưu hóa hình ảnh
+- [ ] Hiểu phân tách mã và tải lười
+- [ ] Yêu cầu tối ưu hóa truy vấn cơ sở dữ liệu
+- [ ] Đo lường hiệu suất cơ bản
+- [ ] Biết cách hướng dẫn Lovable tối ưu hóa
 
 ---
 
-## 🎯 What's Next?
+## 🤔 Các Câu Hỏi Thường Gặp (FAQ)
 
-Excellent! You now understand performance optimization. Use these techniques to make your apps fast and efficient.
+### Q: Tôi có cần tối ưu hóa mọi thứ không?
+**A:** Không phải lúc đầu! Xây dựng ứng dụng của bạn, sau đó tối ưu hóa dựa trên nhu cầu hiệu suất thực tế.
 
-**Continue with:**
-- Module 13: Advanced API Integration
-- Or apply these concepts to Module 9's capstone project!
+### Q: Việc tối ưu hóa có làm cho ứng dụng của tôi chậm hơn để xây dựng không?
+**A:** Không! Lovable xử lý việc tối ưu hóa một cách hiệu quả. Chỉ cần yêu cầu nó trong các prompt của bạn.
+
+### Q: Làm thế nào để tôi biết nếu ứng dụng của tôi chậm?
+**A:** Kiểm thử nó! Nếu các trang tải nhanh và cảm thấy phản hồi tốt, bạn có thể ổn. Tối ưu hóa nếu bạn nhận thấy sự chậm chạp.
+
+### Q: Tôi có nên tối ưu hóa ngay từ đầu không?
+**A:** Tập trung vào việc xây dựng các tính năng trước. Tối ưu hóa sau khi bạn có một ứng dụng hoạt động.
 
 ---
 
-*Module 12 Complete! 🎉*
+## 🎯 Tiếp theo là gì?
 
+Tuyệt vời! Bây giờ bạn đã hiểu về tối ưu hóa hiệu suất. Sử dụng các kỹ thuật này để làm cho ứng dụng của bạn nhanh và hiệu quả.
+
+**Tiếp tục với:**
+- Module 13: Tích hợp API Nâng cao
+- Hoặc áp dụng các khái niệm này vào dự án capstone của Module 9!
+
+---
+
+*Module 12 Hoàn thành! 🎉*
